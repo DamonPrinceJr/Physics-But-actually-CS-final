@@ -1,0 +1,49 @@
+V3 25
+FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/bin2BCD3en.vhd" 2017/10/05.11:25:49 P.20131013
+EN work/bin2BCD3en 1510873201 \
+      FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/bin2BCD3en.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin2BCD3en/Behavioral 1510873202 \
+      FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/bin2BCD3en.vhd" \
+      EN work/bin2BCD3en 1510873201
+FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/DCM_50M.vhd" 2017/10/05.11:26:13 P.20131013
+EN work/DCM_50M 1510873197 \
+      FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/DCM_50M.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/DCM_50M/Behavioral 1510873198 \
+      FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/DCM_50M.vhd" \
+      EN work/DCM_50M 1510873197
+FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/mux4SSD.vhd" 2017/10/03.17:45:21 P.20131013
+EN work/mux4SSD 1510873205 \
+      FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/mux4SSD.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mux4SSD/Behavioral 1510873206 \
+      FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/mux4SSD.vhd" \
+      EN work/mux4SSD 1510873205
+FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/sel_strobeB.vhd" 2017/10/05.11:26:25 P.20131013
+EN work/sel_strobeB 1510873199 \
+      FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/sel_strobeB.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sel_strobeB/Behavioral 1510873200 \
+      FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/sel_strobeB.vhd" \
+      EN work/sel_strobeB 1510873199
+FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/SSD_1dig.vhd" 2017/10/03.14:14:50 P.20131013
+EN work/SSD_1dig 1510873203 \
+      FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/SSD_1dig.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SSD_1dig/Behavioral 1510873204 \
+      FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/SSD_1dig.vhd" \
+      EN work/SSD_1dig 1510873203
+FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/sevenSeg.vhf" 2017/11/16.14:59:54 P.20131013
+EN work/sevenSeg 1510873207 \
+      FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/sevenSeg.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/sevenSeg/BEHAVIORAL 1510873208 \
+      FL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/sevenSeg.vhf" \
+      EN work/sevenSeg 1510873207 CP PULLUP CP DCM_50M CP sel_strobeB CP bin2BCD3en \
+      CP SSD_1dig CP mux4SSD

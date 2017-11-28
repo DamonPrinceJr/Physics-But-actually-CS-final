@@ -1,0 +1,12 @@
+EN dcm_50m NULL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/DCM_50M.vhd" sub00/vhpl00 1510873197
+EN sel_strobeb NULL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/sel_strobeB.vhd" sub00/vhpl02 1510873199
+EN ssd_1dig NULL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/SSD_1dig.vhd" sub00/vhpl06 1510873203
+AR mux4ssd behavioral "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/mux4SSD.vhd" sub00/vhpl09 1510873206
+AR sevenseg behavioral "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/sevenSeg.vhf" sub00/vhpl11 1510873208
+EN bin2bcd3en NULL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/bin2BCD3en.vhd" sub00/vhpl04 1510873201
+AR sel_strobeb behavioral "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/sel_strobeB.vhd" sub00/vhpl03 1510873200
+AR ssd_1dig behavioral "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/SSD_1dig.vhd" sub00/vhpl07 1510873204
+EN mux4ssd NULL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/mux4SSD.vhd" sub00/vhpl08 1510873205
+AR bin2bcd3en behavioral "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/bin2BCD3en.vhd" sub00/vhpl05 1510873202
+EN sevenseg NULL "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/sevenSeg.vhf" sub00/vhpl10 1510873207
+AR dcm_50m behavioral "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/remote_sources/_/_/_/_/_/Downloads/DCM_50M.vhd" sub00/vhpl01 1510873198

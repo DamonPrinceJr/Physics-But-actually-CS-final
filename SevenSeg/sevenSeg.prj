@@ -1,0 +1,6 @@
+vhdl work "remote_sources/_/_/_/_/_/Downloads/SSD_1dig.vhd"
+vhdl work "remote_sources/_/_/_/_/_/Downloads/sel_strobeB.vhd"
+vhdl work "remote_sources/_/_/_/_/_/Downloads/mux4SSD.vhd"
+vhdl work "remote_sources/_/_/_/_/_/Downloads/DCM_50M.vhd"
+vhdl work "remote_sources/_/_/_/_/_/Downloads/bin2BCD3en.vhd"
+vhdl work "sevenSeg.vhf"

@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/sevenSeg.xst" -ofn "C:/Users/Big D/Documents/CSUSM/PHYS301/Folder for SevenSeg/SevenSeg/sevenSeg.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc sevenSeg.ucf -p xc3s100e-cp132-4 "sevenSeg.ngc" sevenSeg.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o sevenSeg_map.ncd sevenSeg.ngd sevenSeg.pcf 
+par -w -intstyle ise -ol high -t 1 sevenSeg_map.ncd sevenSeg.ncd sevenSeg.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml sevenSeg.twx sevenSeg.ncd -o sevenSeg.twr sevenSeg.pcf -ucf sevenSeg.ucf 
+bitgen -intstyle ise -f sevenSeg.ut sevenSeg.ncd 
