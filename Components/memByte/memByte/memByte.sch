@@ -387,9 +387,8 @@
             <wire x2="992" y1="1552" y2="1552" x1="928" />
         </branch>
         <branch name="CLR">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="944" y="688" type="branch" />
-            <wire x2="944" y1="688" y2="688" x1="928" />
-            <wire x2="992" y1="688" y2="688" x1="944" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="688" type="branch" />
+            <wire x2="992" y1="688" y2="688" x1="928" />
         </branch>
         <branch name="CLR">
             <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1920" y="880" type="branch" />

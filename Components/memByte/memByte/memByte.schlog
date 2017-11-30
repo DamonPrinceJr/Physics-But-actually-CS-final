@@ -1,6 +1,0 @@
-select figure at 1836 242 8 -branches -sn=1
-select figure at 1382 983 8 -branches -sn=1
-select figure at 926 651 8 -branches -sn=1
-move bawin at 944 688 to 928 688 -sn=1
-select figure at 958 766 8 -branches -sn=1
-select figure at 1492 749 8 -branches -sn=1

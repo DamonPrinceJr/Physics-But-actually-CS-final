@@ -1,0 +1,13 @@
+xst -intstyle ise -ifn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/SandBox/SandBox/SandBox.xst" -ofn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/SandBox/SandBox/SandBox.syr" 
+xst -intstyle ise -ifn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/SandBox/SandBox/SandBox.xst" -ofn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/SandBox/SandBox/SandBox.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SandBox.ucf -p xc3s100e-cp132-4 "SandBox.ngc" SandBox.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o SandBox_map.ncd SandBox.ngd SandBox.pcf 
+par -w -intstyle ise -ol high -t 1 SandBox_map.ncd SandBox.ncd SandBox.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SandBox.twx SandBox.ncd -o SandBox.twr SandBox.pcf -ucf SandBox.ucf 
+bitgen -intstyle ise -f SandBox.ut SandBox.ncd 
+xst -intstyle ise -ifn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/SandBox/SandBox/SandBox.xst" -ofn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/SandBox/SandBox/SandBox.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc SandBox.ucf -p xc3s100e-cp132-4 "SandBox.ngc" SandBox.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o SandBox_map.ncd SandBox.ngd SandBox.pcf 
+par -w -intstyle ise -ol high -t 1 SandBox_map.ncd SandBox.ncd SandBox.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml SandBox.twx SandBox.ncd -o SandBox.twr SandBox.pcf -ucf SandBox.ucf 
+bitgen -intstyle ise -f SandBox.ut SandBox.ncd 

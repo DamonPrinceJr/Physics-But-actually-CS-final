@@ -9,3 +9,4 @@ map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o memByte
 par -w -intstyle ise -ol high -t 1 memByte_map.ncd memByte.ncd memByte.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml memByte.twx memByte.ncd -o memByte.twr memByte.pcf -ucf memByte.ucf 
 bitgen -intstyle ise -f memByte.ut memByte.ncd 
+sch2sym -intstyle ise -family spartan3e -refsym memByte {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/memByte/memByte/memByte.sch} {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/memByte/memByte/memByte.sym} 

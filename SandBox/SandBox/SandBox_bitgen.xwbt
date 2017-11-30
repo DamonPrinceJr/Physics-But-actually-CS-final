@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Big D\Documents\GitHub\Physics-But-actually-CS-final\SandBox\SandBox\SandBox.ncd
+OUTFILE=C:\Users\Big D\Documents\GitHub\Physics-But-actually-CS-final\SandBox\SandBox\SandBox.bit
+FAMILY=Spartan3E
+PART=xc3s100e-4cp132
+WORKINGDIR=C:\Users\Big D\Documents\GitHub\Physics-But-actually-CS-final\SandBox\SandBox
+LICENSE=WebPack
+USER_INFO=174218040_0_0_110

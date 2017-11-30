@@ -43,6 +43,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="memByte.prj"/>
     <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="memByte.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="memByte.stx"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="memByte.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="memByte.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="memByte.twr" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="memByte.twx" xil_pn:subbranch="Par"/>
@@ -86,6 +87,8 @@
     <transform xil_pn:end_ts="1512076527" xil_pn:in_ck="171785941603936511" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="329258067010532475" xil_pn:start_ts="1512076524">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="memByte.vhf"/>
     </transform>
     <transform xil_pn:end_ts="1512076471" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1724236002121317579" xil_pn:start_ts="1512076471">
@@ -103,14 +106,17 @@
     <transform xil_pn:end_ts="1512076527" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1512076527">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1512076527" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8569902341005073195" xil_pn:start_ts="1512076527">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1512076540" xil_pn:in_ck="171785941603939941" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-3030104683199341227" xil_pn:start_ts="1512076527">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
@@ -130,10 +136,12 @@
     <transform xil_pn:end_ts="1512076910" xil_pn:in_ck="171785941603938687" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1262981274799589621" xil_pn:start_ts="1512076910">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1512076915" xil_pn:in_ck="2167912287273095192" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-4447696884576414568" xil_pn:start_ts="1512076910">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_ngo"/>
       <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
       <outfile xil_pn:name="memByte.bld"/>
@@ -143,6 +151,7 @@
     <transform xil_pn:end_ts="1512076919" xil_pn:in_ck="2218454393786822009" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1512076915">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
@@ -158,6 +167,7 @@
     <transform xil_pn:end_ts="1512076926" xil_pn:in_ck="-8731614920600663054" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-4078461964484670437" xil_pn:start_ts="1512076919">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
       <outfile xil_pn:name="memByte.ncd"/>
       <outfile xil_pn:name="memByte.pad"/>
@@ -172,6 +182,7 @@
     <transform xil_pn:end_ts="1512076932" xil_pn:in_ck="171785941603931062" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1512076926">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="memByte.ut"/>
       <outfile xil_pn:name="membyte.bgn"/>
@@ -184,10 +195,12 @@
     <transform xil_pn:end_ts="1512076945" xil_pn:in_ck="171787305394093472" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="2182533642587968765" xil_pn:start_ts="1512076944">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1512076926" xil_pn:in_ck="-4453103666025117835" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1512076923">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
       <outfile xil_pn:name="memByte.twr"/>
       <outfile xil_pn:name="memByte.twx"/>
