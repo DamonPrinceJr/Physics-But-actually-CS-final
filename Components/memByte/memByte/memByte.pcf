@@ -1,0 +1,27 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Nov 30 13:21:58 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CE" LOCATE = SITE "A7" LEVEL 1;
+COMP "byteOut<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "byteOut<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "byteOut<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "byteOut<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "byteOut<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "byteOut<5>" LOCATE = SITE "N4" LEVEL 1;
+COMP "byteOut<6>" LOCATE = SITE "P4" LEVEL 1;
+COMP "byteOut<7>" LOCATE = SITE "G1" LEVEL 1;
+COMP "SYS_CLK" LOCATE = SITE "C8" LEVEL 1;
+COMP "byteIn<0>" LOCATE = SITE "P11" LEVEL 1;
+COMP "byteIn<1>" LOCATE = SITE "L3" LEVEL 1;
+COMP "byteIn<2>" LOCATE = SITE "K3" LEVEL 1;
+COMP "byteIn<3>" LOCATE = SITE "B4" LEVEL 1;
+COMP "byteIn<4>" LOCATE = SITE "G3" LEVEL 1;
+COMP "byteIn<5>" LOCATE = SITE "F3" LEVEL 1;
+COMP "byteIn<6>" LOCATE = SITE "E2" LEVEL 1;
+COMP "byteIn<7>" LOCATE = SITE "N3" LEVEL 1;
+COMP "CLR" LOCATE = SITE "G12" LEVEL 1;
+NET "SYS_CLK_BUFGP/IBUFG" BEL "SYS_CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

@@ -1,0 +1,17 @@
+V3 13
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/memByte/memByte/memByte.vhf" 2017/11/30.13:15:26 P.20131013
+EN work/FJKCE_MXILINX_memByte 1512076533 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/memByte/memByte/memByte.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FJKCE_MXILINX_memByte/BEHAVIORAL 1512076534 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/memByte/memByte/memByte.vhf" \
+      EN work/FJKCE_MXILINX_memByte 1512076533 CP FDCE CP AND3B2 CP AND3B1 CP OR3 \
+      CP AND2B1
+EN work/memByte 1512076535 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/memByte/memByte/memByte.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/memByte/BEHAVIORAL 1512076536 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/memByte/memByte/memByte.vhf" \
+      EN work/memByte 1512076535 CP FJKCE_MXILINX_memByte CP INV

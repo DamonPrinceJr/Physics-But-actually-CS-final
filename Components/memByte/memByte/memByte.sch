@@ -7,9 +7,7 @@
     </attr>
     <netlist>
         <signal name="byteIn(7:0)" />
-        <signal name="XLXN_2" />
         <signal name="byteIn(3)" />
-        <signal name="XLXN_8" />
         <signal name="byteIn(6)" />
         <signal name="byteIn(7)" />
         <signal name="XLXN_12" />
@@ -17,68 +15,31 @@
         <signal name="XLXN_16" />
         <signal name="XLXN_17" />
         <signal name="byteIn(4)" />
-        <signal name="XLXN_19" />
         <signal name="XLXN_21" />
         <signal name="byteIn(0)" />
         <signal name="XLXN_25" />
-        <signal name="XLXN_26" />
-        <signal name="XLXN_27" />
-        <signal name="XLXN_28" />
-        <signal name="XLXN_29" />
-        <signal name="XLXN_30" />
-        <signal name="XLXN_31" />
-        <signal name="XLXN_32" />
-        <signal name="XLXN_33" />
-        <signal name="XLXN_34" />
-        <signal name="XLXN_36" />
-        <signal name="XLXN_37" />
-        <signal name="XLXN_38" />
-        <signal name="XLXN_39" />
-        <signal name="byteOut(7:0)" />
         <signal name="byteOut(0)" />
-        <signal name="XLXN_43" />
-        <signal name="XLXN_45" />
-        <signal name="XLXN_35" />
-        <signal name="XLXN_47" />
-        <signal name="XLXN_50" />
-        <signal name="XLXN_51" />
-        <signal name="XLXN_52" />
-        <signal name="XLXN_55" />
-        <signal name="XLXN_60" />
+        <signal name="byteOut(7)" />
         <signal name="byteIn(5)" />
-        <signal name="XLXN_67" />
-        <signal name="XLXN_68" />
-        <signal name="XLXN_69" />
-        <signal name="XLXN_70" />
-        <signal name="XLXN_71" />
-        <signal name="XLXN_72" />
-        <signal name="XLXN_73" />
-        <signal name="XLXN_75" />
-        <signal name="XLXN_76" />
-        <signal name="XLXN_77" />
-        <signal name="XLXN_83" />
-        <signal name="XLXN_88" />
-        <signal name="XLXN_90" />
-        <signal name="XLXN_92" />
-        <signal name="XLXN_94" />
-        <signal name="XLXN_96" />
-        <signal name="XLXN_97" />
-        <signal name="XLXN_100" />
         <signal name="byteOut(1)" />
-        <signal name="XLXN_102" />
         <signal name="byteIn(2)" />
-        <signal name="XLXN_103" />
-        <signal name="XLXN_104" />
-        <signal name="XLXN_105" />
+        <signal name="byteIn(1)" />
         <signal name="XLXN_112" />
         <signal name="XLXN_114" />
-        <signal name="XLXN_118" />
-        <signal name="XLXN_120" />
-        <signal name="XLXN_122" />
         <signal name="CE" />
+        <signal name="byteOut(2)" />
+        <signal name="byteOut(3)" />
+        <signal name="byteOut(4)" />
+        <signal name="byteOut(5)" />
+        <signal name="byteOut(6)" />
+        <signal name="SYS_CLK" />
+        <signal name="CLR" />
+        <signal name="byteOut(7:0)" />
         <port polarity="Input" name="byteIn(7:0)" />
-        <port polarity="Output" name="byteOut(7:0)" />
         <port polarity="Input" name="CE" />
+        <port polarity="Input" name="SYS_CLK" />
+        <port polarity="Input" name="CLR" />
+        <port polarity="Output" name="byteOut(7:0)" />
         <blockdef name="fjkce">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-192" y2="-192" x1="0" />
@@ -103,68 +64,68 @@
             <circle r="16" cx="144" cy="-32" />
         </blockdef>
         <block symbolname="fjkce" name="XLXI_1">
-            <blockpin name="C" />
+            <blockpin signalname="SYS_CLK" name="C" />
             <blockpin signalname="CE" name="CE" />
-            <blockpin name="CLR" />
+            <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="byteIn(2)" name="J" />
             <blockpin signalname="XLXN_114" name="K" />
-            <blockpin signalname="XLXN_43" name="Q" />
+            <blockpin signalname="byteOut(2)" name="Q" />
         </block>
         <block symbolname="fjkce" name="XLXI_2">
-            <blockpin name="C" />
-            <blockpin name="CE" />
-            <blockpin name="CLR" />
+            <blockpin signalname="SYS_CLK" name="C" />
+            <blockpin signalname="CE" name="CE" />
+            <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="byteIn(6)" name="J" />
             <blockpin signalname="XLXN_16" name="K" />
-            <blockpin name="Q" />
+            <blockpin signalname="byteOut(6)" name="Q" />
         </block>
         <block symbolname="fjkce" name="XLXI_3">
-            <blockpin name="C" />
+            <blockpin signalname="SYS_CLK" name="C" />
             <blockpin signalname="CE" name="CE" />
-            <blockpin name="CLR" />
-            <blockpin signalname="XLXN_105" name="J" />
+            <blockpin signalname="CLR" name="CLR" />
+            <blockpin signalname="byteIn(1)" name="J" />
             <blockpin signalname="XLXN_112" name="K" />
             <blockpin signalname="byteOut(1)" name="Q" />
         </block>
         <block symbolname="fjkce" name="XLXI_4">
-            <blockpin name="C" />
-            <blockpin name="CE" />
-            <blockpin name="CLR" />
+            <blockpin signalname="SYS_CLK" name="C" />
+            <blockpin signalname="CE" name="CE" />
+            <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="byteIn(5)" name="J" />
             <blockpin signalname="XLXN_12" name="K" />
-            <blockpin name="Q" />
+            <blockpin signalname="byteOut(5)" name="Q" />
         </block>
         <block symbolname="fjkce" name="XLXI_6">
-            <blockpin name="C" />
+            <blockpin signalname="SYS_CLK" name="C" />
             <blockpin signalname="CE" name="CE" />
-            <blockpin name="CLR" />
+            <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="byteIn(3)" name="J" />
             <blockpin signalname="XLXN_25" name="K" />
-            <blockpin name="Q" />
+            <blockpin signalname="byteOut(3)" name="Q" />
         </block>
         <block symbolname="fjkce" name="XLXI_7">
-            <blockpin name="C" />
-            <blockpin name="CE" />
-            <blockpin name="CLR" />
+            <blockpin signalname="SYS_CLK" name="C" />
+            <blockpin signalname="CE" name="CE" />
+            <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="byteIn(4)" name="J" />
             <blockpin signalname="XLXN_15" name="K" />
-            <blockpin name="Q" />
+            <blockpin signalname="byteOut(4)" name="Q" />
         </block>
         <block symbolname="fjkce" name="XLXI_8">
-            <blockpin name="C" />
+            <blockpin signalname="SYS_CLK" name="C" />
             <blockpin signalname="CE" name="CE" />
-            <blockpin name="CLR" />
+            <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="byteIn(0)" name="J" />
             <blockpin signalname="XLXN_21" name="K" />
             <blockpin signalname="byteOut(0)" name="Q" />
         </block>
         <block symbolname="fjkce" name="XLXI_9">
-            <blockpin name="C" />
-            <blockpin name="CE" />
-            <blockpin name="CLR" />
+            <blockpin signalname="SYS_CLK" name="C" />
+            <blockpin signalname="CE" name="CE" />
+            <blockpin signalname="CLR" name="CLR" />
             <blockpin signalname="byteIn(7)" name="J" />
             <blockpin signalname="XLXN_17" name="K" />
-            <blockpin signalname="XLXN_35" name="Q" />
+            <blockpin signalname="byteOut(7)" name="Q" />
         </block>
         <block symbolname="inv" name="XLXI_11">
             <blockpin signalname="byteIn(0)" name="I" />
@@ -195,7 +156,7 @@
             <blockpin signalname="XLXN_114" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_21">
-            <blockpin signalname="XLXN_105" name="I" />
+            <blockpin signalname="byteIn(1)" name="I" />
             <blockpin signalname="XLXN_112" name="O" />
         </block>
     </netlist>
@@ -247,10 +208,6 @@
             <wire x2="672" y1="400" y2="464" x1="672" />
             <wire x2="736" y1="464" y2="464" x1="672" />
         </branch>
-        <branch name="byteOut(7:0)">
-            <wire x2="3040" y1="144" y2="144" x1="2976" />
-        </branch>
-        <iomarker fontsize="28" x="3040" y="144" name="byteOut(7:0)" orien="R0" />
         <iomarker fontsize="28" x="224" y="48" name="byteIn(7:0)" orien="R180" />
         <branch name="byteOut(0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="464" type="branch" />
@@ -260,7 +217,8 @@
         <branch name="XLXN_17">
             <wire x2="2784" y1="2400" y2="2400" x1="2736" />
         </branch>
-        <branch name="XLXN_35">
+        <branch name="byteOut(7)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3344" y="2400" type="branch" />
             <wire x2="3344" y1="2400" y2="2400" x1="3168" />
         </branch>
         <instance x="2512" y="2432" name="XLXI_18" orien="R0" />
@@ -291,7 +249,8 @@
         </branch>
         <instance x="1968" y="1904" name="XLXI_4" orien="R0" />
         <branch name="XLXN_12">
-            <wire x2="1968" y1="1648" y2="1648" x1="1904" />
+            <wire x2="1920" y1="1648" y2="1648" x1="1904" />
+            <wire x2="1968" y1="1648" y2="1648" x1="1920" />
         </branch>
         <instance x="1680" y="1680" name="XLXI_15" orien="R0" />
         <branch name="XLXN_25">
@@ -311,7 +270,7 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2416" y="672" type="branch" />
             <wire x2="2416" y1="672" y2="672" x1="2352" />
         </branch>
-        <branch name="XLXN_105">
+        <branch name="byteIn(1)">
             <wire x2="384" y1="480" y2="480" x1="368" />
             <wire x2="384" y1="256" y2="480" x1="384" />
             <wire x2="1424" y1="256" y2="256" x1="384" />
@@ -339,17 +298,7 @@
         <branch name="XLXN_114">
             <wire x2="2832" y1="768" y2="768" x1="2720" />
         </branch>
-        <branch name="XLXN_43">
-            <wire x2="544" y1="48" y2="112" x1="544" />
-            <wire x2="3312" y1="48" y2="48" x1="544" />
-            <wire x2="3312" y1="48" y2="768" x1="3312" />
-            <wire x2="3312" y1="768" y2="768" x1="3216" />
-        </branch>
         <instance x="2496" y="800" name="XLXI_14" orien="R0" />
-        <branch name="CE">
-            <wire x2="2384" y1="160" y2="160" x1="2144" />
-        </branch>
-        <iomarker fontsize="28" x="2144" y="160" name="CE" orien="R180" />
         <branch name="CE">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="528" type="branch" />
             <wire x2="992" y1="528" y2="528" x1="928" />
@@ -366,5 +315,127 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="1408" type="branch" />
             <wire x2="2800" y1="1408" y2="1408" x1="2720" />
         </branch>
+        <branch name="byteOut(2)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3312" y="768" type="branch" />
+            <wire x2="3312" y1="768" y2="768" x1="3216" />
+        </branch>
+        <branch name="byteOut(3)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3280" y="1344" type="branch" />
+            <wire x2="3280" y1="1344" y2="1344" x1="3184" />
+        </branch>
+        <branch name="byteOut(4)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1472" y="1424" type="branch" />
+            <wire x2="1472" y1="1424" y2="1424" x1="1376" />
+        </branch>
+        <branch name="byteOut(5)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2416" y="1648" type="branch" />
+            <wire x2="2400" y1="1648" y2="1648" x1="2352" />
+            <wire x2="2416" y1="1648" y2="1648" x1="2400" />
+        </branch>
+        <branch name="byteOut(6)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2832" y="2000" type="branch" />
+            <wire x2="2832" y1="2000" y2="2000" x1="2736" />
+        </branch>
+        <branch name="CE">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="912" y="1488" type="branch" />
+            <wire x2="992" y1="1488" y2="1488" x1="912" />
+        </branch>
+        <branch name="CE">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1888" y="1712" type="branch" />
+            <wire x2="1904" y1="1712" y2="1712" x1="1888" />
+            <wire x2="1968" y1="1712" y2="1712" x1="1904" />
+        </branch>
+        <branch name="CE">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2272" y="2064" type="branch" />
+            <wire x2="2352" y1="2064" y2="2064" x1="2272" />
+        </branch>
+        <branch name="CE">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2688" y="2464" type="branch" />
+            <wire x2="2784" y1="2464" y2="2464" x1="2688" />
+        </branch>
+        <branch name="SYS_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="944" y="592" type="branch" />
+            <wire x2="992" y1="592" y2="592" x1="944" />
+        </branch>
+        <branch name="SYS_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="800" type="branch" />
+            <wire x2="1968" y1="800" y2="800" x1="1904" />
+        </branch>
+        <branch name="SYS_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2784" y="896" type="branch" />
+            <wire x2="2832" y1="896" y2="896" x1="2784" />
+        </branch>
+        <branch name="SYS_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2720" y="1472" type="branch" />
+            <wire x2="2800" y1="1472" y2="1472" x1="2720" />
+        </branch>
+        <branch name="SYS_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2272" y="2128" type="branch" />
+            <wire x2="2352" y1="2128" y2="2128" x1="2272" />
+        </branch>
+        <branch name="SYS_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2672" y="2528" type="branch" />
+            <wire x2="2784" y1="2528" y2="2528" x1="2672" />
+        </branch>
+        <branch name="SYS_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="1776" type="branch" />
+            <wire x2="1920" y1="1776" y2="1776" x1="1904" />
+            <wire x2="1968" y1="1776" y2="1776" x1="1920" />
+        </branch>
+        <branch name="SYS_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="928" y="1552" type="branch" />
+            <wire x2="992" y1="1552" y2="1552" x1="928" />
+        </branch>
+        <branch name="CLR">
+            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="944" y="688" type="branch" />
+            <wire x2="944" y1="688" y2="688" x1="928" />
+            <wire x2="992" y1="688" y2="688" x1="944" />
+        </branch>
+        <branch name="CLR">
+            <attrtext style="alignment:SOFT-VLEFT;fontsize:28;fontname:Arial" attrname="Name" x="1920" y="880" type="branch" />
+            <wire x2="1920" y1="880" y2="896" x1="1920" />
+            <wire x2="1968" y1="896" y2="896" x1="1920" />
+        </branch>
+        <branch name="CLR">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2768" y="992" type="branch" />
+            <wire x2="2832" y1="992" y2="992" x1="2768" />
+        </branch>
+        <branch name="CLR">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2736" y="1568" type="branch" />
+            <wire x2="2800" y1="1568" y2="1568" x1="2736" />
+        </branch>
+        <branch name="CLR">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1920" y="1872" type="branch" />
+            <wire x2="1936" y1="1872" y2="1872" x1="1920" />
+            <wire x2="1968" y1="1872" y2="1872" x1="1936" />
+        </branch>
+        <branch name="CLR">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2272" y="2224" type="branch" />
+            <wire x2="2352" y1="2224" y2="2224" x1="2272" />
+        </branch>
+        <branch name="CLR">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2704" y="2624" type="branch" />
+            <wire x2="2784" y1="2624" y2="2624" x1="2704" />
+        </branch>
+        <branch name="CLR">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="960" y="1648" type="branch" />
+            <wire x2="992" y1="1648" y2="1648" x1="960" />
+        </branch>
+        <branch name="SYS_CLK">
+            <wire x2="3344" y1="112" y2="112" x1="3104" />
+        </branch>
+        <branch name="CLR">
+            <wire x2="3344" y1="176" y2="176" x1="3040" />
+        </branch>
+        <branch name="CE">
+            <wire x2="3344" y1="256" y2="256" x1="3024" />
+        </branch>
+        <branch name="byteOut(7:0)">
+            <wire x2="3184" y1="336" y2="336" x1="2960" />
+        </branch>
+        <iomarker fontsize="28" x="3104" y="112" name="SYS_CLK" orien="R180" />
+        <iomarker fontsize="28" x="3040" y="176" name="CLR" orien="R180" />
+        <iomarker fontsize="28" x="3024" y="256" name="CE" orien="R180" />
+        <iomarker fontsize="28" x="3184" y="336" name="byteOut(7:0)" orien="R0" />
     </sheet>
 </drawing>
