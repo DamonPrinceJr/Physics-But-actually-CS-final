@@ -1,4 +1,0 @@
-select figure at 1140 583 8 -branches -sn=1
-move wire at 1136 224 1136 880 to 1328 224 1328 880 -keepConn -sn=1
-move wire at 1328 224 1328 880 to 1296 224 1296 880 -keepConn -sn=1
-select figure at 1331 964 8 -branches -sn=1
