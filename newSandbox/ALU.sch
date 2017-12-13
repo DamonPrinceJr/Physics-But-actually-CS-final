@@ -25,8 +25,8 @@
         <signal name="XLXN_54" />
         <signal name="XLXN_51" />
         <signal name="XLXN_52" />
-        <signal name="opCode(1:0)" />
         <signal name="XLXN_155(7:0)" />
+        <signal name="opCode(1:0)" />
         <port polarity="Input" name="NUHM_INPUT(7:0)" />
         <port polarity="Input" name="CLK" />
         <port polarity="Input" name="A" />
@@ -250,10 +250,9 @@
         <instance x="1376" y="1440" name="XLXI_29" orien="R0" />
         <instance x="1728" y="912" name="XLXI_23" orien="R0">
         </instance>
-        <iomarker fontsize="28" x="336" y="1424" name="opCode(1:0)" orien="R180" />
         <branch name="opCode(1:0)">
             <wire x2="752" y1="1424" y2="1424" x1="336" />
-            <wire x2="752" y1="1424" y2="1456" x1="752" />
         </branch>
+        <iomarker fontsize="28" x="336" y="1424" name="opCode(1:0)" orien="R180" />
     </sheet>
 </drawing>
