@@ -64,21 +64,6 @@
             <line x2="336" y1="-128" y2="-148" x1="336" />
             <line x2="336" y1="-128" y2="-128" x1="384" />
         </blockdef>
-        <blockdef name="fd8ce">
-            <timestamp>2000-1-1T10:10:10</timestamp>
-            <line x2="64" y1="-128" y2="-128" x1="0" />
-            <line x2="64" y1="-192" y2="-192" x1="0" />
-            <line x2="64" y1="-32" y2="-32" x1="0" />
-            <line x2="64" y1="-256" y2="-256" x1="0" />
-            <line x2="320" y1="-256" y2="-256" x1="384" />
-            <line x2="64" y1="-32" y2="-32" x1="192" />
-            <line x2="192" y1="-64" y2="-32" x1="192" />
-            <line x2="64" y1="-128" y2="-144" x1="80" />
-            <line x2="80" y1="-112" y2="-128" x1="64" />
-            <rect width="64" x="320" y="-268" height="24" />
-            <rect width="64" x="0" y="-268" height="24" />
-            <rect width="256" x="64" y="-320" height="256" />
-        </blockdef>
         <blockdef name="sevenSeg">
             <timestamp>2017-12-12T22:10:59</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
@@ -110,26 +95,12 @@
             <blockpin signalname="OFL" name="OFL" />
             <blockpin signalname="RESULT(7:0)" name="S(7:0)" />
         </block>
-        <block symbolname="fd8ce" name="XLXI_19">
-            <blockpin signalname="CLK" name="C" />
-            <blockpin signalname="B" name="CE" />
-            <blockpin name="CLR" />
-            <blockpin signalname="NUHM_INPUT(7:0)" name="D(7:0)" />
-            <blockpin signalname="XLXN_6(7:0)" name="Q(7:0)" />
-        </block>
-        <block symbolname="fd8ce" name="XLXI_18">
-            <blockpin signalname="CLK" name="C" />
-            <blockpin signalname="A" name="CE" />
-            <blockpin name="CLR" />
-            <blockpin signalname="NUHM_INPUT(7:0)" name="D(7:0)" />
-            <blockpin signalname="XLXN_1(7:0)" name="Q(7:0)" />
-        </block>
         <block symbolname="sevenSeg" name="XLXI_23">
-            <blockpin signalname="SYS_CLK" name="SYS_CLK" />
-            <blockpin signalname="RESULT(7:0)" name="Din(7:0)" />
+            <blockpin name="SYS_CLK" />
+            <blockpin name="Din(7:0)" />
             <blockpin name="En" />
-            <blockpin signalname="XLXN_19(7:0)" name="sseg(7:0)" />
-            <blockpin signalname="XLXN_20(3:0)" name="anO(3:0)" />
+            <blockpin name="sseg(7:0)" />
+            <blockpin name="anO(3:0)" />
         </block>
         <block symbolname="and2" name="XLXI_28">
             <blockpin signalname="XLXN_54" name="I0" />
@@ -157,8 +128,6 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="352" y="608" type="branch" />
             <wire x2="416" y1="608" y2="608" x1="352" />
         </branch>
-        <instance x="416" y="864" name="XLXI_18" orien="R0" />
-        <instance x="416" y="1232" name="XLXI_19" orien="R0" />
         <branch name="NUHM_INPUT(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="352" y="976" type="branch" />
             <wire x2="416" y1="976" y2="976" x1="352" />
@@ -245,10 +214,10 @@
         </branch>
         <instance x="1376" y="1632" name="XLXI_30" orien="R0" />
         <instance x="1376" y="1440" name="XLXI_29" orien="R0" />
-        <instance x="1728" y="912" name="XLXI_23" orien="R0" />
         <branch name="opCode(1:0)">
             <wire x2="752" y1="1424" y2="1424" x1="336" />
         </branch>
         <iomarker fontsize="28" x="336" y="1424" name="opCode(1:0)" orien="R180" />
+        <instance x="0" y="0" name="XLXI_23" orien="R0" />
     </sheet>
 </drawing>
