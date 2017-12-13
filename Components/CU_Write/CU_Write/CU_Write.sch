@@ -28,12 +28,10 @@
         <signal name="XLXN_29" />
         <signal name="XLXN_30" />
         <signal name="XLXN_33" />
-        <signal name="XLXN_200" />
         <signal name="XLXN_201" />
         <signal name="XLXN_202" />
         <signal name="XLXN_203" />
         <signal name="XLXN_204" />
-        <signal name="XLXN_205" />
         <signal name="XLXN_206" />
         <signal name="XLXN_217" />
         <signal name="XLXN_218" />
@@ -42,41 +40,29 @@
         <signal name="XLXN_226" />
         <signal name="XLXN_227" />
         <signal name="XLXN_228" />
-        <signal name="XLXN_236" />
         <signal name="XLXN_252" />
         <signal name="XLXN_253" />
         <signal name="XLXN_254" />
         <signal name="XLXN_255" />
         <signal name="XLXN_256" />
-        <signal name="XLXN_264" />
         <signal name="XLXN_266" />
         <signal name="XLXN_268" />
         <signal name="XLXN_269" />
         <signal name="XLXN_270" />
-        <signal name="XLXN_271" />
         <signal name="XLXN_272" />
         <signal name="NOP" />
         <signal name="LDA" />
-        <signal name="ADDI" />
-        <signal name="ADD" />
-        <signal name="ADDU" />
-        <signal name="SBI" />
         <signal name="XLXN_289" />
         <signal name="XLXN_290" />
-        <signal name="XLXN_305" />
-        <signal name="XLXN_335" />
-        <signal name="XLXN_350" />
         <signal name="XLXN_292" />
         <signal name="XLXN_293" />
         <signal name="XLXN_294" />
         <signal name="XLXN_295" />
-        <signal name="SUB" />
         <signal name="XLXN_306" />
         <signal name="XLXN_322" />
         <signal name="XLXN_323" />
         <signal name="XLXN_324" />
         <signal name="XLXN_325" />
-        <signal name="SUBU" />
         <signal name="XLXN_337" />
         <signal name="XLXN_338" />
         <signal name="XLXN_339" />
@@ -114,36 +100,32 @@
         <signal name="XLXN_486" />
         <signal name="XLXN_488" />
         <signal name="XLXN_490" />
-        <signal name="XLXN_499" />
         <signal name="XLXN_501" />
-        <signal name="XLXN_523" />
-        <signal name="XLXN_524" />
         <signal name="IR(7:0)" />
         <signal name="DR(7:0)" />
         <signal name="DR(0)" />
         <signal name="DR(1)" />
         <signal name="Reg_WRITE(0)" />
-        <signal name="XLXN_531" />
-        <signal name="XLXN_532" />
-        <signal name="XLXN_533" />
-        <signal name="XLXN_534" />
         <signal name="XLXN_516" />
         <signal name="XLXN_522" />
         <signal name="XLXN_502" />
         <signal name="Reg_WRITE(2)" />
-        <signal name="XLXN_543" />
-        <signal name="XLXN_544" />
-        <signal name="XLXN_550" />
         <signal name="Reg_WRITE(4)" />
         <signal name="MODE" />
-        <signal name="XLXN_578" />
         <signal name="Reg_WRITE(7)" />
         <signal name="Reg_WRITE(1)" />
         <signal name="Reg_WRITE(6)" />
         <signal name="Reg_WRITE(5)" />
         <signal name="Reg_WRITE(3)" />
+        <signal name="MATH(5:0)" />
+        <signal name="MATH(1)" />
+        <signal name="MATH(2)" />
+        <signal name="MATH(3)" />
+        <signal name="MATH(4)" />
+        <signal name="MATH(5)" />
         <port polarity="Input" name="IR(7:0)" />
         <port polarity="Input" name="DR(7:0)" />
+        <port polarity="Output" name="MATH(5:0)" />
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -323,7 +305,7 @@
             <blockpin signalname="XLXN_204" name="I5" />
             <blockpin signalname="XLXN_218" name="I6" />
             <blockpin signalname="IR(0)" name="I7" />
-            <blockpin signalname="ADDI" name="O" />
+            <blockpin signalname="MATH(5:0)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_119">
             <blockpin signalname="IR(4)" name="I" />
@@ -362,7 +344,7 @@
             <blockpin signalname="XLXN_227" name="I5" />
             <blockpin signalname="IR(1)" name="I6" />
             <blockpin signalname="XLXN_266" name="I7" />
-            <blockpin signalname="ADD" name="O" />
+            <blockpin signalname="MATH(1)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_126">
             <blockpin signalname="IR(4)" name="I" />
@@ -377,7 +359,7 @@
             <blockpin signalname="XLXN_255" name="I5" />
             <blockpin signalname="IR(1)" name="I6" />
             <blockpin signalname="IR(0)" name="I7" />
-            <blockpin signalname="ADDU" name="O" />
+            <blockpin signalname="MATH(2)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_146">
             <blockpin signalname="IR(4)" name="I" />
@@ -408,7 +390,7 @@
             <blockpin signalname="IR(2)" name="I5" />
             <blockpin signalname="XLXN_290" name="I6" />
             <blockpin signalname="XLXN_289" name="I7" />
-            <blockpin signalname="SBI" name="O" />
+            <blockpin signalname="MATH(3)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_154">
             <blockpin signalname="IR(4)" name="I" />
@@ -435,7 +417,7 @@
             <blockpin signalname="IR(2)" name="I5" />
             <blockpin signalname="XLXN_306" name="I6" />
             <blockpin signalname="IR(0)" name="I7" />
-            <blockpin signalname="SUB" name="O" />
+            <blockpin signalname="MATH(4)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_161">
             <blockpin signalname="IR(4)" name="I" />
@@ -466,7 +448,7 @@
             <blockpin signalname="IR(2)" name="I5" />
             <blockpin signalname="IR(1)" name="I6" />
             <blockpin signalname="XLXN_337" name="I7" />
-            <blockpin signalname="SUBU" name="O" />
+            <blockpin signalname="MATH(5)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_178">
             <blockpin signalname="IR(4)" name="I" />
@@ -682,12 +664,12 @@
         <block symbolname="or8" name="XLXI_254">
             <blockpin signalname="CLR" name="I0" />
             <blockpin signalname="LDA" name="I1" />
-            <blockpin signalname="SUBU" name="I2" />
-            <blockpin signalname="SUB" name="I3" />
-            <blockpin signalname="SBI" name="I4" />
-            <blockpin signalname="ADDU" name="I5" />
-            <blockpin signalname="ADD" name="I6" />
-            <blockpin signalname="ADDI" name="I7" />
+            <blockpin signalname="MATH(5)" name="I2" />
+            <blockpin signalname="MATH(4)" name="I3" />
+            <blockpin signalname="MATH(3)" name="I4" />
+            <blockpin signalname="MATH(2)" name="I5" />
+            <blockpin signalname="MATH(1)" name="I6" />
+            <blockpin signalname="MATH(5:0)" name="I7" />
             <blockpin signalname="XLXN_501" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_258">
@@ -1071,19 +1053,19 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="944" type="branch" />
             <wire x2="672" y1="944" y2="944" x1="640" />
         </branch>
-        <branch name="ADDI">
+        <branch name="MATH(5:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="1488" type="branch" />
             <wire x2="672" y1="1488" y2="1488" x1="640" />
         </branch>
-        <branch name="ADD">
+        <branch name="MATH(1)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="2032" type="branch" />
             <wire x2="672" y1="2032" y2="2032" x1="640" />
         </branch>
-        <branch name="ADDU">
+        <branch name="MATH(2)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="256" type="branch" />
             <wire x2="1440" y1="256" y2="256" x1="1408" />
         </branch>
-        <branch name="SBI">
+        <branch name="MATH(3)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="800" type="branch" />
             <wire x2="1440" y1="800" y2="800" x1="1408" />
         </branch>
@@ -1137,7 +1119,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="864" y="1568" type="branch" />
             <wire x2="1152" y1="1568" y2="1568" x1="864" />
         </branch>
-        <branch name="SUB">
+        <branch name="MATH(4)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="1344" type="branch" />
             <wire x2="1440" y1="1344" y2="1344" x1="1408" />
         </branch>
@@ -1188,7 +1170,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="864" y="2112" type="branch" />
             <wire x2="1152" y1="2112" y2="2112" x1="864" />
         </branch>
-        <branch name="SUBU">
+        <branch name="MATH(5)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="1888" type="branch" />
             <wire x2="1440" y1="1888" y2="1888" x1="1408" />
         </branch>
@@ -1544,27 +1526,27 @@
             <wire x2="1696" y1="2112" y2="2112" x1="1664" />
         </branch>
         <instance x="1696" y="2144" name="XLXI_252" orien="R0" />
-        <branch name="ADDI">
+        <branch name="MATH(5:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="80" type="branch" />
             <wire x2="2672" y1="80" y2="80" x1="2640" />
         </branch>
-        <branch name="ADD">
+        <branch name="MATH(1)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="144" type="branch" />
             <wire x2="2672" y1="144" y2="144" x1="2640" />
         </branch>
-        <branch name="ADDU">
+        <branch name="MATH(2)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="208" type="branch" />
             <wire x2="2672" y1="208" y2="208" x1="2640" />
         </branch>
-        <branch name="SBI">
+        <branch name="MATH(3)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="272" type="branch" />
             <wire x2="2672" y1="272" y2="272" x1="2640" />
         </branch>
-        <branch name="SUB">
+        <branch name="MATH(4)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="336" type="branch" />
             <wire x2="2672" y1="336" y2="336" x1="2640" />
         </branch>
-        <branch name="SUBU">
+        <branch name="MATH(5)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="400" type="branch" />
             <wire x2="2672" y1="400" y2="400" x1="2640" />
         </branch>
@@ -1695,6 +1677,11 @@
         <branch name="CLR">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="528" type="branch" />
             <wire x2="2672" y1="528" y2="528" x1="2640" />
+        </branch>
+        <iomarker fontsize="28" x="3184" y="1504" name="MATH(5:0)" orien="R0" />
+        <branch name="MATH(5:0)">
+            <wire x2="2688" y1="1504" y2="1504" x1="2656" />
+            <wire x2="3184" y1="1504" y2="1504" x1="2688" />
         </branch>
     </sheet>
 </drawing>
