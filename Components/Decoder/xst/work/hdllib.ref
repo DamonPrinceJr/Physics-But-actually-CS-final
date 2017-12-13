@@ -1,0 +1,14 @@
+EN dcm_50m NULL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" sub00/vhpl02 1513118139
+EN ssd_1dig NULL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd" sub00/vhpl04 1512687138
+EN sel_strobeb NULL "C:/Users/Big D/Downloads/sel_strobeB.vhd" sub00/vhpl10 1513118145
+AR mux4ssd behavioral "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd" sub00/vhpl07 1513118142
+AR crenc4bin behavioral "C:/Users/Big D/Downloads/CRenc4bin.vhd" sub00/vhpl01 1513118138
+AR decoder behavioral "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" sub00/vhpl13 1513118148
+EN bin2bcd3en NULL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" sub00/vhpl08 1513118143
+AR ssd_1dig behavioral "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd" sub00/vhpl05 1512687139
+AR sel_strobeb behavioral "C:/Users/Big D/Downloads/sel_strobeB.vhd" sub00/vhpl11 1513118146
+EN mux4ssd NULL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd" sub00/vhpl06 1513118141
+EN decoder NULL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" sub00/vhpl12 1513118147
+AR bin2bcd3en behavioral "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" sub00/vhpl09 1513118144
+EN crenc4bin NULL "C:/Users/Big D/Downloads/CRenc4bin.vhd" sub00/vhpl00 1513118137
+AR dcm_50m behavioral "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" sub00/vhpl03 1513118140

@@ -1,0 +1,53 @@
+V3 29
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" 2017/12/12.14:35:33 P.20131013
+EN work/Decoder 1513118147 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Decoder/BEHAVIORAL 1513118148 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" \
+      EN work/Decoder 1513118147 CP CRenc4bin CP DCM_50M CP mux4SSD CP bin2BCD3en \
+      CP sel_strobeB CP PULLDOWN
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" 2017/12/12.14:19:47 P.20131013
+EN work/bin2BCD3en 1513118143 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin2BCD3en/Behavioral 1513118144 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" \
+      EN work/bin2BCD3en 1513118143
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" 2017/12/12.14:19:47 P.20131013
+EN work/DCM_50M 1513118139 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/DCM_50M/Behavioral 1513118140 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" \
+      EN work/DCM_50M 1513118139
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd" 2017/12/12.14:19:47 P.20131013
+EN work/mux4SSD 1513118141 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mux4SSD/Behavioral 1513118142 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd" \
+      EN work/mux4SSD 1513118141
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd" 2017/10/03.14:14:50 P.20131013
+EN work/SSD_1dig 1512687138 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SSD_1dig/Behavioral 1512687139 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd" \
+      EN work/SSD_1dig 1512687138
+FL "C:/Users/Big D/Downloads/CRenc4bin.vhd" 2017/10/05.13:35:54 P.20131013
+EN work/CRenc4bin 1513118137 FL "C:/Users/Big D/Downloads/CRenc4bin.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CRenc4bin/Behavioral 1513118138 \
+      FL "C:/Users/Big D/Downloads/CRenc4bin.vhd" EN work/CRenc4bin 1513118137
+FL "C:/Users/Big D/Downloads/sel_strobeB.vhd" 2017/10/05.11:26:25 P.20131013
+EN work/sel_strobeB 1513118145 FL "C:/Users/Big D/Downloads/sel_strobeB.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sel_strobeB/Behavioral 1513118146 \
+      FL "C:/Users/Big D/Downloads/sel_strobeB.vhd" EN work/sel_strobeB 1513118145

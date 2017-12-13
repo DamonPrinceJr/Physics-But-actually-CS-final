@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Dec 07 14:09:54 2017
+# Process ID: 14456
+# Log file: C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/pa.fromNetlist.tcl}
+startgroup
+set_property package_pin K14 [get_ports {anO[3]}]
+endgroup
+startgroup
+set_property package_pin M13 [get_ports {anO[2]}]
+endgroup
+startgroup
+set_property package_pin J12 [get_ports {anO[1]}]
+endgroup
+startgroup
+set_property package_pin F12 [get_ports {anO[1]}]
+endgroup
+startgroup
+set_property package_pin B7 [get_ports {colO[3]}]
+endgroup
+startgroup
+set_property package_pin C5 [get_ports {colO[2]}]
+endgroup
+startgroup
+set_property package_pin B6 [get_ports {colO[1]}]
+endgroup
+startgroup
+set_property package_pin C6 [get_ports {colO[0]}]
+endgroup
+startgroup
+set_property package_pin B2 [get_ports {row[3]}]
+endgroup
+startgroup
+set_property package_pin A3 [get_ports {row[2]}]
+endgroup
+startgroup
+set_property package_pin J3 [get_ports {row[1]}]
+endgroup
+startgroup
+set_property package_pin B5 [get_ports {row[0]}]
+endgroup
+startgroup
+set_property package_pin N13 [get_ports {sseg[7]}]
+endgroup
+startgroup
+set_property package_pin L14 [get_ports {sseg[6]}]
+endgroup
+startgroup
+set_property package_pin H12 [get_ports {sseg[5]}]
+endgroup
+startgroup
+set_property package_pin N14 [get_ports {sseg[4]}]
+endgroup
+startgroup
+set_property package_pin N11 [get_ports {sseg[3]}]
+endgroup
+startgroup
+set_property package_pin P12 [get_ports {sseg[2]}]
+endgroup
+startgroup
+set_property package_pin L13 [get_ports {sseg[1]}]
+endgroup
+startgroup
+set_property package_pin M12 [get_ports {sseg[0]}]
+endgroup
+startgroup
+set_property package_pin G12 [get_ports En]
+endgroup
+set_property package_pin "" [get_ports [list  keyO]]
+startgroup
+set_property package_pin B8 [get_ports SYS_CLK]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports keyO]
+endgroup
+save_constraints

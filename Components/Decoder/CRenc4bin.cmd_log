@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../../../../Downloads/CRenc4bin.vhd -prj Decoder -o CRenc4bin.spl -module CRenc4bin -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e CRenc4bin.spl {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/CRenc4bin.sym} 

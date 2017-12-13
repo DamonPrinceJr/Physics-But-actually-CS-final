@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-11-30T14:27:50</DateModified>
+  <DateModified>2017-12-12T15:43:39</DateModified>
   <ModuleName>Mem32xBank</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/32x8Bank/Mem32x8Bank/iseconfig/Mem32xBank.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/32x8Bank/Mem32x8Bank</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/32x8Bank/Mem32x8Bank\</ImplementationReportsDirectory>
   <DateInitialized>2017-11-30T14:27:50</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

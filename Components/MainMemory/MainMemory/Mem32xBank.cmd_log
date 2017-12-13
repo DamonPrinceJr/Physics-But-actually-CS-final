@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym Mem32xBank {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/32x8Bank/Mem32x8Bank/Mem32xBank.sch} {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/MainMemory/MainMemory/Mem32xBank.sym} 

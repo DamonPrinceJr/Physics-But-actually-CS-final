@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../downloads/DCM_50M.vhd -prj Decoder -o DCM_50M.spl -module DCM_50M -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e DCM_50M.spl {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/DCM_50M.sym} 

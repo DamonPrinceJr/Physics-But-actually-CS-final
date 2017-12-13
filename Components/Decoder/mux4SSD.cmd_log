@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../downloads/mux4SSD.vhd -prj Decoder -o mux4SSD.spl -module mux4SSD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e mux4SSD.spl {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/mux4SSD.sym} 

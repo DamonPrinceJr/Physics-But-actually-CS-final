@@ -1,0 +1,22 @@
+
+
+
+NET "colO[3]" LOC = B7;
+NET "colO[2]" LOC = C5;
+NET "colO[1]" LOC = B6;
+NET "colO[0]" LOC = C6;
+NET "row[3]" LOC = B2;
+NET "row[2]" LOC = A3;
+NET "row[1]" LOC = J3;
+NET "row[0]" LOC = B5;
+
+NET "En" LOC = G12;
+NET "SYS_CLK" LOC = B8;
+NET "keyO" LOC = M5;
+
+# PlanAhead Generated physical constraints 
+
+NET "binDisplay[0]" LOC = n5;
+NET "binDisplay[1]" LOC = n4;
+NET "binDisplay[2]" LOC = p4;
+NET "binDisplay[3]" LOC = g1;

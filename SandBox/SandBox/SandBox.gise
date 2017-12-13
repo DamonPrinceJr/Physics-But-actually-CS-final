@@ -83,17 +83,21 @@
   <transforms xmlns="http://www.xilinx.com/XMLSchema">
     <transform xil_pn:end_ts="1512079687" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1512079687">
       <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
     </transform>
     <transform xil_pn:end_ts="1512079981" xil_pn:in_ck="131782026281249723" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-3525046905969606217" xil_pn:start_ts="1512079979">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
+      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
       <outfile xil_pn:name="SandBox.vhf"/>
     </transform>
     <transform xil_pn:end_ts="1512079689" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="1684232086798630791" xil_pn:start_ts="1512079689">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1512079689" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1512079689">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -102,6 +106,7 @@
     <transform xil_pn:end_ts="1512079689" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="4271808914052076021" xil_pn:start_ts="1512079689">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
     </transform>
     <transform xil_pn:end_ts="1512079689" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1512079689">
       <status xil_pn:value="SuccessfullyRun"/>
@@ -111,11 +116,13 @@
     <transform xil_pn:end_ts="1512079689" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-8609906256327759983" xil_pn:start_ts="1512079689">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1512079987" xil_pn:in_ck="2911501913407211877" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="4341892479489043345" xil_pn:start_ts="1512079981">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
@@ -136,11 +143,13 @@
     <transform xil_pn:end_ts="1512080037" xil_pn:in_ck="131782026281251899" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="1262981241067228593" xil_pn:start_ts="1512080037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1512080041" xil_pn:in_ck="7005630674465155088" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4071836345830318292" xil_pn:start_ts="1512080037">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForProperties"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="SandBox.bld"/>
       <outfile xil_pn:name="SandBox.ngd"/>
