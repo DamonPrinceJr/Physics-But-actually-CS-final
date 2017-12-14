@@ -62,7 +62,7 @@
         <signal name="carryOut5" />
         <signal name="carryOut7" />
         <signal name="carryOut6" />
-        <port polarity="Output" name="OP_CODE(1:0)" />
+        <port polarity="Input" name="OP_CODE(1:0)" />
         <port polarity="Input" name="number(7:0)" />
         <port polarity="Output" name="Result(7:0)" />
         <port polarity="Output" name="carryOut0" />
@@ -293,7 +293,6 @@
         <branch name="OP_CODE(1:0)">
             <wire x2="512" y1="1824" y2="1824" x1="336" />
         </branch>
-        <iomarker fontsize="28" x="336" y="1824" name="OP_CODE(1:0)" orien="R180" />
         <branch name="OP_CODE(1)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="368" y="176" type="branch" />
             <wire x2="432" y1="176" y2="176" x1="368" />
@@ -746,5 +745,6 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2064" y="1712" type="branch" />
             <wire x2="2064" y1="1712" y2="1712" x1="2000" />
         </branch>
+        <iomarker fontsize="28" x="336" y="1824" name="OP_CODE(1:0)" orien="R180" />
     </sheet>
 </drawing>
