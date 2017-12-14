@@ -1,0 +1,54 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : testingDisplay.vf
+// /___/   /\     Timestamp : 12/14/2017 08:04:48
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/testingDisplay2/testingDisplay2/testingDisplay.vf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/testingDisplay2/testingDisplay2/testingDisplay.sch
+//Design Name: testingDisplay
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module testingDisplay(EN, 
+                      row, 
+                      SYS_CLK, 
+                      anO, 
+                      keyO, 
+                      sseg, 
+                      colO);
+
+    input EN;
+    input [3:0] row;
+    input SYS_CLK;
+   output [3:0] anO;
+   output keyO;
+   output [7:0] sseg;
+    inout [3:0] colO;
+   
+   wire [7:0] bin;
+   
+   Decoder  XLXI_4 (.En(EN), 
+                   .row(row[3:0]), 
+                   .SYS_CLK(SYS_CLK), 
+                   .anO(), 
+                   .binDisplay(bin[3:0]), 
+                   .dpO(), 
+                   .keyO(keyO), 
+                   .colO(colO[3:0]));
+   sevenSeg  XLXI_7 (.Din(bin[7:0]), 
+                    .En(EN), 
+                    .SYS_CLK(SYS_CLK), 
+                    .anO(anO[3:0]), 
+                    .sseg(sseg[7:0]));
+endmodule

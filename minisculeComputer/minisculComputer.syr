@@ -1,0 +1,236 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: minisculComputer.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "minisculComputer.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "minisculComputer"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : minisculComputer
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" in Library work.
+Entity <DCM_50M> compiled.
+Entity <DCM_50M> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd" in Library work.
+Entity <sel_strobeB> compiled.
+Entity <sel_strobeB> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" in Library work.
+Entity <bin2BCD3en> compiled.
+Entity <bin2BCD3en> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd" in Library work.
+Entity <SSD_1dig> compiled.
+Entity <SSD_1dig> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd" in Library work.
+Entity <mux4SSD> compiled.
+Entity <mux4SSD> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/sevenSeg.vhf" in Library work.
+Entity <sevenSeg> compiled.
+Entity <sevenSeg> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Mem32xBank.vhf" in Library work.
+Entity <FD8CE_MXILINX_Mem32xBank> compiled.
+Entity <FD8CE_MXILINX_Mem32xBank> (Architecture <BEHAVIORAL>) compiled.
+Entity <Mem32xBank> compiled.
+Entity <Mem32xBank> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf" in Library work.
+Entity <M2_1_MXILINX_programCounter> compiled.
+Entity <M2_1_MXILINX_programCounter> (Architecture <BEHAVIORAL>) compiled.
+Entity <FTCLEX_MXILINX_programCounter> compiled.
+Entity <FTCLEX_MXILINX_programCounter> (Architecture <BEHAVIORAL>) compiled.
+Entity <CB8CLE_MXILINX_programCounter> compiled.
+Entity <CB8CLE_MXILINX_programCounter> (Architecture <BEHAVIORAL>) compiled.
+Entity <M2_1B1_MXILINX_programCounter> compiled.
+Entity <M2_1B1_MXILINX_programCounter> (Architecture <BEHAVIORAL>) compiled.
+Entity <CB2CLED_MXILINX_programCounter> compiled.
+Entity <CB2CLED_MXILINX_programCounter> (Architecture <BEHAVIORAL>) compiled.
+Entity <programCounter> compiled.
+Entity <programCounter> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Misc.vhf" in Library work.
+Entity <NAND8_MXILINX_CU_Misc> compiled.
+Entity <NAND8_MXILINX_CU_Misc> (Architecture <BEHAVIORAL>) compiled.
+Entity <AND8_MXILINX_CU_Misc> compiled.
+Entity <AND8_MXILINX_CU_Misc> (Architecture <BEHAVIORAL>) compiled.
+Entity <CU_Misc> compiled.
+Entity <CU_Misc> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MainMemory.vhf" in Library work.
+Entity <MainMemory> compiled.
+Entity <MainMemory> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf" in Library work.
+Entity <M2_1_MXILINX_MM_signal_MUX> compiled.
+Entity <M2_1_MXILINX_MM_signal_MUX> (Architecture <BEHAVIORAL>) compiled.
+Entity <M2_1E_MXILINX_MM_signal_MUX> compiled.
+Entity <M2_1E_MXILINX_MM_signal_MUX> (Architecture <BEHAVIORAL>) compiled.
+Entity <M16_1E_MXILINX_MM_signal_MUX> compiled.
+Entity <M16_1E_MXILINX_MM_signal_MUX> (Architecture <BEHAVIORAL>) compiled.
+Entity <signalMux_32_MUSER_MM_signal_MUX> compiled.
+Entity <signalMux_32_MUSER_MM_signal_MUX> (Architecture <BEHAVIORAL>) compiled.
+Entity <MM_signal_MUX> compiled.
+Entity <MM_signal_MUX> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_ALU.vhf" in Library work.
+Entity <M2_1E_MXILINX_CU_ALU> compiled.
+Entity <M2_1E_MXILINX_CU_ALU> (Architecture <BEHAVIORAL>) compiled.
+Entity <M4_1E_MXILINX_CU_ALU> compiled.
+Entity <M4_1E_MXILINX_CU_ALU> (Architecture <BEHAVIORAL>) compiled.
+Entity <CU_ALU> compiled.
+Entity <CU_ALU> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Registers.vhf" in Library work.
+Entity <FD8CE_MXILINX_Registers> compiled.
+Entity <FD8CE_MXILINX_Registers> (Architecture <BEHAVIORAL>) compiled.
+Entity <Registers> compiled.
+Entity <Registers> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/DisplayModule.vhf" in Library work.
+Entity <M2_1_MXILINX_DisplayModule> compiled.
+Entity <M2_1_MXILINX_DisplayModule> (Architecture <BEHAVIORAL>) compiled.
+Entity <DisplayModule> compiled.
+Entity <DisplayModule> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read.vhf" in Library work.
+Entity <OR6_MXILINX_CU_Read> compiled.
+Entity <OR6_MXILINX_CU_Read> (Architecture <BEHAVIORAL>) compiled.
+Entity <AND8_MXILINX_CU_Read> compiled.
+Entity <AND8_MXILINX_CU_Read> (Architecture <BEHAVIORAL>) compiled.
+Entity <CU_Read> compiled.
+Entity <CU_Read> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read_MUX.vhf" in Library work.
+Entity <M2_1E_MXILINX_CU_Read_MUX> compiled.
+Entity <M2_1E_MXILINX_CU_Read_MUX> (Architecture <BEHAVIORAL>) compiled.
+Entity <M4_1E_MXILINX_CU_Read_MUX> compiled.
+Entity <M4_1E_MXILINX_CU_Read_MUX> (Architecture <BEHAVIORAL>) compiled.
+Entity <CU_Read_MUX> compiled.
+Entity <CU_Read_MUX> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Write.vhf" in Library work.
+Entity <D2_4E_MXILINX_CU_Write> compiled.
+Entity <D2_4E_MXILINX_CU_Write> (Architecture <BEHAVIORAL>) compiled.
+Entity <OR8_MXILINX_CU_Write> compiled.
+Entity <OR8_MXILINX_CU_Write> (Architecture <BEHAVIORAL>) compiled.
+Entity <AND8_MXILINX_CU_Write> compiled.
+Entity <AND8_MXILINX_CU_Write> (Architecture <BEHAVIORAL>) compiled.
+Entity <CU_Write> compiled.
+Entity <CU_Write> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd" in Library work.
+Entity <CRenc4bin> compiled.
+Entity <CRenc4bin> (Architecture <Behavioral>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/minisculComputer.vhf" in Library work.
+Entity <FD8CE_MXILINX_minisculComputer> compiled.
+Entity <FD8CE_MXILINX_minisculComputer> (Architecture <BEHAVIORAL>) compiled.
+Entity <minisculComputer> compiled.
+Entity <minisculComputer> (Architecture <BEHAVIORAL>) compiled.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signalMux_32.vhf" in Library work.
+Entity <M2_1_MXILINX_signalMux_32> compiled.
+Entity <M2_1_MXILINX_signalMux_32> (Architecture <BEHAVIORAL>) compiled.
+Entity <M2_1E_MXILINX_signalMux_32> compiled.
+Entity <M2_1E_MXILINX_signalMux_32> (Architecture <BEHAVIORAL>) compiled.
+Entity <M16_1E_MXILINX_signalMux_32> compiled.
+Entity <M16_1E_MXILINX_signalMux_32> (Architecture <BEHAVIORAL>) compiled.
+Entity <signalMux_32> compiled.
+Entity <signalMux_32> (Architecture <BEHAVIORAL>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <minisculComputer> in library <work> (architecture <BEHAVIORAL>).
+"C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/minisculComputer.vhf" line 317: In entity <minisculComputer>
+ERROR:Xst:2587 - Port <counter> of instance <XLXI_1> has different type in definition <programCounter>.
+ERROR:Xst:2585 - Port <timer> of instance <XLXI_1> does not exist in definition <programCounter>. Please compare the definition of block <programCounter> to its component declaration to detect the mismatch.
+--> 
+
+Total memory usage is 252592 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

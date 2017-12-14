@@ -1,0 +1,94 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Decoder.vf
+// /___/   /\     Timestamp : 12/14/2017 08:03:51
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/testingDisplay2/testingDisplay2/Decoder.vf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.sch
+//Design Name: Decoder
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Decoder(En, 
+               row, 
+               SYS_CLK, 
+               anO, 
+               binDisplay, 
+               dpO, 
+               keyO, 
+               colO);
+
+    input En;
+    input [3:0] row;
+    input SYS_CLK;
+   output [3:0] anO;
+   output [3:0] binDisplay;
+   output dpO;
+   output keyO;
+    inout [3:0] colO;
+   
+   wire [7:0] binO;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire [3:0] XLXN_9;
+   wire [3:0] XLXN_10;
+   wire [3:0] XLXN_11;
+   wire [3:0] XLXN_13;
+   wire [0:1] XLXN_14;
+   wire keyO_DUMMY;
+   wire [3:0] row_DUMMY;
+   
+   assign XLXN_4 = 1;
+   assign XLXN_7 = 0;
+   assign keyO = keyO_DUMMY;
+   assign row_DUMMY[3:0] = row[3:0];
+   CRenc4bin  XLXI_1 (.CE(XLXN_4), 
+                     .clk(XLXN_5), 
+                     .rowI(row_DUMMY[3:0]), 
+                     .binO(binO[3:0]), 
+                     .keyO(keyO_DUMMY), 
+                     .colO(colO[3:0]));
+   DCM_50M  XLXI_2 (.CLK(SYS_CLK), 
+                   .RST(XLXN_7), 
+                   .CLK1(), 
+                   .CLK1k(XLXN_5), 
+                   .CLK1M(), 
+                   .CLK10k(XLXN_6));
+   mux4SSD  XLXI_4 (.dp_in(), 
+                   .hexA(XLXN_13[3:0]), 
+                   .hexB(XLXN_11[3:0]), 
+                   .hexC(XLXN_10[3:0]), 
+                   .hexD(XLXN_9[3:0]), 
+                   .rb_in(keyO_DUMMY), 
+                   .sel(XLXN_14[0:1]), 
+                   .anO(anO[3:0]), 
+                   .dpO(dpO), 
+                   .hexO(binDisplay[3:0]));
+   bin2BCD3en  XLXI_5 (.CLK(XLXN_5), 
+                      .Din(binO[7:0]), 
+                      .En(En), 
+                      .Dout0(XLXN_13[3:0]), 
+                      .Dout1(XLXN_11[3:0]), 
+                      .Dout2(XLXN_10[3:0]), 
+                      .Dout3(XLXN_9[3:0]), 
+                      .RBout());
+   sel_strobeB  XLXI_6 (.clk(XLXN_6), 
+                       .sel(XLXN_14[0:1]));
+   PULLDOWN  XLXI_10_0 (.O(row_DUMMY[0]));
+   PULLDOWN  XLXI_10_1 (.O(row_DUMMY[1]));
+   PULLDOWN  XLXI_10_2 (.O(row_DUMMY[2]));
+   PULLDOWN  XLXI_10_3 (.O(row_DUMMY[3]));
+endmodule

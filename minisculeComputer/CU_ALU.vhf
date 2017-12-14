@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : CU_ALU.vhf
--- /___/   /\     Timestamp : 12/13/2017 16:18:14
+-- /___/   /\     Timestamp : 12/14/2017 08:12:54
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -120,8 +120,8 @@ architecture BEHAVIORAL of M4_1E_MXILINX_CU_ALU is
    end component;
    attribute BOX_TYPE of MUXF5 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_M01 : label is "I_M01_16";
-   attribute HU_SET of I_M23 : label is "I_M23_15";
+   attribute HU_SET of I_M01 : label is "I_M01_1";
+   attribute HU_SET of I_M23 : label is "I_M23_0";
 begin
    I_M01 : M2_1E_MXILINX_CU_ALU
       port map (D0=>D0,
@@ -162,7 +162,8 @@ entity CU_ALU is
           Reg2    : in    std_logic_vector (7 downto 0); 
           Reg3    : in    std_logic_vector (7 downto 0); 
           Add_Sub : out   std_logic; 
-          ALU_B   : out   std_logic_vector (7 downto 0));
+          ALU_B   : out   std_logic_vector (7 downto 0); 
+          Signed  : out   std_logic);
 end CU_ALU;
 
 architecture BEHAVIORAL of CU_ALU is
@@ -227,22 +228,31 @@ architecture BEHAVIORAL of CU_ALU is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_17";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_18";
-   attribute HU_SET of XLXI_20 : label is "XLXI_20_19";
-   attribute HU_SET of XLXI_21 : label is "XLXI_21_20";
-   attribute HU_SET of XLXI_22 : label is "XLXI_22_25";
-   attribute HU_SET of XLXI_23 : label is "XLXI_23_26";
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_27";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_28";
-   attribute HU_SET of XLXI_38 : label is "XLXI_38_21";
-   attribute HU_SET of XLXI_39 : label is "XLXI_39_22";
-   attribute HU_SET of XLXI_40 : label is "XLXI_40_29";
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_30";
-   attribute HU_SET of XLXI_67 : label is "XLXI_67_23";
-   attribute HU_SET of XLXI_68 : label is "XLXI_68_24";
-   attribute HU_SET of XLXI_69 : label is "XLXI_69_31";
-   attribute HU_SET of XLXI_70 : label is "XLXI_70_32";
+   component OR4
+      port ( I0 : in    std_logic; 
+             I1 : in    std_logic; 
+             I2 : in    std_logic; 
+             I3 : in    std_logic; 
+             O  : out   std_logic);
+   end component;
+   attribute BOX_TYPE of OR4 : component is "BLACK_BOX";
+   
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_2";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_3";
+   attribute HU_SET of XLXI_20 : label is "XLXI_20_4";
+   attribute HU_SET of XLXI_21 : label is "XLXI_21_5";
+   attribute HU_SET of XLXI_22 : label is "XLXI_22_10";
+   attribute HU_SET of XLXI_23 : label is "XLXI_23_11";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_12";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_13";
+   attribute HU_SET of XLXI_38 : label is "XLXI_38_6";
+   attribute HU_SET of XLXI_39 : label is "XLXI_39_7";
+   attribute HU_SET of XLXI_40 : label is "XLXI_40_14";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_15";
+   attribute HU_SET of XLXI_67 : label is "XLXI_67_8";
+   attribute HU_SET of XLXI_68 : label is "XLXI_68_9";
+   attribute HU_SET of XLXI_69 : label is "XLXI_69_16";
+   attribute HU_SET of XLXI_70 : label is "XLXI_70_17";
 begin
    XLXI_1 : OR3
       port map (I0=>MATH(2),
@@ -405,6 +415,13 @@ begin
                 E=>MODE,
                 S0=>DR_vs_Reg,
                 O=>ALU_B(7));
+   
+   XLXI_72 : OR4
+      port map (I0=>MATH(4),
+                I1=>MATH(3),
+                I2=>MATH(1),
+                I3=>MATH(0),
+                O=>Signed);
    
 end BEHAVIORAL;
 

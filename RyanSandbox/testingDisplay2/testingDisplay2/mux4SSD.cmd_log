@@ -1,0 +1,2 @@
+vhdtdtfi -lib work ../../../downloads/mux4SSD.vhd -prj testingDisplay2 -o mux4SSD.spl -module mux4SSD -template C:/Xilinx/14.7/ISE_DS/ISE//data/splfile.tft -deleteonerror 
+spl2sym -intstyle ise -family spartan3e mux4SSD.spl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/testingDisplay2/testingDisplay2/mux4SSD.sym 

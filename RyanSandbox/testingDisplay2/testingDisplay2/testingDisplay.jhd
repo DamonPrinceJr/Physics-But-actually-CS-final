@@ -1,0 +1,5 @@
+MODULE testingDisplay
+	SUBMODULE Decoder
+		INSTANCE XLXI_4
+	SUBMODULE sevenSeg
+		INSTANCE XLXI_7

@@ -24,19 +24,12 @@
         <signal name="counter(3)" />
         <signal name="counter(4)" />
         <signal name="counter_31" />
-        <signal name="XLXN_93(7:0)" />
         <signal name="counter(7:0)" />
         <signal name="counter(5:0)" />
         <signal name="pc_timer(0)" />
         <signal name="pc_timer(1)" />
         <signal name="pc_timer(3)" />
-        <signal name="XLXN_95" />
-        <signal name="XLXN_97" />
-        <signal name="XLXN_99" />
-        <signal name="XLXN_101" />
-        <signal name="XLXN_103" />
         <signal name="timer0" />
-        <signal name="XLXN_106" />
         <signal name="timer1" />
         <port polarity="Input" name="SYS_CLK" />
         <port polarity="Input" name="MODE" />
@@ -134,7 +127,7 @@
             <blockpin signalname="pc_timer(3)" name="C" />
             <blockpin signalname="MODE" name="CE" />
             <blockpin name="CLR" />
-            <blockpin signalname="XLXN_93(7:0)" name="D(7:0)" />
+            <blockpin name="D(7:0)" />
             <blockpin signalname="counter_31" name="L" />
             <blockpin name="CEO" />
             <blockpin signalname="counter(7:0)" name="Q(7:0)" />
@@ -183,14 +176,6 @@
             <blockpin signalname="counter(1)" name="I3" />
             <blockpin signalname="counter(0)" name="I4" />
             <blockpin signalname="counter_31" name="O" />
-        </block>
-        <block symbolname="constant" name="XLXI_39">
-            <attr value="00000" name="CValue">
-                <trait delete="all:1 sym:0" />
-                <trait editname="all:1 sch:0" />
-                <trait valuetype="BitVector 32 Hexadecimal" />
-            </attr>
-            <blockpin signalname="XLXN_93(7:0)" name="O" />
         </block>
         <block symbolname="constant" name="XLXI_40">
             <attr value="1" name="CValue">
@@ -319,11 +304,6 @@
         <branch name="counter_31">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1760" y="1168" type="branch" />
             <wire x2="1760" y1="1168" y2="1168" x1="1712" />
-        </branch>
-        <instance x="496" y="928" name="XLXI_39" orien="R0">
-        </instance>
-        <branch name="XLXN_93(7:0)">
-            <wire x2="816" y1="960" y2="960" x1="640" />
         </branch>
         <instance x="624" y="464" name="XLXI_40" orien="R0">
         </instance>

@@ -1,0 +1,368 @@
+V3 182
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd 2017/12/11.20:15:30 P.20131013
+EN work/bin2BCD3en 1513268022 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin2BCD3en/Behavioral 1513268023 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd \
+      EN work/bin2BCD3en 1513268022
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd 2017/12/12.20:41:06 P.20131013
+EN work/CRenc4bin 1513268098 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CRenc4bin/Behavioral 1513268099 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd \
+      EN work/CRenc4bin 1513268098
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd 2017/12/11.20:15:30 P.20131013
+EN work/DCM_50M 1513268018 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/DCM_50M/Behavioral 1513268019 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd \
+      EN work/DCM_50M 1513268018
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd 2017/12/11.20:15:30 P.20131013
+EN work/mux4SSD 1513268026 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mux4SSD/Behavioral 1513268027 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd \
+      EN work/mux4SSD 1513268026
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd 2017/12/12.20:41:06 P.20131013
+EN work/sel_strobeB 1513268020 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sel_strobeB/Behavioral 1513268021 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd \
+      EN work/sel_strobeB 1513268020
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd 2017/12/11.20:15:30 P.20131013
+EN work/SSD_1dig 1513268024 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SSD_1dig/Behavioral 1513268025 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd \
+      EN work/SSD_1dig 1513268024
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_ALU.vhf 2017/12/14.08:12:55 P.20131013
+EN work/M2_1E_MXILINX_CU_ALU 1513268064 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_ALU.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1E_MXILINX_CU_ALU/BEHAVIORAL 1513268065 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_ALU.vhf \
+      EN work/M2_1E_MXILINX_CU_ALU 1513268064 CP AND3 CP AND3B1 CP OR2
+EN work/M4_1E_MXILINX_CU_ALU 1513268066 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_ALU.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M4_1E_MXILINX_CU_ALU/BEHAVIORAL 1513268067 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_ALU.vhf \
+      EN work/M4_1E_MXILINX_CU_ALU 1513268066 CP M2_1E_MXILINX_CU_ALU CP MUXF5
+EN work/CU_ALU 1513268068 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_ALU.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CU_ALU/BEHAVIORAL 1513268069 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_ALU.vhf \
+      EN work/CU_ALU 1513268068 CP OR3 CP OR2 CP M4_1E_MXILINX_CU_ALU \
+      CP M2_1E_MXILINX_CU_ALU CP INV CP AND2 CP OR4
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Misc.vhf 2017/12/13.16:18:14 P.20131013
+EN work/NAND8_MXILINX_CU_Misc 1513268046 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Misc.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/NAND8_MXILINX_CU_Misc/BEHAVIORAL 1513268047 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Misc.vhf \
+      EN work/NAND8_MXILINX_CU_Misc 1513268046 CP FMAP CP AND4 CP NAND2
+EN work/AND8_MXILINX_CU_Misc 1513268048 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Misc.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/AND8_MXILINX_CU_Misc/BEHAVIORAL 1513268049 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Misc.vhf \
+      EN work/AND8_MXILINX_CU_Misc 1513268048 CP FMAP CP AND4 CP AND2
+EN work/CU_Misc 1513268050 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Misc.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CU_Misc/BEHAVIORAL 1513268051 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Misc.vhf \
+      EN work/CU_Misc 1513268050 CP INV CP OR2 CP AND8_MXILINX_CU_Misc \
+      CP NAND8_MXILINX_CU_Misc CP AND2
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read.vhf 2017/12/13.16:20:09 P.20131013
+EN work/OR6_MXILINX_CU_Read 1513268078 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/OR6_MXILINX_CU_Read/BEHAVIORAL 1513268079 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read.vhf \
+      EN work/OR6_MXILINX_CU_Read 1513268078 CP OR4 CP OR3 CP FMAP
+EN work/AND8_MXILINX_CU_Read 1513268080 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/AND8_MXILINX_CU_Read/BEHAVIORAL 1513268081 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read.vhf \
+      EN work/AND8_MXILINX_CU_Read 1513268080 CP FMAP CP AND4 CP AND2
+EN work/CU_Read 1513268082 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CU_Read/BEHAVIORAL 1513268083 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read.vhf \
+      EN work/CU_Read 1513268082 CP AND8_MXILINX_CU_Read CP INV CP OR2 CP OR3 \
+      CP OR6_MXILINX_CU_Read
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read_MUX.vhf 2017/12/13.16:23:41 P.20131013
+EN work/M2_1E_MXILINX_CU_Read_MUX 1513268084 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read_MUX.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1E_MXILINX_CU_Read_MUX/BEHAVIORAL 1513268085 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read_MUX.vhf \
+      EN work/M2_1E_MXILINX_CU_Read_MUX 1513268084 CP AND3 CP AND3B1 CP OR2
+EN work/M4_1E_MXILINX_CU_Read_MUX 1513268086 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read_MUX.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M4_1E_MXILINX_CU_Read_MUX/BEHAVIORAL 1513268087 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read_MUX.vhf \
+      EN work/M4_1E_MXILINX_CU_Read_MUX 1513268086 CP M2_1E_MXILINX_CU_Read_MUX \
+      CP MUXF5
+EN work/CU_Read_MUX 1513268088 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read_MUX.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CU_Read_MUX/BEHAVIORAL 1513268089 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read_MUX.vhf \
+      EN work/CU_Read_MUX 1513268088 CP OR2 CP M4_1E_MXILINX_CU_Read_MUX CP INV
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Write.vhf 2017/12/14.08:12:55 P.20131013
+EN work/D2_4E_MXILINX_CU_Write 1513268090 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Write.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/D2_4E_MXILINX_CU_Write/BEHAVIORAL 1513268091 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Write.vhf \
+      EN work/D2_4E_MXILINX_CU_Write 1513268090 CP AND3 CP AND3B1 CP AND3B2
+EN work/OR8_MXILINX_CU_Write 1513268092 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Write.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/OR8_MXILINX_CU_Write/BEHAVIORAL 1513268093 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Write.vhf \
+      EN work/OR8_MXILINX_CU_Write 1513268092 CP FMAP CP OR2 CP OR4
+EN work/AND8_MXILINX_CU_Write 1513268094 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Write.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/AND8_MXILINX_CU_Write/BEHAVIORAL 1513268095 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Write.vhf \
+      EN work/AND8_MXILINX_CU_Write 1513268094 CP FMAP CP AND4 CP AND2
+EN work/CU_Write 1513268096 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Write.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CU_Write/BEHAVIORAL 1513268097 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Write.vhf \
+      EN work/CU_Write 1513268096 CP AND8_MXILINX_CU_Write CP INV \
+      CP OR8_MXILINX_CU_Write CP OR2 CP AND2 CP D2_4E_MXILINX_CU_Write
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/DisplayModule.vhf 2017/12/13.16:18:16 P.20131013
+EN work/M2_1_MXILINX_DisplayModule 1513268074 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/DisplayModule.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_DisplayModule/BEHAVIORAL 1513268075 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/DisplayModule.vhf \
+      EN work/M2_1_MXILINX_DisplayModule 1513268074 CP AND2B1 CP OR2 CP AND2
+EN work/DisplayModule 1513268076 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/DisplayModule.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/DisplayModule/BEHAVIORAL 1513268077 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/DisplayModule.vhf \
+      EN work/DisplayModule 1513268076 CP M2_1_MXILINX_DisplayModule CP sevenSeg
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MainMemory.vhf 2017/12/13.16:18:14 P.20131013
+EN work/MainMemory 1513268052 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MainMemory.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/MainMemory/BEHAVIORAL 1513268053 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MainMemory.vhf \
+      EN work/MainMemory 1513268052 CP Mem32xBank
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Mem32xBank.vhf 2017/12/13.15:32:00 P.20131013
+EN work/FD8CE_MXILINX_Mem32xBank 1513268030 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Mem32xBank.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD8CE_MXILINX_Mem32xBank/BEHAVIORAL 1513268031 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Mem32xBank.vhf \
+      EN work/FD8CE_MXILINX_Mem32xBank 1513268030 CP FDCE
+EN work/Mem32xBank 1513268032 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Mem32xBank.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mem32xBank/BEHAVIORAL 1513268033 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Mem32xBank.vhf \
+      EN work/Mem32xBank 1513268032 CP FD8CE_MXILINX_Mem32xBank
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/minisculComputer.vhf 2017/12/14.08:13:35 P.20131013
+EN work/FD8CE_MXILINX_minisculComputer 1513268100 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/minisculComputer.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD8CE_MXILINX_minisculComputer/BEHAVIORAL 1513268101 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/minisculComputer.vhf \
+      EN work/FD8CE_MXILINX_minisculComputer 1513268100 CP FDCE
+EN work/minisculComputer 1513268102 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/minisculComputer.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/minisculComputer/BEHAVIORAL 1513268103 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/minisculComputer.vhf \
+      EN work/minisculComputer 1513268102 CP programCounter CP CU_Misc CP mux4SSD \
+      CP bin2BCD3en CP sel_strobeB CP MainMemory CP MM_signal_MUX CP PULLDOWN \
+      CP FD8CE_MXILINX_minisculComputer CP CU_ALU CP Registers CP DisplayModule \
+      CP CU_Read CP CU_Read_MUX CP CU_Write CP CRenc4bin CP DCM_50M
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf 2017/12/13.15:32:03 P.20131013
+EN work/M2_1_MXILINX_MM_signal_MUX 1513268054 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_MM_signal_MUX/BEHAVIORAL 1513268055 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf \
+      EN work/M2_1_MXILINX_MM_signal_MUX 1513268054 CP AND2B1 CP OR2 CP AND2
+EN work/M2_1E_MXILINX_MM_signal_MUX 1513268056 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1E_MXILINX_MM_signal_MUX/BEHAVIORAL 1513268057 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf \
+      EN work/M2_1E_MXILINX_MM_signal_MUX 1513268056 CP AND3 CP AND3B1 CP OR2
+EN work/M16_1E_MXILINX_MM_signal_MUX 1513268058 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M16_1E_MXILINX_MM_signal_MUX/BEHAVIORAL 1513268059 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf \
+      EN work/M16_1E_MXILINX_MM_signal_MUX 1513268058 \
+      CP M2_1_MXILINX_MM_signal_MUX CP MUXF5_L CP MUXF6 \
+      CP M2_1E_MXILINX_MM_signal_MUX
+EN work/signalMux_32_MUSER_MM_signal_MUX 1513268060 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/signalMux_32_MUSER_MM_signal_MUX/BEHAVIORAL 1513268061 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf \
+      EN work/signalMux_32_MUSER_MM_signal_MUX 1513268060 \
+      CP M16_1E_MXILINX_MM_signal_MUX CP M2_1_MXILINX_MM_signal_MUX
+EN work/MM_signal_MUX 1513268062 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/MM_signal_MUX/BEHAVIORAL 1513268063 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf \
+      EN work/MM_signal_MUX 1513268062 CP signalMux_32_MUSER_MM_signal_MUX
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf 2017/12/13.16:18:14 P.20131013
+EN work/M2_1_MXILINX_programCounter 1513268034 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_programCounter/BEHAVIORAL 1513268035 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf \
+      EN work/M2_1_MXILINX_programCounter 1513268034 CP AND2B1 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_programCounter 1513268036 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTCLEX_MXILINX_programCounter/BEHAVIORAL 1513268037 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf \
+      EN work/FTCLEX_MXILINX_programCounter 1513268036 \
+      CP M2_1_MXILINX_programCounter CP XOR2 CP FDCE
+EN work/CB8CLE_MXILINX_programCounter 1513268038 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB8CLE_MXILINX_programCounter/BEHAVIORAL 1513268039 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf \
+      EN work/CB8CLE_MXILINX_programCounter 1513268038 \
+      CP FTCLEX_MXILINX_programCounter CP AND3 CP AND2 CP VCC CP AND4 CP AND5 CP OR2
+EN work/M2_1B1_MXILINX_programCounter 1513268040 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1B1_MXILINX_programCounter/BEHAVIORAL 1513268041 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf \
+      EN work/M2_1B1_MXILINX_programCounter 1513268040 CP AND2B2 CP OR2 CP AND2
+EN work/CB2CLED_MXILINX_programCounter 1513268042 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB2CLED_MXILINX_programCounter/BEHAVIORAL 1513268043 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf \
+      EN work/CB2CLED_MXILINX_programCounter 1513268042 \
+      CP FTCLEX_MXILINX_programCounter CP M2_1_MXILINX_programCounter \
+      CP M2_1B1_MXILINX_programCounter CP VCC CP AND2B2 CP AND2 CP OR2
+EN work/programCounter 1513268044 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/programCounter/BEHAVIORAL 1513268045 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf \
+      EN work/programCounter 1513268044 CP CB8CLE_MXILINX_programCounter \
+      CP CB2CLED_MXILINX_programCounter CP AND2 CP INV CP AND5
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Registers.vhf 2017/12/13.15:32:04 P.20131013
+EN work/FD8CE_MXILINX_Registers 1513268070 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Registers.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD8CE_MXILINX_Registers/BEHAVIORAL 1513268071 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Registers.vhf \
+      EN work/FD8CE_MXILINX_Registers 1513268070 CP FDCE
+EN work/Registers 1513268072 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Registers.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Registers/BEHAVIORAL 1513268073 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Registers.vhf \
+      EN work/Registers 1513268072 CP FD8CE_MXILINX_Registers
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/sevenSeg.vhf 2017/12/13.15:32:04 P.20131013
+EN work/sevenSeg 1513268028 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/sevenSeg.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/sevenSeg/BEHAVIORAL 1513268029 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/sevenSeg.vhf \
+      EN work/sevenSeg 1513268028 CP PULLUP CP DCM_50M CP sel_strobeB CP bin2BCD3en \
+      CP SSD_1dig CP mux4SSD
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signalMux_32.vhf 2017/12/13.15:32:01 P.20131013
+EN work/M2_1_MXILINX_signalMux_32 1513268104 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signalMux_32.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_signalMux_32/BEHAVIORAL 1513268105 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signalMux_32.vhf \
+      EN work/M2_1_MXILINX_signalMux_32 1513268104 CP AND2B1 CP OR2 CP AND2
+EN work/M2_1E_MXILINX_signalMux_32 1513268106 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signalMux_32.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1E_MXILINX_signalMux_32/BEHAVIORAL 1513268107 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signalMux_32.vhf \
+      EN work/M2_1E_MXILINX_signalMux_32 1513268106 CP AND3 CP AND3B1 CP OR2
+EN work/M16_1E_MXILINX_signalMux_32 1513268108 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signalMux_32.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M16_1E_MXILINX_signalMux_32/BEHAVIORAL 1513268109 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signalMux_32.vhf \
+      EN work/M16_1E_MXILINX_signalMux_32 1513268108 CP M2_1_MXILINX_signalMux_32 \
+      CP MUXF5_L CP MUXF6 CP M2_1E_MXILINX_signalMux_32
+EN work/signalMux_32 1513268110 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signalMux_32.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/signalMux_32/BEHAVIORAL 1513268111 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signalMux_32.vhf \
+      EN work/signalMux_32 1513268110 CP M16_1E_MXILINX_signalMux_32 \
+      CP M2_1_MXILINX_signalMux_32

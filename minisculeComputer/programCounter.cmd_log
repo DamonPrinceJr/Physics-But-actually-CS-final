@@ -1,1 +1,1 @@
-sch2sym -intstyle ise -family spartan3e -refsym programCounter C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.sch C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym programCounter C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.sch C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.sym 

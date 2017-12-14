@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : programCounter.vhf
--- /___/   /\     Timestamp : 12/13/2017 16:18:13
+-- /___/   /\     Timestamp : 12/14/2017 08:47:59
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -615,10 +615,10 @@ architecture BEHAVIORAL of programCounter is
    signal XLXN_83               : std_logic;
    signal XLXN_85               : std_logic;
    signal XLXN_86               : std_logic;
-   signal XLXN_93               : std_logic_vector (7 downto 0);
    signal pc_timer_DUMMY        : std_logic_vector (3 downto 0);
    signal counter_DUMMY         : std_logic_vector (7 downto 0);
    signal XLXI_3_CLR_openSignal : std_logic;
+   signal XLXI_3_D_openSignal   : std_logic_vector (7 downto 0);
    signal XLXI_5_CLR_openSignal : std_logic;
    component CB8CLE_MXILINX_programCounter
       port ( C   : in    std_logic; 
@@ -673,14 +673,13 @@ architecture BEHAVIORAL of programCounter is
 begin
    XLXN_11 <= '0';
    XLXN_14 <= '1';
-   XLXN_93(7 downto 0) <= x"00";
    counter(7 downto 0) <= counter_DUMMY(7 downto 0);
    pc_timer(3 downto 0) <= pc_timer_DUMMY(3 downto 0);
    XLXI_3 : CB8CLE_MXILINX_programCounter
       port map (C=>pc_timer_DUMMY(3),
                 CE=>MODE,
                 CLR=>XLXI_3_CLR_openSignal,
-                D(7 downto 0)=>XLXN_93(7 downto 0),
+                D(7 downto 0)=>XLXI_3_D_openSignal(7 downto 0),
                 L=>counter_31,
                 CEO=>open,
                 Q(7 downto 0)=>counter_DUMMY(7 downto 0),

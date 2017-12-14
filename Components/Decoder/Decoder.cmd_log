@@ -34,3 +34,9 @@ map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Decoder
 par -w -intstyle ise -ol high -t 1 Decoder_map.ncd Decoder.ncd Decoder.pcf 
 trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Decoder.twx Decoder.ncd -o Decoder.twr Decoder.pcf -ucf Decoder.ucf 
 bitgen -intstyle ise -f Decoder.ut Decoder.ncd 
+xst -intstyle ise -ifn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.xst" -ofn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc Decoder.ucf -p xc3s100e-cp132-4 Decoder.ngc Decoder.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Decoder_map.ncd Decoder.ngd Decoder.pcf 
+par -w -intstyle ise -ol high -t 1 Decoder_map.ncd Decoder.ncd Decoder.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Decoder.twx Decoder.ncd -o Decoder.twr Decoder.pcf -ucf Decoder.ucf 
+bitgen -intstyle ise -f Decoder.ut Decoder.ncd 

@@ -1,6 +1,6 @@
-vhdl work "../../../../../Downloads/sel_strobeB.vhd"
-vhdl work "../../../../../Downloads/CRenc4bin.vhd"
+vhdl work "../../downloads/sel_strobeB.vhd"
 vhdl work "../../downloads/mux4SSD.vhd"
 vhdl work "../../downloads/DCM_50M.vhd"
+vhdl work "../../downloads/CRenc4bin.vhd"
 vhdl work "../../downloads/bin2BCD3en.vhd"
 vhdl work "Decoder.vhf"

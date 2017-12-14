@@ -1,0 +1,2 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym inputProcessor C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/inputProcessor/inputProcessor/inputProcessor.sch C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/inputProcessor.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym inputProcessor C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/inputProcessor/inputProcessor/inputProcessor.sch C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/inputProcessor.sym 
