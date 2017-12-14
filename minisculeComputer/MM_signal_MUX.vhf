@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : MM_signal_MUX.vhf
--- /___/   /\     Timestamp : 12/13/2017 15:32:01
+-- /___/   /\     Timestamp : 12/14/2017 12:17:34
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/MM_Decode_MUX/MM_Decode_MUX/MM_signal_MUX.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/MM_Decode_MUX/MM_Decode_MUX/MM_signal_MUX.sch"
 --Design Name: MM_signal_MUX
 --Device: spartan3e
 --Purpose:
@@ -219,15 +219,15 @@ architecture BEHAVIORAL of M16_1E_MXILINX_MM_signal_MUX is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of I_MAB : label is "I_MAB_47";
-   attribute HU_SET of I_MCD : label is "I_MCD_46";
-   attribute HU_SET of I_MEF : label is "I_MEF_45";
-   attribute HU_SET of I_M01 : label is "I_M01_52";
-   attribute HU_SET of I_M23 : label is "I_M23_51";
-   attribute HU_SET of I_M45 : label is "I_M45_50";
-   attribute HU_SET of I_M67 : label is "I_M67_49";
-   attribute HU_SET of I_M89 : label is "I_M89_48";
-   attribute HU_SET of I_O : label is "I_O_44";
+   attribute HU_SET of I_MAB : label is "I_MAB_203";
+   attribute HU_SET of I_MCD : label is "I_MCD_202";
+   attribute HU_SET of I_MEF : label is "I_MEF_201";
+   attribute HU_SET of I_M01 : label is "I_M01_208";
+   attribute HU_SET of I_M23 : label is "I_M23_207";
+   attribute HU_SET of I_M45 : label is "I_M45_206";
+   attribute HU_SET of I_M67 : label is "I_M67_205";
+   attribute HU_SET of I_M89 : label is "I_M89_204";
+   attribute HU_SET of I_O : label is "I_O_200";
 begin
    I_MAB : M2_1_MXILINX_MM_signal_MUX
       port map (D0=>D10,
@@ -404,9 +404,9 @@ architecture BEHAVIORAL of signalMux_32_MUSER_MM_signal_MUX is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_55";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_54";
-   attribute HU_SET of XLXI_16 : label is "XLXI_16_53";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_211";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_210";
+   attribute HU_SET of XLXI_16 : label is "XLXI_16_209";
 begin
    XLXI_2 : M16_1E_MXILINX_MM_signal_MUX
       port map (D0=>mux_in16,

@@ -1,0 +1,152 @@
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design inputProcessor.ngc ...
+WARNING:NetListWriters:298 - No output is written to inputProcessor.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_310/XLXI_2/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block inputProcessor
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_311/XLXI_82/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block
+   inputProcessor is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file inputProcessor.edif ...
+ngc2edif: Total memory usage is 80216 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design inputProcessor.ngc ...
+WARNING:NetListWriters:298 - No output is written to inputProcessor.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_310/XLXI_2/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block inputProcessor
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_311/XLXI_82/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block
+   inputProcessor is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file inputProcessor.edif ...
+ngc2edif: Total memory usage is 80344 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design inputProcessor.ngc ...
+WARNING:NetListWriters:298 - No output is written to inputProcessor.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_310/XLXI_2/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block inputProcessor
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_311/XLXI_82/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block
+   inputProcessor is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file inputProcessor.edif ...
+ngc2edif: Total memory usage is 80216 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design inputProcessor.ngc ...
+WARNING:NetListWriters:298 - No output is written to inputProcessor.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_310/XLXI_2/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block inputProcessor
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_311/XLXI_82/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block
+   inputProcessor is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file inputProcessor.edif ...
+ngc2edif: Total memory usage is 80408 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design inputProcessor.ngc ...
+WARNING:NetListWriters:298 - No output is written to inputProcessor.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_310/XLXI_2/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block inputProcessor
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_311/XLXI_82/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block
+   inputProcessor is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file inputProcessor.edif ...
+ngc2edif: Total memory usage is 79896 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design inputProcessor.ngc ...
+WARNING:NetListWriters:298 - No output is written to inputProcessor.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_310/XLXI_2/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block inputProcessor
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_311/XLXI_82/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block
+   inputProcessor is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file inputProcessor.edif ...
+ngc2edif: Total memory usage is 80216 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design inputProcessor.ngc ...
+WARNING:NetListWriters:298 - No output is written to inputProcessor.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_310/XLXI_2/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block inputProcessor
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_311/XLXI_82/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block
+   inputProcessor is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file inputProcessor.edif ...
+ngc2edif: Total memory usage is 80216 kilobytes
+
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design inputProcessor.ngc ...
+WARNING:NetListWriters:298 - No output is written to inputProcessor.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_310/XLXI_2/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block inputProcessor
+   is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_311/XLXI_82/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block
+   inputProcessor is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file inputProcessor.edif ...
+ngc2edif: Total memory usage is 79832 kilobytes
+

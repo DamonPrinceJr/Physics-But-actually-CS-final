@@ -1,3 +1,14 @@
 xst -intstyle ise -ifn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.xst" -ofn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.syr" 
 xst -intstyle ise -ifn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.xst" -ofn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.syr" 
 xst -intstyle ise -ifn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.xst" -ofn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.syr" 
+xst -intstyle ise -ifn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.xst" -ofn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 "programCounter.ngc" programCounter.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o programCounter_map.ncd programCounter.ngd programCounter.pcf 
+par -w -intstyle ise -ol high -t 1 programCounter_map.ncd programCounter.ncd programCounter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml programCounter.twx programCounter.ncd -o programCounter.twr programCounter.pcf 
+bitgen -intstyle ise -f programCounter.ut programCounter.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc programCouunter.ucf -p xc3s100e-cp132-4 "programCounter.ngc" programCounter.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o programCounter_map.ncd programCounter.ngd programCounter.pcf 
+par -w -intstyle ise -ol high -t 1 programCounter_map.ncd programCounter.ncd programCounter.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml programCounter.twx programCounter.ncd -o programCounter.twr programCounter.pcf -ucf programCouunter.ucf 
+bitgen -intstyle ise -f programCounter.ut programCounter.ncd 

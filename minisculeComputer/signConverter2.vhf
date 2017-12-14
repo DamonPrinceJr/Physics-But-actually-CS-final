@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : signConverter2.vhf
--- /___/   /\     Timestamp : 12/14/2017 09:23:47
+-- /___/   /\     Timestamp : 12/14/2017 12:17:27
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signConverter2.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/signConverter/signConverter/signConverter2.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signConverter2.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/signConverter/signConverter/signConverter2.sch"
 --Design Name: signConverter2
 --Device: spartan3e
 --Purpose:
@@ -479,15 +479,15 @@ architecture BEHAVIORAL of signConverter2 is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_2";
-   attribute HU_SET of XLXI_58 : label is "XLXI_58_7";
-   attribute HU_SET of XLXI_59 : label is "XLXI_59_8";
-   attribute HU_SET of XLXI_60 : label is "XLXI_60_9";
-   attribute HU_SET of XLXI_61 : label is "XLXI_61_10";
-   attribute HU_SET of XLXI_62 : label is "XLXI_62_3";
-   attribute HU_SET of XLXI_63 : label is "XLXI_63_4";
-   attribute HU_SET of XLXI_64 : label is "XLXI_64_5";
-   attribute HU_SET of XLXI_65 : label is "XLXI_65_6";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_36";
+   attribute HU_SET of XLXI_58 : label is "XLXI_58_41";
+   attribute HU_SET of XLXI_59 : label is "XLXI_59_42";
+   attribute HU_SET of XLXI_60 : label is "XLXI_60_43";
+   attribute HU_SET of XLXI_61 : label is "XLXI_61_44";
+   attribute HU_SET of XLXI_62 : label is "XLXI_62_37";
+   attribute HU_SET of XLXI_63 : label is "XLXI_63_38";
+   attribute HU_SET of XLXI_64 : label is "XLXI_64_39";
+   attribute HU_SET of XLXI_65 : label is "XLXI_65_40";
 begin
    compliment(7 downto 0) <= compliment_DUMMY(7 downto 0);
    XLXI_2 : ADSU8_MXILINX_signConverter2

@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym sevenSeg {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/SevenSeg/sevenSeg.sch} {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/sevenSeg.sym} 

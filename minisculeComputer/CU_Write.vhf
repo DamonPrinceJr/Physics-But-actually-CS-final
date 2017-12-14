@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : CU_Write.vhf
--- /___/   /\     Timestamp : 12/14/2017 08:12:55
+-- /___/   /\     Timestamp : 12/14/2017 12:17:28
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Write.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Write.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.sch"
 --Design Name: CU_Write
 --Device: spartan3e
 --Purpose:
@@ -450,21 +450,21 @@ architecture BEHAVIORAL of CU_Write is
              D3 : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_19";
-   attribute HU_SET of XLXI_23 : label is "XLXI_23_18";
-   attribute HU_SET of XLXI_118 : label is "XLXI_118_20";
-   attribute HU_SET of XLXI_125 : label is "XLXI_125_21";
-   attribute HU_SET of XLXI_145 : label is "XLXI_145_22";
-   attribute HU_SET of XLXI_153 : label is "XLXI_153_23";
-   attribute HU_SET of XLXI_160 : label is "XLXI_160_24";
-   attribute HU_SET of XLXI_177 : label is "XLXI_177_25";
-   attribute HU_SET of XLXI_184 : label is "XLXI_184_26";
-   attribute HU_SET of XLXI_224 : label is "XLXI_224_27";
-   attribute HU_SET of XLXI_230 : label is "XLXI_230_28";
-   attribute HU_SET of XLXI_236 : label is "XLXI_236_29";
-   attribute HU_SET of XLXI_242 : label is "XLXI_242_30";
-   attribute HU_SET of XLXI_254 : label is "XLXI_254_31";
-   attribute HU_SET of XLXI_261 : label is "XLXI_261_32";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_47";
+   attribute HU_SET of XLXI_23 : label is "XLXI_23_46";
+   attribute HU_SET of XLXI_118 : label is "XLXI_118_48";
+   attribute HU_SET of XLXI_125 : label is "XLXI_125_49";
+   attribute HU_SET of XLXI_145 : label is "XLXI_145_50";
+   attribute HU_SET of XLXI_153 : label is "XLXI_153_51";
+   attribute HU_SET of XLXI_160 : label is "XLXI_160_52";
+   attribute HU_SET of XLXI_177 : label is "XLXI_177_53";
+   attribute HU_SET of XLXI_184 : label is "XLXI_184_54";
+   attribute HU_SET of XLXI_224 : label is "XLXI_224_55";
+   attribute HU_SET of XLXI_230 : label is "XLXI_230_56";
+   attribute HU_SET of XLXI_236 : label is "XLXI_236_57";
+   attribute HU_SET of XLXI_242 : label is "XLXI_242_58";
+   attribute HU_SET of XLXI_254 : label is "XLXI_254_59";
+   attribute HU_SET of XLXI_261 : label is "XLXI_261_60";
 begin
    MATH_OP(5 downto 0) <= MATH_OP_DUMMY(5 downto 0);
    XLXI_4 : AND8_MXILINX_CU_Write

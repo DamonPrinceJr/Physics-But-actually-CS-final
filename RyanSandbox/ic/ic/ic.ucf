@@ -1,0 +1,34 @@
+
+NET "MODE" LOC = N3;#R17;#N3;
+
+NET "colO[3]" LOC = B7;#R33;#B7;
+NET "colO[2]" LOC = C5;#R31;#C5;
+NET "colO[1]" LOC = B6;#R29;#B6;
+NET "colO[0]" LOC = C6;#R27;#C6;
+NET "row[3]" LOC = B2;#R19;#B2;
+NET "row[2]" LOC = A3;#R21;#A3;
+NET "row[1]" LOC = J3;#R23;#J3;
+NET "row[0]" LOC = B5;#R25;#B5;
+
+NET "writeToTemp" LOC = a7;#B18;#a7;
+NET "writeToMM" LOC = m4;#D18;#m4;
+
+NET "SYS_CLK" LOC = B8;
+
+NET "temp[0]" LOC = m5;#J14;#m5;
+NET "temp[1]" LOC = m11;#J15;#m11;
+NET "temp[2]" LOC = p7;#K15;#p7;
+NET "temp[3]" LOC = p6;#K14;#p6;
+
+#NET "anO[3]" LOC = F15;#k14;
+#NET "anO[2]" LOC = C18;#M13;
+#NET "anO[1]" LOC = H17;#J12;
+#NET "anO[0]" LOC = F17#F12;
+#NET "sseg[7]" LOC = C17;#N13;
+#NET "sseg[6]" LOC = L18;#L14;
+#NET "sseg[5]" LOC = F18;#H12;
+#NET "sseg[4]" LOC = D17;#N14;
+#NET "sseg[3]" LOC = D16;#N11;
+#NET "sseg[2]" LOC = G14;#P12;
+#NET "sseg[1]" LOC = J17;#L13;
+#NET "sseg[0]" LOC = H14;#M12;

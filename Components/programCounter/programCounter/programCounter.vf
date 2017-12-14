@@ -7,11 +7,11 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : programCounter.vf
-// /___/   /\     Timestamp : 12/13/2017 16:13:36
+// /___/   /\     Timestamp : 12/14/2017 14:44:40
 // \   \  /  \ 
 //  \___\/\___\ 
 //
-//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.vf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.sch
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.vf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.sch"
 //Design Name: programCounter
 //Device: spartan3e
 //Purpose:
@@ -325,14 +325,15 @@ endmodule
 
 module programCounter(MODE, 
                       SYS_CLK, 
-                      counter, 
+                      pc_counter, 
                       pc_timer);
 
     input MODE;
     input SYS_CLK;
-   output [7:0] counter;
+   output [7:0] pc_counter;
    output [3:0] pc_timer;
    
+   wire CLK;
    wire counter_31;
    wire timer0;
    wire timer1;
@@ -344,26 +345,24 @@ module programCounter(MODE,
    wire XLXN_83;
    wire XLXN_85;
    wire XLXN_86;
-   wire [7:0] XLXN_93;
    wire [3:0] pc_timer_DUMMY;
-   wire [7:0] counter_DUMMY;
+   wire [7:0] pc_counter_DUMMY;
    
    assign XLXN_11 = 0;
    assign XLXN_14 = 1;
-   assign XLXN_93 = 8'h00;
-   assign counter[7:0] = counter_DUMMY[7:0];
+   assign pc_counter[7:0] = pc_counter_DUMMY[7:0];
    assign pc_timer[3:0] = pc_timer_DUMMY[3:0];
    (* HU_SET = "XLXI_3_14" *) 
    CB8CLE_MXILINX_programCounter  XLXI_3 (.C(pc_timer_DUMMY[3]), 
                                          .CE(MODE), 
                                          .CLR(), 
-                                         .D(XLXN_93[7:0]), 
+                                         .D(), 
                                          .L(counter_31), 
                                          .CEO(), 
-                                         .Q(counter_DUMMY[7:0]), 
+                                         .Q(pc_counter_DUMMY[7:0]), 
                                          .TC());
    (* HU_SET = "XLXI_5_13" *) 
-   CB2CLED_MXILINX_programCounter  XLXI_5 (.C(SYS_CLK), 
+   CB2CLED_MXILINX_programCounter  XLXI_5 (.C(CLK), 
                                           .CE(MODE), 
                                           .CLR(), 
                                           .D0(XLXN_8), 
@@ -394,10 +393,16 @@ module programCounter(MODE,
                 .O(XLXN_85));
    INV  XLXI_37 (.I(timer0), 
                 .O(XLXN_86));
-   AND5  XLXI_38 (.I0(counter_DUMMY[4]), 
-                 .I1(counter_DUMMY[3]), 
-                 .I2(counter_DUMMY[2]), 
-                 .I3(counter_DUMMY[1]), 
-                 .I4(counter_DUMMY[0]), 
+   AND5  XLXI_38 (.I0(pc_counter_DUMMY[4]), 
+                 .I1(pc_counter_DUMMY[3]), 
+                 .I2(pc_counter_DUMMY[2]), 
+                 .I3(pc_counter_DUMMY[1]), 
+                 .I4(pc_counter_DUMMY[0]), 
                  .O(counter_31));
+   DCM_50M  XLXI_43 (.CLK(SYS_CLK), 
+                    .RST(), 
+                    .CLK1(CLK), 
+                    .CLK1k(), 
+                    .CLK1M(), 
+                    .CLK10k());
 endmodule

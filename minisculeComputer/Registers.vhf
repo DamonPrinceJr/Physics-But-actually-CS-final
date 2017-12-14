@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Registers.vhf
--- /___/   /\     Timestamp : 12/13/2017 15:32:04
+-- /___/   /\     Timestamp : 12/14/2017 12:17:29
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Registers.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Registers/Registers/Registers.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Registers.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Registers/Registers/Registers.sch"
 --Design Name: Registers
 --Device: spartan3e
 --Purpose:
@@ -138,15 +138,15 @@ architecture BEHAVIORAL of Registers is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_56";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_57";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_58";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_59";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_60";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_61";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_62";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_63";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_64";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_97";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_98";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_99";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_100";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_101";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_102";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_103";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_104";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_105";
 begin
    XLXI_1 : FD8CE_MXILINX_Registers
       port map (C=>CLK,

@@ -1,0 +1,3 @@
+MODULE alu_test
+	SUBMODULE ALU_component
+		INSTANCE XLXI_1

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.12 secs
+Total CPU time to Xst completion: 0.08 secs
  
 --> Reading design: Decoder.prj
 
@@ -104,29 +104,29 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-WARNING:HDLParsers:3607 - Unit work/Decoder is now defined in a different file.  It was defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf", and is now defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf".
-WARNING:HDLParsers:3607 - Unit work/Decoder/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf", and is now defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf".
-WARNING:HDLParsers:3607 - Unit work/bin2BCD3en is now defined in a different file.  It was defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd", and is now defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd".
-WARNING:HDLParsers:3607 - Unit work/bin2BCD3en/Behavioral is now defined in a different file.  It was defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd", and is now defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd".
-WARNING:HDLParsers:3607 - Unit work/CRenc4bin is now defined in a different file.  It was defined in "C:/Users/Big D/Downloads/CRenc4bin.vhd", and is now defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd".
-WARNING:HDLParsers:3607 - Unit work/CRenc4bin/Behavioral is now defined in a different file.  It was defined in "C:/Users/Big D/Downloads/CRenc4bin.vhd", and is now defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd".
-WARNING:HDLParsers:3607 - Unit work/DCM_50M is now defined in a different file.  It was defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd", and is now defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd".
-WARNING:HDLParsers:3607 - Unit work/DCM_50M/Behavioral is now defined in a different file.  It was defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd", and is now defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd".
-WARNING:HDLParsers:3607 - Unit work/mux4SSD is now defined in a different file.  It was defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd", and is now defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd".
-WARNING:HDLParsers:3607 - Unit work/mux4SSD/Behavioral is now defined in a different file.  It was defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd", and is now defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd".
-WARNING:HDLParsers:3607 - Unit work/sel_strobeB is now defined in a different file.  It was defined in "C:/Users/Big D/Downloads/sel_strobeB.vhd", and is now defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd".
-WARNING:HDLParsers:3607 - Unit work/sel_strobeB/Behavioral is now defined in a different file.  It was defined in "C:/Users/Big D/Downloads/sel_strobeB.vhd", and is now defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd".
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/Decoder is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf", and is now defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf".
+WARNING:HDLParsers:3607 - Unit work/Decoder/BEHAVIORAL is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf", and is now defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf".
+WARNING:HDLParsers:3607 - Unit work/bin2BCD3en is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd", and is now defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd".
+WARNING:HDLParsers:3607 - Unit work/bin2BCD3en/Behavioral is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd", and is now defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd".
+WARNING:HDLParsers:3607 - Unit work/CRenc4bin is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd", and is now defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd".
+WARNING:HDLParsers:3607 - Unit work/CRenc4bin/Behavioral is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd", and is now defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd".
+WARNING:HDLParsers:3607 - Unit work/DCM_50M is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd", and is now defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd".
+WARNING:HDLParsers:3607 - Unit work/DCM_50M/Behavioral is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd", and is now defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd".
+WARNING:HDLParsers:3607 - Unit work/mux4SSD is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd", and is now defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd".
+WARNING:HDLParsers:3607 - Unit work/mux4SSD/Behavioral is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd", and is now defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd".
+WARNING:HDLParsers:3607 - Unit work/sel_strobeB is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd", and is now defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd".
+WARNING:HDLParsers:3607 - Unit work/sel_strobeB/Behavioral is now defined in a different file.  It was defined in "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd", and is now defined in "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd".
+Compiling vhdl file "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd" in Library work.
 Architecture behavioral of Entity crenc4bin is up to date.
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" in Library work.
+Compiling vhdl file "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" in Library work.
 Architecture behavioral of Entity dcm_50m is up to date.
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd" in Library work.
+Compiling vhdl file "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd" in Library work.
 Architecture behavioral of Entity mux4ssd is up to date.
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" in Library work.
+Compiling vhdl file "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" in Library work.
 Architecture behavioral of Entity bin2bcd3en is up to date.
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd" in Library work.
+Compiling vhdl file "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd" in Library work.
 Architecture behavioral of Entity sel_strobeb is up to date.
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" in Library work.
+Compiling vhdl file "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" in Library work.
 Entity <decoder> compiled.
 Entity <decoder> (Architecture <behavioral>) compiled.
 
@@ -153,11 +153,9 @@ Analyzing hierarchy for entity <sel_strobeB> in library <work> (architecture <be
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <Decoder> in library <work> (Architecture <behavioral>).
-WARNING:Xst:753 - "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" line 117: Unconnected output port 'CLK1M' of component 'DCM_50M'.
-WARNING:Xst:753 - "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" line 117: Unconnected output port 'CLK1' of component 'DCM_50M'.
-WARNING:Xst:753 - "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" line 125: Unconnected output port 'dpO' of component 'mux4SSD'.
-WARNING:Xst:753 - "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" line 125: Unconnected output port 'anO' of component 'mux4SSD'.
-WARNING:Xst:753 - "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" line 137: Unconnected output port 'RBout' of component 'bin2BCD3en'.
+WARNING:Xst:753 - "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" line 119: Unconnected output port 'CLK1M' of component 'DCM_50M'.
+WARNING:Xst:753 - "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" line 119: Unconnected output port 'CLK1' of component 'DCM_50M'.
+WARNING:Xst:753 - "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" line 139: Unconnected output port 'RBout' of component 'bin2BCD3en'.
 Entity <Decoder> analyzed. Unit <Decoder> generated.
 
 Analyzing Entity <CRenc4bin> in library <work> (Architecture <behavioral>).
@@ -173,8 +171,8 @@ Analyzing Entity <mux4SSD> in library <work> (Architecture <behavioral>).
 Entity <mux4SSD> analyzed. Unit <mux4SSD> generated.
 
 Analyzing Entity <bin2BCD3en> in library <work> (Architecture <behavioral>).
-INFO:Xst:1561 - "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" line 62: Mux is complete : default of case is discarded
-INFO:Xst:1561 - "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" line 62: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" line 62: Mux is complete : default of case is discarded
+INFO:Xst:1561 - "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" line 62: Mux is complete : default of case is discarded
 INFO:Xst:2679 - Register <Dout3> in unit <bin2BCD3en> has a constant value of 0000 during circuit operation. The register is replaced by logic.
 Entity <bin2BCD3en> analyzed. Unit <bin2BCD3en> generated.
 
@@ -189,7 +187,7 @@ Entity <sel_strobeB> analyzed. Unit <sel_strobeB> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <CRenc4bin>.
-    Related source file is "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd".
+    Related source file is "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd".
     Found 4-bit register for signal <colO>.
     Found 1-bit register for signal <keyO>.
     Found 4-bit register for signal <binO>.
@@ -200,7 +198,7 @@ Unit <CRenc4bin> synthesized.
 
 
 Synthesizing Unit <DCM_50M>.
-    Related source file is "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd".
+    Related source file is "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd".
     Found 1-bit register for signal <clk_1>.
     Found 32-bit adder for signal <clk_1$addsub0000> created at line 121.
     Found 32-bit comparator greater for signal <clk_1$cmp_gt0000> created at line 122.
@@ -226,12 +224,12 @@ Unit <DCM_50M> synthesized.
 
 
 Synthesizing Unit <mux4SSD>.
-    Related source file is "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd".
+    Related source file is "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd".
 Unit <mux4SSD> synthesized.
 
 
 Synthesizing Unit <bin2BCD3en>.
-    Related source file is "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd".
+    Related source file is "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd".
     Found 16x4-bit ROM for signal <b9$mux0000> created at line 50.
     Found 16x4-bit ROM for signal <b8$mux0000> created at line 50.
     Found 16x4-bit ROM for signal <b7$mux0000> created at line 50.
@@ -251,7 +249,7 @@ Unit <bin2BCD3en> synthesized.
 
 
 Synthesizing Unit <sel_strobeB>.
-    Related source file is "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd".
+    Related source file is "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd".
     Found 4x2-bit ROM for signal <sel$mux0001> created at line 44.
     Found 2-bit register for signal <sel>.
     Found 2-bit register for signal <selx>.
@@ -262,7 +260,7 @@ Unit <sel_strobeB> synthesized.
 
 
 Synthesizing Unit <Decoder>.
-    Related source file is "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf".
+    Related source file is "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf".
 WARNING:Xst:653 - Signal <binO<7:4>> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 WARNING:Xst:653 - Signal <XLXI_4_dp_in_openSignal> is used but never assigned. This sourceless signal will be automatically connected to value 0000.
 Unit <Decoder> synthesized.
@@ -413,15 +411,15 @@ Optimization Goal                  : Speed
 Keep Hierarchy                     : No
 
 Design Statistics
-# IOs                              : 15
+# IOs                              : 20
 
 Cell Usage :
-# BELS                             : 698
+# BELS                             : 703
 #      GND                         : 1
-#      INV                         : 19
+#      INV                         : 20
 #      LUT1                        : 190
 #      LUT2                        : 17
-#      LUT3                        : 15
+#      LUT3                        : 19
 #      LUT4                        : 39
 #      MUXCY                       : 221
 #      MUXF5                       : 3
@@ -437,9 +435,9 @@ Cell Usage :
 # Clock Buffers                    : 2
 #      BUFG                        : 1
 #      BUFGP                       : 1
-# IO Buffers                       : 14
+# IO Buffers                       : 19
 #      IBUF                        : 5
-#      OBUF                        : 9
+#      OBUF                        : 14
 # Others                           : 4
 #      PULLDOWN                    : 4
 =========================================================================
@@ -451,9 +449,9 @@ Selected Device : 3s100ecp132-4
 
  Number of Slices:                      171  out of    960    17%  
  Number of Slice Flip Flops:            121  out of   1920     6%  
- Number of 4 input LUTs:                280  out of   1920    14%  
- Number of IOs:                          15
- Number of bonded IOBs:                  15  out of     83    18%  
+ Number of 4 input LUTs:                285  out of   1920    14%  
+ Number of IOs:                          20
+ Number of bonded IOBs:                  20  out of     83    24%  
  Number of GCLKs:                         2  out of     24     8%  
 
 ---------------------------
@@ -507,7 +505,7 @@ Speed Grade: -4
 
    Minimum period: 10.324ns (Maximum Frequency: 96.860MHz)
    Minimum input arrival time before clock: 5.839ns
-   Maximum output required time after clock: 6.056ns
+   Maximum output required time after clock: 6.320ns
    Maximum combinational path delay: No path found
 
 Timing Detail:
@@ -684,7 +682,7 @@ Offset:              5.839ns (Levels of Logic = 4)
     ----------------------------------------  ------------
      IBUF:I->O             6   1.218   0.844  row_3_IBUF (row_3_IBUF)
      LUT4:I0->O            4   0.704   0.762  XLXI_1/binO_mux0002<0>41 (XLXI_1/keyO_cmp_eq0001)
-     LUT4:I0->O            1   0.704   0.595  XLXI_1/binO_mux0002<1>701_SW1 (N16)
+     LUT4:I0->O            1   0.704   0.595  XLXI_1/binO_mux0002<1>701_SW1 (N12)
      LUT4:I0->O            1   0.704   0.000  XLXI_1/binO_mux0002<1>701 (XLXI_1/binO_mux0002<1>70)
      FDS:D                     0.308          XLXI_1/binO_2
     ----------------------------------------
@@ -693,9 +691,9 @@ Offset:              5.839ns (Levels of Logic = 4)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/clk_1k'
-  Total number of paths / destination ports: 15 / 9
+  Total number of paths / destination ports: 20 / 14
 -------------------------------------------------------------------------
-Offset:              6.056ns (Levels of Logic = 3)
+Offset:              6.320ns (Levels of Logic = 3)
   Source:            XLXI_1/keyO (FF)
   Destination:       binDisplay<0> (PAD)
   Source Clock:      XLXI_2/clk_1k rising
@@ -704,19 +702,19 @@ Offset:              6.056ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FDRS:C->Q             6   0.591   0.748  XLXI_1/keyO (XLXI_1/keyO)
+     FDRS:C->Q            11   0.591   1.012  XLXI_1/keyO (XLXI_1/keyO)
      LUT3:I1->O            1   0.704   0.000  XLXI_4/hexO<0>1 (XLXI_4/hexO<0>)
      MUXF5:I1->O           1   0.321   0.420  XLXI_4/hexO<0>_f5 (binDisplay_0_OBUF)
      OBUF:I->O                 3.272          binDisplay_0_OBUF (binDisplay<0>)
     ----------------------------------------
-    Total                      6.056ns (4.888ns logic, 1.168ns route)
-                                       (80.7% logic, 19.3% route)
+    Total                      6.320ns (4.888ns logic, 1.432ns route)
+                                       (77.3% logic, 22.7% route)
 
 =========================================================================
 Timing constraint: Default OFFSET OUT AFTER for Clock 'XLXI_2/clk_10k'
-  Total number of paths / destination ports: 9 / 4
+  Total number of paths / destination ports: 17 / 8
 -------------------------------------------------------------------------
-Offset:              6.012ns (Levels of Logic = 3)
+Offset:              6.225ns (Levels of Logic = 3)
   Source:            XLXI_6/sel_0 (FF)
   Destination:       binDisplay<0> (PAD)
   Source Clock:      XLXI_2/clk_10k rising
@@ -725,25 +723,25 @@ Offset:              6.012ns (Levels of Logic = 3)
                                 Gate     Net
     Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
     ----------------------------------------  ------------
-     FD:C->Q               6   0.591   0.704  XLXI_6/sel_0 (XLXI_6/sel_0)
+     FD:C->Q              10   0.591   0.917  XLXI_6/sel_0 (XLXI_6/sel_0)
      LUT3:I2->O            1   0.704   0.000  XLXI_4/hexO<0>1 (XLXI_4/hexO<0>)
      MUXF5:I1->O           1   0.321   0.420  XLXI_4/hexO<0>_f5 (binDisplay_0_OBUF)
      OBUF:I->O                 3.272          binDisplay_0_OBUF (binDisplay<0>)
     ----------------------------------------
-    Total                      6.012ns (4.888ns logic, 1.124ns route)
-                                       (81.3% logic, 18.7% route)
+    Total                      6.225ns (4.888ns logic, 1.337ns route)
+                                       (78.5% logic, 21.5% route)
 
 =========================================================================
 
 
-Total REAL time to Xst completion: 5.00 secs
-Total CPU time to Xst completion: 5.22 secs
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.91 secs
  
 --> 
 
-Total memory usage is 269048 kilobytes
+Total memory usage is 287984 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :   62 (   0 filtered)
+Number of warnings :   60 (   0 filtered)
 Number of infos    :    7 (   0 filtered)
 

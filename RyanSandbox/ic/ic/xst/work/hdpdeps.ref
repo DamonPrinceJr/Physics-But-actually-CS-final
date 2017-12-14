@@ -1,0 +1,122 @@
+V3 68
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" 2017/12/14.12:11:39 P.20131013
+EN work/bin2BCD3en 1513291190 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/bin2BCD3en/Behavioral 1513291191 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" \
+      EN work/bin2BCD3en 1513291190
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd" 2017/12/14.12:11:39 P.20131013
+EN work/CRenc4bin 1513291184 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/CRenc4bin/Behavioral 1513291185 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd" \
+      EN work/CRenc4bin 1513291184
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" 2017/12/14.12:11:39 P.20131013
+EN work/DCM_50M 1513291186 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/DCM_50M/Behavioral 1513291187 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" \
+      EN work/DCM_50M 1513291186
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd" 2017/12/14.12:11:39 P.20131013
+EN work/mux4SSD 1513291188 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/mux4SSD/Behavioral 1513291189 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd" \
+      EN work/mux4SSD 1513291188
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd" 2017/12/14.12:11:39 P.20131013
+EN work/sel_strobeB 1513291192 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/sel_strobeB/Behavioral 1513291193 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd" \
+      EN work/sel_strobeB 1513291192
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd" 2017/12/14.12:11:39 P.20131013
+EN work/SSD_1dig 1513290518 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/SSD_1dig/Behavioral 1513290519 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd" \
+      EN work/SSD_1dig 1513290518
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/Decoder.vhf" 2017/12/14.14:18:45 P.20131013
+EN work/Decoder 1513291194 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/Decoder.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Decoder/BEHAVIORAL 1513291195 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/Decoder.vhf" \
+      EN work/Decoder 1513291194 CP CRenc4bin CP DCM_50M CP mux4SSD CP bin2BCD3en \
+      CP sel_strobeB CP PULLDOWN
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" 2017/12/14.14:36:34 P.20131013
+EN work/D4_16E_MXILINX_inputProcessor 1513291196 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/D4_16E_MXILINX_inputProcessor/BEHAVIORAL 1513291197 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      EN work/D4_16E_MXILINX_inputProcessor 1513291196 CP AND5B3 CP AND5B2 \
+      CP AND5B1 CP AND5 CP AND5B4
+EN work/M2_1_MXILINX_inputProcessor 1513291198 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1_MXILINX_inputProcessor/BEHAVIORAL 1513291199 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      EN work/M2_1_MXILINX_inputProcessor 1513291198 CP AND2B1 CP OR2 CP AND2
+EN work/M2_1B1_MXILINX_inputProcessor 1513291200 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/M2_1B1_MXILINX_inputProcessor/BEHAVIORAL 1513291201 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      EN work/M2_1B1_MXILINX_inputProcessor 1513291200 CP AND2B2 CP OR2 CP AND2
+EN work/FTCLEX_MXILINX_inputProcessor 1513291202 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FTCLEX_MXILINX_inputProcessor/BEHAVIORAL 1513291203 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      EN work/FTCLEX_MXILINX_inputProcessor 1513291202 \
+      CP M2_1_MXILINX_inputProcessor CP XOR2 CP FDCE
+EN work/CB2CLED_MXILINX_inputProcessor 1513291204 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CB2CLED_MXILINX_inputProcessor/BEHAVIORAL 1513291205 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      EN work/CB2CLED_MXILINX_inputProcessor 1513291204 \
+      CP FTCLEX_MXILINX_inputProcessor CP M2_1_MXILINX_inputProcessor \
+      CP M2_1B1_MXILINX_inputProcessor CP VCC CP AND2B2 CP AND2 CP OR2
+EN work/FD4CE_MXILINX_inputProcessor 1513291206 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD4CE_MXILINX_inputProcessor/BEHAVIORAL 1513291207 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      EN work/FD4CE_MXILINX_inputProcessor 1513291206 CP FDCE
+EN work/inputProcessor 1513291208 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/inputProcessor/BEHAVIORAL 1513291209 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.vhf" \
+      EN work/inputProcessor 1513291208 CP CB2CLED_MXILINX_inputProcessor \
+      CP FD4CE_MXILINX_inputProcessor CP AND2 CP INV CP M2_1_MXILINX_inputProcessor \
+      CP D4_16E_MXILINX_inputProcessor CP Decoder
+FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/sevenSeg.vhf" 2017/12/14.14:18:45 P.20131013
+EN work/sevenSeg 1513290526 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/sevenSeg.vhf" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/sevenSeg/BEHAVIORAL 1513290527 \
+      FL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/sevenSeg.vhf" \
+      EN work/sevenSeg 1513290526 CP PULLUP CP DCM_50M CP sel_strobeB CP bin2BCD3en \
+      CP SSD_1dig CP mux4SSD

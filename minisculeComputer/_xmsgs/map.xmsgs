@@ -5,7 +5,7 @@
      behavior or data corruption.  It is strongly advised that
      users do not edit the contents of this file. -->
 <messages>
-<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">writeToMM</arg> has no load.
+<msg type="info" file="LIT" num="243" delta="old" >Logical network <arg fmt="%s" index="1">writeToMM_IBUF</arg> has no load.
 </msg>
 
 <msg type="info" file="LIT" num="395" delta="old" >The above <arg fmt="%s" index="1">info</arg> message is repeated <arg fmt="%d" index="2">36</arg> more times for the following (max. 5 shown):
@@ -44,8 +44,16 @@ To see the details of these <arg fmt="%s" index="4">info</arg> messages, please 
 </msg>
 
 <msg type="warning" file="Pack" num="249" delta="old" >The following adjacent carry multiplexers occupy different slice components.  The resulting carry chain will have suboptimal timing.
-	<arg fmt="%s" index="1">XLXI_159/XLXI_14/XLXI_82/Mcompar_cnt1M_cmp_ge0000_cy&lt;10&gt;</arg>
-	<arg fmt="%s" index="2">XLXI_159/XLXI_14/XLXI_82/Mcount_cnt1M_cy&lt;0&gt;</arg>
+	<arg fmt="%s" index="1">XLXI_163/XLXI_15/XLXI_82/Mcompar_cnt1M_cmp_ge0000_cy&lt;10&gt;</arg>
+	<arg fmt="%s" index="2">XLXI_163/XLXI_15/XLXI_82/Mcount_cnt1M_cy&lt;0&gt;</arg>
+</msg>
+
+<msg type="warning" file="Pack" num="249" delta="old" >The following adjacent carry multiplexers occupy different slice components.  The resulting carry chain will have suboptimal timing.
+	<arg fmt="%s" index="1">XLXI_162/XLXI_42/Mcompar_cnt1M_cmp_ge0000_cy&lt;10&gt;</arg>
+	<arg fmt="%s" index="2">XLXI_162/XLXI_42/Mcount_cnt1M_cy&lt;0&gt;</arg>
+</msg>
+
+<msg type="warning" file="PhysDesignRules" num="367" delta="old" >The signal &lt;<arg fmt="%s" index="1">writeToMM_IBUF</arg>&gt; is incomplete. The signal does not drive any load pins in the design.
 </msg>
 
 </messages>

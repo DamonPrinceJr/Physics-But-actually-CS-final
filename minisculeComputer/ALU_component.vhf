@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : ALU_component.vhf
--- /___/   /\     Timestamp : 12/14/2017 09:23:47
+-- /___/   /\     Timestamp : 12/14/2017 12:17:33
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/ALU_component.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/ALU/ALU_component/ALU_component.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/ALU_component.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/ALU/ALU_component/ALU_component.sch"
 --Design Name: ALU_component
 --Device: spartan3e
 --Purpose:
@@ -417,7 +417,7 @@ architecture BEHAVIORAL of ALU_component is
              S   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_11";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_186";
 begin
    XLXI_2 : signConverter2
       port map (number(7 downto 0)=>A_in(7 downto 0),

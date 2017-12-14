@@ -22,20 +22,60 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="programCounter.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="DCM_50M.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="DCM_50M.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="programCounter.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="programCounter.cmd_log"/>
     <file xil_pn:fileType="FILE_JHD" xil_pn:name="programCounter.jhd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="programCounter.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="programCounter.ncd" xil_pn:subbranch="Par"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="programCounter.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="programCounter.ngd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="programCounter.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="programCounter.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="programCounter.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="programCounter.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="programCounter.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="programCounter.ptwx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="programCounter.stx"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="programCounter.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="programCounter.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="programCounter.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="programCounter.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="programCounter.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VERILOG" xil_pn:name="programCounter.vf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="programCounter.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="programCounter.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="programCounter_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="programCounter_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="programCounter_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="programCounter_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="programCounter_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="programCounter_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="programCounter_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="programCounter_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="programCounter_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="programCounter_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="programCounter_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="programCounter_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="programCounter_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="programCounter_usage.xml"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="programCounter_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="programCounter_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="programcounter.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="programcounter.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="programcounter.drc" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
@@ -44,7 +84,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1513210417" xil_pn:in_ck="-3330402324804709980" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="4204887221126595953" xil_pn:start_ts="1513210415">
+    <transform xil_pn:end_ts="1513291481" xil_pn:in_ck="-3330402324804709980" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="4204887221126595953" xil_pn:start_ts="1513291478">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="programCounter.vf"/>
@@ -69,10 +109,12 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1513210424" xil_pn:in_ck="-659913527227704798" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-3086592502708579155" xil_pn:start_ts="1513210417">
+    <transform xil_pn:end_ts="1513291488" xil_pn:in_ck="-1047331225783759630" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="-3086592502708579155" xil_pn:start_ts="1513291481">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="programCounter.jhd"/>
       <outfile xil_pn:name="programCounter.lso"/>
@@ -82,9 +124,76 @@
       <outfile xil_pn:name="programCounter.stx"/>
       <outfile xil_pn:name="programCounter.syr"/>
       <outfile xil_pn:name="programCounter.xst"/>
+      <outfile xil_pn:name="programCounter_vhdl.prj"/>
       <outfile xil_pn:name="programCounter_xst.xrpt"/>
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
+    </transform>
+    <transform xil_pn:end_ts="1513291645" xil_pn:in_ck="777197331792992121" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="-2994910276989654822" xil_pn:start_ts="1513291645">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1513291650" xil_pn:in_ck="5783381101372312471" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-870068350298840131" xil_pn:start_ts="1513291645">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="programCounter.bld"/>
+      <outfile xil_pn:name="programCounter.ngd"/>
+      <outfile xil_pn:name="programCounter_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1513291653" xil_pn:in_ck="68523708371188216" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1513291650">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="programCounter.pcf"/>
+      <outfile xil_pn:name="programCounter_map.map"/>
+      <outfile xil_pn:name="programCounter_map.mrp"/>
+      <outfile xil_pn:name="programCounter_map.ncd"/>
+      <outfile xil_pn:name="programCounter_map.ngm"/>
+      <outfile xil_pn:name="programCounter_map.xrpt"/>
+      <outfile xil_pn:name="programCounter_summary.xml"/>
+      <outfile xil_pn:name="programCounter_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1513291662" xil_pn:in_ck="5980285672375408625" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="1934304854298957634" xil_pn:start_ts="1513291653">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="programCounter.ncd"/>
+      <outfile xil_pn:name="programCounter.pad"/>
+      <outfile xil_pn:name="programCounter.par"/>
+      <outfile xil_pn:name="programCounter.ptwx"/>
+      <outfile xil_pn:name="programCounter.unroutes"/>
+      <outfile xil_pn:name="programCounter.xpi"/>
+      <outfile xil_pn:name="programCounter_pad.csv"/>
+      <outfile xil_pn:name="programCounter_pad.txt"/>
+      <outfile xil_pn:name="programCounter_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1513291668" xil_pn:in_ck="-3330402324804715429" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="-7817169320884990698" xil_pn:start_ts="1513291662">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="programCounter.ut"/>
+      <outfile xil_pn:name="programcounter.bgn"/>
+      <outfile xil_pn:name="programcounter.bit"/>
+      <outfile xil_pn:name="programcounter.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1513291674" xil_pn:in_ck="-3281391797276265915" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="5582947192412673156" xil_pn:start_ts="1513291668">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1513291662" xil_pn:in_ck="-1886807437572026380" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1513291660">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="programCounter.twr"/>
+      <outfile xil_pn:name="programCounter.twx"/>
     </transform>
   </transforms>
 

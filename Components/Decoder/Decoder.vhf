@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Decoder.vhf
--- /___/   /\     Timestamp : 12/14/2017 07:31:37
+-- /___/   /\     Timestamp : 12/14/2017 12:13:22
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.sch"
 --Design Name: Decoder
 --Device: spartan3e
 --Purpose:
@@ -29,7 +29,9 @@ entity Decoder is
    port ( En         : in    std_logic; 
           row        : in    std_logic_vector (3 downto 0); 
           SYS_CLK    : in    std_logic; 
+          anO        : out   std_logic_vector (3 downto 0); 
           binDisplay : out   std_logic_vector (3 downto 0); 
+          dpO        : out   std_logic; 
           keyO       : out   std_logic; 
           colO       : inout std_logic_vector (3 downto 0));
 end Decoder;
@@ -130,8 +132,8 @@ begin
                 hexD(3 downto 0)=>XLXN_9(3 downto 0),
                 rb_in=>keyO_DUMMY,
                 sel(0 to 1)=>XLXN_14(0 to 1),
-                anO=>open,
-                dpO=>open,
+                anO(3 downto 0)=>anO(3 downto 0),
+                dpO=>dpO,
                 hexO(3 downto 0)=>binDisplay(3 downto 0));
    
    XLXI_5 : bin2BCD3en

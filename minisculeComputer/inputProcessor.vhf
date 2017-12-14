@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : inputProcessor.vhf
--- /___/   /\     Timestamp : 12/14/2017 09:39:48
+-- /___/   /\     Timestamp : 12/14/2017 13:01:06
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/inputProcessor.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/inputProcessor/inputProcessor/inputProcessor.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/inputProcessor.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/inputProcessor/inputProcessor/inputProcessor.sch"
 --Design Name: inputProcessor
 --Device: spartan3e
 --Purpose:
@@ -398,7 +398,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_inputProcessor is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_2";
+   attribute HU_SET of I_36_30 : label is "I_36_30_0";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -507,10 +507,10 @@ architecture BEHAVIORAL of CB2CLED_MXILINX_inputProcessor is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_4";
-   attribute HU_SET of I_Q1 : label is "I_Q1_3";
-   attribute HU_SET of I_TC : label is "I_TC_5";
-   attribute HU_SET of I_T1 : label is "I_T1_6";
+   attribute HU_SET of I_Q0 : label is "I_Q0_2";
+   attribute HU_SET of I_Q1 : label is "I_Q1_1";
+   attribute HU_SET of I_TC : label is "I_TC_3";
+   attribute HU_SET of I_T1 : label is "I_T1_4";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -756,22 +756,22 @@ architecture BEHAVIORAL of inputProcessor is
              D9  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_12";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_8";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_9";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_10";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_11";
-   attribute HU_SET of XLXI_18 : label is "XLXI_18_7";
-   attribute HU_SET of XLXI_158 : label is "XLXI_158_13";
-   attribute HU_SET of XLXI_159 : label is "XLXI_159_14";
-   attribute HU_SET of XLXI_160 : label is "XLXI_160_15";
-   attribute HU_SET of XLXI_161 : label is "XLXI_161_16";
-   attribute HU_SET of XLXI_162 : label is "XLXI_162_20";
-   attribute HU_SET of XLXI_163 : label is "XLXI_163_17";
-   attribute HU_SET of XLXI_164 : label is "XLXI_164_18";
-   attribute HU_SET of XLXI_165 : label is "XLXI_165_19";
-   attribute HU_SET of XLXI_306 : label is "XLXI_306_22";
-   attribute HU_SET of XLXI_307 : label is "XLXI_307_21";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_10";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_6";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_7";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_8";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_9";
+   attribute HU_SET of XLXI_18 : label is "XLXI_18_5";
+   attribute HU_SET of XLXI_158 : label is "XLXI_158_11";
+   attribute HU_SET of XLXI_159 : label is "XLXI_159_12";
+   attribute HU_SET of XLXI_160 : label is "XLXI_160_13";
+   attribute HU_SET of XLXI_161 : label is "XLXI_161_14";
+   attribute HU_SET of XLXI_162 : label is "XLXI_162_18";
+   attribute HU_SET of XLXI_163 : label is "XLXI_163_15";
+   attribute HU_SET of XLXI_164 : label is "XLXI_164_16";
+   attribute HU_SET of XLXI_165 : label is "XLXI_165_17";
+   attribute HU_SET of XLXI_306 : label is "XLXI_306_20";
+   attribute HU_SET of XLXI_307 : label is "XLXI_307_19";
 begin
    XLXN_365 <= '1';
    immediate(7 downto 0) <= immediate_DUMMY(7 downto 0);

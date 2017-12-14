@@ -1,0 +1,7 @@
+MODULE ALU_component
+	SUBMODULE signConverter2
+		INSTANCE XLXI_2
+	SUBMODULE signConverter2
+		INSTANCE XLXI_3
+	SUBMODULE signConverter2
+		INSTANCE XLXI_6

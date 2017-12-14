@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym Decoder {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/Decoder/Decoder.sch} {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/Decoder.sym} 

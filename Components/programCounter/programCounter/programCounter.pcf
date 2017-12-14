@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 14 14:47:32 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SYS_CLK" LOCATE = SITE "B8" LEVEL 1;
+COMP "MODE" LOCATE = SITE "N3" LEVEL 1;
+COMP "pc_counter<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "pc_counter<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "pc_counter<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "pc_counter<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "pc_counter<4>" LOCATE = SITE "N5" LEVEL 1;
+COMP "pc_counter<5>" LOCATE = SITE "N4" LEVEL 1;
+COMP "pc_counter<6>" LOCATE = SITE "P4" LEVEL 1;
+COMP "pc_counter<7>" LOCATE = SITE "G1" LEVEL 1;
+NET "SYS_CLK_BUFGP/IBUFG" BEL "SYS_CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

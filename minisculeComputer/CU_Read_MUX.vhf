@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : CU_Read_MUX.vhf
--- /___/   /\     Timestamp : 12/13/2017 16:23:40
+-- /___/   /\     Timestamp : 12/14/2017 12:17:28
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read_MUX.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Read_MUX/CU_Read_MUX/CU_Read_MUX.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read_MUX.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Read_MUX/CU_Read_MUX/CU_Read_MUX.sch"
 --Design Name: CU_Read_MUX
 --Device: spartan3e
 --Purpose:
@@ -120,8 +120,8 @@ architecture BEHAVIORAL of M4_1E_MXILINX_CU_Read_MUX is
    end component;
    attribute BOX_TYPE of MUXF5 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_M01 : label is "I_M01_1";
-   attribute HU_SET of I_M23 : label is "I_M23_0";
+   attribute HU_SET of I_M01 : label is "I_M01_62";
+   attribute HU_SET of I_M23 : label is "I_M23_61";
 begin
    I_M01 : M2_1E_MXILINX_CU_Read_MUX
       port map (D0=>D0,
@@ -192,14 +192,14 @@ architecture BEHAVIORAL of CU_Read_MUX is
    end component;
    attribute BOX_TYPE of INV : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_2";
-   attribute HU_SET of XLXI_11 : label is "XLXI_11_3";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_4";
-   attribute HU_SET of XLXI_16 : label is "XLXI_16_5";
-   attribute HU_SET of XLXI_19 : label is "XLXI_19_6";
-   attribute HU_SET of XLXI_20 : label is "XLXI_20_7";
-   attribute HU_SET of XLXI_21 : label is "XLXI_21_8";
-   attribute HU_SET of XLXI_22 : label is "XLXI_22_9";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_63";
+   attribute HU_SET of XLXI_11 : label is "XLXI_11_64";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_65";
+   attribute HU_SET of XLXI_16 : label is "XLXI_16_66";
+   attribute HU_SET of XLXI_19 : label is "XLXI_19_67";
+   attribute HU_SET of XLXI_20 : label is "XLXI_20_68";
+   attribute HU_SET of XLXI_21 : label is "XLXI_21_69";
+   attribute HU_SET of XLXI_22 : label is "XLXI_22_70";
 begin
    ZERO <= '0';
    XLXI_1 : OR2

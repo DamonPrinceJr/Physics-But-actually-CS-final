@@ -8,6 +8,13 @@
       <ClosedNodes>
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/MM_Decode_MUX C:|Users|Vason|Documents|GitHub|Physics-But-actually-CS-final|Components|MM_Decode_MUX|MM_Decode_MUX|MM_Decode_MUX.sch/XLXI_28 - MM_signal_MUX</ClosedNode>
+         <ClosedNode>/minisculComputer C:|Users|Big D|Documents|GitHub|Physics-But-actually-CS-final|minisculeComputer|minisculComputer.sch/XLXI_10 - MM_signal_MUX</ClosedNode>
+         <ClosedNode>/minisculComputer C:|Users|Big D|Documents|GitHub|Physics-But-actually-CS-final|minisculeComputer|minisculComputer.sch/XLXI_11 - MM_signal_MUX</ClosedNode>
+         <ClosedNode>/minisculComputer C:|Users|Big D|Documents|GitHub|Physics-But-actually-CS-final|minisculeComputer|minisculComputer.sch/XLXI_158 - ALU_component</ClosedNode>
+         <ClosedNode>/minisculComputer C:|Users|Big D|Documents|GitHub|Physics-But-actually-CS-final|minisculeComputer|minisculComputer.sch/XLXI_159 - DisplayModule/XLXI_14 - sevenSeg</ClosedNode>
+         <ClosedNode>/minisculComputer C:|Users|Big D|Documents|GitHub|Physics-But-actually-CS-final|minisculeComputer|minisculComputer.sch/XLXI_162 - programCounter</ClosedNode>
+         <ClosedNode>/minisculComputer C:|Users|Big D|Documents|GitHub|Physics-But-actually-CS-final|minisculeComputer|minisculComputer.sch/XLXI_163 - DisplayModule</ClosedNode>
+         <ClosedNode>/minisculComputer C:|Users|Big D|Documents|GitHub|Physics-But-actually-CS-final|minisculeComputer|minisculComputer.sch/XLXI_8 - MainMemory</ClosedNode>
          <ClosedNode>/minisculComputer C:|Users|Vason|Documents|GitHub|Physics-But-actually-CS-final|minisculeComputer|minisculComputer.sch/XLXI_10 - MM_signal_MUX</ClosedNode>
          <ClosedNode>/minisculComputer C:|Users|Vason|Documents|GitHub|Physics-But-actually-CS-final|minisculeComputer|minisculComputer.sch/XLXI_11 - MM_signal_MUX</ClosedNode>
          <ClosedNode>/minisculComputer C:|Users|Vason|Documents|GitHub|Physics-But-actually-CS-final|minisculeComputer|minisculComputer.sch/XLXI_158 - ALU_component</ClosedNode>
@@ -16,14 +23,12 @@
          <ClosedNode>/minisculComputer C:|Users|Vason|Documents|GitHub|Physics-But-actually-CS-final|minisculeComputer|minisculComputer.sch/XLXI_85 - DisplayModule</ClosedNode>
          <ClosedNode>/minisculComputer C:|Users|Vason|Documents|GitHub|Physics-But-actually-CS-final|minisculeComputer|minisculComputer.sch/XLXI_85 - DisplayModule/XLXI_14 - sevenSeg</ClosedNode>
       </ClosedNodes>
-      <SelectedItems>
-         <SelectedItem>minisculComputer (C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/minisculComputer.sch)</SelectedItem>
-      </SelectedItems>
+      <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000016b000000020000000000000000000000000200000064ffffffff0000008100000003000000020000016b0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>minisculComputer (C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/minisculComputer.sch)</CurrentItem>
+      <CurrentItem>XLXI_2 - CU_Misc (C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Misc/CU_Misc/CU_Misc.sch)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -31,13 +36,13 @@
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView guiview="File" >
       <ClosedNodes>
@@ -67,7 +72,6 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Design Utilities/Compile HDL Simulation Libraries</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>Synthesize - XST</ClosedNode>
@@ -100,20 +104,6 @@
          <ClosedNodesVersion>1</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
-      </SelectedItems>
-      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
-      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
-      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
-   </ItemView>
-   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
-      <ClosedNodes>
-         <ClosedNodesVersion>1</ClosedNodesVersion>
-         <ClosedNode>User Constraints</ClosedNode>
-      </ClosedNodes>
-      <SelectedItems>
          <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
@@ -121,5 +111,18 @@
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem></CurrentItem>
+   </ItemView>
+   <ItemView engineview="SynthesisOnly" sourcetype="DESUT_UCF" guiview="Process" >
+      <ClosedNodes>
+         <ClosedNodesVersion>1</ClosedNodesVersion>
+      </ClosedNodes>
+      <SelectedItems>
+         <SelectedItem>User Constraints</SelectedItem>
+      </SelectedItems>
+      <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
+      <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
+      <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000000f8000000010000000100000000000000000000000064ffffffff000000810000000000000001000000f80000000100000000</ViewHeaderState>
+      <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
+      <CurrentItem>User Constraints</CurrentItem>
    </ItemView>
 </Project>

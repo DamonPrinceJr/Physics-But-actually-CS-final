@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : Mem32xBank.vhf
--- /___/   /\     Timestamp : 12/13/2017 15:32:00
+-- /___/   /\     Timestamp : 12/14/2017 12:17:32
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Mem32xBank.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/32x8Bank/Mem32x8Bank/Mem32xBank.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Mem32xBank.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/32x8Bank/Mem32x8Bank/Mem32xBank.sch"
 --Design Name: Mem32xBank
 --Device: spartan3e
 --Purpose:
@@ -130,38 +130,38 @@ architecture BEHAVIORAL of Mem32xBank is
              Q   : out   std_logic_vector (7 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_2";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_3";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_4";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_5";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_6";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_7";
-   attribute HU_SET of XLXI_33 : label is "XLXI_33_10";
-   attribute HU_SET of XLXI_34 : label is "XLXI_34_31";
-   attribute HU_SET of XLXI_35 : label is "XLXI_35_30";
-   attribute HU_SET of XLXI_36 : label is "XLXI_36_29";
-   attribute HU_SET of XLXI_37 : label is "XLXI_37_28";
-   attribute HU_SET of XLXI_38 : label is "XLXI_38_27";
-   attribute HU_SET of XLXI_39 : label is "XLXI_39_26";
-   attribute HU_SET of XLXI_40 : label is "XLXI_40_25";
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_8";
-   attribute HU_SET of XLXI_42 : label is "XLXI_42_17";
-   attribute HU_SET of XLXI_43 : label is "XLXI_43_16";
-   attribute HU_SET of XLXI_44 : label is "XLXI_44_15";
-   attribute HU_SET of XLXI_45 : label is "XLXI_45_14";
-   attribute HU_SET of XLXI_46 : label is "XLXI_46_13";
-   attribute HU_SET of XLXI_47 : label is "XLXI_47_12";
-   attribute HU_SET of XLXI_48 : label is "XLXI_48_11";
-   attribute HU_SET of XLXI_49 : label is "XLXI_49_9";
-   attribute HU_SET of XLXI_50 : label is "XLXI_50_24";
-   attribute HU_SET of XLXI_51 : label is "XLXI_51_23";
-   attribute HU_SET of XLXI_52 : label is "XLXI_52_22";
-   attribute HU_SET of XLXI_53 : label is "XLXI_53_21";
-   attribute HU_SET of XLXI_54 : label is "XLXI_54_20";
-   attribute HU_SET of XLXI_55 : label is "XLXI_55_19";
-   attribute HU_SET of XLXI_56 : label is "XLXI_56_18";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_152";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_153";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_154";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_155";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_156";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_157";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_158";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_159";
+   attribute HU_SET of XLXI_33 : label is "XLXI_33_162";
+   attribute HU_SET of XLXI_34 : label is "XLXI_34_183";
+   attribute HU_SET of XLXI_35 : label is "XLXI_35_182";
+   attribute HU_SET of XLXI_36 : label is "XLXI_36_181";
+   attribute HU_SET of XLXI_37 : label is "XLXI_37_180";
+   attribute HU_SET of XLXI_38 : label is "XLXI_38_179";
+   attribute HU_SET of XLXI_39 : label is "XLXI_39_178";
+   attribute HU_SET of XLXI_40 : label is "XLXI_40_177";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_160";
+   attribute HU_SET of XLXI_42 : label is "XLXI_42_169";
+   attribute HU_SET of XLXI_43 : label is "XLXI_43_168";
+   attribute HU_SET of XLXI_44 : label is "XLXI_44_167";
+   attribute HU_SET of XLXI_45 : label is "XLXI_45_166";
+   attribute HU_SET of XLXI_46 : label is "XLXI_46_165";
+   attribute HU_SET of XLXI_47 : label is "XLXI_47_164";
+   attribute HU_SET of XLXI_48 : label is "XLXI_48_163";
+   attribute HU_SET of XLXI_49 : label is "XLXI_49_161";
+   attribute HU_SET of XLXI_50 : label is "XLXI_50_176";
+   attribute HU_SET of XLXI_51 : label is "XLXI_51_175";
+   attribute HU_SET of XLXI_52 : label is "XLXI_52_174";
+   attribute HU_SET of XLXI_53 : label is "XLXI_53_173";
+   attribute HU_SET of XLXI_54 : label is "XLXI_54_172";
+   attribute HU_SET of XLXI_55 : label is "XLXI_55_171";
+   attribute HU_SET of XLXI_56 : label is "XLXI_56_170";
 begin
    XLXI_1 : FD8CE_MXILINX_Mem32xBank
       port map (C=>CLK,

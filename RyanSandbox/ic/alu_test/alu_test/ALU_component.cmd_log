@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym ALU_component {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/ALU/ALU_component/ALU_component.sch} {C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/alu_test/alu_test/ALU_component.sym} 

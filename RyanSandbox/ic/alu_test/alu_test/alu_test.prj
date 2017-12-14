@@ -1,0 +1,3 @@
+vhdl work "signConverter2.vhf"
+vhdl work "ALU_component.vhf"
+vhdl work "alu_test.vhf"

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/alu_test/alu_test/alu_test.vhf</arg>&quot; line <arg fmt="%d" index="2">160</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Overflow</arg>&apos; of component &apos;<arg fmt="%s" index="4">ALU_component</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/alu_test/alu_test/alu_test.vhf</arg>&quot; line <arg fmt="%d" index="2">160</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">Carryout</arg>&apos; of component &apos;<arg fmt="%s" index="4">ALU_component</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/alu_test/alu_test/ALU_component.vhf</arg>&quot; line <arg fmt="%d" index="2">422</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">compliment</arg>&apos; of component &apos;<arg fmt="%s" index="4">signConverter2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/alu_test/alu_test/ALU_component.vhf</arg>&quot; line <arg fmt="%d" index="2">428</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">compliment</arg>&apos; of component &apos;<arg fmt="%s" index="4">signConverter2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/alu_test/alu_test/ALU_component.vhf</arg>&quot; line <arg fmt="%d" index="2">443</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">compliment</arg>&apos; of component &apos;<arg fmt="%s" index="4">signConverter2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/alu_test/alu_test/signConverter2.vhf</arg>&quot; line <arg fmt="%d" index="2">493</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">CO</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_signConverter2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="new" >&quot;<arg fmt="%s" index="1">C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/alu_test/alu_test/signConverter2.vhf</arg>&quot; line <arg fmt="%d" index="2">493</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">OFL</arg>&apos; of component &apos;<arg fmt="%s" index="4">ADSU8_MXILINX_signConverter2</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">dummy</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_2_B_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">00000000</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_2_ADD_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_5_CI_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_3_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="653" delta="new" >Signal &lt;<arg fmt="%s" index="1">XLXI_2_CLR_openSignal</arg>&gt; is used but never assigned. This sourceless signal will be automatically connected to value <arg fmt="%s" index="2">0</arg>.
+</msg>
+
+</messages>
+

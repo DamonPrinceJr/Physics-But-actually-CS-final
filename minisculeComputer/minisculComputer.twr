@@ -45,7 +45,7 @@ Setup/Hold to clock SYS_CLK
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-MODE        |    1.695(R)|    0.524(R)|SYS_CLK_BUFGP     |   0.000|
+MODE        |    4.453(R)|   -1.545(R)|SYS_CLK_BUFGP     |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Setup/Hold to clock writeToTemp
@@ -53,7 +53,7 @@ Setup/Hold to clock writeToTemp
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-MODE        |    1.619(R)|    0.376(R)|writeToTemp_BUFGP |   0.000|
+MODE        |    2.181(R)|   -0.111(R)|writeToTemp_BUFGP |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock to Setup on destination clock SYS_CLK
@@ -61,7 +61,7 @@ Clock to Setup on destination clock SYS_CLK
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SYS_CLK        |   12.693|         |         |         |
+SYS_CLK        |   12.291|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 Clock to Setup on destination clock writeToTemp
@@ -69,19 +69,19 @@ Clock to Setup on destination clock writeToTemp
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-SYS_CLK        |    3.081|         |         |         |
-writeToTemp    |    3.654|         |         |         |
+SYS_CLK        |    3.718|         |         |         |
+writeToTemp    |    3.289|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Dec 14 09:58:27 2017 
+Analysis completed Thu Dec 14 13:09:00 2017 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 169 MB
+Peak Memory Usage: 166 MB
 
 
 

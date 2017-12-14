@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : CU_Misc.vhf
--- /___/   /\     Timestamp : 12/13/2017 16:18:14
+-- /___/   /\     Timestamp : 12/14/2017 14:18:00
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Misc.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Misc/CU_Misc/CU_Misc.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Misc.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Misc/CU_Misc/CU_Misc.sch"
 --Design Name: CU_Misc
 --Device: spartan3e
 --Purpose:
@@ -234,6 +234,7 @@ end CU_Misc;
 architecture BEHAVIORAL of CU_Misc is
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
+   signal RUN_MODE   : std_logic;
    signal XLXN_3     : std_logic;
    signal XLXN_24    : std_logic;
    signal XLXN_45    : std_logic;
@@ -286,10 +287,10 @@ architecture BEHAVIORAL of CU_Misc is
    end component;
    attribute BOX_TYPE of AND2 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_11 : label is "XLXI_11_33";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_34";
-   attribute HU_SET of XLXI_15 : label is "XLXI_15_35";
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_36";
+   attribute HU_SET of XLXI_11 : label is "XLXI_11_0";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_1";
+   attribute HU_SET of XLXI_15 : label is "XLXI_15_2";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_3";
 begin
    XLXI_4 : INV
       port map (I=>IR(0),
@@ -338,7 +339,7 @@ begin
                 O=>XLXN_92);
    
    XLXI_19 : AND2
-      port map (I0=>MODE,
+      port map (I0=>RUN_MODE,
                 I1=>XLXN_92,
                 O=>XLXN_45);
    
@@ -354,19 +355,23 @@ begin
                 O=>XLXN_94);
    
    XLXI_25 : AND2
-      port map (I0=>MODE,
+      port map (I0=>RUN_MODE,
                 I1=>XLXN_94,
                 O=>XLXN_46);
    
    XLXI_28 : AND2
-      port map (I0=>MODE,
+      port map (I0=>RUN_MODE,
                 I1=>XLXN_118,
                 O=>RESET_PC);
    
    XLXI_29 : AND2
-      port map (I0=>MODE,
+      port map (I0=>RUN_MODE,
                 I1=>XLXN_129,
                 O=>DISABLE_PC);
+   
+   XLXI_30 : INV
+      port map (I=>MODE,
+                O=>RUN_MODE);
    
 end BEHAVIORAL;
 

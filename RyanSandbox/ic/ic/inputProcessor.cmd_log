@@ -1,0 +1,29 @@
+xst -intstyle ise -ifn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.xst" -ofn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ic.ucf -p xc3s100e-cp132-4 "inputProcessor.ngc" inputProcessor.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o inputProcessor_map.ncd inputProcessor.ngd inputProcessor.pcf 
+xst -intstyle ise -ifn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.xst" -ofn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ic.ucf -p xc3s1200e-ft256-4 "inputProcessor.ngc" inputProcessor.ngd  
+map -intstyle ise -p xc3s1200e-ft256-4 -cm area -ir off -pr off -c 100 -o inputProcessor_map.ncd inputProcessor.ngd inputProcessor.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ic.ucf -p xc3s1200e-ft256-4 "inputProcessor.ngc" inputProcessor.ngd  
+map -intstyle ise -p xc3s1200e-ft256-4 -cm area -ir off -pr off -c 100 -o inputProcessor_map.ncd inputProcessor.ngd inputProcessor.pcf 
+xst -intstyle ise -ifn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.xst" -ofn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.syr" 
+xst -intstyle ise -ifn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.xst" -ofn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.syr" 
+xst -intstyle ise -ifn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.xst" -ofn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.syr" 
+xst -intstyle ise -ifn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.xst" -ofn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ic.ucf -p xc3s250e-cp132-4 "inputProcessor.ngc" inputProcessor.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o inputProcessor_map.ncd inputProcessor.ngd inputProcessor.pcf 
+par -w -intstyle ise -ol high -t 1 inputProcessor_map.ncd inputProcessor.ncd inputProcessor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml inputProcessor.twx inputProcessor.ncd -o inputProcessor.twr inputProcessor.pcf -ucf ic.ucf 
+bitgen -intstyle ise -f inputProcessor.ut inputProcessor.ncd 
+xst -intstyle ise -ifn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.xst" -ofn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ic.ucf -p xc3s250e-cp132-4 "inputProcessor.ngc" inputProcessor.ngd  
+map -intstyle ise -p xc3s250e-cp132-4 -cm area -ir off -pr off -c 100 -o inputProcessor_map.ncd inputProcessor.ngd inputProcessor.pcf 
+par -w -intstyle ise -ol high -t 1 inputProcessor_map.ncd inputProcessor.ncd inputProcessor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml inputProcessor.twx inputProcessor.ncd -o inputProcessor.twr inputProcessor.pcf -ucf ic.ucf 
+bitgen -intstyle ise -f inputProcessor.ut inputProcessor.ncd 
+xst -intstyle ise -ifn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.xst" -ofn "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/ic/ic/inputProcessor.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc ic.ucf -p xc3s100e-cp132-4 "inputProcessor.ngc" inputProcessor.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o inputProcessor_map.ncd inputProcessor.ngd inputProcessor.pcf 
+par -w -intstyle ise -ol high -t 1 inputProcessor_map.ncd inputProcessor.ncd inputProcessor.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml inputProcessor.twx inputProcessor.ncd -o inputProcessor.twr inputProcessor.pcf -ucf ic.ucf 
+bitgen -intstyle ise -f inputProcessor.ut inputProcessor.ncd 

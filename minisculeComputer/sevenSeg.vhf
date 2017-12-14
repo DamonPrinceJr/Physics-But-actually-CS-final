@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : sevenSeg.vhf
--- /___/   /\     Timestamp : 12/13/2017 15:32:04
+-- /___/   /\     Timestamp : 12/14/2017 12:40:33
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/sevenSeg.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/SevenSeg/sevenSeg.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/sevenSeg.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/SevenSeg/sevenSeg.sch"
 --Design Name: sevenSeg
 --Device: spartan3e
 --Purpose:
@@ -105,9 +105,9 @@ begin
       port map (CLK=>SYS_CLK,
                 RST=>XLXN_220,
                 CLK1=>open,
-                CLK1k=>XLXN_3,
+                CLK1k=>open,
                 CLK1M=>open,
-                CLK10k=>open);
+                CLK10k=>XLXN_3);
    
    XLXI_83 : sel_strobeB
       port map (clk=>XLXN_3,

@@ -1,6 +1,8 @@
-MO M2_1B1_MXILINX_programCounter NULL programCounter.vf vlg55/_m2__1_b1___m_x_i_l_i_n_x__program_counter.bin 1513210419
-MO CB8CLE_MXILINX_programCounter NULL programCounter.vf vlg34/_c_b8_c_l_e___m_x_i_l_i_n_x__program_counter.bin 1513210419
-MO CB2CLED_MXILINX_programCounter NULL programCounter.vf vlg7E/_c_b2_c_l_e_d___m_x_i_l_i_n_x__program_counter.bin 1513210419
-MO M2_1_MXILINX_programCounter NULL programCounter.vf vlg6E/_m2__1___m_x_i_l_i_n_x__program_counter.bin 1513210419
-MO programCounter NULL programCounter.vf vlg18/program_counter.bin 1513210419
-MO FTCLEX_MXILINX_programCounter NULL programCounter.vf vlg61/_f_t_c_l_e_x___m_x_i_l_i_n_x__program_counter.bin 1513210419
+EN dcm_50m NULL "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" sub00/vhpl00 1513291483
+MO M2_1B1_MXILINX_programCounter NULL programCounter.vf vlg55/_m2__1_b1___m_x_i_l_i_n_x__program_counter.bin 1513291483
+MO CB8CLE_MXILINX_programCounter NULL programCounter.vf vlg34/_c_b8_c_l_e___m_x_i_l_i_n_x__program_counter.bin 1513291483
+MO CB2CLED_MXILINX_programCounter NULL programCounter.vf vlg7E/_c_b2_c_l_e_d___m_x_i_l_i_n_x__program_counter.bin 1513291483
+MO M2_1_MXILINX_programCounter NULL programCounter.vf vlg6E/_m2__1___m_x_i_l_i_n_x__program_counter.bin 1513291483
+MO programCounter NULL programCounter.vf vlg18/program_counter.bin 1513291483
+MO FTCLEX_MXILINX_programCounter NULL programCounter.vf vlg61/_f_t_c_l_e_x___m_x_i_l_i_n_x__program_counter.bin 1513291483
+AR dcm_50m behavioral "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" sub00/vhpl01 1513291484

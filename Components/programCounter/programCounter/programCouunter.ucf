@@ -1,0 +1,17 @@
+
+NET "MODE" LOC = N3;
+
+NET "pc_counter[0]" LOC = M5;
+NET "pc_counter[1]" LOC = M11;
+NET "pc_counter[2]" LOC = P7;
+NET "pc_counter[3]" LOC = P6;
+NET "pc_counter[4]" LOC = N5;
+NET "pc_counter[5]" LOC = N4;
+NET "pc_counter[6]" LOC = P4;
+NET "pc_counter[7]" LOC = G1;
+#NET "pc_timer[0]" LOC = n5;
+#NET "pc_timer[1]" LOC = n4;
+#NET "pc_timer[2]" LOC = p4;
+#NET "pc_timer[3]" LOC = g1;
+
+NET "SYS_CLK" LOC = B8;

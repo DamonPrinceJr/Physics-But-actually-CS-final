@@ -1,0 +1,287 @@
+--------------------------------------------------------------------------------
+Release 14.7 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+-n 3 -fastpaths -xml inputProcessor.twx inputProcessor.ncd -o
+inputProcessor.twr inputProcessor.pcf -ucf ic.ucf
+
+Design file:              inputProcessor.ncd
+Physical constraint file: inputProcessor.pcf
+Device,package,speed:     xc3s100e,cp132,-4 (PRODUCTION 1.27 2013-10-13)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Setup/Hold to clock writeToTemp
+------------+------------+------------+------------------+--------+
+            |Max Setup to|Max Hold to |                  | Clock  |
+Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
+------------+------------+------------+------------------+--------+
+MODE        |    0.986(R)|    0.609(R)|writeToTemp_BUFGP |   0.000|
+------------+------------+------------+------------------+--------+
+
+Clock SYS_CLK to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+temp<0>     |    8.019(R)|SYS_CLK_BUFGP     |   0.000|
+temp<1>     |    8.347(R)|SYS_CLK_BUFGP     |   0.000|
+temp<2>     |    8.038(R)|SYS_CLK_BUFGP     |   0.000|
+temp<3>     |    8.295(R)|SYS_CLK_BUFGP     |   0.000|
+------------+------------+------------------+--------+
+
+Clock writeToTemp to Pad
+--------------+------------+------------------+--------+
+              | clk (edge) |                  | Clock  |
+Destination   |   to PAD   |Internal Clock(s) | Phase  |
+--------------+------------+------------------+--------+
+displayData<0>|   10.604(R)|writeToTemp_BUFGP |   0.000|
+displayData<1>|    8.816(R)|writeToTemp_BUFGP |   0.000|
+displayData<2>|    8.802(R)|writeToTemp_BUFGP |   0.000|
+displayData<3>|   10.013(R)|writeToTemp_BUFGP |   0.000|
+displayData<4>|   10.252(R)|writeToTemp_BUFGP |   0.000|
+displayData<5>|    9.805(R)|writeToTemp_BUFGP |   0.000|
+displayData<6>|   10.371(R)|writeToTemp_BUFGP |   0.000|
+displayData<7>|    9.105(R)|writeToTemp_BUFGP |   0.000|
+immediate<0>  |    7.359(R)|writeToTemp_BUFGP |   0.000|
+immediate<1>  |    7.689(R)|writeToTemp_BUFGP |   0.000|
+immediate<2>  |    7.410(R)|writeToTemp_BUFGP |   0.000|
+immediate<3>  |    8.460(R)|writeToTemp_BUFGP |   0.000|
+immediate<4>  |    7.639(R)|writeToTemp_BUFGP |   0.000|
+immediate<5>  |    7.909(R)|writeToTemp_BUFGP |   0.000|
+immediate<6>  |    7.875(R)|writeToTemp_BUFGP |   0.000|
+immediate<7>  |    7.704(R)|writeToTemp_BUFGP |   0.000|
+opCode<0>     |    7.890(R)|writeToTemp_BUFGP |   0.000|
+opCode<1>     |    7.688(R)|writeToTemp_BUFGP |   0.000|
+opCode<2>     |    7.877(R)|writeToTemp_BUFGP |   0.000|
+opCode<3>     |    7.824(R)|writeToTemp_BUFGP |   0.000|
+opCode<4>     |    7.688(R)|writeToTemp_BUFGP |   0.000|
+opCode<5>     |    7.953(R)|writeToTemp_BUFGP |   0.000|
+opCode<6>     |    7.938(R)|writeToTemp_BUFGP |   0.000|
+opCode<7>     |    7.557(R)|writeToTemp_BUFGP |   0.000|
+--------------+------------+------------------+--------+
+
+Clock to Setup on destination clock SYS_CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SYS_CLK        |    8.300|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock writeToTemp
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+SYS_CLK        |    3.830|         |         |         |
+writeToTemp    |    3.773|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+switchAddr<0>  |MM_Byte<0>     |    8.249|
+switchAddr<0>  |MM_Byte<1>     |    8.506|
+switchAddr<0>  |MM_Byte<2>     |    6.981|
+switchAddr<0>  |MM_Byte<3>     |    6.475|
+switchAddr<0>  |MM_Byte<4>     |    6.056|
+switchAddr<0>  |MM_Byte<5>     |    6.730|
+switchAddr<0>  |MM_Byte<6>     |    6.957|
+switchAddr<0>  |MM_Byte<7>     |    6.730|
+switchAddr<0>  |MM_Byte<8>     |    6.986|
+switchAddr<0>  |MM_Byte<9>     |    6.992|
+switchAddr<0>  |MM_Byte<10>    |    7.242|
+switchAddr<0>  |MM_Byte<11>    |    6.767|
+switchAddr<0>  |MM_Byte<12>    |    6.828|
+switchAddr<0>  |MM_Byte<13>    |    7.022|
+switchAddr<0>  |MM_Byte<14>    |    7.144|
+switchAddr<0>  |MM_Byte<15>    |    8.061|
+switchAddr<0>  |MM_Byte<16>    |    9.900|
+switchAddr<0>  |MM_Byte<17>    |    9.724|
+switchAddr<0>  |MM_Byte<18>    |    8.148|
+switchAddr<0>  |MM_Byte<19>    |    9.037|
+switchAddr<0>  |MM_Byte<20>    |    7.034|
+switchAddr<0>  |MM_Byte<21>    |    7.228|
+switchAddr<0>  |MM_Byte<22>    |    8.985|
+switchAddr<0>  |MM_Byte<23>    |    8.100|
+switchAddr<0>  |MM_Byte<24>    |    9.229|
+switchAddr<0>  |MM_Byte<25>    |    9.167|
+switchAddr<0>  |MM_Byte<26>    |    7.731|
+switchAddr<0>  |MM_Byte<27>    |    9.766|
+switchAddr<0>  |MM_Byte<28>    |    6.914|
+switchAddr<0>  |MM_Byte<29>    |    6.779|
+switchAddr<0>  |MM_Byte<30>    |    7.750|
+switchAddr<0>  |MM_Byte<31>    |    8.110|
+switchAddr<1>  |MM_Byte<0>     |    7.998|
+switchAddr<1>  |MM_Byte<1>     |    7.682|
+switchAddr<1>  |MM_Byte<2>     |    6.571|
+switchAddr<1>  |MM_Byte<3>     |    6.660|
+switchAddr<1>  |MM_Byte<4>     |    6.478|
+switchAddr<1>  |MM_Byte<5>     |    6.706|
+switchAddr<1>  |MM_Byte<6>     |    7.023|
+switchAddr<1>  |MM_Byte<7>     |    6.706|
+switchAddr<1>  |MM_Byte<8>     |    7.023|
+switchAddr<1>  |MM_Byte<9>     |    6.863|
+switchAddr<1>  |MM_Byte<10>    |    7.416|
+switchAddr<1>  |MM_Byte<11>    |    7.318|
+switchAddr<1>  |MM_Byte<12>    |    7.988|
+switchAddr<1>  |MM_Byte<13>    |    7.794|
+switchAddr<1>  |MM_Byte<14>    |    7.525|
+switchAddr<1>  |MM_Byte<15>    |    6.930|
+switchAddr<1>  |MM_Byte<16>    |    9.370|
+switchAddr<1>  |MM_Byte<17>    |    9.803|
+switchAddr<1>  |MM_Byte<18>    |    9.060|
+switchAddr<1>  |MM_Byte<19>    |    8.207|
+switchAddr<1>  |MM_Byte<20>    |    7.463|
+switchAddr<1>  |MM_Byte<21>    |    7.076|
+switchAddr<1>  |MM_Byte<22>    |    9.543|
+switchAddr<1>  |MM_Byte<23>    |    7.722|
+switchAddr<1>  |MM_Byte<24>    |    7.975|
+switchAddr<1>  |MM_Byte<25>    |    9.246|
+switchAddr<1>  |MM_Byte<26>    |    7.964|
+switchAddr<1>  |MM_Byte<27>    |    8.032|
+switchAddr<1>  |MM_Byte<28>    |    6.498|
+switchAddr<1>  |MM_Byte<29>    |    6.742|
+switchAddr<1>  |MM_Byte<30>    |    7.980|
+switchAddr<1>  |MM_Byte<31>    |    7.153|
+switchAddr<2>  |MM_Byte<0>     |    8.174|
+switchAddr<2>  |MM_Byte<1>     |    8.174|
+switchAddr<2>  |MM_Byte<2>     |    8.231|
+switchAddr<2>  |MM_Byte<3>     |    7.111|
+switchAddr<2>  |MM_Byte<4>     |    7.235|
+switchAddr<2>  |MM_Byte<5>     |    7.274|
+switchAddr<2>  |MM_Byte<6>     |    7.539|
+switchAddr<2>  |MM_Byte<7>     |    7.274|
+switchAddr<2>  |MM_Byte<8>     |    8.008|
+switchAddr<2>  |MM_Byte<9>     |    6.956|
+switchAddr<2>  |MM_Byte<10>    |    7.832|
+switchAddr<2>  |MM_Byte<11>    |    6.919|
+switchAddr<2>  |MM_Byte<12>    |    7.451|
+switchAddr<2>  |MM_Byte<13>    |    7.451|
+switchAddr<2>  |MM_Byte<14>    |    6.325|
+switchAddr<2>  |MM_Byte<15>    |    7.801|
+switchAddr<2>  |MM_Byte<16>    |    8.038|
+switchAddr<2>  |MM_Byte<17>    |    8.303|
+switchAddr<2>  |MM_Byte<18>    |    8.658|
+switchAddr<2>  |MM_Byte<19>    |    8.290|
+switchAddr<2>  |MM_Byte<20>    |    7.840|
+switchAddr<2>  |MM_Byte<21>    |    7.423|
+switchAddr<2>  |MM_Byte<22>    |    7.147|
+switchAddr<2>  |MM_Byte<23>    |    6.413|
+switchAddr<2>  |MM_Byte<24>    |    8.768|
+switchAddr<2>  |MM_Byte<25>    |    7.746|
+switchAddr<2>  |MM_Byte<26>    |    7.933|
+switchAddr<2>  |MM_Byte<27>    |    8.588|
+switchAddr<2>  |MM_Byte<28>    |    8.213|
+switchAddr<2>  |MM_Byte<29>    |    7.119|
+switchAddr<2>  |MM_Byte<30>    |    7.949|
+switchAddr<2>  |MM_Byte<31>    |    7.795|
+switchAddr<3>  |MM_Byte<0>     |    7.136|
+switchAddr<3>  |MM_Byte<1>     |    7.196|
+switchAddr<3>  |MM_Byte<2>     |    7.756|
+switchAddr<3>  |MM_Byte<3>     |    8.192|
+switchAddr<3>  |MM_Byte<4>     |    8.119|
+switchAddr<3>  |MM_Byte<5>     |    8.153|
+switchAddr<3>  |MM_Byte<6>     |    7.425|
+switchAddr<3>  |MM_Byte<7>     |    8.153|
+switchAddr<3>  |MM_Byte<8>     |    7.484|
+switchAddr<3>  |MM_Byte<9>     |    8.813|
+switchAddr<3>  |MM_Byte<10>    |    7.747|
+switchAddr<3>  |MM_Byte<11>    |    8.795|
+switchAddr<3>  |MM_Byte<12>    |    8.923|
+switchAddr<3>  |MM_Byte<13>    |    8.923|
+switchAddr<3>  |MM_Byte<14>    |   10.054|
+switchAddr<3>  |MM_Byte<15>    |    7.334|
+switchAddr<3>  |MM_Byte<16>    |   11.119|
+switchAddr<3>  |MM_Byte<17>    |   11.373|
+switchAddr<3>  |MM_Byte<18>    |    7.560|
+switchAddr<3>  |MM_Byte<19>    |    6.944|
+switchAddr<3>  |MM_Byte<20>    |    7.824|
+switchAddr<3>  |MM_Byte<21>    |    7.880|
+switchAddr<3>  |MM_Byte<22>    |   10.778|
+switchAddr<3>  |MM_Byte<23>    |    9.771|
+switchAddr<3>  |MM_Byte<24>    |    6.980|
+switchAddr<3>  |MM_Byte<25>    |   10.816|
+switchAddr<3>  |MM_Byte<26>    |    6.998|
+switchAddr<3>  |MM_Byte<27>    |    7.588|
+switchAddr<3>  |MM_Byte<28>    |    7.574|
+switchAddr<3>  |MM_Byte<29>    |    8.967|
+switchAddr<3>  |MM_Byte<30>    |    7.014|
+switchAddr<3>  |MM_Byte<31>    |    7.401|
+switchAddr<4>  |MM_Byte<0>     |    8.196|
+switchAddr<4>  |MM_Byte<1>     |    8.196|
+switchAddr<4>  |MM_Byte<2>     |    8.133|
+switchAddr<4>  |MM_Byte<3>     |    7.427|
+switchAddr<4>  |MM_Byte<4>     |    7.409|
+switchAddr<4>  |MM_Byte<5>     |    7.142|
+switchAddr<4>  |MM_Byte<6>     |    7.866|
+switchAddr<4>  |MM_Byte<7>     |    7.142|
+switchAddr<4>  |MM_Byte<8>     |    7.866|
+switchAddr<4>  |MM_Byte<9>     |    7.708|
+switchAddr<4>  |MM_Byte<10>    |    7.491|
+switchAddr<4>  |MM_Byte<11>    |    7.526|
+switchAddr<4>  |MM_Byte<12>    |    7.811|
+switchAddr<4>  |MM_Byte<13>    |    7.811|
+switchAddr<4>  |MM_Byte<14>    |    8.066|
+switchAddr<4>  |MM_Byte<15>    |    7.892|
+switchAddr<4>  |MM_Byte<16>    |    7.889|
+switchAddr<4>  |MM_Byte<17>    |    7.766|
+switchAddr<4>  |MM_Byte<18>    |    7.923|
+switchAddr<4>  |MM_Byte<19>    |    8.724|
+switchAddr<4>  |MM_Byte<20>    |    7.682|
+switchAddr<4>  |MM_Byte<21>    |    7.682|
+switchAddr<4>  |MM_Byte<22>    |    6.984|
+switchAddr<4>  |MM_Byte<23>    |    8.306|
+switchAddr<4>  |MM_Byte<24>    |    8.522|
+switchAddr<4>  |MM_Byte<25>    |    7.209|
+switchAddr<4>  |MM_Byte<26>    |    8.107|
+switchAddr<4>  |MM_Byte<27>    |    8.688|
+switchAddr<4>  |MM_Byte<28>    |    7.908|
+switchAddr<4>  |MM_Byte<29>    |    7.398|
+switchAddr<4>  |MM_Byte<30>    |    8.123|
+switchAddr<4>  |MM_Byte<31>    |    8.068|
+---------------+---------------+---------+
+
+
+Analysis completed Thu Dec 14 14:40:06 2017 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 157 MB
+
+
+

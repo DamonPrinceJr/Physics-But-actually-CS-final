@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : CU_ALU.vhf
--- /___/   /\     Timestamp : 12/14/2017 08:12:54
+-- /___/   /\     Timestamp : 12/14/2017 14:18:00
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_ALU.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_ALU/CU_ALU/CU_ALU.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_ALU.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_ALU/CU_ALU/CU_ALU.sch"
 --Design Name: CU_ALU
 --Device: spartan3e
 --Purpose:
@@ -120,8 +120,8 @@ architecture BEHAVIORAL of M4_1E_MXILINX_CU_ALU is
    end component;
    attribute BOX_TYPE of MUXF5 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_M01 : label is "I_M01_1";
-   attribute HU_SET of I_M23 : label is "I_M23_0";
+   attribute HU_SET of I_M01 : label is "I_M01_5";
+   attribute HU_SET of I_M23 : label is "I_M23_4";
 begin
    I_M01 : M2_1E_MXILINX_CU_ALU
       port map (D0=>D0,
@@ -170,6 +170,7 @@ architecture BEHAVIORAL of CU_ALU is
    attribute BOX_TYPE   : string ;
    attribute HU_SET     : string ;
    signal DR_vs_Reg : std_logic;
+   signal RUN_MODE  : std_logic;
    signal XLXN_2    : std_logic;
    signal XLXN_21   : std_logic;
    signal XLXN_22   : std_logic;
@@ -237,22 +238,22 @@ architecture BEHAVIORAL of CU_ALU is
    end component;
    attribute BOX_TYPE of OR4 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_2";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_3";
-   attribute HU_SET of XLXI_20 : label is "XLXI_20_4";
-   attribute HU_SET of XLXI_21 : label is "XLXI_21_5";
-   attribute HU_SET of XLXI_22 : label is "XLXI_22_10";
-   attribute HU_SET of XLXI_23 : label is "XLXI_23_11";
-   attribute HU_SET of XLXI_24 : label is "XLXI_24_12";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_13";
-   attribute HU_SET of XLXI_38 : label is "XLXI_38_6";
-   attribute HU_SET of XLXI_39 : label is "XLXI_39_7";
-   attribute HU_SET of XLXI_40 : label is "XLXI_40_14";
-   attribute HU_SET of XLXI_41 : label is "XLXI_41_15";
-   attribute HU_SET of XLXI_67 : label is "XLXI_67_8";
-   attribute HU_SET of XLXI_68 : label is "XLXI_68_9";
-   attribute HU_SET of XLXI_69 : label is "XLXI_69_16";
-   attribute HU_SET of XLXI_70 : label is "XLXI_70_17";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_6";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_7";
+   attribute HU_SET of XLXI_20 : label is "XLXI_20_8";
+   attribute HU_SET of XLXI_21 : label is "XLXI_21_9";
+   attribute HU_SET of XLXI_22 : label is "XLXI_22_14";
+   attribute HU_SET of XLXI_23 : label is "XLXI_23_15";
+   attribute HU_SET of XLXI_24 : label is "XLXI_24_16";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_17";
+   attribute HU_SET of XLXI_38 : label is "XLXI_38_10";
+   attribute HU_SET of XLXI_39 : label is "XLXI_39_11";
+   attribute HU_SET of XLXI_40 : label is "XLXI_40_18";
+   attribute HU_SET of XLXI_41 : label is "XLXI_41_19";
+   attribute HU_SET of XLXI_67 : label is "XLXI_67_12";
+   attribute HU_SET of XLXI_68 : label is "XLXI_68_13";
+   attribute HU_SET of XLXI_69 : label is "XLXI_69_20";
+   attribute HU_SET of XLXI_70 : label is "XLXI_70_21";
 begin
    XLXI_1 : OR3
       port map (I0=>MATH(2),
@@ -276,7 +277,7 @@ begin
                 D1=>Reg1(0),
                 D2=>Reg2(0),
                 D3=>Reg3(0),
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR(0),
                 S1=>DR(1),
                 O=>XLXN_2);
@@ -284,7 +285,7 @@ begin
    XLXI_5 : M2_1E_MXILINX_CU_ALU
       port map (D0=>DR(0),
                 D1=>XLXN_2,
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR_vs_Reg,
                 O=>ALU_B(0));
    
@@ -302,7 +303,7 @@ begin
                 D1=>Reg1(1),
                 D2=>Reg2(1),
                 D3=>Reg3(1),
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR(0),
                 S1=>DR(1),
                 O=>XLXN_49);
@@ -310,7 +311,7 @@ begin
    XLXI_21 : M2_1E_MXILINX_CU_ALU
       port map (D0=>DR(1),
                 D1=>XLXN_49,
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR_vs_Reg,
                 O=>ALU_B(1));
    
@@ -319,7 +320,7 @@ begin
                 D1=>Reg1(4),
                 D2=>Reg2(4),
                 D3=>Reg3(4),
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR(0),
                 S1=>DR(1),
                 O=>XLXN_60);
@@ -327,7 +328,7 @@ begin
    XLXI_23 : M2_1E_MXILINX_CU_ALU
       port map (D0=>DR(4),
                 D1=>XLXN_60,
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR_vs_Reg,
                 O=>ALU_B(4));
    
@@ -336,7 +337,7 @@ begin
                 D1=>Reg1(5),
                 D2=>Reg2(5),
                 D3=>Reg3(5),
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR(0),
                 S1=>DR(1),
                 O=>XLXN_71);
@@ -344,7 +345,7 @@ begin
    XLXI_25 : M2_1E_MXILINX_CU_ALU
       port map (D0=>DR(5),
                 D1=>XLXN_71,
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR_vs_Reg,
                 O=>ALU_B(5));
    
@@ -353,7 +354,7 @@ begin
                 D1=>Reg1(2),
                 D2=>Reg2(2),
                 D3=>Reg3(2),
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR(0),
                 S1=>DR(1),
                 O=>XLXN_148);
@@ -361,7 +362,7 @@ begin
    XLXI_39 : M2_1E_MXILINX_CU_ALU
       port map (D0=>DR(2),
                 D1=>XLXN_148,
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR_vs_Reg,
                 O=>ALU_B(2));
    
@@ -370,7 +371,7 @@ begin
                 D1=>Reg1(6),
                 D2=>Reg2(6),
                 D3=>Reg3(6),
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR(0),
                 S1=>DR(1),
                 O=>XLXN_159);
@@ -378,7 +379,7 @@ begin
    XLXI_41 : M2_1E_MXILINX_CU_ALU
       port map (D0=>DR(6),
                 D1=>XLXN_159,
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR_vs_Reg,
                 O=>ALU_B(6));
    
@@ -387,7 +388,7 @@ begin
                 D1=>Reg1(3),
                 D2=>Reg2(3),
                 D3=>Reg3(3),
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR(0),
                 S1=>DR(1),
                 O=>XLXN_305);
@@ -395,7 +396,7 @@ begin
    XLXI_68 : M2_1E_MXILINX_CU_ALU
       port map (D0=>DR(3),
                 D1=>XLXN_305,
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR_vs_Reg,
                 O=>ALU_B(3));
    
@@ -404,7 +405,7 @@ begin
                 D1=>Reg1(7),
                 D2=>Reg2(7),
                 D3=>Reg3(7),
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR(0),
                 S1=>DR(1),
                 O=>XLXN_316);
@@ -412,7 +413,7 @@ begin
    XLXI_70 : M2_1E_MXILINX_CU_ALU
       port map (D0=>DR(7),
                 D1=>XLXN_316,
-                E=>MODE,
+                E=>RUN_MODE,
                 S0=>DR_vs_Reg,
                 O=>ALU_B(7));
    
@@ -422,6 +423,10 @@ begin
                 I2=>MATH(1),
                 I3=>MATH(0),
                 O=>Signed);
+   
+   XLXI_73 : INV
+      port map (I=>MODE,
+                O=>RUN_MODE);
    
 end BEHAVIORAL;
 

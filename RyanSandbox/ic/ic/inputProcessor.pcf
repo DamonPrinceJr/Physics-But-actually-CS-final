@@ -1,0 +1,26 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 14 14:39:56 2017
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "SYS_CLK" LOCATE = SITE "B8" LEVEL 1;
+COMP "MODE" LOCATE = SITE "N3" LEVEL 1;
+COMP "colO<0>" LOCATE = SITE "C6" LEVEL 1;
+COMP "colO<1>" LOCATE = SITE "B6" LEVEL 1;
+COMP "colO<2>" LOCATE = SITE "C5" LEVEL 1;
+COMP "colO<3>" LOCATE = SITE "B7" LEVEL 1;
+COMP "temp<0>" LOCATE = SITE "M5" LEVEL 1;
+COMP "temp<1>" LOCATE = SITE "M11" LEVEL 1;
+COMP "temp<2>" LOCATE = SITE "P7" LEVEL 1;
+COMP "temp<3>" LOCATE = SITE "P6" LEVEL 1;
+COMP "writeToTemp" LOCATE = SITE "A7" LEVEL 1;
+COMP "row<0>" LOCATE = SITE "B5" LEVEL 1;
+COMP "row<1>" LOCATE = SITE "J3" LEVEL 1;
+COMP "row<2>" LOCATE = SITE "A3" LEVEL 1;
+COMP "row<3>" LOCATE = SITE "B2" LEVEL 1;
+COMP "writeToMM" LOCATE = SITE "M4" LEVEL 1;
+NET "writeToTemp_BUFGP/IBUFG" BEL "writeToTemp_BUFGP/BUFG.GCLKMUX"
+        USELOCALCONNECT;
+NET "SYS_CLK_BUFGP/IBUFG" BEL "SYS_CLK_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

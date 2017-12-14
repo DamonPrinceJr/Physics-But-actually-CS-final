@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : CU_Read.vhf
--- /___/   /\     Timestamp : 12/13/2017 16:20:09
+-- /___/   /\     Timestamp : 12/14/2017 12:17:28
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Read/CU_Read/CU_Read.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Read/CU_Read/CU_Read.sch"
 --Design Name: CU_Read
 --Device: spartan3e
 --Purpose:
@@ -341,19 +341,19 @@ architecture BEHAVIORAL of CU_Read is
              O  : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_1";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_0";
-   attribute HU_SET of XLXI_19 : label is "XLXI_19_4";
-   attribute HU_SET of XLXI_25 : label is "XLXI_25_5";
-   attribute HU_SET of XLXI_170 : label is "XLXI_170_2";
-   attribute HU_SET of XLXI_178 : label is "XLXI_178_3";
-   attribute HU_SET of XLXI_185 : label is "XLXI_185_6";
-   attribute HU_SET of XLXI_198 : label is "XLXI_198_7";
-   attribute HU_SET of XLXI_285 : label is "XLXI_285_8";
-   attribute HU_SET of XLXI_293 : label is "XLXI_293_9";
-   attribute HU_SET of XLXI_301 : label is "XLXI_301_10";
-   attribute HU_SET of XLXI_309 : label is "XLXI_309_11";
-   attribute HU_SET of XLXI_340 : label is "XLXI_340_12";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_72";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_71";
+   attribute HU_SET of XLXI_19 : label is "XLXI_19_75";
+   attribute HU_SET of XLXI_25 : label is "XLXI_25_76";
+   attribute HU_SET of XLXI_170 : label is "XLXI_170_73";
+   attribute HU_SET of XLXI_178 : label is "XLXI_178_74";
+   attribute HU_SET of XLXI_185 : label is "XLXI_185_77";
+   attribute HU_SET of XLXI_198 : label is "XLXI_198_78";
+   attribute HU_SET of XLXI_285 : label is "XLXI_285_79";
+   attribute HU_SET of XLXI_293 : label is "XLXI_293_80";
+   attribute HU_SET of XLXI_301 : label is "XLXI_301_81";
+   attribute HU_SET of XLXI_309 : label is "XLXI_309_82";
+   attribute HU_SET of XLXI_340 : label is "XLXI_340_83";
 begin
    XLXI_1 : AND8_MXILINX_CU_Read
       port map (I0=>XLXN_12,

@@ -19,12 +19,11 @@
         <signal name="temp(3)" />
         <signal name="SYS_CLK" />
         <signal name="writeToTemp" />
-        <signal name="binaryInput(3:0)" />
+        <signal name="fgumfghmfgj(3:0)" />
         <signal name="writeToMM" />
         <signal name="opCode(7:0)" />
         <signal name="immediate(7:0)" />
         <signal name="switchAddr(4:0)" />
-        <signal name="XLXN_369" />
         <signal name="XLXN_3" />
         <signal name="XLXN_4" />
         <signal name="XLXN_5" />
@@ -64,7 +63,7 @@
         <signal name="displayData(5)" />
         <signal name="displayData(6)" />
         <signal name="displayData(7)" />
-        <signal name="displayData(8)" />
+        <signal name="displayData8" />
         <signal name="displayData(8:0)" />
         <signal name="MM_Byte(31:0)" />
         <signal name="switchAddr(0)" />
@@ -107,9 +106,17 @@
         <signal name="switchAddr(4)" />
         <signal name="MODE" />
         <signal name="temp(3:0)" />
+        <signal name="row(3:0)" />
+        <signal name="colO(3:0)" />
+        <signal name="binaryInput(3:0)" />
+        <signal name="keyO" />
+        <signal name="sseg(7:0)" />
+        <signal name="anO(3:0)" />
+        <signal name="XLXN_966" />
+        <signal name="displayData(7:0)" />
         <port polarity="Input" name="SYS_CLK" />
         <port polarity="Input" name="writeToTemp" />
-        <port polarity="Input" name="binaryInput(3:0)" />
+        <port polarity="Input" name="fgumfghmfgj(3:0)" />
         <port polarity="Input" name="writeToMM" />
         <port polarity="Output" name="opCode(7:0)" />
         <port polarity="Output" name="immediate(7:0)" />
@@ -117,6 +124,11 @@
         <port polarity="Output" name="displayData(8:0)" />
         <port polarity="Output" name="MM_Byte(31:0)" />
         <port polarity="Input" name="MODE" />
+        <port polarity="Output" name="temp(3:0)" />
+        <port polarity="Input" name="row(3:0)" />
+        <port polarity="BiDirectional" name="colO(3:0)" />
+        <port polarity="Output" name="sseg(7:0)" />
+        <port polarity="Output" name="anO(3:0)" />
         <blockdef name="cb2cled">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <rect width="256" x="64" y="-576" height="512" />
@@ -217,9 +229,25 @@
             <line x2="64" y1="-1088" y2="-1088" x1="0" />
             <line x2="64" y1="-128" y2="-128" x1="0" />
         </blockdef>
+        <blockdef name="Decoder">
+            <timestamp>2017-12-14T21:17:22</timestamp>
+            <rect width="256" x="64" y="-320" height="320" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-44" height="24" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <line x2="384" y1="-288" y2="-288" x1="320" />
+            <rect width="64" x="320" y="-236" height="24" />
+            <line x2="384" y1="-224" y2="-224" x1="320" />
+            <rect width="64" x="320" y="-172" height="24" />
+            <line x2="384" y1="-160" y2="-160" x1="320" />
+            <line x2="384" y1="-96" y2="-96" x1="320" />
+            <rect width="64" x="320" y="-44" height="24" />
+            <line x2="384" y1="-32" y2="-32" x1="320" />
+        </blockdef>
         <block symbolname="fd4ce" name="XLXI_18">
             <blockpin signalname="SYS_CLK" name="C" />
-            <blockpin signalname="XLXN_369" name="CE" />
+            <blockpin signalname="keyO" name="CE" />
             <blockpin signalname="XLXN_87" name="CLR" />
             <blockpin signalname="binaryInput(0)" name="D0" />
             <blockpin signalname="binaryInput(1)" name="D1" />
@@ -229,10 +257,6 @@
             <blockpin signalname="temp(1)" name="Q1" />
             <blockpin signalname="temp(2)" name="Q2" />
             <blockpin signalname="temp(3)" name="Q3" />
-        </block>
-        <block symbolname="inv" name="XLXI_73">
-            <blockpin signalname="MODE" name="I" />
-            <blockpin signalname="XLXN_369" name="O" />
         </block>
         <block symbolname="fd4ce" name="XLXI_6">
             <blockpin signalname="writeToTemp" name="C" />
@@ -398,7 +422,7 @@
         <block symbolname="and2" name="XLXI_166">
             <blockpin signalname="pos(1)" name="I0" />
             <blockpin signalname="pos(0)" name="I1" />
-            <blockpin signalname="displayData(8)" name="O" />
+            <blockpin signalname="displayData8" name="O" />
         </block>
         <block symbolname="d4_16e" name="XLXI_307">
             <blockpin signalname="switchAddr(0)" name="A0" />
@@ -450,6 +474,16 @@
             <blockpin signalname="MM_Byte(8)" name="D8" />
             <blockpin signalname="MM_Byte(9)" name="D9" />
         </block>
+        <block symbolname="Decoder" name="XLXI_310">
+            <blockpin signalname="SYS_CLK" name="SYS_CLK" />
+            <blockpin signalname="MODE" name="En" />
+            <blockpin signalname="row(3:0)" name="row(3:0)" />
+            <blockpin signalname="keyO" name="keyO" />
+            <blockpin signalname="binaryInput(3:0)" name="binDisplay(3:0)" />
+            <blockpin name="anO(3:0)" />
+            <blockpin name="dpO" />
+            <blockpin signalname="colO(3:0)" name="colO(3:0)" />
+        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
         <instance x="400" y="1424" name="XLXI_18" orien="R0" />
@@ -492,7 +526,7 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="832" y="1168" type="branch" />
             <wire x2="832" y1="1168" y2="1168" x1="784" />
         </branch>
-        <branch name="binaryInput(3:0)">
+        <branch name="fgumfghmfgj(3:0)">
             <wire x2="480" y1="160" y2="160" x1="400" />
         </branch>
         <branch name="SYS_CLK">
@@ -504,7 +538,6 @@
         <branch name="writeToTemp">
             <wire x2="480" y1="352" y2="352" x1="400" />
         </branch>
-        <iomarker fontsize="28" x="400" y="160" name="binaryInput(3:0)" orien="R180" />
         <iomarker fontsize="28" x="400" y="224" name="SYS_CLK" orien="R180" />
         <iomarker fontsize="28" x="400" y="288" name="writeToMM" orien="R180" />
         <iomarker fontsize="28" x="400" y="352" name="writeToTemp" orien="R180" />
@@ -520,13 +553,9 @@
             <wire x2="480" y1="416" y2="416" x1="400" />
         </branch>
         <iomarker fontsize="28" x="400" y="416" name="MODE" orien="R180" />
-        <branch name="XLXN_369">
+        <branch name="keyO">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="368" y="1232" type="branch" />
             <wire x2="400" y1="1232" y2="1232" x1="368" />
-        </branch>
-        <instance x="144" y="1264" name="XLXI_73" orien="R0" />
-        <branch name="MODE">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="112" y="1232" type="branch" />
-            <wire x2="144" y1="1232" y2="1232" x1="112" />
         </branch>
         <instance x="1456" y="1024" name="XLXI_6" orien="R0" />
         <instance x="1456" y="1600" name="XLXI_7" orien="R0" />
@@ -927,7 +956,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2880" y="1104" type="branch" />
             <wire x2="2960" y1="1104" y2="1104" x1="2880" />
         </branch>
-        <branch name="displayData(8)">
+        <branch name="displayData8">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3296" y="1072" type="branch" />
             <wire x2="3296" y1="1072" y2="1072" x1="3216" />
         </branch>
@@ -1115,16 +1144,65 @@
         <instance x="2160" y="2512" name="XLXI_306" orien="R0" />
         <branch name="switchAddr(4)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2032" y="2624" type="branch" />
-            <wire x2="2048" y1="2624" y2="2624" x1="2032" />
-            <wire x2="2096" y1="2624" y2="2624" x1="2048" />
-        </branch>
-        <branch name="temp(3:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="560" y="608" type="branch" />
-            <wire x2="560" y1="608" y2="608" x1="480" />
+            <wire x2="2096" y1="2624" y2="2624" x1="2032" />
         </branch>
         <branch name="switchAddr(4:0)">
             <wire x2="480" y1="480" y2="480" x1="400" />
         </branch>
         <iomarker fontsize="28" x="400" y="480" name="switchAddr(4:0)" orien="R180" />
+        <branch name="MODE">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="112" y="1232" type="branch" />
+            <wire x2="144" y1="1232" y2="1232" x1="112" />
+        </branch>
+        <instance x="1296" y="400" name="XLXI_310" orien="R0">
+        </instance>
+        <branch name="SYS_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1264" y="112" type="branch" />
+            <wire x2="1296" y1="112" y2="112" x1="1264" />
+        </branch>
+        <branch name="MODE">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1264" y="240" type="branch" />
+            <wire x2="1296" y1="240" y2="240" x1="1264" />
+        </branch>
+        <branch name="row(3:0)">
+            <wire x2="1296" y1="368" y2="368" x1="1248" />
+        </branch>
+        <branch name="colO(3:0)">
+            <wire x2="1728" y1="368" y2="368" x1="1680" />
+        </branch>
+        <iomarker fontsize="28" x="1248" y="368" name="row(3:0)" orien="R180" />
+        <iomarker fontsize="28" x="1728" y="368" name="colO(3:0)" orien="R0" />
+        <branch name="binaryInput(3:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1760" y="176" type="branch" />
+            <wire x2="1760" y1="176" y2="176" x1="1680" />
+        </branch>
+        <iomarker fontsize="28" x="400" y="160" name="fgumfghmfgj(3:0)" orien="R180" />
+        <branch name="keyO">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1744" y="112" type="branch" />
+            <wire x2="1744" y1="112" y2="112" x1="1680" />
+        </branch>
+        <branch name="sseg(7:0)">
+            <wire x2="640" y1="2352" y2="2352" x1="592" />
+        </branch>
+        <branch name="anO(3:0)">
+            <wire x2="640" y1="2480" y2="2480" x1="592" />
+        </branch>
+        <branch name="XLXN_966">
+            <wire x2="208" y1="2480" y2="2480" x1="160" />
+        </branch>
+        <branch name="displayData(7:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="160" y="2416" type="branch" />
+            <wire x2="208" y1="2416" y2="2416" x1="160" />
+        </branch>
+        <branch name="SYS_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="160" y="2352" type="branch" />
+            <wire x2="208" y1="2352" y2="2352" x1="160" />
+        </branch>
+        <iomarker fontsize="28" x="640" y="2352" name="sseg(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="640" y="2480" name="anO(3:0)" orien="R0" />
+        <iomarker fontsize="28" x="560" y="608" name="temp(3:0)" orien="R0" />
+        <branch name="temp(3:0)">
+            <wire x2="560" y1="608" y2="608" x1="480" />
+        </branch>
     </sheet>
 </drawing>

@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : programCounter.vhf
--- /___/   /\     Timestamp : 12/14/2017 09:48:04
+-- /___/   /\     Timestamp : 12/14/2017 13:06:46
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/programCounter/programCounter/programCounter.sch"
 --Design Name: programCounter
 --Device: spartan3e
 --Purpose:
@@ -125,7 +125,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_programCounter is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_2";
+   attribute HU_SET of I_36_30 : label is "I_36_30_0";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -239,14 +239,14 @@ architecture BEHAVIORAL of CB8CLE_MXILINX_programCounter is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_3";
-   attribute HU_SET of I_Q1 : label is "I_Q1_4";
-   attribute HU_SET of I_Q2 : label is "I_Q2_5";
-   attribute HU_SET of I_Q3 : label is "I_Q3_6";
-   attribute HU_SET of I_Q4 : label is "I_Q4_7";
-   attribute HU_SET of I_Q5 : label is "I_Q5_8";
-   attribute HU_SET of I_Q6 : label is "I_Q6_9";
-   attribute HU_SET of I_Q7 : label is "I_Q7_10";
+   attribute HU_SET of I_Q0 : label is "I_Q0_1";
+   attribute HU_SET of I_Q1 : label is "I_Q1_2";
+   attribute HU_SET of I_Q2 : label is "I_Q2_3";
+   attribute HU_SET of I_Q3 : label is "I_Q3_4";
+   attribute HU_SET of I_Q4 : label is "I_Q4_5";
+   attribute HU_SET of I_Q5 : label is "I_Q5_6";
+   attribute HU_SET of I_Q6 : label is "I_Q6_7";
+   attribute HU_SET of I_Q7 : label is "I_Q7_8";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -523,10 +523,10 @@ architecture BEHAVIORAL of CB2CLED_MXILINX_programCounter is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_12";
-   attribute HU_SET of I_Q1 : label is "I_Q1_11";
-   attribute HU_SET of I_TC : label is "I_TC_13";
-   attribute HU_SET of I_T1 : label is "I_T1_14";
+   attribute HU_SET of I_Q0 : label is "I_Q0_10";
+   attribute HU_SET of I_Q1 : label is "I_Q1_9";
+   attribute HU_SET of I_TC : label is "I_TC_11";
+   attribute HU_SET of I_T1 : label is "I_T1_12";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -604,22 +604,24 @@ end programCounter;
 architecture BEHAVIORAL of programCounter is
    attribute HU_SET     : string ;
    attribute BOX_TYPE   : string ;
-   signal counter_31            : std_logic;
-   signal timer0                : std_logic;
-   signal timer1                : std_logic;
-   signal XLXN_8                : std_logic;
-   signal XLXN_9                : std_logic;
-   signal XLXN_11               : std_logic;
-   signal XLXN_14               : std_logic;
-   signal XLXN_81               : std_logic;
-   signal XLXN_83               : std_logic;
-   signal XLXN_85               : std_logic;
-   signal XLXN_86               : std_logic;
-   signal pc_timer_DUMMY        : std_logic_vector (3 downto 0);
-   signal pc_counter_DUMMY      : std_logic_vector (7 downto 0);
-   signal XLXI_3_CLR_openSignal : std_logic;
-   signal XLXI_3_D_openSignal   : std_logic_vector (7 downto 0);
-   signal XLXI_5_CLR_openSignal : std_logic;
+   signal CLK                    : std_logic;
+   signal counter_31             : std_logic;
+   signal timer0                 : std_logic;
+   signal timer1                 : std_logic;
+   signal XLXN_8                 : std_logic;
+   signal XLXN_9                 : std_logic;
+   signal XLXN_11                : std_logic;
+   signal XLXN_14                : std_logic;
+   signal XLXN_81                : std_logic;
+   signal XLXN_83                : std_logic;
+   signal XLXN_85                : std_logic;
+   signal XLXN_86                : std_logic;
+   signal pc_timer_DUMMY         : std_logic_vector (3 downto 0);
+   signal pc_counter_DUMMY       : std_logic_vector (7 downto 0);
+   signal XLXI_3_CLR_openSignal  : std_logic;
+   signal XLXI_3_D_openSignal    : std_logic_vector (7 downto 0);
+   signal XLXI_5_CLR_openSignal  : std_logic;
+   signal XLXI_42_RST_openSignal : std_logic;
    component CB8CLE_MXILINX_programCounter
       port ( C   : in    std_logic; 
              CE  : in    std_logic; 
@@ -668,8 +670,17 @@ architecture BEHAVIORAL of programCounter is
    end component;
    attribute BOX_TYPE of AND5 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_16";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_15";
+   component DCM_50M
+      port ( CLK    : in    std_logic; 
+             RST    : in    std_logic; 
+             CLK1M  : out   std_logic; 
+             CLK10k : out   std_logic; 
+             CLK1k  : out   std_logic; 
+             CLK1   : out   std_logic);
+   end component;
+   
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_14";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_13";
 begin
    XLXN_11 <= '0';
    XLXN_14 <= '1';
@@ -686,7 +697,7 @@ begin
                 TC=>open);
    
    XLXI_5 : CB2CLED_MXILINX_programCounter
-      port map (C=>SYS_CLK,
+      port map (C=>CLK,
                 CE=>MODE,
                 CLR=>XLXI_5_CLR_openSignal,
                 D0=>XLXN_8,
@@ -741,6 +752,14 @@ begin
                 I3=>pc_counter_DUMMY(1),
                 I4=>pc_counter_DUMMY(0),
                 O=>counter_31);
+   
+   XLXI_42 : DCM_50M
+      port map (CLK=>SYS_CLK,
+                RST=>XLXI_42_RST_openSignal,
+                CLK1=>CLK,
+                CLK1k=>open,
+                CLK1M=>open,
+                CLK10k=>open);
    
 end BEHAVIORAL;
 

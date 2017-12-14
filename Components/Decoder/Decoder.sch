@@ -7,25 +7,19 @@
     </attr>
     <netlist>
         <signal name="keyO" />
-        <signal name="XLXN_17" />
         <signal name="XLXN_5" />
         <signal name="XLXN_6" />
         <signal name="XLXN_7" />
         <signal name="binO(3:0)" />
-        <signal name="XLXN_22(3:0)" />
         <signal name="XLXN_9(3:0)" />
         <signal name="XLXN_10(3:0)" />
         <signal name="XLXN_11(3:0)" />
         <signal name="XLXN_13(3:0)" />
         <signal name="XLXN_14(0:1)" />
-        <signal name="XLXN_28(0:1)" />
         <signal name="SYS_CLK" />
-        <signal name="XLXN_42(0:1)" />
-        <signal name="XLXN_47(3:0)" />
         <signal name="binDisplay(3:0)" />
         <signal name="anO(3:0)" />
         <signal name="dpO" />
-        <signal name="XLXN_52(3:0)" />
         <signal name="binO(7:0)" />
         <signal name="En" />
         <signal name="XLXN_4" />
@@ -131,9 +125,9 @@
         <block symbolname="DCM_50M" name="XLXI_2">
             <blockpin signalname="SYS_CLK" name="CLK" />
             <blockpin signalname="XLXN_7" name="RST" />
-            <blockpin name="CLK1M" />
-            <blockpin signalname="XLXN_6" name="CLK10k" />
-            <blockpin signalname="XLXN_5" name="CLK1k" />
+            <blockpin signalname="XLXN_6" name="CLK1M" />
+            <blockpin signalname="XLXN_5" name="CLK10k" />
+            <blockpin name="CLK1k" />
             <blockpin name="CLK1" />
         </block>
         <block symbolname="sel_strobeB" name="XLXI_6">
@@ -195,15 +189,6 @@
             <wire x2="256" y1="160" y2="160" x1="48" />
         </branch>
         <iomarker fontsize="28" x="256" y="160" name="keyO" orien="R0" />
-        <branch name="XLXN_5">
-            <wire x2="1056" y1="544" y2="896" x1="1056" />
-            <wire x2="1216" y1="896" y2="896" x1="1056" />
-            <wire x2="1216" y1="896" y2="1168" x1="1216" />
-            <wire x2="1360" y1="544" y2="544" x1="1056" />
-            <wire x2="1216" y1="1168" y2="1168" x1="1184" />
-            <wire x2="1216" y1="832" y2="896" x1="1216" />
-            <wire x2="1376" y1="832" y2="832" x1="1216" />
-        </branch>
         <branch name="XLXN_7">
             <wire x2="800" y1="1232" y2="1232" x1="768" />
         </branch>
@@ -225,8 +210,7 @@
             <wire x2="1936" y1="1088" y2="1264" x1="1936" />
         </branch>
         <branch name="SYS_CLK">
-            <wire x2="784" y1="1040" y2="1040" x1="768" />
-            <wire x2="800" y1="1040" y2="1040" x1="784" />
+            <wire x2="800" y1="1040" y2="1040" x1="768" />
         </branch>
         <branch name="keyO">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1920" y="768" type="branch" />
@@ -286,13 +270,22 @@
         </instance>
         <instance x="800" y="1264" name="XLXI_2" orien="R0">
         </instance>
-        <branch name="XLXN_6">
-            <wire x2="1264" y1="1104" y2="1104" x1="1184" />
-            <wire x2="1264" y1="1104" y2="1264" x1="1264" />
-            <wire x2="1376" y1="1264" y2="1264" x1="1264" />
-        </branch>
         <instance x="624" y="1200" name="XLXI_7" orien="R0">
         </instance>
         <iomarker fontsize="28" x="768" y="1040" name="SYS_CLK" orien="R180" />
+        <branch name="XLXN_6">
+            <wire x2="1264" y1="1040" y2="1040" x1="1184" />
+            <wire x2="1264" y1="1040" y2="1264" x1="1264" />
+            <wire x2="1376" y1="1264" y2="1264" x1="1264" />
+        </branch>
+        <branch name="XLXN_5">
+            <wire x2="1360" y1="544" y2="544" x1="1056" />
+            <wire x2="1056" y1="544" y2="896" x1="1056" />
+            <wire x2="1216" y1="896" y2="896" x1="1056" />
+            <wire x2="1216" y1="896" y2="1104" x1="1216" />
+            <wire x2="1216" y1="1104" y2="1104" x1="1184" />
+            <wire x2="1376" y1="832" y2="832" x1="1216" />
+            <wire x2="1216" y1="832" y2="896" x1="1216" />
+        </branch>
     </sheet>
 </drawing>

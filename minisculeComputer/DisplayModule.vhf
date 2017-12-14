@@ -7,11 +7,11 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : DisplayModule.vhf
--- /___/   /\     Timestamp : 12/13/2017 16:18:15
+-- /___/   /\     Timestamp : 12/14/2017 12:42:26
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
---Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/DisplayModule.vhf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/DisplayModule/DisplayModule/DisplayModule.sch
+--Command: sch2hdl -intstyle ise -family spartan3e -flat -suppress -vhdl "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/DisplayModule.vhf" -w "C:/Users/Big D/Documents/GitHub/Physics-But-actually-CS-final/Components/DisplayModule/DisplayModule/DisplayModule.sch"
 --Design Name: DisplayModule
 --Device: spartan3e
 --Purpose:
@@ -117,19 +117,19 @@ architecture BEHAVIORAL of DisplayModule is
              anO     : out   std_logic_vector (3 downto 0));
    end component;
    
-   attribute HU_SET of XLXI_1 : label is "XLXI_1_62";
-   attribute HU_SET of XLXI_2 : label is "XLXI_2_63";
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_64";
-   attribute HU_SET of XLXI_4 : label is "XLXI_4_65";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_66";
-   attribute HU_SET of XLXI_6 : label is "XLXI_6_67";
-   attribute HU_SET of XLXI_7 : label is "XLXI_7_68";
-   attribute HU_SET of XLXI_8 : label is "XLXI_8_69";
-   attribute HU_SET of XLXI_9 : label is "XLXI_9_70";
-   attribute HU_SET of XLXI_10 : label is "XLXI_10_71";
-   attribute HU_SET of XLXI_11 : label is "XLXI_11_74";
-   attribute HU_SET of XLXI_12 : label is "XLXI_12_72";
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_73";
+   attribute HU_SET of XLXI_1 : label is "XLXI_1_0";
+   attribute HU_SET of XLXI_2 : label is "XLXI_2_1";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_2";
+   attribute HU_SET of XLXI_4 : label is "XLXI_4_3";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_4";
+   attribute HU_SET of XLXI_6 : label is "XLXI_6_5";
+   attribute HU_SET of XLXI_7 : label is "XLXI_7_6";
+   attribute HU_SET of XLXI_8 : label is "XLXI_8_7";
+   attribute HU_SET of XLXI_9 : label is "XLXI_9_8";
+   attribute HU_SET of XLXI_10 : label is "XLXI_10_9";
+   attribute HU_SET of XLXI_11 : label is "XLXI_11_12";
+   attribute HU_SET of XLXI_12 : label is "XLXI_12_10";
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_11";
 begin
    XLXI_1 : M2_1_MXILINX_DisplayModule
       port map (D0=>RegisterC(0),
@@ -209,7 +209,7 @@ begin
                 S0=>MODE,
                 O=>lightOutput(3));
    
-   XLXI_14 : sevenSeg
+   XLXI_15 : sevenSeg
       port map (Din(7 downto 0)=>displayOutput(7 downto 0),
                 En=>MODE,
                 SYS_CLK=>CLK,
