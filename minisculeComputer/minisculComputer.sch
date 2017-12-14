@@ -25,7 +25,8 @@
         <signal name="XLXN_11(3:0)" />
         <signal name="XLXN_13(3:0)" />
         <signal name="XLXN_14(0:1)" />
-        <signal name="binDisplay(3:0)" />
+        <signal name="binDisplay(3:0)">
+        </signal>
         <signal name="binO(7:0)" />
         <signal name="En" />
         <signal name="XLXN_6" />
@@ -69,7 +70,6 @@
         <port polarity="Input" name="SYS_CLK" />
         <port polarity="Output" name="sseg(7:0)" />
         <port polarity="Output" name="anO(3:0)" />
-        <port polarity="Output" name="binDisplay(3:0)" />
         <port polarity="Input" name="En" />
         <port polarity="Output" name="dpO" />
         <port polarity="BiDirectional" name="colO(3:0)" />
@@ -621,27 +621,24 @@
             <wire x2="288" y1="928" y2="928" x1="256" />
         </branch>
         <branch name="XLXN_10(3:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="592" type="branch" />
             <wire x2="1344" y1="592" y2="592" x1="1248" />
             <wire x2="1440" y1="592" y2="592" x1="1344" />
         </branch>
         <branch name="XLXN_11(3:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="656" type="branch" />
             <wire x2="1344" y1="656" y2="656" x1="1248" />
             <wire x2="1440" y1="656" y2="656" x1="1344" />
         </branch>
         <branch name="XLXN_13(3:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="720" type="branch" />
             <wire x2="1344" y1="720" y2="720" x1="1248" />
             <wire x2="1440" y1="720" y2="720" x1="1344" />
         </branch>
         <branch name="XLXN_14(0:1)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1360" y="784" type="branch" />
             <wire x2="1360" y1="960" y2="960" x1="1248" />
             <wire x2="1360" y1="784" y2="960" x1="1360" />
             <wire x2="1440" y1="784" y2="784" x1="1360" />
         </branch>
         <branch name="binDisplay(3:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="848" type="branch" />
             <wire x2="1904" y1="848" y2="848" x1="1824" />
         </branch>
         <branch name="binO(7:0)">
@@ -659,7 +656,6 @@
         </branch>
         <bustap x2="800" y1="784" y2="880" x1="800" />
         <branch name="XLXN_6">
-            <attrtext style="alignment:SOFT-TCENTER;fontsize:28;fontname:Arial" attrname="Name" x="752" y="960" type="branch" />
             <wire x2="752" y1="800" y2="800" x1="672" />
             <wire x2="752" y1="800" y2="960" x1="752" />
             <wire x2="864" y1="960" y2="960" x1="752" />
@@ -667,7 +663,6 @@
         <instance x="864" y="992" name="XLXI_6" orien="R0">
         </instance>
         <branch name="XLXN_5">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="608" y="592" type="branch" />
             <wire x2="544" y1="240" y2="592" x1="544" />
             <wire x2="608" y1="592" y2="592" x1="544" />
             <wire x2="704" y1="592" y2="592" x1="608" />
@@ -678,7 +673,6 @@
             <wire x2="864" y1="528" y2="528" x1="704" />
         </branch>
         <branch name="XLXN_9(3:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="528" type="branch" />
             <wire x2="1344" y1="528" y2="528" x1="1248" />
             <wire x2="1440" y1="528" y2="528" x1="1344" />
         </branch>
@@ -713,7 +707,6 @@
         </instance>
         <instance x="736" y="528" name="XLXI_10(3:0)" orien="R0" />
         <branch name="binO(3:0)">
-            <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="304" type="branch" />
             <wire x2="1296" y1="880" y2="880" x1="800" />
             <wire x2="1296" y1="304" y2="304" x1="1232" />
             <wire x2="1296" y1="304" y2="880" x1="1296" />
@@ -958,6 +951,5 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="720" y="1472" type="branch" />
             <wire x2="720" y1="1472" y2="1472" x1="640" />
         </branch>
-        <iomarker fontsize="28" x="1904" y="848" name="binDisplay(3:0)" orien="R0" />
     </sheet>
 </drawing>
