@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/signConverter/signConverter/signConverter2.xst" -ofn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/signConverter/signConverter/signConverter2.syr" 

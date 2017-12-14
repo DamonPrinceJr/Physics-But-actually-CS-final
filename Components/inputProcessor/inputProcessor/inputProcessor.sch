@@ -55,7 +55,6 @@
         <signal name="XLXN_9" />
         <signal name="XLXN_365" />
         <signal name="XLXN_368" />
-        <signal name="temp(3:0)" />
         <signal name="pos(1:0)" />
         <signal name="displayData(0)" />
         <signal name="displayData(1)" />
@@ -106,6 +105,9 @@
         <signal name="MM_Byte(31)" />
         <signal name="XLXN_957" />
         <signal name="switchAddr(4)" />
+        <signal name="MODE" />
+        <signal name="temp(3:0)" />
+        <signal name="switchAddr(7:0)" />
         <port polarity="Input" name="SYS_CLK" />
         <port polarity="Input" name="writeToTemp" />
         <port polarity="Input" name="binaryInput(3:0)" />
@@ -115,6 +117,8 @@
         <port polarity="Input" name="switchAddr(4:0)" />
         <port polarity="Output" name="displayData(8:0)" />
         <port polarity="Output" name="MM_Byte(31:0)" />
+        <port polarity="Input" name="MODE" />
+        <port polarity="Input" name="switchAddr(7:0)" />
         <blockdef name="cb2cled">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <rect width="256" x="64" y="-576" height="512" />
@@ -514,10 +518,10 @@
         </branch>
         <iomarker fontsize="28" x="640" y="160" name="opCode(7:0)" orien="R0" />
         <iomarker fontsize="28" x="640" y="224" name="immediate(7:0)" orien="R0" />
-        <branch name="switchAddr(4:0)">
+        <branch name="MODE">
             <wire x2="480" y1="416" y2="416" x1="400" />
         </branch>
-        <iomarker fontsize="28" x="400" y="416" name="switchAddr(4:0)" orien="R180" />
+        <iomarker fontsize="28" x="400" y="416" name="MODE" orien="R180" />
         <branch name="XLXN_369">
             <wire x2="400" y1="1232" y2="1232" x1="368" />
         </branch>
@@ -776,10 +780,6 @@
             <wire x2="400" y1="2096" y2="2096" x1="368" />
         </branch>
         <instance x="144" y="2128" name="XLXI_72" orien="R0" />
-        <branch name="temp(3:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="560" y="480" type="branch" />
-            <wire x2="560" y1="480" y2="480" x1="480" />
-        </branch>
         <branch name="pos(1:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="560" y="544" type="branch" />
             <wire x2="560" y1="544" y2="544" x1="480" />
@@ -1120,5 +1120,13 @@
             <wire x2="2048" y1="2624" y2="2624" x1="2032" />
             <wire x2="2096" y1="2624" y2="2624" x1="2048" />
         </branch>
+        <branch name="temp(3:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="560" y="608" type="branch" />
+            <wire x2="560" y1="608" y2="608" x1="480" />
+        </branch>
+        <branch name="switchAddr(7:0)">
+            <wire x2="480" y1="480" y2="480" x1="400" />
+        </branch>
+        <iomarker fontsize="28" x="400" y="480" name="switchAddr(7:0)" orien="R180" />
     </sheet>
 </drawing>

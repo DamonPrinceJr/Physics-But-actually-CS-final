@@ -22,6 +22,8 @@
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="minisculeComputer.xise"/>
 
   <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ALU_component.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="ALU_component.vhf"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="CRenc4bin.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="CRenc4bin.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="CU_ALU.sym" xil_pn:origination="imported"/>
@@ -62,6 +64,7 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="minisculComputer.syr"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="minisculComputer.vhf"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="minisculComputer.xst"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="minisculComputer_envsettings.html"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="minisculComputer_summary.html"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="minisculComputer_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="minisculComputer_xst.xrpt"/>
@@ -73,6 +76,8 @@
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sel_strobeB.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sevenSeg.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="sevenSeg.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="signConverter2.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="signConverter2.vhf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="signalMux_32.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="signalMux_32.vhf"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
@@ -84,9 +89,10 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1513270196" xil_pn:in_ck="-8806442938558793410" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1310553701813273253" xil_pn:start_ts="1513270193">
+    <transform xil_pn:end_ts="1513272595" xil_pn:in_ck="-5484351911313401623" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1310553701813273253" xil_pn:start_ts="1513272592">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="ALU_component.vhf"/>
       <outfile xil_pn:name="CU_ALU.vhf"/>
       <outfile xil_pn:name="CU_Misc.vhf"/>
       <outfile xil_pn:name="CU_Read.vhf"/>
@@ -100,6 +106,7 @@
       <outfile xil_pn:name="minisculComputer.vhf"/>
       <outfile xil_pn:name="programCounter.vhf"/>
       <outfile xil_pn:name="sevenSeg.vhf"/>
+      <outfile xil_pn:name="signConverter2.vhf"/>
       <outfile xil_pn:name="signalMux_32.vhf"/>
     </transform>
     <transform xil_pn:end_ts="1513207926" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4849855945544407957" xil_pn:start_ts="1513207926">
@@ -114,8 +121,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1513268016" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1513268016">
-      <status xil_pn:value="AbortedRun"/>
+    <transform xil_pn:end_ts="1513272458" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1513272458">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
@@ -124,17 +131,24 @@
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1513268020" xil_pn:in_ck="-7834932682713785239" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8089048525156231093" xil_pn:start_ts="1513268016">
+    <transform xil_pn:end_ts="1513272517" xil_pn:in_ck="2163897847273868188" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8089048525156231093" xil_pn:start_ts="1513272513">
       <status xil_pn:value="FailedRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputAdded"/>
       <status xil_pn:value="InputChanged"/>
-      <status xil_pn:value="InputRemoved"/>
       <status xil_pn:value="OutputChanged"/>
-      <status xil_pn:value="OutputRemoved"/>
+      <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
+      <outfile xil_pn:name="minisculComputer.jhd"/>
+      <outfile xil_pn:name="minisculComputer.lso"/>
+      <outfile xil_pn:name="minisculComputer.prj"/>
+      <outfile xil_pn:name="minisculComputer.syr"/>
+      <outfile xil_pn:name="minisculComputer.xst"/>
+      <outfile xil_pn:name="minisculComputer_vhdl.prj"/>
+      <outfile xil_pn:name="minisculComputer_xst.xrpt"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+      <outfile xil_pn:name="xst"/>
     </transform>
     <transform xil_pn:end_ts="1513268020" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6160946175456529301" xil_pn:start_ts="1513268020">
       <status xil_pn:value="SuccessfullyRun"/>

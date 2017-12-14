@@ -3,13 +3,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 --> Parameter TMPDIR set to xst/projnav.tmp
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.10 secs
  
 --> Parameter xsthdpdir set to xst
 
 
-Total REAL time to Xst completion: 0.00 secs
+Total REAL time to Xst completion: 1.00 secs
 Total CPU time to Xst completion: 0.10 secs
  
 --> Reading design: minisculComputer.prj
@@ -105,130 +105,78 @@ Slice Utilization Ratio Delta      : 5
 *                          HDL Compilation                              *
 =========================================================================
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd" in Library work.
-Entity <DCM_50M> compiled.
-Entity <DCM_50M> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity dcm_50m is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd" in Library work.
-Entity <sel_strobeB> compiled.
-Entity <sel_strobeB> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity sel_strobeb is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd" in Library work.
-Entity <bin2BCD3en> compiled.
-Entity <bin2BCD3en> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity bin2bcd3en is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd" in Library work.
-Entity <SSD_1dig> compiled.
-Entity <SSD_1dig> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity ssd_1dig is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd" in Library work.
-Entity <mux4SSD> compiled.
-Entity <mux4SSD> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity mux4ssd is up to date.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signConverter2.vhf" in Library work.
+Architecture behavioral of Entity m2_1_mxilinx_signconverter2 is up to date.
+Architecture behavioral of Entity adsu8_mxilinx_signconverter2 is up to date.
+Architecture behavioral of Entity signconverter2 is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/sevenSeg.vhf" in Library work.
-Entity <sevenSeg> compiled.
-Entity <sevenSeg> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity sevenseg is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Mem32xBank.vhf" in Library work.
-Entity <FD8CE_MXILINX_Mem32xBank> compiled.
-Entity <FD8CE_MXILINX_Mem32xBank> (Architecture <BEHAVIORAL>) compiled.
-Entity <Mem32xBank> compiled.
-Entity <Mem32xBank> (Architecture <BEHAVIORAL>) compiled.
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf" in Library work.
-Entity <M2_1_MXILINX_programCounter> compiled.
-Entity <M2_1_MXILINX_programCounter> (Architecture <BEHAVIORAL>) compiled.
-Entity <FTCLEX_MXILINX_programCounter> compiled.
-Entity <FTCLEX_MXILINX_programCounter> (Architecture <BEHAVIORAL>) compiled.
-Entity <CB8CLE_MXILINX_programCounter> compiled.
-Entity <CB8CLE_MXILINX_programCounter> (Architecture <BEHAVIORAL>) compiled.
-Entity <M2_1B1_MXILINX_programCounter> compiled.
-Entity <M2_1B1_MXILINX_programCounter> (Architecture <BEHAVIORAL>) compiled.
-Entity <CB2CLED_MXILINX_programCounter> compiled.
-Entity <CB2CLED_MXILINX_programCounter> (Architecture <BEHAVIORAL>) compiled.
-Entity <programCounter> compiled.
-Entity <programCounter> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity fd8ce_mxilinx_mem32xbank is up to date.
+Architecture behavioral of Entity mem32xbank is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Misc.vhf" in Library work.
-Entity <NAND8_MXILINX_CU_Misc> compiled.
-Entity <NAND8_MXILINX_CU_Misc> (Architecture <BEHAVIORAL>) compiled.
-Entity <AND8_MXILINX_CU_Misc> compiled.
-Entity <AND8_MXILINX_CU_Misc> (Architecture <BEHAVIORAL>) compiled.
-Entity <CU_Misc> compiled.
-Entity <CU_Misc> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity nand8_mxilinx_cu_misc is up to date.
+Architecture behavioral of Entity and8_mxilinx_cu_misc is up to date.
+Architecture behavioral of Entity cu_misc is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MainMemory.vhf" in Library work.
-Entity <MainMemory> compiled.
-Entity <MainMemory> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity mainmemory is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MM_signal_MUX.vhf" in Library work.
-Entity <M2_1_MXILINX_MM_signal_MUX> compiled.
-Entity <M2_1_MXILINX_MM_signal_MUX> (Architecture <BEHAVIORAL>) compiled.
-Entity <M2_1E_MXILINX_MM_signal_MUX> compiled.
-Entity <M2_1E_MXILINX_MM_signal_MUX> (Architecture <BEHAVIORAL>) compiled.
-Entity <M16_1E_MXILINX_MM_signal_MUX> compiled.
-Entity <M16_1E_MXILINX_MM_signal_MUX> (Architecture <BEHAVIORAL>) compiled.
-Entity <signalMux_32_MUSER_MM_signal_MUX> compiled.
-Entity <signalMux_32_MUSER_MM_signal_MUX> (Architecture <BEHAVIORAL>) compiled.
-Entity <MM_signal_MUX> compiled.
-Entity <MM_signal_MUX> (Architecture <BEHAVIORAL>) compiled.
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_ALU.vhf" in Library work.
-Entity <M2_1E_MXILINX_CU_ALU> compiled.
-Entity <M2_1E_MXILINX_CU_ALU> (Architecture <BEHAVIORAL>) compiled.
-Entity <M4_1E_MXILINX_CU_ALU> compiled.
-Entity <M4_1E_MXILINX_CU_ALU> (Architecture <BEHAVIORAL>) compiled.
-Entity <CU_ALU> compiled.
-Entity <CU_ALU> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity m2_1_mxilinx_mm_signal_mux is up to date.
+Architecture behavioral of Entity m2_1e_mxilinx_mm_signal_mux is up to date.
+Architecture behavioral of Entity m16_1e_mxilinx_mm_signal_mux is up to date.
+Architecture behavioral of Entity signalmux_32_muser_mm_signal_mux is up to date.
+Architecture behavioral of Entity mm_signal_mux is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Registers.vhf" in Library work.
-Entity <FD8CE_MXILINX_Registers> compiled.
-Entity <FD8CE_MXILINX_Registers> (Architecture <BEHAVIORAL>) compiled.
-Entity <Registers> compiled.
-Entity <Registers> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity fd8ce_mxilinx_registers is up to date.
+Architecture behavioral of Entity registers is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/DisplayModule.vhf" in Library work.
-Entity <M2_1_MXILINX_DisplayModule> compiled.
-Entity <M2_1_MXILINX_DisplayModule> (Architecture <BEHAVIORAL>) compiled.
-Entity <DisplayModule> compiled.
-Entity <DisplayModule> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity m2_1_mxilinx_displaymodule is up to date.
+Architecture behavioral of Entity displaymodule is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read.vhf" in Library work.
-Entity <OR6_MXILINX_CU_Read> compiled.
-Entity <OR6_MXILINX_CU_Read> (Architecture <BEHAVIORAL>) compiled.
-Entity <AND8_MXILINX_CU_Read> compiled.
-Entity <AND8_MXILINX_CU_Read> (Architecture <BEHAVIORAL>) compiled.
-Entity <CU_Read> compiled.
-Entity <CU_Read> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity or6_mxilinx_cu_read is up to date.
+Architecture behavioral of Entity and8_mxilinx_cu_read is up to date.
+Architecture behavioral of Entity cu_read is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read_MUX.vhf" in Library work.
-Entity <M2_1E_MXILINX_CU_Read_MUX> compiled.
-Entity <M2_1E_MXILINX_CU_Read_MUX> (Architecture <BEHAVIORAL>) compiled.
-Entity <M4_1E_MXILINX_CU_Read_MUX> compiled.
-Entity <M4_1E_MXILINX_CU_Read_MUX> (Architecture <BEHAVIORAL>) compiled.
-Entity <CU_Read_MUX> compiled.
-Entity <CU_Read_MUX> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity m2_1e_mxilinx_cu_read_mux is up to date.
+Architecture behavioral of Entity m4_1e_mxilinx_cu_read_mux is up to date.
+Architecture behavioral of Entity cu_read_mux is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Write.vhf" in Library work.
-Entity <D2_4E_MXILINX_CU_Write> compiled.
-Entity <D2_4E_MXILINX_CU_Write> (Architecture <BEHAVIORAL>) compiled.
-Entity <OR8_MXILINX_CU_Write> compiled.
-Entity <OR8_MXILINX_CU_Write> (Architecture <BEHAVIORAL>) compiled.
-Entity <AND8_MXILINX_CU_Write> compiled.
-Entity <AND8_MXILINX_CU_Write> (Architecture <BEHAVIORAL>) compiled.
-Entity <CU_Write> compiled.
-Entity <CU_Write> (Architecture <BEHAVIORAL>) compiled.
+Architecture behavioral of Entity d2_4e_mxilinx_cu_write is up to date.
+Architecture behavioral of Entity or8_mxilinx_cu_write is up to date.
+Architecture behavioral of Entity and8_mxilinx_cu_write is up to date.
+Architecture behavioral of Entity cu_write is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/CRenc4bin.vhd" in Library work.
-Entity <CRenc4bin> compiled.
-Entity <CRenc4bin> (Architecture <Behavioral>) compiled.
+Architecture behavioral of Entity crenc4bin is up to date.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/programCounter.vhf" in Library work.
+Architecture behavioral of Entity m2_1_mxilinx_programcounter is up to date.
+Architecture behavioral of Entity ftclex_mxilinx_programcounter is up to date.
+Architecture behavioral of Entity cb8cle_mxilinx_programcounter is up to date.
+Architecture behavioral of Entity m2_1b1_mxilinx_programcounter is up to date.
+Architecture behavioral of Entity cb2cled_mxilinx_programcounter is up to date.
+Architecture behavioral of Entity programcounter is up to date.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/ALU_component.vhf" in Library work.
+Architecture behavioral of Entity adsu8_mxilinx_alu_component is up to date.
+Architecture behavioral of Entity alu_component is up to date.
+Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_ALU.vhf" in Library work.
+Architecture behavioral of Entity m2_1e_mxilinx_cu_alu is up to date.
+Architecture behavioral of Entity m4_1e_mxilinx_cu_alu is up to date.
+Architecture behavioral of Entity cu_alu is up to date.
 Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/minisculComputer.vhf" in Library work.
-Entity <FD8CE_MXILINX_minisculComputer> compiled.
-Entity <FD8CE_MXILINX_minisculComputer> (Architecture <BEHAVIORAL>) compiled.
-Entity <minisculComputer> compiled.
-Entity <minisculComputer> (Architecture <BEHAVIORAL>) compiled.
-Compiling vhdl file "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signalMux_32.vhf" in Library work.
-Entity <M2_1_MXILINX_signalMux_32> compiled.
-Entity <M2_1_MXILINX_signalMux_32> (Architecture <BEHAVIORAL>) compiled.
-Entity <M2_1E_MXILINX_signalMux_32> compiled.
-Entity <M2_1E_MXILINX_signalMux_32> (Architecture <BEHAVIORAL>) compiled.
-Entity <M16_1E_MXILINX_signalMux_32> compiled.
-Entity <M16_1E_MXILINX_signalMux_32> (Architecture <BEHAVIORAL>) compiled.
-Entity <signalMux_32> compiled.
-Entity <signalMux_32> (Architecture <BEHAVIORAL>) compiled.
-
-=========================================================================
-*                     Design Hierarchy Analysis                         *
-=========================================================================
-Analyzing hierarchy for entity <minisculComputer> in library <work> (architecture <BEHAVIORAL>).
-"C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/minisculComputer.vhf" line 317: In entity <minisculComputer>
-ERROR:Xst:2587 - Port <counter> of instance <XLXI_1> has different type in definition <programCounter>.
-ERROR:Xst:2585 - Port <timer> of instance <XLXI_1> does not exist in definition <programCounter>. Please compare the definition of block <programCounter> to its component declaration to detect the mismatch.
+Architecture behavioral of Entity fd8ce_mxilinx_minisculcomputer is up to date.
+ERROR:HDLParsers:1202 - "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/minisculComputer.vhf" Line 300. Redeclaration of symbol counter.
+ERROR:HDLParsers:843 - "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/minisculComputer.vhf" Line 463. Formal counter of programCounter is used twice.
 --> 
 
-Total memory usage is 252592 kilobytes
+Total memory usage is 250592 kilobytes
 
 Number of errors   :    2 (   0 filtered)
 Number of warnings :    0 (   0 filtered)

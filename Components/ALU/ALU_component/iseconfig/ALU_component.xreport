@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2017-12-13T21:03:27</DateModified>
+  <DateModified>2017-12-14T09:10:26</DateModified>
   <ModuleName>ALU_component</ModuleName>
   <SummaryTimeStamp>Unknown</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/ALU/ALU_component/iseconfig/ALU_component.xreport</SavedFilePath>
-  <ImplementationReportsDirectory>C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/ALU/ALU_component</ImplementationReportsDirectory>
+  <ImplementationReportsDirectory>C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/ALU/ALU_component\</ImplementationReportsDirectory>
   <DateInitialized>2017-12-13T21:03:27</DateInitialized>
   <EnableMessageFiltering>false</EnableMessageFiltering>
  </header>

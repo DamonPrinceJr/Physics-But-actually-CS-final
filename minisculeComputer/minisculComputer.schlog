@@ -1,9 +1,0 @@
-select figure at -232 2398 8 -branches -sn=1
-select figure at 2898 2255 8 -branches -sn=1
-move instance at 2720 2448 to 2720 1888 R0 -keepConn -sn=1
-select figure at 2749 1395 8 -branches -sn=1
-select figure at 2401 1339 8 -branches -sn=1
-select figure at 762 1259 8 -branches -sn=1
-select figure at 3538 1378 8 -branches -sn=1
-select figure at 176 592 8 -branches -sn=1
-select figure at -217 1910 8 -branches -sn=1

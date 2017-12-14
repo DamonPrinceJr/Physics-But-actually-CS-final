@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym signConverter2 C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/signConverter/signConverter/signConverter2.sch C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/ALU/ALU_component/signConverter2.sym 

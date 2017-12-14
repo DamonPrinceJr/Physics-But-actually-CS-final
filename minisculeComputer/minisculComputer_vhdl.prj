@@ -3,6 +3,7 @@ vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\downloa
 vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\downloads\mux4SSD.vhd"
 vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\downloads\DCM_50M.vhd"
 vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\downloads\bin2BCD3en.vhd"
+vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\minisculeComputer\signConverter2.vhf"
 vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\minisculeComputer\sevenSeg.vhf"
 vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\minisculeComputer\signalMux_32.vhf"
 vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\minisculeComputer\Mem32xBank.vhf"
@@ -17,4 +18,5 @@ vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\miniscu
 vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\minisculeComputer\CU_Read.vhf"
 vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\minisculeComputer\CU_Misc.vhf"
 vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\minisculeComputer\CU_ALU.vhf"
+vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\minisculeComputer\ALU_component.vhf"
 vhdl work "C:\Users\Vason\Documents\GitHub\Physics-But-actually-CS-final\minisculeComputer\minisculComputer.vhf"
