@@ -18,10 +18,8 @@
         <signal name="MATH(4)" />
         <signal name="MATH(5)" />
         <signal name="XLXN_2" />
-        <signal name="DR(1)">
-        </signal>
-        <signal name="DR(0)">
-        </signal>
+        <signal name="DR(1)" />
+        <signal name="DR(0)" />
         <signal name="Reg2(0)" />
         <signal name="Reg1(0)" />
         <signal name="Reg0(0)" />
@@ -36,43 +34,37 @@
         <signal name="Reg1(2)" />
         <signal name="Reg0(2)" />
         <signal name="Reg3(2)" />
-        <signal name="DR(2)">
-        </signal>
+        <signal name="DR(2)" />
         <signal name="XLXN_305" />
         <signal name="Reg2(3)" />
         <signal name="Reg1(3)" />
         <signal name="Reg0(3)" />
         <signal name="Reg3(3)" />
-        <signal name="DR(3)">
-        </signal>
+        <signal name="DR(3)" />
         <signal name="XLXN_60" />
         <signal name="Reg2(4)" />
         <signal name="Reg1(4)" />
         <signal name="Reg0(4)" />
         <signal name="Reg3(4)" />
-        <signal name="DR(4)">
-        </signal>
+        <signal name="DR(4)" />
         <signal name="XLXN_71" />
         <signal name="Reg2(5)" />
         <signal name="Reg1(5)" />
         <signal name="Reg0(5)" />
         <signal name="Reg3(5)" />
-        <signal name="DR(5)">
-        </signal>
+        <signal name="DR(5)" />
         <signal name="XLXN_159" />
         <signal name="Reg2(6)" />
         <signal name="Reg1(6)" />
         <signal name="Reg0(6)" />
         <signal name="Reg3(6)" />
-        <signal name="DR(6)">
-        </signal>
+        <signal name="DR(6)" />
         <signal name="XLXN_316" />
         <signal name="Reg2(7)" />
         <signal name="Reg1(7)" />
         <signal name="Reg0(7)" />
         <signal name="Reg3(7)" />
-        <signal name="DR(7)">
-        </signal>
+        <signal name="DR(7)" />
         <signal name="ALU_B(0)" />
         <signal name="ALU_B(1)" />
         <signal name="ALU_B(2)" />
@@ -83,21 +75,23 @@
         <signal name="ALU_B(4)" />
         <signal name="MATH(5:0)" />
         <signal name="DR(7:0)" />
-        <signal name="r0(7:0)" />
-        <signal name="r1(7:0)" />
-        <signal name="r2(7:0)" />
-        <signal name="r3(7:0)" />
-        <signal name="ALU_B(7:0)" />
+        <signal name="Reg0(7:0)" />
+        <signal name="Reg1(7:0)" />
+        <signal name="Reg2(7:0)" />
+        <signal name="Reg3(7:0)" />
         <signal name="Add_Sub" />
+        <signal name="Signed" />
+        <signal name="ALU_B(7:0)" />
         <port polarity="Input" name="MODE" />
         <port polarity="Input" name="MATH(5:0)" />
         <port polarity="Input" name="DR(7:0)" />
-        <port polarity="Input" name="r0(7:0)" />
-        <port polarity="Input" name="r1(7:0)" />
-        <port polarity="Input" name="r2(7:0)" />
-        <port polarity="Input" name="r3(7:0)" />
-        <port polarity="Output" name="ALU_B(7:0)" />
+        <port polarity="Input" name="Reg0(7:0)" />
+        <port polarity="Input" name="Reg1(7:0)" />
+        <port polarity="Input" name="Reg2(7:0)" />
+        <port polarity="Input" name="Reg3(7:0)" />
         <port polarity="Output" name="Add_Sub" />
+        <port polarity="Output" name="Signed" />
+        <port polarity="Output" name="ALU_B(7:0)" />
         <blockdef name="or3">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="48" y1="-64" y2="-64" x1="0" />
@@ -178,6 +172,21 @@
             <line x2="64" y1="-48" y2="-48" x1="144" />
             <line x2="144" y1="-144" y2="-144" x1="64" />
             <line x2="64" y1="-48" y2="-144" x1="64" />
+        </blockdef>
+        <blockdef name="or4">
+            <timestamp>2000-1-1T10:10:10</timestamp>
+            <line x2="48" y1="-64" y2="-64" x1="0" />
+            <line x2="64" y1="-128" y2="-128" x1="0" />
+            <line x2="64" y1="-192" y2="-192" x1="0" />
+            <line x2="48" y1="-256" y2="-256" x1="0" />
+            <line x2="192" y1="-160" y2="-160" x1="256" />
+            <arc ex="112" ey="-208" sx="192" sy="-160" r="88" cx="116" cy="-120" />
+            <line x2="48" y1="-208" y2="-208" x1="112" />
+            <line x2="48" y1="-112" y2="-112" x1="112" />
+            <line x2="48" y1="-256" y2="-208" x1="48" />
+            <line x2="48" y1="-64" y2="-112" x1="48" />
+            <arc ex="48" ey="-208" sx="48" sy="-112" r="56" cx="16" cy="-160" />
+            <arc ex="192" ey="-160" sx="112" sy="-112" r="88" cx="116" cy="-200" />
         </blockdef>
         <block symbolname="or3" name="XLXI_1">
             <blockpin signalname="MATH(2)" name="I0" />
@@ -340,6 +349,13 @@
             <blockpin signalname="MATH(4)" name="I0" />
             <blockpin signalname="MATH(1)" name="I1" />
             <blockpin signalname="DR_vs_Reg" name="O" />
+        </block>
+        <block symbolname="or4" name="XLXI_72">
+            <blockpin signalname="MATH(4)" name="I0" />
+            <blockpin signalname="MATH(3)" name="I1" />
+            <blockpin signalname="MATH(1)" name="I2" />
+            <blockpin signalname="MATH(0)" name="I3" />
+            <blockpin signalname="Signed" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -798,32 +814,53 @@
         <branch name="DR(7:0)">
             <wire x2="304" y1="96" y2="96" x1="224" />
         </branch>
-        <branch name="r0(7:0)">
+        <branch name="Reg0(7:0)">
             <wire x2="304" y1="128" y2="128" x1="224" />
         </branch>
-        <branch name="r1(7:0)">
+        <branch name="Reg1(7:0)">
             <wire x2="304" y1="160" y2="160" x1="224" />
         </branch>
-        <branch name="r2(7:0)">
+        <branch name="Reg2(7:0)">
             <wire x2="304" y1="192" y2="192" x1="224" />
         </branch>
-        <branch name="r3(7:0)">
+        <branch name="Reg3(7:0)">
             <wire x2="304" y1="224" y2="224" x1="224" />
         </branch>
         <iomarker fontsize="28" x="224" y="64" name="MATH(5:0)" orien="R180" />
         <iomarker fontsize="28" x="224" y="32" name="MODE" orien="R180" />
         <iomarker fontsize="28" x="224" y="96" name="DR(7:0)" orien="R180" />
-        <iomarker fontsize="28" x="224" y="128" name="r0(7:0)" orien="R180" />
-        <iomarker fontsize="28" x="224" y="160" name="r1(7:0)" orien="R180" />
-        <iomarker fontsize="28" x="224" y="192" name="r2(7:0)" orien="R180" />
-        <iomarker fontsize="28" x="224" y="224" name="r3(7:0)" orien="R180" />
-        <branch name="ALU_B(7:0)">
-            <wire x2="3184" y1="96" y2="96" x1="3104" />
-        </branch>
-        <iomarker fontsize="28" x="3184" y="96" name="ALU_B(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="224" y="128" name="Reg0(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="224" y="160" name="Reg1(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="224" y="192" name="Reg2(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="224" y="224" name="Reg3(7:0)" orien="R180" />
         <branch name="Add_Sub">
             <wire x2="1280" y1="448" y2="448" x1="1232" />
         </branch>
         <iomarker fontsize="28" x="1280" y="448" name="Add_Sub" orien="R0" />
+        <branch name="MATH(1)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="224" type="branch" />
+            <wire x2="1088" y1="224" y2="224" x1="1040" />
+        </branch>
+        <branch name="MATH(0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="160" type="branch" />
+            <wire x2="1088" y1="160" y2="160" x1="1040" />
+        </branch>
+        <instance x="1088" y="416" name="XLXI_72" orien="R0" />
+        <branch name="MATH(4)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="352" type="branch" />
+            <wire x2="1088" y1="352" y2="352" x1="1040" />
+        </branch>
+        <branch name="MATH(3)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1040" y="288" type="branch" />
+            <wire x2="1088" y1="288" y2="288" x1="1040" />
+        </branch>
+        <branch name="Signed">
+            <wire x2="1376" y1="256" y2="256" x1="1344" />
+        </branch>
+        <iomarker fontsize="28" x="1376" y="256" name="Signed" orien="R0" />
+        <branch name="ALU_B(7:0)">
+            <wire x2="1312" y1="96" y2="96" x1="1232" />
+        </branch>
+        <iomarker fontsize="28" x="1312" y="96" name="ALU_B(7:0)" orien="R0" />
     </sheet>
 </drawing>

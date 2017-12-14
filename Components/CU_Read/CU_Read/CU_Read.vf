@@ -1,0 +1,495 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : CU_Read.vf
+// /___/   /\     Timestamp : 12/13/2017 15:46:09
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Read/CU_Read/CU_Read.vf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Read/CU_Read/CU_Read.sch
+//Design Name: CU_Read
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module OR6_MXILINX_CU_Read(I0, 
+                           I1, 
+                           I2, 
+                           I3, 
+                           I4, 
+                           I5, 
+                           O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+   output O;
+   
+   wire dummy;
+   wire I35;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   OR4  I_36_87 (.I0(I0), 
+                .I1(I1), 
+                .I2(I2), 
+                .I3(I35), 
+                .O(O_DUMMY));
+   OR3  I_36_88 (.I0(I3), 
+                .I1(I4), 
+                .I2(I5), 
+                .O(I35));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_106 (.I1(I0), 
+                  .I2(I1), 
+                  .I3(I2), 
+                  .I4(I35), 
+                  .O(O_DUMMY));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_107 (.I1(I3), 
+                  .I2(I4), 
+                  .I3(I5), 
+                  .I4(dummy), 
+                  .O(I35));
+endmodule
+`timescale 1ns / 1ps
+
+module AND8_MXILINX_CU_Read(I0, 
+                            I1, 
+                            I2, 
+                            I3, 
+                            I4, 
+                            I5, 
+                            I6, 
+                            I7, 
+                            O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+    input I6;
+    input I7;
+   output O;
+   
+   wire dummy;
+   wire S0;
+   wire S1;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_29 (.I1(I0), 
+                 .I2(I1), 
+                 .I3(I2), 
+                 .I4(I3), 
+                 .O(S0));
+   AND4  I_36_110 (.I0(I0), 
+                  .I1(I1), 
+                  .I2(I2), 
+                  .I3(I3), 
+                  .O(S0));
+   AND4  I_36_127 (.I0(I4), 
+                  .I1(I5), 
+                  .I2(I6), 
+                  .I3(I7), 
+                  .O(S1));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_138 (.I1(I4), 
+                  .I2(I5), 
+                  .I3(I6), 
+                  .I4(I7), 
+                  .O(S1));
+   AND2  I_36_142 (.I0(S0), 
+                  .I1(S1), 
+                  .O(O_DUMMY));
+   (* RLOC = "X0Y1" *) 
+   FMAP  I_36_152 (.I1(S0), 
+                  .I2(S1), 
+                  .I3(dummy), 
+                  .I4(dummy), 
+                  .O(O_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module CU_Read(IR, 
+               readSignal);
+
+    input [7:0] IR;
+   output [3:0] readSignal;
+   
+   wire opCode0x01;
+   wire opCode0x02;
+   wire opCode0x03;
+   wire opCode0x05;
+   wire opCode0x08;
+   wire opCode0x11;
+   wire opCode0x12;
+   wire opCode0x13;
+   wire opCode0x14;
+   wire opCode0x15;
+   wire opCode0x16;
+   wire opCode0x17;
+   wire XLXN_4;
+   wire XLXN_6;
+   wire XLXN_8;
+   wire XLXN_10;
+   wire XLXN_12;
+   wire XLXN_18;
+   wire XLXN_20;
+   wire XLXN_22;
+   wire XLXN_24;
+   wire XLXN_26;
+   wire XLXN_44;
+   wire XLXN_46;
+   wire XLXN_48;
+   wire XLXN_50;
+   wire XLXN_52;
+   wire XLXN_59;
+   wire XLXN_61;
+   wire XLXN_63;
+   wire XLXN_65;
+   wire XLXN_70;
+   wire XLXN_72;
+   wire XLXN_78;
+   wire XLXN_80;
+   wire XLXN_82;
+   wire XLXN_343;
+   wire XLXN_345;
+   wire XLXN_347;
+   wire XLXN_349;
+   wire XLXN_351;
+   wire XLXN_356;
+   wire XLXN_358;
+   wire XLXN_360;
+   wire XLXN_362;
+   wire XLXN_364;
+   wire XLXN_366;
+   wire XLXN_370;
+   wire XLXN_373;
+   wire XLXN_375;
+   wire XLXN_377;
+   wire XLXN_385;
+   wire XLXN_398;
+   wire XLXN_400;
+   wire XLXN_402;
+   wire XLXN_410;
+   wire XLXN_562;
+   wire XLXN_564;
+   wire XLXN_566;
+   wire XLXN_577;
+   wire XLXN_579;
+   wire XLXN_581;
+   wire XLXN_585;
+   wire XLXN_587;
+   wire XLXN_592;
+   wire XLXN_594;
+   wire XLXN_596;
+   wire XLXN_602;
+   wire XLXN_607;
+   wire XLXN_609;
+   wire XLXN_611;
+   wire XLXN_615;
+   wire XLXN_627;
+   wire XLXN_629;
+   wire XLXN_631;
+   wire XLXN_633;
+   wire XLXN_635;
+   wire XLXN_637;
+   wire XLXN_639;
+   wire XLXN_641;
+   wire XLXN_643;
+   wire XLXN_645;
+   wire XLXN_653;
+   
+   (* HU_SET = "XLXI_1_1" *) 
+   AND8_MXILINX_CU_Read  XLXI_1 (.I0(XLXN_12), 
+                                .I1(XLXN_10), 
+                                .I2(XLXN_8), 
+                                .I3(XLXN_6), 
+                                .I4(XLXN_4), 
+                                .I5(IR[2]), 
+                                .I6(IR[1]), 
+                                .I7(IR[0]), 
+                                .O(readSignal[0]));
+   INV  XLXI_2 (.I(IR[3]), 
+               .O(XLXN_4));
+   INV  XLXI_3 (.I(IR[4]), 
+               .O(XLXN_6));
+   INV  XLXI_4 (.I(IR[5]), 
+               .O(XLXN_8));
+   INV  XLXI_5 (.I(IR[6]), 
+               .O(XLXN_10));
+   INV  XLXI_6 (.I(IR[7]), 
+               .O(XLXN_12));
+   (* HU_SET = "XLXI_7_0" *) 
+   AND8_MXILINX_CU_Read  XLXI_7 (.I0(XLXN_26), 
+                                .I1(XLXN_24), 
+                                .I2(XLXN_22), 
+                                .I3(XLXN_20), 
+                                .I4(XLXN_18), 
+                                .I5(XLXN_72), 
+                                .I6(XLXN_70), 
+                                .I7(IR[0]), 
+                                .O(opCode0x01));
+   INV  XLXI_8 (.I(IR[3]), 
+               .O(XLXN_18));
+   INV  XLXI_9 (.I(IR[4]), 
+               .O(XLXN_20));
+   INV  XLXI_10 (.I(IR[5]), 
+                .O(XLXN_22));
+   INV  XLXI_11 (.I(IR[6]), 
+                .O(XLXN_24));
+   INV  XLXI_12 (.I(IR[7]), 
+                .O(XLXN_26));
+   (* HU_SET = "XLXI_19_4" *) 
+   AND8_MXILINX_CU_Read  XLXI_19 (.I0(XLXN_52), 
+                                 .I1(XLXN_50), 
+                                 .I2(XLXN_48), 
+                                 .I3(XLXN_46), 
+                                 .I4(XLXN_44), 
+                                 .I5(XLXN_653), 
+                                 .I6(IR[1]), 
+                                 .I7(IR[0]), 
+                                 .O(opCode0x03));
+   INV  XLXI_20 (.I(IR[3]), 
+                .O(XLXN_44));
+   INV  XLXI_21 (.I(IR[4]), 
+                .O(XLXN_46));
+   INV  XLXI_22 (.I(IR[5]), 
+                .O(XLXN_48));
+   INV  XLXI_23 (.I(IR[6]), 
+                .O(XLXN_50));
+   INV  XLXI_24 (.I(IR[7]), 
+                .O(XLXN_52));
+   (* HU_SET = "XLXI_25_5" *) 
+   AND8_MXILINX_CU_Read  XLXI_25 (.I0(XLXN_65), 
+                                 .I1(XLXN_63), 
+                                 .I2(XLXN_61), 
+                                 .I3(XLXN_59), 
+                                 .I4(IR[3]), 
+                                 .I5(XLXN_82), 
+                                 .I6(XLXN_80), 
+                                 .I7(XLXN_78), 
+                                 .O(opCode0x08));
+   INV  XLXI_27 (.I(IR[4]), 
+                .O(XLXN_59));
+   INV  XLXI_28 (.I(IR[5]), 
+                .O(XLXN_61));
+   INV  XLXI_29 (.I(IR[6]), 
+                .O(XLXN_63));
+   INV  XLXI_30 (.I(IR[7]), 
+                .O(XLXN_65));
+   INV  XLXI_31 (.I(IR[1]), 
+                .O(XLXN_70));
+   INV  XLXI_32 (.I(IR[2]), 
+                .O(XLXN_72));
+   INV  XLXI_34 (.I(IR[0]), 
+                .O(XLXN_78));
+   INV  XLXI_35 (.I(IR[1]), 
+                .O(XLXN_80));
+   INV  XLXI_36 (.I(IR[2]), 
+                .O(XLXN_82));
+   (* HU_SET = "XLXI_170_2" *) 
+   AND8_MXILINX_CU_Read  XLXI_170 (.I0(XLXN_351), 
+                                  .I1(XLXN_349), 
+                                  .I2(XLXN_347), 
+                                  .I3(XLXN_345), 
+                                  .I4(XLXN_343), 
+                                  .I5(XLXN_356), 
+                                  .I6(IR[1]), 
+                                  .I7(XLXN_627), 
+                                  .O(opCode0x02));
+   INV  XLXI_171 (.I(IR[3]), 
+                 .O(XLXN_343));
+   INV  XLXI_172 (.I(IR[4]), 
+                 .O(XLXN_345));
+   INV  XLXI_173 (.I(IR[5]), 
+                 .O(XLXN_347));
+   INV  XLXI_174 (.I(IR[6]), 
+                 .O(XLXN_349));
+   INV  XLXI_175 (.I(IR[7]), 
+                 .O(XLXN_351));
+   INV  XLXI_177 (.I(IR[2]), 
+                 .O(XLXN_356));
+   (* HU_SET = "XLXI_178_3" *) 
+   AND8_MXILINX_CU_Read  XLXI_178 (.I0(XLXN_366), 
+                                  .I1(XLXN_364), 
+                                  .I2(XLXN_362), 
+                                  .I3(XLXN_360), 
+                                  .I4(XLXN_358), 
+                                  .I5(IR[2]), 
+                                  .I6(XLXN_370), 
+                                  .I7(IR[0]), 
+                                  .O(opCode0x05));
+   INV  XLXI_179 (.I(IR[3]), 
+                 .O(XLXN_358));
+   INV  XLXI_180 (.I(IR[4]), 
+                 .O(XLXN_360));
+   INV  XLXI_181 (.I(IR[5]), 
+                 .O(XLXN_362));
+   INV  XLXI_182 (.I(IR[6]), 
+                 .O(XLXN_364));
+   INV  XLXI_183 (.I(IR[1]), 
+                 .O(XLXN_370));
+   INV  XLXI_184 (.I(IR[7]), 
+                 .O(XLXN_366));
+   (* HU_SET = "XLXI_185_6" *) 
+   AND8_MXILINX_CU_Read  XLXI_185 (.I0(IR[7]), 
+                                  .I1(XLXN_377), 
+                                  .I2(XLXN_375), 
+                                  .I3(XLXN_373), 
+                                  .I4(XLXN_631), 
+                                  .I5(XLXN_385), 
+                                  .I6(XLXN_629), 
+                                  .I7(IR[0]), 
+                                  .O(opCode0x11));
+   INV  XLXI_186 (.I(IR[4]), 
+                 .O(XLXN_373));
+   INV  XLXI_187 (.I(IR[5]), 
+                 .O(XLXN_375));
+   INV  XLXI_188 (.I(IR[6]), 
+                 .O(XLXN_377));
+   INV  XLXI_192 (.I(IR[2]), 
+                 .O(XLXN_385));
+   (* HU_SET = "XLXI_198_7" *) 
+   AND8_MXILINX_CU_Read  XLXI_198 (.I0(IR[7]), 
+                                  .I1(XLXN_402), 
+                                  .I2(XLXN_400), 
+                                  .I3(XLXN_398), 
+                                  .I4(XLXN_635), 
+                                  .I5(XLXN_410), 
+                                  .I6(IR[1]), 
+                                  .I7(XLXN_633), 
+                                  .O(opCode0x12));
+   INV  XLXI_199 (.I(IR[4]), 
+                 .O(XLXN_398));
+   INV  XLXI_200 (.I(IR[5]), 
+                 .O(XLXN_400));
+   INV  XLXI_201 (.I(IR[6]), 
+                 .O(XLXN_402));
+   INV  XLXI_205 (.I(IR[2]), 
+                 .O(XLXN_410));
+   (* HU_SET = "XLXI_285_8" *) 
+   AND8_MXILINX_CU_Read  XLXI_285 (.I0(IR[7]), 
+                                  .I1(XLXN_566), 
+                                  .I2(XLXN_564), 
+                                  .I3(XLXN_562), 
+                                  .I4(XLXN_639), 
+                                  .I5(XLXN_637), 
+                                  .I6(IR[1]), 
+                                  .I7(IR[0]), 
+                                  .O(opCode0x13));
+   INV  XLXI_286 (.I(IR[4]), 
+                 .O(XLXN_562));
+   INV  XLXI_287 (.I(IR[5]), 
+                 .O(XLXN_564));
+   INV  XLXI_288 (.I(IR[6]), 
+                 .O(XLXN_566));
+   (* HU_SET = "XLXI_293_9" *) 
+   AND8_MXILINX_CU_Read  XLXI_293 (.I0(IR[7]), 
+                                  .I1(XLXN_581), 
+                                  .I2(XLXN_579), 
+                                  .I3(XLXN_577), 
+                                  .I4(XLXN_641), 
+                                  .I5(IR[2]), 
+                                  .I6(XLXN_587), 
+                                  .I7(XLXN_585), 
+                                  .O(opCode0x15));
+   INV  XLXI_294 (.I(IR[4]), 
+                 .O(XLXN_577));
+   INV  XLXI_295 (.I(IR[5]), 
+                 .O(XLXN_579));
+   INV  XLXI_296 (.I(IR[6]), 
+                 .O(XLXN_581));
+   INV  XLXI_298 (.I(IR[0]), 
+                 .O(XLXN_585));
+   INV  XLXI_299 (.I(IR[1]), 
+                 .O(XLXN_587));
+   (* HU_SET = "XLXI_301_10" *) 
+   AND8_MXILINX_CU_Read  XLXI_301 (.I0(IR[7]), 
+                                  .I1(XLXN_596), 
+                                  .I2(XLXN_594), 
+                                  .I3(XLXN_592), 
+                                  .I4(XLXN_643), 
+                                  .I5(IR[2]), 
+                                  .I6(XLXN_602), 
+                                  .I7(IR[0]), 
+                                  .O(opCode0x16));
+   INV  XLXI_302 (.I(IR[4]), 
+                 .O(XLXN_592));
+   INV  XLXI_303 (.I(IR[5]), 
+                 .O(XLXN_594));
+   INV  XLXI_304 (.I(IR[6]), 
+                 .O(XLXN_596));
+   INV  XLXI_307 (.I(IR[1]), 
+                 .O(XLXN_602));
+   (* HU_SET = "XLXI_309_11" *) 
+   AND8_MXILINX_CU_Read  XLXI_309 (.I0(IR[7]), 
+                                  .I1(XLXN_611), 
+                                  .I2(XLXN_609), 
+                                  .I3(XLXN_607), 
+                                  .I4(XLXN_645), 
+                                  .I5(IR[2]), 
+                                  .I6(IR[1]), 
+                                  .I7(XLXN_615), 
+                                  .O(opCode0x17));
+   INV  XLXI_310 (.I(IR[4]), 
+                 .O(XLXN_607));
+   INV  XLXI_311 (.I(IR[5]), 
+                 .O(XLXN_609));
+   INV  XLXI_312 (.I(IR[6]), 
+                 .O(XLXN_611));
+   INV  XLXI_314 (.I(IR[0]), 
+                 .O(XLXN_615));
+   INV  XLXI_317 (.I(IR[0]), 
+                 .O(XLXN_627));
+   INV  XLXI_318 (.I(IR[1]), 
+                 .O(XLXN_629));
+   INV  XLXI_319 (.I(IR[3]), 
+                 .O(XLXN_631));
+   INV  XLXI_320 (.I(IR[0]), 
+                 .O(XLXN_633));
+   INV  XLXI_321 (.I(IR[3]), 
+                 .O(XLXN_635));
+   INV  XLXI_322 (.I(IR[2]), 
+                 .O(XLXN_637));
+   INV  XLXI_323 (.I(IR[3]), 
+                 .O(XLXN_639));
+   INV  XLXI_324 (.I(IR[3]), 
+                 .O(XLXN_641));
+   INV  XLXI_325 (.I(IR[3]), 
+                 .O(XLXN_643));
+   INV  XLXI_326 (.I(IR[3]), 
+                 .O(XLXN_645));
+   INV  XLXI_327 (.I(IR[2]), 
+                 .O(XLXN_653));
+   OR2  XLXI_328 (.I0(opCode0x05), 
+                 .I1(opCode0x02), 
+                 .O(readSignal[1]));
+   OR3  XLXI_329 (.I0(opCode0x08), 
+                 .I1(opCode0x03), 
+                 .I2(opCode0x01), 
+                 .O(readSignal[2]));
+   (* HU_SET = "XLXI_340_12" *) 
+   OR6_MXILINX_CU_Read  XLXI_340 (.I0(opCode0x16), 
+                                 .I1(opCode0x15), 
+                                 .I2(opCode0x14), 
+                                 .I3(opCode0x13), 
+                                 .I4(opCode0x12), 
+                                 .I5(opCode0x11), 
+                                 .O(readSignal[3]));
+endmodule

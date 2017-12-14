@@ -6,31 +6,74 @@
         <trait edittrait="all:0" />
     </attr>
     <netlist>
-        <signal name="mux_in0" />
-        <signal name="mux_in1" />
-        <signal name="mux_in2" />
-        <signal name="mux_in3" />
-        <signal name="mux_in4" />
-        <signal name="mux_in5" />
-        <signal name="mux_in6" />
-        <signal name="mux_in7" />
-        <signal name="mux_in8" />
-        <signal name="mux_in9" />
-        <signal name="mux_in10" />
-        <signal name="mux_in11" />
-        <signal name="mux_in12" />
-        <signal name="mux_in13" />
-        <signal name="mux_in14" />
-        <signal name="mux_in15" />
-        <signal name="XLXN_18" />
-        <signal name="S(0)" />
-        <signal name="S(1)" />
-        <signal name="XLXN_21" />
-        <signal name="S(2)" />
-        <signal name="XLXN_23" />
-        <signal name="S(3)" />
-        <signal name="XLXN_25" />
         <signal name="E" />
+        <signal name="XLXN_62" />
+        <signal name="S(4:0)" />
+        <signal name="XLXN_82" />
+        <signal name="XLXN_83" />
+        <signal name="XLXN_84" />
+        <signal name="XLXN_85" />
+        <signal name="XLXN_86" />
+        <signal name="XLXN_104" />
+        <signal name="XLXN_105" />
+        <signal name="XLXN_106" />
+        <signal name="XLXN_107" />
+        <signal name="XLXN_108" />
+        <signal name="XLXN_126" />
+        <signal name="XLXN_127" />
+        <signal name="XLXN_128" />
+        <signal name="XLXN_129" />
+        <signal name="XLXN_130" />
+        <signal name="XLXN_148" />
+        <signal name="XLXN_149" />
+        <signal name="XLXN_150" />
+        <signal name="XLXN_151" />
+        <signal name="XLXN_152" />
+        <signal name="XLXN_170" />
+        <signal name="XLXN_171" />
+        <signal name="XLXN_172" />
+        <signal name="XLXN_173" />
+        <signal name="XLXN_174" />
+        <signal name="XLXN_192" />
+        <signal name="XLXN_193" />
+        <signal name="XLXN_194" />
+        <signal name="XLXN_195" />
+        <signal name="XLXN_196" />
+        <signal name="XLXN_213" />
+        <signal name="XLXN_214" />
+        <signal name="XLXN_215" />
+        <signal name="XLXN_216" />
+        <signal name="XLXN_217" />
+        <signal name="XLXN_234" />
+        <signal name="XLXN_235" />
+        <signal name="XLXN_236" />
+        <signal name="XLXN_237" />
+        <signal name="XLXN_238" />
+        <signal name="XLXN_255" />
+        <signal name="XLXN_256" />
+        <signal name="XLXN_257" />
+        <signal name="XLXN_258" />
+        <signal name="XLXN_259" />
+        <signal name="DecodeOut" />
+        <signal name="XLXN_261" />
+        <signal name="XLXN_63" />
+        <signal name="S(4)" />
+        <signal name="mux_in15" />
+        <signal name="mux_in14" />
+        <signal name="mux_in13" />
+        <signal name="mux_in12" />
+        <signal name="mux_in11" />
+        <signal name="mux_in10" />
+        <signal name="mux_in9" />
+        <signal name="mux_in8" />
+        <signal name="mux_in7" />
+        <signal name="mux_in6" />
+        <signal name="mux_in5" />
+        <signal name="mux_in4" />
+        <signal name="mux_in3" />
+        <signal name="mux_in2" />
+        <signal name="mux_in1" />
+        <signal name="mux_in0" />
         <signal name="mux_in16" />
         <signal name="mux_in17" />
         <signal name="mux_in18" />
@@ -47,28 +90,34 @@
         <signal name="mux_in29" />
         <signal name="mux_in30" />
         <signal name="mux_in31" />
-        <signal name="DecodeOut" />
-        <signal name="XLXN_62" />
-        <signal name="XLXN_63" />
-        <signal name="S(4)" />
-        <signal name="S(4:0)" />
-        <port polarity="Input" name="mux_in0" />
-        <port polarity="Input" name="mux_in1" />
-        <port polarity="Input" name="mux_in2" />
-        <port polarity="Input" name="mux_in3" />
-        <port polarity="Input" name="mux_in4" />
-        <port polarity="Input" name="mux_in5" />
-        <port polarity="Input" name="mux_in6" />
-        <port polarity="Input" name="mux_in7" />
-        <port polarity="Input" name="mux_in8" />
-        <port polarity="Input" name="mux_in9" />
-        <port polarity="Input" name="mux_in10" />
-        <port polarity="Input" name="mux_in11" />
-        <port polarity="Input" name="mux_in12" />
-        <port polarity="Input" name="mux_in13" />
-        <port polarity="Input" name="mux_in14" />
-        <port polarity="Input" name="mux_in15" />
+        <signal name="XLXN_297" />
+        <signal name="S(3)" />
+        <signal name="XLXN_299" />
+        <signal name="S(2)" />
+        <signal name="XLXN_301" />
+        <signal name="S(1)" />
+        <signal name="XLXN_303" />
+        <signal name="S(0)" />
+        <signal name="XLXN_305" />
         <port polarity="Input" name="E" />
+        <port polarity="Input" name="S(4:0)" />
+        <port polarity="Output" name="DecodeOut" />
+        <port polarity="Input" name="mux_in15" />
+        <port polarity="Input" name="mux_in14" />
+        <port polarity="Input" name="mux_in13" />
+        <port polarity="Input" name="mux_in12" />
+        <port polarity="Input" name="mux_in11" />
+        <port polarity="Input" name="mux_in10" />
+        <port polarity="Input" name="mux_in9" />
+        <port polarity="Input" name="mux_in8" />
+        <port polarity="Input" name="mux_in7" />
+        <port polarity="Input" name="mux_in6" />
+        <port polarity="Input" name="mux_in5" />
+        <port polarity="Input" name="mux_in4" />
+        <port polarity="Input" name="mux_in3" />
+        <port polarity="Input" name="mux_in2" />
+        <port polarity="Input" name="mux_in1" />
+        <port polarity="Input" name="mux_in0" />
         <port polarity="Input" name="mux_in16" />
         <port polarity="Input" name="mux_in17" />
         <port polarity="Input" name="mux_in18" />
@@ -85,8 +134,6 @@
         <port polarity="Input" name="mux_in29" />
         <port polarity="Input" name="mux_in30" />
         <port polarity="Input" name="mux_in31" />
-        <port polarity="Output" name="DecodeOut" />
-        <port polarity="Input" name="S(4:0)" />
         <blockdef name="m16_1e">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="96" y1="-288" y2="-288" x1="0" />
@@ -139,6 +186,12 @@
             <line x2="96" y1="-96" y2="-96" x1="0" />
             <line x2="96" y1="-160" y2="-160" x1="0" />
         </blockdef>
+        <block symbolname="m2_1" name="XLXI_16">
+            <blockpin signalname="XLXN_62" name="D0" />
+            <blockpin signalname="XLXN_63" name="D1" />
+            <blockpin signalname="S(4)" name="S0" />
+            <blockpin signalname="DecodeOut" name="O" />
+        </block>
         <block symbolname="m16_1e" name="XLXI_9">
             <blockpin signalname="mux_in0" name="D0" />
             <blockpin signalname="mux_in1" name="D1" />
@@ -187,216 +240,206 @@
             <blockpin signalname="S(3)" name="S3" />
             <blockpin signalname="XLXN_63" name="O" />
         </block>
-        <block symbolname="m2_1" name="XLXI_16">
-            <blockpin signalname="XLXN_62" name="D0" />
-            <blockpin signalname="XLXN_63" name="D1" />
-            <blockpin signalname="S(4)" name="S0" />
-            <blockpin signalname="DecodeOut" name="O" />
-        </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <instance x="1760" y="1760" name="XLXI_2" orien="R0" />
-        <branch name="mux_in16">
-            <wire x2="1760" y1="448" y2="448" x1="1728" />
-        </branch>
-        <branch name="mux_in17">
-            <wire x2="1760" y1="512" y2="512" x1="1728" />
-        </branch>
-        <branch name="mux_in18">
-            <wire x2="1760" y1="576" y2="576" x1="1728" />
-        </branch>
-        <branch name="mux_in19">
-            <wire x2="1760" y1="640" y2="640" x1="1728" />
-        </branch>
-        <branch name="mux_in20">
-            <wire x2="1760" y1="704" y2="704" x1="1728" />
-        </branch>
-        <branch name="mux_in21">
-            <wire x2="1760" y1="768" y2="768" x1="1728" />
-        </branch>
-        <branch name="mux_in22">
-            <wire x2="1760" y1="832" y2="832" x1="1728" />
-        </branch>
-        <branch name="mux_in23">
-            <wire x2="1760" y1="896" y2="896" x1="1728" />
-        </branch>
-        <branch name="mux_in24">
-            <wire x2="1760" y1="960" y2="960" x1="1728" />
-        </branch>
-        <branch name="mux_in25">
-            <wire x2="1760" y1="1024" y2="1024" x1="1728" />
-        </branch>
-        <branch name="mux_in26">
-            <wire x2="1760" y1="1088" y2="1088" x1="1728" />
-        </branch>
-        <branch name="mux_in27">
-            <wire x2="1760" y1="1152" y2="1152" x1="1728" />
-        </branch>
-        <branch name="mux_in28">
-            <wire x2="1760" y1="1216" y2="1216" x1="1728" />
-        </branch>
-        <branch name="mux_in29">
-            <wire x2="1760" y1="1280" y2="1280" x1="1728" />
-        </branch>
-        <branch name="mux_in30">
-            <wire x2="1760" y1="1344" y2="1344" x1="1728" />
-        </branch>
-        <branch name="mux_in31">
-            <wire x2="1760" y1="1408" y2="1408" x1="1728" />
-        </branch>
-        <branch name="DecodeOut">
-            <wire x2="3056" y1="896" y2="896" x1="2976" />
-        </branch>
-        <branch name="XLXN_63">
-            <wire x2="2656" y1="928" y2="928" x1="2080" />
-        </branch>
-        <instance x="2656" y="1024" name="XLXI_16" orien="R0" />
-        <branch name="S(4)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2544" y="992" type="branch" />
-            <wire x2="2656" y1="992" y2="992" x1="2544" />
-        </branch>
-        <iomarker fontsize="28" x="3056" y="896" name="DecodeOut" orien="R0" />
-        <branch name="XLXN_62">
-            <wire x2="1248" y1="944" y2="944" x1="1072" />
-            <wire x2="2144" y1="288" y2="288" x1="1248" />
-            <wire x2="2144" y1="288" y2="864" x1="2144" />
-            <wire x2="2656" y1="864" y2="864" x1="2144" />
-            <wire x2="1248" y1="288" y2="944" x1="1248" />
-        </branch>
-        <branch name="S(3)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="448" y="1984" type="branch" />
-            <wire x2="656" y1="1984" y2="1984" x1="448" />
-            <wire x2="1376" y1="1984" y2="1984" x1="656" />
-            <wire x2="656" y1="1680" y2="1984" x1="656" />
-            <wire x2="752" y1="1680" y2="1680" x1="656" />
-            <wire x2="1760" y1="1664" y2="1664" x1="1376" />
-            <wire x2="1376" y1="1664" y2="1984" x1="1376" />
-        </branch>
-        <branch name="S(2)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="448" y="1936" type="branch" />
-            <wire x2="608" y1="1936" y2="1936" x1="448" />
-            <wire x2="1328" y1="1936" y2="1936" x1="608" />
-            <wire x2="608" y1="1616" y2="1936" x1="608" />
-            <wire x2="752" y1="1616" y2="1616" x1="608" />
-            <wire x2="1760" y1="1600" y2="1600" x1="1328" />
-            <wire x2="1328" y1="1600" y2="1936" x1="1328" />
-        </branch>
-        <branch name="S(1)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="448" y="1888" type="branch" />
-            <wire x2="560" y1="1888" y2="1888" x1="448" />
-            <wire x2="1280" y1="1888" y2="1888" x1="560" />
-            <wire x2="560" y1="1552" y2="1888" x1="560" />
-            <wire x2="752" y1="1552" y2="1552" x1="560" />
-            <wire x2="1280" y1="1536" y2="1888" x1="1280" />
-            <wire x2="1760" y1="1536" y2="1536" x1="1280" />
-        </branch>
-        <branch name="S(0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="448" y="1840" type="branch" />
-            <wire x2="512" y1="1840" y2="1840" x1="448" />
-            <wire x2="1232" y1="1840" y2="1840" x1="512" />
-            <wire x2="512" y1="1488" y2="1840" x1="512" />
-            <wire x2="752" y1="1488" y2="1488" x1="512" />
-            <wire x2="1760" y1="1472" y2="1472" x1="1232" />
-            <wire x2="1232" y1="1472" y2="1840" x1="1232" />
-        </branch>
-        <branch name="mux_in15">
-            <wire x2="752" y1="1424" y2="1424" x1="720" />
-        </branch>
-        <branch name="mux_in14">
-            <wire x2="752" y1="1360" y2="1360" x1="720" />
-        </branch>
-        <branch name="mux_in13">
-            <wire x2="752" y1="1296" y2="1296" x1="720" />
-        </branch>
-        <branch name="mux_in12">
-            <wire x2="752" y1="1232" y2="1232" x1="720" />
-        </branch>
-        <branch name="mux_in11">
-            <wire x2="752" y1="1168" y2="1168" x1="720" />
-        </branch>
-        <branch name="mux_in10">
-            <wire x2="752" y1="1104" y2="1104" x1="720" />
-        </branch>
-        <branch name="mux_in9">
-            <wire x2="752" y1="1040" y2="1040" x1="720" />
-        </branch>
-        <branch name="mux_in8">
-            <wire x2="752" y1="976" y2="976" x1="720" />
-        </branch>
-        <branch name="mux_in7">
-            <wire x2="752" y1="912" y2="912" x1="720" />
-        </branch>
-        <branch name="mux_in6">
-            <wire x2="752" y1="848" y2="848" x1="720" />
-        </branch>
-        <branch name="mux_in5">
-            <wire x2="752" y1="784" y2="784" x1="720" />
-        </branch>
-        <branch name="mux_in4">
-            <wire x2="752" y1="720" y2="720" x1="720" />
-        </branch>
-        <branch name="mux_in3">
-            <wire x2="752" y1="656" y2="656" x1="720" />
-        </branch>
-        <branch name="mux_in2">
-            <wire x2="752" y1="592" y2="592" x1="720" />
-        </branch>
-        <branch name="mux_in1">
-            <wire x2="752" y1="528" y2="528" x1="720" />
-        </branch>
-        <branch name="mux_in0">
-            <wire x2="752" y1="464" y2="464" x1="720" />
-        </branch>
-        <instance x="752" y="1776" name="XLXI_9" orien="R0" />
-        <iomarker fontsize="28" x="720" y="464" name="mux_in0" orien="R180" />
-        <iomarker fontsize="28" x="720" y="528" name="mux_in1" orien="R180" />
-        <iomarker fontsize="28" x="720" y="592" name="mux_in2" orien="R180" />
-        <iomarker fontsize="28" x="720" y="656" name="mux_in3" orien="R180" />
-        <iomarker fontsize="28" x="720" y="720" name="mux_in4" orien="R180" />
-        <iomarker fontsize="28" x="720" y="784" name="mux_in5" orien="R180" />
-        <iomarker fontsize="28" x="720" y="848" name="mux_in6" orien="R180" />
-        <iomarker fontsize="28" x="720" y="912" name="mux_in7" orien="R180" />
-        <iomarker fontsize="28" x="720" y="976" name="mux_in8" orien="R180" />
-        <iomarker fontsize="28" x="720" y="1040" name="mux_in9" orien="R180" />
-        <iomarker fontsize="28" x="720" y="1104" name="mux_in10" orien="R180" />
-        <iomarker fontsize="28" x="720" y="1168" name="mux_in11" orien="R180" />
-        <iomarker fontsize="28" x="720" y="1232" name="mux_in12" orien="R180" />
-        <iomarker fontsize="28" x="720" y="1296" name="mux_in13" orien="R180" />
-        <iomarker fontsize="28" x="720" y="1360" name="mux_in14" orien="R180" />
-        <iomarker fontsize="28" x="720" y="1424" name="mux_in15" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="448" name="mux_in16" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="512" name="mux_in17" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="576" name="mux_in18" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="640" name="mux_in19" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="704" name="mux_in20" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="768" name="mux_in21" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="832" name="mux_in22" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="896" name="mux_in23" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="960" name="mux_in24" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="1024" name="mux_in25" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="1088" name="mux_in26" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="1152" name="mux_in27" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="1216" name="mux_in28" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="1280" name="mux_in29" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="1344" name="mux_in30" orien="R180" />
-        <iomarker fontsize="28" x="1728" y="1408" name="mux_in31" orien="R180" />
         <iomarker fontsize="28" x="192" y="80" name="S(4:0)" orien="R180" />
         <branch name="S(4:0)">
             <wire x2="256" y1="80" y2="80" x1="192" />
         </branch>
-        <iomarker fontsize="28" x="192" y="144" name="E" orien="R180" />
         <branch name="E">
-            <wire x2="224" y1="144" y2="144" x1="192" />
-            <wire x2="256" y1="144" y2="144" x1="224" />
+            <wire x2="256" y1="112" y2="112" x1="192" />
+        </branch>
+        <iomarker fontsize="28" x="192" y="112" name="E" orien="R180" />
+        <branch name="DecodeOut">
+            <wire x2="2688" y1="912" y2="912" x1="2608" />
+        </branch>
+        <branch name="XLXN_63">
+            <wire x2="1744" y1="1872" y2="1872" x1="1408" />
+            <wire x2="1744" y1="944" y2="1872" x1="1744" />
+            <wire x2="2288" y1="944" y2="944" x1="1744" />
+        </branch>
+        <instance x="2288" y="1040" name="XLXI_16" orien="R0" />
+        <branch name="S(4)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2176" y="1008" type="branch" />
+            <wire x2="2288" y1="1008" y2="1008" x1="2176" />
+        </branch>
+        <branch name="mux_in15">
+            <wire x2="416" y1="1168" y2="1168" x1="384" />
+        </branch>
+        <branch name="mux_in14">
+            <wire x2="416" y1="1104" y2="1104" x1="384" />
+        </branch>
+        <branch name="mux_in13">
+            <wire x2="416" y1="1040" y2="1040" x1="384" />
+        </branch>
+        <branch name="mux_in12">
+            <wire x2="416" y1="976" y2="976" x1="384" />
+        </branch>
+        <branch name="mux_in11">
+            <wire x2="416" y1="912" y2="912" x1="384" />
+        </branch>
+        <branch name="mux_in10">
+            <wire x2="416" y1="848" y2="848" x1="384" />
+        </branch>
+        <branch name="mux_in9">
+            <wire x2="416" y1="784" y2="784" x1="384" />
+        </branch>
+        <branch name="mux_in8">
+            <wire x2="416" y1="720" y2="720" x1="384" />
+        </branch>
+        <branch name="mux_in7">
+            <wire x2="416" y1="656" y2="656" x1="384" />
+        </branch>
+        <branch name="mux_in6">
+            <wire x2="416" y1="592" y2="592" x1="384" />
+        </branch>
+        <branch name="mux_in5">
+            <wire x2="416" y1="528" y2="528" x1="384" />
+        </branch>
+        <branch name="mux_in4">
+            <wire x2="416" y1="464" y2="464" x1="384" />
+        </branch>
+        <branch name="mux_in3">
+            <wire x2="416" y1="400" y2="400" x1="384" />
+        </branch>
+        <branch name="mux_in2">
+            <wire x2="416" y1="336" y2="336" x1="384" />
+        </branch>
+        <branch name="mux_in1">
+            <wire x2="416" y1="272" y2="272" x1="384" />
+        </branch>
+        <branch name="mux_in0">
+            <wire x2="416" y1="208" y2="208" x1="384" />
+        </branch>
+        <instance x="416" y="1520" name="XLXI_9" orien="R0" />
+        <branch name="XLXN_62">
+            <wire x2="816" y1="688" y2="688" x1="736" />
+            <wire x2="816" y1="368" y2="688" x1="816" />
+            <wire x2="1744" y1="368" y2="368" x1="816" />
+            <wire x2="1744" y1="368" y2="880" x1="1744" />
+            <wire x2="2288" y1="880" y2="880" x1="1744" />
+        </branch>
+        <branch name="mux_in16">
+            <wire x2="1088" y1="1392" y2="1392" x1="1056" />
+        </branch>
+        <branch name="mux_in17">
+            <wire x2="1088" y1="1456" y2="1456" x1="1056" />
+        </branch>
+        <branch name="mux_in18">
+            <wire x2="1088" y1="1520" y2="1520" x1="1056" />
+        </branch>
+        <branch name="mux_in19">
+            <wire x2="1088" y1="1584" y2="1584" x1="1056" />
+        </branch>
+        <branch name="mux_in20">
+            <wire x2="1088" y1="1648" y2="1648" x1="1056" />
+        </branch>
+        <branch name="mux_in21">
+            <wire x2="1088" y1="1712" y2="1712" x1="1056" />
+        </branch>
+        <branch name="mux_in22">
+            <wire x2="1088" y1="1776" y2="1776" x1="1056" />
+        </branch>
+        <branch name="mux_in23">
+            <wire x2="1088" y1="1840" y2="1840" x1="1056" />
+        </branch>
+        <branch name="mux_in24">
+            <wire x2="1088" y1="1904" y2="1904" x1="1056" />
+        </branch>
+        <branch name="mux_in25">
+            <wire x2="1088" y1="1968" y2="1968" x1="1056" />
+        </branch>
+        <branch name="mux_in26">
+            <wire x2="1088" y1="2032" y2="2032" x1="1056" />
+        </branch>
+        <branch name="mux_in27">
+            <wire x2="1088" y1="2096" y2="2096" x1="1056" />
+        </branch>
+        <branch name="mux_in28">
+            <wire x2="1088" y1="2160" y2="2160" x1="1056" />
+        </branch>
+        <branch name="mux_in29">
+            <wire x2="1088" y1="2224" y2="2224" x1="1056" />
+        </branch>
+        <branch name="mux_in30">
+            <wire x2="1088" y1="2288" y2="2288" x1="1056" />
+        </branch>
+        <branch name="mux_in31">
+            <wire x2="1088" y1="2352" y2="2352" x1="1056" />
+        </branch>
+        <branch name="S(3)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="80" y="2000" type="branch" />
+            <wire x2="288" y1="2000" y2="2000" x1="80" />
+            <wire x2="288" y1="2000" y2="2608" x1="288" />
+            <wire x2="1088" y1="2608" y2="2608" x1="288" />
+            <wire x2="416" y1="1424" y2="1424" x1="288" />
+            <wire x2="288" y1="1424" y2="2000" x1="288" />
+        </branch>
+        <branch name="S(2)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="80" y="1952" type="branch" />
+            <wire x2="240" y1="1952" y2="1952" x1="80" />
+            <wire x2="240" y1="1952" y2="2544" x1="240" />
+            <wire x2="1088" y1="2544" y2="2544" x1="240" />
+            <wire x2="416" y1="1360" y2="1360" x1="240" />
+            <wire x2="240" y1="1360" y2="1952" x1="240" />
+        </branch>
+        <branch name="S(1)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="80" y="1904" type="branch" />
+            <wire x2="192" y1="1904" y2="1904" x1="80" />
+            <wire x2="192" y1="1904" y2="2480" x1="192" />
+            <wire x2="1088" y1="2480" y2="2480" x1="192" />
+            <wire x2="416" y1="1296" y2="1296" x1="192" />
+            <wire x2="192" y1="1296" y2="1904" x1="192" />
+        </branch>
+        <branch name="S(0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="80" y="1856" type="branch" />
+            <wire x2="144" y1="1856" y2="1856" x1="80" />
+            <wire x2="144" y1="1856" y2="2416" x1="144" />
+            <wire x2="1088" y1="2416" y2="2416" x1="144" />
+            <wire x2="416" y1="1232" y2="1232" x1="144" />
+            <wire x2="144" y1="1232" y2="1856" x1="144" />
         </branch>
         <branch name="E">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="448" y="2032" type="branch" />
-            <wire x2="704" y1="2032" y2="2032" x1="448" />
-            <wire x2="1424" y1="2032" y2="2032" x1="704" />
-            <wire x2="752" y1="1744" y2="1744" x1="704" />
-            <wire x2="704" y1="1744" y2="2032" x1="704" />
-            <wire x2="1760" y1="1728" y2="1728" x1="1424" />
-            <wire x2="1424" y1="1728" y2="2032" x1="1424" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="80" y="2048" type="branch" />
+            <wire x2="336" y1="2048" y2="2048" x1="80" />
+            <wire x2="336" y1="2048" y2="2672" x1="336" />
+            <wire x2="1088" y1="2672" y2="2672" x1="336" />
+            <wire x2="416" y1="1488" y2="1488" x1="336" />
+            <wire x2="336" y1="1488" y2="2048" x1="336" />
         </branch>
+        <instance x="1088" y="2704" name="XLXI_2" orien="R0" />
+        <iomarker fontsize="28" x="2688" y="912" name="DecodeOut" orien="R0" />
+        <iomarker fontsize="28" x="384" y="208" name="mux_in0" orien="R180" />
+        <iomarker fontsize="28" x="384" y="272" name="mux_in1" orien="R180" />
+        <iomarker fontsize="28" x="384" y="336" name="mux_in2" orien="R180" />
+        <iomarker fontsize="28" x="384" y="400" name="mux_in3" orien="R180" />
+        <iomarker fontsize="28" x="384" y="464" name="mux_in4" orien="R180" />
+        <iomarker fontsize="28" x="384" y="528" name="mux_in5" orien="R180" />
+        <iomarker fontsize="28" x="384" y="592" name="mux_in6" orien="R180" />
+        <iomarker fontsize="28" x="384" y="656" name="mux_in7" orien="R180" />
+        <iomarker fontsize="28" x="384" y="720" name="mux_in8" orien="R180" />
+        <iomarker fontsize="28" x="384" y="784" name="mux_in9" orien="R180" />
+        <iomarker fontsize="28" x="384" y="848" name="mux_in10" orien="R180" />
+        <iomarker fontsize="28" x="384" y="912" name="mux_in11" orien="R180" />
+        <iomarker fontsize="28" x="384" y="976" name="mux_in12" orien="R180" />
+        <iomarker fontsize="28" x="384" y="1040" name="mux_in13" orien="R180" />
+        <iomarker fontsize="28" x="384" y="1104" name="mux_in14" orien="R180" />
+        <iomarker fontsize="28" x="384" y="1168" name="mux_in15" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="1392" name="mux_in16" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="1456" name="mux_in17" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="1520" name="mux_in18" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="1584" name="mux_in19" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="1648" name="mux_in20" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="1712" name="mux_in21" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="1776" name="mux_in22" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="1840" name="mux_in23" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="1904" name="mux_in24" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="1968" name="mux_in25" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="2032" name="mux_in26" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="2096" name="mux_in27" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="2160" name="mux_in28" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="2224" name="mux_in29" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="2288" name="mux_in30" orien="R180" />
+        <iomarker fontsize="28" x="1056" y="2352" name="mux_in31" orien="R180" />
     </sheet>
 </drawing>

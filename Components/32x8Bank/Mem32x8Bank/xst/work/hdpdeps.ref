@@ -1,0 +1,16 @@
+V3 8
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/32x8Bank/Mem32x8Bank/Mem32xBank.vhf 2017/12/13.15:41:44 P.20131013
+EN work/FD8CE_MXILINX_Mem32xBank 1513208520 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/32x8Bank/Mem32x8Bank/Mem32xBank.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/FD8CE_MXILINX_Mem32xBank/BEHAVIORAL 1513208521 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/32x8Bank/Mem32x8Bank/Mem32xBank.vhf \
+      EN work/FD8CE_MXILINX_Mem32xBank 1513208520 CP FDCE
+EN work/Mem32xBank 1513208522 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/32x8Bank/Mem32x8Bank/Mem32xBank.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/Mem32xBank/BEHAVIORAL 1513208523 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/32x8Bank/Mem32x8Bank/Mem32xBank.vhf \
+      EN work/Mem32xBank 1513208522 CP FD8CE_MXILINX_Mem32xBank

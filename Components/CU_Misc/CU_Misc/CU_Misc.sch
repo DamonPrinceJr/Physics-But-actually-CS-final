@@ -23,20 +23,8 @@
         <signal name="XLXN_45" />
         <signal name="XLXN_46" />
         <signal name="EN_WRITE" />
-        <signal name="XLXN_103" />
-        <signal name="XLXN_104" />
-        <signal name="XLXN_105" />
-        <signal name="XLXN_106" />
-        <signal name="XLXN_107" />
-        <signal name="XLXN_108" />
-        <signal name="XLXN_109" />
-        <signal name="XLXN_110" />
-        <signal name="XLXN_111" />
         <signal name="XLXN_118" />
-        <signal name="IR(8)" />
         <signal name="RESET_PC" />
-        <signal name="XLXN_123" />
-        <signal name="XLXN_124" />
         <signal name="XLXN_129" />
         <signal name="DISABLE_PC" />
         <port polarity="Input" name="IR(7:0)" />
@@ -123,14 +111,14 @@
             <blockpin signalname="XLXN_129" name="O" />
         </block>
         <block symbolname="and8" name="XLXI_12">
-            <blockpin signalname="IR(8)" name="I0" />
-            <blockpin signalname="IR(7)" name="I1" />
-            <blockpin signalname="IR(6)" name="I2" />
-            <blockpin signalname="IR(5)" name="I3" />
-            <blockpin signalname="IR(4)" name="I4" />
-            <blockpin signalname="IR(3)" name="I5" />
-            <blockpin signalname="IR(2)" name="I6" />
-            <blockpin signalname="IR(1)" name="I7" />
+            <blockpin signalname="IR(7)" name="I0" />
+            <blockpin signalname="IR(6)" name="I1" />
+            <blockpin signalname="IR(5)" name="I2" />
+            <blockpin signalname="IR(4)" name="I3" />
+            <blockpin signalname="IR(3)" name="I4" />
+            <blockpin signalname="IR(2)" name="I5" />
+            <blockpin signalname="IR(1)" name="I6" />
+            <blockpin signalname="IR(0)" name="I7" />
             <blockpin signalname="XLXN_118" name="O" />
         </block>
         <block symbolname="nand8" name="XLXI_15">
@@ -205,7 +193,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="624" y="352" type="branch" />
             <wire x2="976" y1="352" y2="352" x1="624" />
         </branch>
-        <branch name="IR(6)">
+        <branch name="IR(5)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="624" y="1152" type="branch" />
             <wire x2="976" y1="1152" y2="1152" x1="624" />
         </branch>
@@ -217,23 +205,23 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="624" y="288" type="branch" />
             <wire x2="704" y1="288" y2="288" x1="624" />
         </branch>
-        <branch name="IR(4)">
+        <branch name="IR(3)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="624" y="1024" type="branch" />
             <wire x2="976" y1="1024" y2="1024" x1="624" />
         </branch>
-        <branch name="IR(3)">
+        <branch name="IR(2)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="624" y="960" type="branch" />
             <wire x2="976" y1="960" y2="960" x1="624" />
         </branch>
-        <branch name="IR(2)">
+        <branch name="IR(1)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="624" y="896" type="branch" />
             <wire x2="976" y1="896" y2="896" x1="624" />
         </branch>
-        <branch name="IR(1)">
+        <branch name="IR(0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="624" y="832" type="branch" />
             <wire x2="976" y1="832" y2="832" x1="624" />
         </branch>
-        <branch name="IR(5)">
+        <branch name="IR(4)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="624" y="1088" type="branch" />
             <wire x2="976" y1="1088" y2="1088" x1="624" />
         </branch>
@@ -355,11 +343,11 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="1120" type="branch" />
             <wire x2="1328" y1="1120" y2="1120" x1="1280" />
         </branch>
-        <branch name="IR(7)">
+        <branch name="IR(6)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="624" y="1216" type="branch" />
             <wire x2="976" y1="1216" y2="1216" x1="624" />
         </branch>
-        <branch name="IR(8)">
+        <branch name="IR(7)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="624" y="1280" type="branch" />
             <wire x2="976" y1="1280" y2="1280" x1="624" />
         </branch>

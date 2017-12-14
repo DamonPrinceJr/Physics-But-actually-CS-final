@@ -1,0 +1,223 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : CU_Misc.vf
+// /___/   /\     Timestamp : 12/13/2017 15:45:34
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Misc/CU_Misc/CU_Misc.vf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Misc/CU_Misc/CU_Misc.sch
+//Design Name: CU_Misc
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module NAND8_MXILINX_CU_Misc(I0, 
+                             I1, 
+                             I2, 
+                             I3, 
+                             I4, 
+                             I5, 
+                             I6, 
+                             I7, 
+                             O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+    input I6;
+    input I7;
+   output O;
+   
+   wire dummy;
+   wire S0;
+   wire S1;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_29 (.I1(I0), 
+                 .I2(I1), 
+                 .I3(I2), 
+                 .I4(I3), 
+                 .O(S0));
+   AND4  I_36_110 (.I0(I0), 
+                  .I1(I1), 
+                  .I2(I2), 
+                  .I3(I3), 
+                  .O(S0));
+   AND4  I_36_127 (.I0(I4), 
+                  .I1(I5), 
+                  .I2(I6), 
+                  .I3(I7), 
+                  .O(S1));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_138 (.I1(I4), 
+                  .I2(I5), 
+                  .I3(I6), 
+                  .I4(I7), 
+                  .O(S1));
+   NAND2  I_36_146 (.I0(S0), 
+                   .I1(S1), 
+                   .O(O_DUMMY));
+   (* RLOC = "X0Y1" *) 
+   FMAP  I_36_150 (.I1(S0), 
+                  .I2(S1), 
+                  .I3(dummy), 
+                  .I4(dummy), 
+                  .O(O_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module AND8_MXILINX_CU_Misc(I0, 
+                            I1, 
+                            I2, 
+                            I3, 
+                            I4, 
+                            I5, 
+                            I6, 
+                            I7, 
+                            O);
+
+    input I0;
+    input I1;
+    input I2;
+    input I3;
+    input I4;
+    input I5;
+    input I6;
+    input I7;
+   output O;
+   
+   wire dummy;
+   wire S0;
+   wire S1;
+   wire O_DUMMY;
+   
+   assign O = O_DUMMY;
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_29 (.I1(I0), 
+                 .I2(I1), 
+                 .I3(I2), 
+                 .I4(I3), 
+                 .O(S0));
+   AND4  I_36_110 (.I0(I0), 
+                  .I1(I1), 
+                  .I2(I2), 
+                  .I3(I3), 
+                  .O(S0));
+   AND4  I_36_127 (.I0(I4), 
+                  .I1(I5), 
+                  .I2(I6), 
+                  .I3(I7), 
+                  .O(S1));
+   (* RLOC = "X0Y0" *) 
+   FMAP  I_36_138 (.I1(I4), 
+                  .I2(I5), 
+                  .I3(I6), 
+                  .I4(I7), 
+                  .O(S1));
+   AND2  I_36_142 (.I0(S0), 
+                  .I1(S1), 
+                  .O(O_DUMMY));
+   (* RLOC = "X0Y1" *) 
+   FMAP  I_36_152 (.I1(S0), 
+                  .I2(S1), 
+                  .I3(dummy), 
+                  .I4(dummy), 
+                  .O(O_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module CU_Misc(IR, 
+               MODE, 
+               DISABLE_PC, 
+               EN_WRITE, 
+               RESET_PC);
+
+    input [7:0] IR;
+    input MODE;
+   output DISABLE_PC;
+   output EN_WRITE;
+   output RESET_PC;
+   
+   wire XLXN_3;
+   wire XLXN_24;
+   wire XLXN_45;
+   wire XLXN_46;
+   wire XLXN_92;
+   wire XLXN_94;
+   wire XLXN_118;
+   wire XLXN_129;
+   
+   INV  XLXI_4 (.I(IR[0]), 
+               .O(XLXN_3));
+   INV  XLXI_9 (.I(IR[0]), 
+               .O(XLXN_24));
+   OR2  XLXI_10 (.I0(XLXN_46), 
+                .I1(XLXN_45), 
+                .O(EN_WRITE));
+   (* HU_SET = "XLXI_11_0" *) 
+   AND8_MXILINX_CU_Misc  XLXI_11 (.I0(IR[7]), 
+                                 .I1(IR[6]), 
+                                 .I2(IR[5]), 
+                                 .I3(IR[4]), 
+                                 .I4(IR[3]), 
+                                 .I5(IR[2]), 
+                                 .I6(IR[1]), 
+                                 .I7(XLXN_3), 
+                                 .O(XLXN_129));
+   (* HU_SET = "XLXI_12_1" *) 
+   AND8_MXILINX_CU_Misc  XLXI_12 (.I0(IR[7]), 
+                                 .I1(IR[6]), 
+                                 .I2(IR[5]), 
+                                 .I3(IR[4]), 
+                                 .I4(IR[3]), 
+                                 .I5(IR[2]), 
+                                 .I6(IR[1]), 
+                                 .I7(IR[0]), 
+                                 .O(XLXN_118));
+   (* HU_SET = "XLXI_15_2" *) 
+   NAND8_MXILINX_CU_Misc  XLXI_15 (.I0(IR[7]), 
+                                  .I1(IR[6]), 
+                                  .I2(IR[5]), 
+                                  .I3(IR[4]), 
+                                  .I4(IR[3]), 
+                                  .I5(IR[2]), 
+                                  .I6(IR[1]), 
+                                  .I7(IR[0]), 
+                                  .O(XLXN_92));
+   AND2  XLXI_19 (.I0(MODE), 
+                 .I1(XLXN_92), 
+                 .O(XLXN_45));
+   (* HU_SET = "XLXI_24_3" *) 
+   NAND8_MXILINX_CU_Misc  XLXI_24 (.I0(IR[7]), 
+                                  .I1(IR[6]), 
+                                  .I2(IR[5]), 
+                                  .I3(IR[4]), 
+                                  .I4(IR[3]), 
+                                  .I5(IR[2]), 
+                                  .I6(IR[1]), 
+                                  .I7(XLXN_24), 
+                                  .O(XLXN_94));
+   AND2  XLXI_25 (.I0(MODE), 
+                 .I1(XLXN_94), 
+                 .O(XLXN_46));
+   AND2  XLXI_28 (.I0(MODE), 
+                 .I1(XLXN_118), 
+                 .O(RESET_PC));
+   AND2  XLXI_29 (.I0(MODE), 
+                 .I1(XLXN_129), 
+                 .O(DISABLE_PC));
+endmodule

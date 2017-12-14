@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym CU_Write C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.sch C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/ControlUnit/ControlUnit/CU_Write.sym 

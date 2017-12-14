@@ -8,7 +8,6 @@
     <netlist>
         <signal name="MM_OP(255:0)" />
         <signal name="PC(4:0)" />
-        <signal name="XLXN_587(4:0)" />
         <signal name="MM_IM(255:0)" />
         <signal name="OP_out(7:0)" />
         <signal name="IM_out(7:0)" />
@@ -44,27 +43,47 @@
         <instance x="1328" y="1024" name="XLXI_29" orien="R0">
         </instance>
         <branch name="MM_OP(255:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="672" type="branch" />
             <wire x2="1328" y1="672" y2="672" x1="1280" />
         </branch>
         <branch name="PC(4:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="960" y="992" type="branch" />
             <wire x2="1024" y1="992" y2="992" x1="960" />
             <wire x2="1328" y1="992" y2="992" x1="1024" />
             <wire x2="1328" y1="736" y2="736" x1="1024" />
             <wire x2="1024" y1="736" y2="992" x1="1024" />
         </branch>
         <branch name="MM_IM(255:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="928" type="branch" />
             <wire x2="1328" y1="928" y2="928" x1="1296" />
         </branch>
         <branch name="OP_out(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1776" y="672" type="branch" />
             <wire x2="1776" y1="672" y2="672" x1="1744" />
         </branch>
         <branch name="IM_out(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1776" y="928" type="branch" />
             <wire x2="1776" y1="928" y2="928" x1="1744" />
         </branch>
-        <iomarker fontsize="28" x="1280" y="672" name="MM_OP(255:0)" orien="R180" />
-        <iomarker fontsize="28" x="1296" y="928" name="MM_IM(255:0)" orien="R180" />
-        <iomarker fontsize="28" x="960" y="992" name="PC(4:0)" orien="R180" />
-        <iomarker fontsize="28" x="1776" y="672" name="OP_out(7:0)" orien="R0" />
-        <iomarker fontsize="28" x="1776" y="928" name="IM_out(7:0)" orien="R0" />
+        <branch name="MM_OP(255:0)">
+            <wire x2="320" y1="160" y2="160" x1="240" />
+        </branch>
+        <branch name="MM_IM(255:0)">
+            <wire x2="320" y1="208" y2="208" x1="240" />
+        </branch>
+        <branch name="PC(4:0)">
+            <wire x2="320" y1="256" y2="256" x1="240" />
+        </branch>
+        <branch name="OP_out(7:0)">
+            <wire x2="480" y1="160" y2="160" x1="400" />
+        </branch>
+        <branch name="IM_out(7:0)">
+            <wire x2="480" y1="208" y2="208" x1="400" />
+        </branch>
+        <iomarker fontsize="28" x="480" y="160" name="OP_out(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="480" y="208" name="IM_out(7:0)" orien="R0" />
+        <iomarker fontsize="28" x="240" y="160" name="MM_OP(255:0)" orien="R180" />
+        <iomarker fontsize="28" x="240" y="208" name="MM_IM(255:0)" orien="R180" />
+        <iomarker fontsize="28" x="240" y="256" name="PC(4:0)" orien="R180" />
     </sheet>
 </drawing>

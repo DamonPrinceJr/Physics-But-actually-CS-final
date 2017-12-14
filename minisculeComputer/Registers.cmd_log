@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym Registers C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Registers/Registers/Registers.sch C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/Registers.sym 

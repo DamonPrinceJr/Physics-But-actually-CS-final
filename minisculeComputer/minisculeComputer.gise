@@ -21,8 +21,74 @@
 
   <sourceproject xmlns="http://www.xilinx.com/XMLSchema" xil_pn:fileType="FILE_XISE" xil_pn:name="minisculeComputer.xise"/>
 
-  <files xmlns="http://www.xilinx.com/XMLSchema"/>
+  <files xmlns="http://www.xilinx.com/XMLSchema">
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="CU_ALU.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="CU_ALU.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="CU_Misc.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="CU_Misc.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="CU_Read.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="CU_Read.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="CU_Read_MUX.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="CU_Read_MUX.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="CU_Write.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="CU_Write.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="ControlUnit.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="DCM_50M.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="DCM_50M.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="DisplayModule.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="DisplayModule.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MM_Decode_MUX.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MM_signal_MUX.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="MM_signal_MUX.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="MainMemory.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="MainMemory.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Mem32xBank.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="Mem32xBank.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="Registers.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="Registers.vhf"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="SSD_1dig.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SSD_1dig.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="bin2BCD3en.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="bin2BCD3en.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="mux4SSD.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="mux4SSD.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="programCounter.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="programCounter.vhf"/>
+    <file xil_pn:fileType="FILE_SPL" xil_pn:name="sel_strobeB.spl"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sel_strobeB.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="sevenSeg.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="sevenSeg.vhf"/>
+    <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="signalMux_32.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="signalMux_32.vhf"/>
+  </files>
 
-  <transforms xmlns="http://www.xilinx.com/XMLSchema"/>
+  <transforms xmlns="http://www.xilinx.com/XMLSchema">
+    <transform xil_pn:end_ts="1513207917" xil_pn:name="TRAN_copyInitialToXSTAbstractSynthesis" xil_pn:start_ts="1513207916">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1513211444" xil_pn:in_ck="6616821470719266148" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1310553701813273253" xil_pn:start_ts="1513211442">
+      <status xil_pn:value="FailedRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
+      <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputAdded"/>
+      <status xil_pn:value="InputChanged"/>
+      <status xil_pn:value="InputRemoved"/>
+      <status xil_pn:value="OutputRemoved"/>
+    </transform>
+    <transform xil_pn:end_ts="1513207926" xil_pn:name="TRAN_regenerateCores" xil_pn:prop_ck="-4849855945544407957" xil_pn:start_ts="1513207926">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1513207926" xil_pn:name="TRAN_SubProjectAbstractToPreProxy" xil_pn:start_ts="1513207926">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1513207926" xil_pn:name="TRAN_xawsTohdl" xil_pn:prop_ck="3150920463594959705" xil_pn:start_ts="1513207926">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+  </transforms>
 
 </generated_project>

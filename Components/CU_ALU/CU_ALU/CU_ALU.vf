@@ -1,0 +1,261 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : CU_ALU.vf
+// /___/   /\     Timestamp : 12/13/2017 15:44:11
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_ALU/CU_ALU/CU_ALU.vf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_ALU/CU_ALU/CU_ALU.sch
+//Design Name: CU_ALU
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_CU_ALU(D0, 
+                            D1, 
+                            E, 
+                            S0, 
+                            O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_CU_ALU(D0, 
+                            D1, 
+                            D2, 
+                            D3, 
+                            E, 
+                            S0, 
+                            S1, 
+                            O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   (* HU_SET = "I_M01_1" *) 
+   M2_1E_MXILINX_CU_ALU  I_M01 (.D0(D0), 
+                               .D1(D1), 
+                               .E(E), 
+                               .S0(S0), 
+                               .O(M01));
+   (* HU_SET = "I_M23_0" *) 
+   M2_1E_MXILINX_CU_ALU  I_M23 (.D0(D2), 
+                               .D1(D3), 
+                               .E(E), 
+                               .S0(S0), 
+                               .O(M23));
+   MUXF5  I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module CU_ALU(DR, 
+              MATH, 
+              MODE, 
+              Reg0, 
+              Reg1, 
+              Reg2, 
+              Reg3, 
+              Add_Sub, 
+              ALU_B);
+
+    input [7:0] DR;
+    input [5:0] MATH;
+    input MODE;
+    input [7:0] Reg0;
+    input [7:0] Reg1;
+    input [7:0] Reg2;
+    input [7:0] Reg3;
+   output Add_Sub;
+   output [7:0] ALU_B;
+   
+   wire DR_vs_Reg;
+   wire XLXN_2;
+   wire XLXN_21;
+   wire XLXN_22;
+   wire XLXN_23;
+   wire XLXN_49;
+   wire XLXN_60;
+   wire XLXN_71;
+   wire XLXN_148;
+   wire XLXN_159;
+   wire XLXN_305;
+   wire XLXN_316;
+   
+   OR3  XLXI_1 (.I0(MATH[2]), 
+               .I1(MATH[1]), 
+               .I2(MATH[0]), 
+               .O(XLXN_23));
+   OR3  XLXI_2 (.I0(MATH[5]), 
+               .I1(MATH[4]), 
+               .I2(MATH[3]), 
+               .O(XLXN_21));
+   OR2  XLXI_3 (.I0(MATH[4]), 
+               .I1(MATH[1]), 
+               .O(DR_vs_Reg));
+   (* HU_SET = "XLXI_4_2" *) 
+   M4_1E_MXILINX_CU_ALU  XLXI_4 (.D0(Reg0[0]), 
+                                .D1(Reg1[0]), 
+                                .D2(Reg2[0]), 
+                                .D3(Reg3[0]), 
+                                .E(MODE), 
+                                .S0(DR[0]), 
+                                .S1(DR[1]), 
+                                .O(XLXN_2));
+   (* HU_SET = "XLXI_5_3" *) 
+   M2_1E_MXILINX_CU_ALU  XLXI_5 (.D0(DR[0]), 
+                                .D1(XLXN_2), 
+                                .E(MODE), 
+                                .S0(DR_vs_Reg), 
+                                .O(ALU_B[0]));
+   INV  XLXI_16 (.I(XLXN_21), 
+                .O(XLXN_22));
+   AND2  XLXI_17 (.I0(XLXN_22), 
+                 .I1(XLXN_23), 
+                 .O(Add_Sub));
+   (* HU_SET = "XLXI_20_4" *) 
+   M4_1E_MXILINX_CU_ALU  XLXI_20 (.D0(Reg0[1]), 
+                                 .D1(Reg1[1]), 
+                                 .D2(Reg2[1]), 
+                                 .D3(Reg3[1]), 
+                                 .E(MODE), 
+                                 .S0(DR[0]), 
+                                 .S1(DR[1]), 
+                                 .O(XLXN_49));
+   (* HU_SET = "XLXI_21_5" *) 
+   M2_1E_MXILINX_CU_ALU  XLXI_21 (.D0(DR[1]), 
+                                 .D1(XLXN_49), 
+                                 .E(MODE), 
+                                 .S0(DR_vs_Reg), 
+                                 .O(ALU_B[1]));
+   (* HU_SET = "XLXI_22_10" *) 
+   M4_1E_MXILINX_CU_ALU  XLXI_22 (.D0(Reg0[4]), 
+                                 .D1(Reg1[4]), 
+                                 .D2(Reg2[4]), 
+                                 .D3(Reg3[4]), 
+                                 .E(MODE), 
+                                 .S0(DR[0]), 
+                                 .S1(DR[1]), 
+                                 .O(XLXN_60));
+   (* HU_SET = "XLXI_23_11" *) 
+   M2_1E_MXILINX_CU_ALU  XLXI_23 (.D0(DR[4]), 
+                                 .D1(XLXN_60), 
+                                 .E(MODE), 
+                                 .S0(DR_vs_Reg), 
+                                 .O(ALU_B[4]));
+   (* HU_SET = "XLXI_24_12" *) 
+   M4_1E_MXILINX_CU_ALU  XLXI_24 (.D0(Reg0[5]), 
+                                 .D1(Reg1[5]), 
+                                 .D2(Reg2[5]), 
+                                 .D3(Reg3[5]), 
+                                 .E(MODE), 
+                                 .S0(DR[0]), 
+                                 .S1(DR[1]), 
+                                 .O(XLXN_71));
+   (* HU_SET = "XLXI_25_13" *) 
+   M2_1E_MXILINX_CU_ALU  XLXI_25 (.D0(DR[5]), 
+                                 .D1(XLXN_71), 
+                                 .E(MODE), 
+                                 .S0(DR_vs_Reg), 
+                                 .O(ALU_B[5]));
+   (* HU_SET = "XLXI_38_6" *) 
+   M4_1E_MXILINX_CU_ALU  XLXI_38 (.D0(Reg0[2]), 
+                                 .D1(Reg1[2]), 
+                                 .D2(Reg2[2]), 
+                                 .D3(Reg3[2]), 
+                                 .E(MODE), 
+                                 .S0(DR[0]), 
+                                 .S1(DR[1]), 
+                                 .O(XLXN_148));
+   (* HU_SET = "XLXI_39_7" *) 
+   M2_1E_MXILINX_CU_ALU  XLXI_39 (.D0(DR[2]), 
+                                 .D1(XLXN_148), 
+                                 .E(MODE), 
+                                 .S0(DR_vs_Reg), 
+                                 .O(ALU_B[2]));
+   (* HU_SET = "XLXI_40_14" *) 
+   M4_1E_MXILINX_CU_ALU  XLXI_40 (.D0(Reg0[6]), 
+                                 .D1(Reg1[6]), 
+                                 .D2(Reg2[6]), 
+                                 .D3(Reg3[6]), 
+                                 .E(MODE), 
+                                 .S0(DR[0]), 
+                                 .S1(DR[1]), 
+                                 .O(XLXN_159));
+   (* HU_SET = "XLXI_41_15" *) 
+   M2_1E_MXILINX_CU_ALU  XLXI_41 (.D0(DR[6]), 
+                                 .D1(XLXN_159), 
+                                 .E(MODE), 
+                                 .S0(DR_vs_Reg), 
+                                 .O(ALU_B[6]));
+   (* HU_SET = "XLXI_67_8" *) 
+   M4_1E_MXILINX_CU_ALU  XLXI_67 (.D0(Reg0[3]), 
+                                 .D1(Reg1[3]), 
+                                 .D2(Reg2[3]), 
+                                 .D3(Reg3[3]), 
+                                 .E(MODE), 
+                                 .S0(DR[0]), 
+                                 .S1(DR[1]), 
+                                 .O(XLXN_305));
+   (* HU_SET = "XLXI_68_9" *) 
+   M2_1E_MXILINX_CU_ALU  XLXI_68 (.D0(DR[3]), 
+                                 .D1(XLXN_305), 
+                                 .E(MODE), 
+                                 .S0(DR_vs_Reg), 
+                                 .O(ALU_B[3]));
+   (* HU_SET = "XLXI_69_16" *) 
+   M4_1E_MXILINX_CU_ALU  XLXI_69 (.D0(Reg0[7]), 
+                                 .D1(Reg1[7]), 
+                                 .D2(Reg2[7]), 
+                                 .D3(Reg3[7]), 
+                                 .E(MODE), 
+                                 .S0(DR[0]), 
+                                 .S1(DR[1]), 
+                                 .O(XLXN_316));
+   (* HU_SET = "XLXI_70_17" *) 
+   M2_1E_MXILINX_CU_ALU  XLXI_70 (.D0(DR[7]), 
+                                 .D1(XLXN_316), 
+                                 .E(MODE), 
+                                 .S0(DR_vs_Reg), 
+                                 .O(ALU_B[7]));
+endmodule

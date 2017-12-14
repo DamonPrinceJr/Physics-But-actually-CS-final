@@ -91,7 +91,6 @@
         <signal name="IR(3)" />
         <signal name="XLXN_643" />
         <signal name="XLXN_645" />
-        <signal name="opCode0x07" />
         <signal name="opCode0x01" />
         <signal name="opCode0x05" />
         <signal name="opCode0x08" />
@@ -99,10 +98,13 @@
         <signal name="XLXN_653" />
         <signal name="opCode0x03" />
         <signal name="opCode0x14" />
-        <signal name="XLXN_686" />
-        <signal name="XLXN_688" />
-        <signal name="XLXN_689" />
+        <signal name="readSignal(3)" />
+        <signal name="readSignal(1)" />
+        <signal name="readSignal(3:0)" />
+        <signal name="readSignal(0)" />
+        <signal name="readSignal(2)" />
         <port polarity="Input" name="IR(7:0)" />
+        <port polarity="Output" name="readSignal(3:0)" />
         <blockdef name="and8">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-64" y2="-512" x1="64" />
@@ -210,7 +212,7 @@
             <blockpin signalname="IR(2)" name="I5" />
             <blockpin signalname="IR(1)" name="I6" />
             <blockpin signalname="IR(0)" name="I7" />
-            <blockpin signalname="opCode0x07" name="O" />
+            <blockpin signalname="readSignal(0)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_2">
             <blockpin signalname="IR(3)" name="I" />
@@ -586,16 +588,11 @@
             <blockpin signalname="IR(2)" name="I" />
             <blockpin signalname="XLXN_653" name="O" />
         </block>
-        <block symbolname="or2" name="XLXI_328">
-            <blockpin signalname="opCode0x05" name="I0" />
-            <blockpin signalname="opCode0x02" name="I1" />
-            <blockpin signalname="XLXN_688" name="O" />
-        </block>
         <block symbolname="or3" name="XLXI_329">
             <blockpin signalname="opCode0x08" name="I0" />
             <blockpin signalname="opCode0x03" name="I1" />
             <blockpin signalname="opCode0x01" name="I2" />
-            <blockpin signalname="XLXN_686" name="O" />
+            <blockpin signalname="readSignal(2)" name="O" />
         </block>
         <block symbolname="or6" name="XLXI_340">
             <blockpin signalname="opCode0x16" name="I0" />
@@ -604,7 +601,12 @@
             <blockpin signalname="opCode0x13" name="I3" />
             <blockpin signalname="opCode0x12" name="I4" />
             <blockpin signalname="opCode0x11" name="I5" />
-            <blockpin signalname="XLXN_689" name="O" />
+            <blockpin signalname="readSignal(3)" name="O" />
+        </block>
+        <block symbolname="or2" name="XLXI_328">
+            <blockpin signalname="opCode0x05" name="I0" />
+            <blockpin signalname="opCode0x02" name="I1" />
+            <blockpin signalname="readSignal(1)" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -1302,7 +1304,7 @@
             <wire x2="2448" y1="2320" y2="2320" x1="2384" />
         </branch>
         <instance x="2448" y="2352" name="XLXI_326" orien="R0" />
-        <branch name="opCode0x07">
+        <branch name="readSignal(0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1088" y="256" type="branch" />
             <wire x2="1088" y1="256" y2="256" x1="1024" />
         </branch>
@@ -1352,61 +1354,75 @@
             <wire x2="480" y1="480" y2="480" x1="416" />
         </branch>
         <instance x="480" y="512" name="XLXI_6" orien="R0" />
-        <branch name="opCode0x02">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2688" y="64" type="branch" />
-            <wire x2="2752" y1="64" y2="64" x1="2688" />
-        </branch>
-        <branch name="opCode0x05">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2688" y="128" type="branch" />
-            <wire x2="2752" y1="128" y2="128" x1="2688" />
-        </branch>
         <branch name="opCode0x01">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2688" y="192" type="branch" />
-            <wire x2="2752" y1="192" y2="192" x1="2688" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="384" type="branch" />
+            <wire x2="2544" y1="384" y2="384" x1="2480" />
         </branch>
         <branch name="opCode0x03">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2688" y="256" type="branch" />
-            <wire x2="2752" y1="256" y2="256" x1="2688" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="448" type="branch" />
+            <wire x2="2544" y1="448" y2="448" x1="2480" />
         </branch>
         <branch name="opCode0x08">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2688" y="320" type="branch" />
-            <wire x2="2752" y1="320" y2="320" x1="2688" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="512" type="branch" />
+            <wire x2="2544" y1="512" y2="512" x1="2480" />
         </branch>
         <branch name="opCode0x11">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2688" y="368" type="branch" />
-            <wire x2="2752" y1="368" y2="368" x1="2688" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="560" type="branch" />
+            <wire x2="2544" y1="560" y2="560" x1="2480" />
         </branch>
         <branch name="opCode0x12">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2688" y="432" type="branch" />
-            <wire x2="2752" y1="432" y2="432" x1="2688" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="624" type="branch" />
+            <wire x2="2544" y1="624" y2="624" x1="2480" />
         </branch>
         <branch name="opCode0x13">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2688" y="496" type="branch" />
-            <wire x2="2752" y1="496" y2="496" x1="2688" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="688" type="branch" />
+            <wire x2="2544" y1="688" y2="688" x1="2480" />
         </branch>
         <branch name="opCode0x14">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2688" y="560" type="branch" />
-            <wire x2="2752" y1="560" y2="560" x1="2688" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="752" type="branch" />
+            <wire x2="2544" y1="752" y2="752" x1="2480" />
         </branch>
         <branch name="opCode0x15">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2688" y="624" type="branch" />
-            <wire x2="2752" y1="624" y2="624" x1="2688" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="816" type="branch" />
+            <wire x2="2544" y1="816" y2="816" x1="2480" />
         </branch>
         <branch name="opCode0x16">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2688" y="688" type="branch" />
-            <wire x2="2752" y1="688" y2="688" x1="2688" />
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="880" type="branch" />
+            <wire x2="2544" y1="880" y2="880" x1="2480" />
         </branch>
-        <instance x="2752" y="192" name="XLXI_328" orien="R0" />
-        <instance x="2752" y="384" name="XLXI_329" orien="R0" />
-        <instance x="2752" y="752" name="XLXI_340" orien="R0" />
-        <branch name="XLXN_686">
-            <wire x2="3072" y1="256" y2="256" x1="3008" />
+        <instance x="2544" y="576" name="XLXI_329" orien="R0" />
+        <instance x="2544" y="944" name="XLXI_340" orien="R0" />
+        <branch name="readSignal(2)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2864" y="448" type="branch" />
+            <wire x2="2832" y1="448" y2="448" x1="2800" />
+            <wire x2="2864" y1="448" y2="448" x1="2832" />
         </branch>
-        <branch name="XLXN_688">
-            <wire x2="3072" y1="96" y2="96" x1="3008" />
+        <branch name="readSignal(3)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2864" y="720" type="branch" />
+            <wire x2="2832" y1="720" y2="720" x1="2800" />
+            <wire x2="2864" y1="720" y2="720" x1="2832" />
         </branch>
-        <branch name="XLXN_689">
-            <wire x2="3072" y1="528" y2="528" x1="3008" />
+        <branch name="opCode0x02">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="272" type="branch" />
+            <wire x2="2544" y1="272" y2="272" x1="2480" />
         </branch>
+        <branch name="opCode0x05">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="336" type="branch" />
+            <wire x2="2544" y1="336" y2="336" x1="2480" />
+        </branch>
+        <branch name="readSignal(1)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2864" y="304" type="branch" />
+            <wire x2="2832" y1="304" y2="304" x1="2800" />
+            <wire x2="2864" y1="304" y2="304" x1="2832" />
+        </branch>
+        <instance x="2544" y="400" name="XLXI_328" orien="R0" />
+        <branch name="readSignal(0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2480" y="224" type="branch" />
+            <wire x2="2864" y1="224" y2="224" x1="2480" />
+        </branch>
+        <branch name="readSignal(3:0)">
+            <wire x2="3072" y1="32" y2="32" x1="2992" />
+        </branch>
+        <iomarker fontsize="28" x="3072" y="32" name="readSignal(3:0)" orien="R0" />
     </sheet>
 </drawing>

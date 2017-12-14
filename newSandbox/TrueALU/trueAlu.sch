@@ -34,11 +34,28 @@
         <signal name="XLXN_436" />
         <signal name="XLXN_437" />
         <signal name="XLXN_438" />
+        <signal name="signed" />
+        <signal name="number(0)" />
+        <signal name="XLXN_447" />
+        <signal name="XLXN_448" />
+        <signal name="XLXN_449" />
+        <signal name="XLXN_463" />
+        <signal name="XLXN_464" />
+        <signal name="XLXN_467" />
+        <signal name="result" />
+        <signal name="carryOut0" />
+        <signal name="XLXN_471" />
+        <signal name="carryIn0" />
+        <signal name="number(7:0)" />
+        <signal name="ovf" />
         <port polarity="Input" name="SYS_CLK" />
+        <port polarity="Output" name="RESULT(7:0)" />
         <port polarity="Output" name="CO" />
         <port polarity="Output" name="OFL" />
         <port polarity="Input" name="NUHM_INPUT(7:0)" />
         <port polarity="Output" name="OP_CODE(1:0)" />
+        <port polarity="Input" name="signed" />
+        <port polarity="Input" name="number(7:0)" />
         <blockdef name="adsu8">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="384" y1="-128" y2="-128" x1="448" />
@@ -188,6 +205,31 @@
             <blockpin signalname="XLXN_422" name="I0" />
             <blockpin signalname="XLXN_434" name="I1" />
             <blockpin name="O" />
+        </block>
+        <block symbolname="xor2" name="XLXI_136">
+            <blockpin signalname="signed" name="I0" />
+            <blockpin signalname="number(0)" name="I1" />
+            <blockpin signalname="XLXN_464" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_137">
+            <blockpin signalname="carryIn0" name="I0" />
+            <blockpin signalname="signed" name="I1" />
+            <blockpin signalname="XLXN_471" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_138">
+            <blockpin signalname="signed" name="I0" />
+            <blockpin signalname="XLXN_464" name="I1" />
+            <blockpin signalname="XLXN_467" name="O" />
+        </block>
+        <block symbolname="xor2" name="XLXI_133">
+            <blockpin signalname="XLXN_464" name="I0" />
+            <blockpin signalname="signed" name="I1" />
+            <blockpin signalname="result" name="O" />
+        </block>
+        <block symbolname="xor2" name="XLXI_140">
+            <blockpin signalname="XLXN_471" name="I0" />
+            <blockpin signalname="XLXN_467" name="I1" />
+            <blockpin signalname="carryOut0" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -375,6 +417,73 @@
             <wire x2="2752" y1="1264" y2="1264" x1="2688" />
             <wire x2="2688" y1="1264" y2="1728" x1="2688" />
             <wire x2="2752" y1="608" y2="1264" x1="2752" />
+        </branch>
+        <branch name="signed">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="976" y="2016" type="branch" />
+            <wire x2="1024" y1="2016" y2="2016" x1="976" />
+        </branch>
+        <branch name="number(0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="976" y="1952" type="branch" />
+            <wire x2="1024" y1="1952" y2="1952" x1="976" />
+        </branch>
+        <instance x="1024" y="2080" name="XLXI_136" orien="R0" />
+        <branch name="XLXN_467">
+            <wire x2="1744" y1="2112" y2="2112" x1="1616" />
+            <wire x2="1744" y1="2112" y2="2208" x1="1744" />
+            <wire x2="1760" y1="2208" y2="2208" x1="1744" />
+        </branch>
+        <instance x="1760" y="2336" name="XLXI_140" orien="R0" />
+        <instance x="1360" y="2208" name="XLXI_138" orien="R0" />
+        <branch name="XLXN_464">
+            <wire x2="1296" y1="1984" y2="1984" x1="1280" />
+            <wire x2="1296" y1="1984" y2="2080" x1="1296" />
+            <wire x2="1360" y1="2080" y2="2080" x1="1296" />
+            <wire x2="1360" y1="1984" y2="1984" x1="1296" />
+        </branch>
+        <instance x="1360" y="2368" name="XLXI_137" orien="R0" />
+        <instance x="1360" y="2048" name="XLXI_133" orien="R0" />
+        <branch name="result">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1680" y="1952" type="branch" />
+            <wire x2="1680" y1="1952" y2="1952" x1="1616" />
+        </branch>
+        <branch name="carryOut0">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="2080" y="2240" type="branch" />
+            <wire x2="2080" y1="2240" y2="2240" x1="2016" />
+        </branch>
+        <branch name="XLXN_471">
+            <wire x2="1760" y1="2272" y2="2272" x1="1616" />
+        </branch>
+        <branch name="signed">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="1920" type="branch" />
+            <wire x2="1360" y1="1920" y2="1920" x1="1296" />
+        </branch>
+        <branch name="signed">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="2144" type="branch" />
+            <wire x2="1360" y1="2144" y2="2144" x1="1296" />
+        </branch>
+        <branch name="carryIn0">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="2304" type="branch" />
+            <wire x2="1360" y1="2304" y2="2304" x1="1296" />
+        </branch>
+        <branch name="signed">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1296" y="2240" type="branch" />
+            <wire x2="1360" y1="2240" y2="2240" x1="1296" />
+        </branch>
+        <branch name="number(7:0)">
+            <wire x2="816" y1="2128" y2="2128" x1="736" />
+        </branch>
+        <branch name="signed">
+            <wire x2="816" y1="2208" y2="2208" x1="736" />
+        </branch>
+        <iomarker fontsize="28" x="736" y="2128" name="number(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="736" y="2208" name="signed" orien="R180" />
+        <branch name="RESULT(7:0)">
+            <wire x2="960" y1="2128" y2="2128" x1="880" />
+        </branch>
+        <iomarker fontsize="28" x="960" y="2128" name="RESULT(7:0)" orien="R0" />
+        <branch name="ovf">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="960" y="2208" type="branch" />
+            <wire x2="960" y1="2208" y2="2208" x1="880" />
         </branch>
     </sheet>
 </drawing>

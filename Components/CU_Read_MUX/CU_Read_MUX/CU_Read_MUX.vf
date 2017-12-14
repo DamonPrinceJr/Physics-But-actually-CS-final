@@ -1,0 +1,190 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : CU_Read_MUX.vf
+// /___/   /\     Timestamp : 12/13/2017 15:48:11
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Read_MUX/CU_Read_MUX/CU_Read_MUX.vf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Read_MUX/CU_Read_MUX/CU_Read_MUX.sch
+//Design Name: CU_Read_MUX
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1E_MXILINX_CU_Read_MUX(D0, 
+                                 D1, 
+                                 E, 
+                                 S0, 
+                                 O);
+
+    input D0;
+    input D1;
+    input E;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND3  I_36_30 (.I0(D1), 
+                 .I1(E), 
+                 .I2(S0), 
+                 .O(M1));
+   AND3B1  I_36_31 (.I0(S0), 
+                   .I1(E), 
+                   .I2(D0), 
+                   .O(M0));
+   OR2  I_36_38 (.I0(M1), 
+                .I1(M0), 
+                .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module M4_1E_MXILINX_CU_Read_MUX(D0, 
+                                 D1, 
+                                 D2, 
+                                 D3, 
+                                 E, 
+                                 S0, 
+                                 S1, 
+                                 O);
+
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+    input E;
+    input S0;
+    input S1;
+   output O;
+   
+   wire M01;
+   wire M23;
+   
+   (* HU_SET = "I_M01_1" *) 
+   M2_1E_MXILINX_CU_Read_MUX  I_M01 (.D0(D0), 
+                                    .D1(D1), 
+                                    .E(E), 
+                                    .S0(S0), 
+                                    .O(M01));
+   (* HU_SET = "I_M23_0" *) 
+   M2_1E_MXILINX_CU_Read_MUX  I_M23 (.D0(D2), 
+                                    .D1(D3), 
+                                    .E(E), 
+                                    .S0(S0), 
+                                    .O(M23));
+   MUXF5  I_O (.I0(M01), 
+              .I1(M23), 
+              .S(S1), 
+              .O(O));
+endmodule
+`timescale 1ns / 1ps
+
+module CU_Read_MUX(A, 
+                   ALU, 
+                   DR, 
+                   readSignal, 
+                   byteOut);
+
+    input [7:0] A;
+    input [7:0] ALU;
+    input [7:0] DR;
+    input [3:0] readSignal;
+   output [7:0] byteOut;
+   
+   wire [1:0] muxCode;
+   wire ONE;
+   wire XLXN_71;
+   wire ZERO;
+   
+   assign ZERO = 0;
+   OR2  XLXI_1 (.I0(readSignal[3]), 
+               .I1(readSignal[1]), 
+               .O(muxCode[0]));
+   OR2  XLXI_2 (.I0(readSignal[3]), 
+               .I1(readSignal[2]), 
+               .O(muxCode[1]));
+   (* HU_SET = "XLXI_10_2" *) 
+   M4_1E_MXILINX_CU_Read_MUX  XLXI_10 (.D0(ZERO), 
+                                      .D1(A[0]), 
+                                      .D2(DR[0]), 
+                                      .D3(ALU[0]), 
+                                      .E(ONE), 
+                                      .S0(muxCode[0]), 
+                                      .S1(muxCode[1]), 
+                                      .O(byteOut[0]));
+   (* HU_SET = "XLXI_11_3" *) 
+   M4_1E_MXILINX_CU_Read_MUX  XLXI_11 (.D0(ZERO), 
+                                      .D1(A[1]), 
+                                      .D2(DR[1]), 
+                                      .D3(ALU[1]), 
+                                      .E(ONE), 
+                                      .S0(muxCode[0]), 
+                                      .S1(muxCode[1]), 
+                                      .O(byteOut[1]));
+   (* HU_SET = "XLXI_12_4" *) 
+   M4_1E_MXILINX_CU_Read_MUX  XLXI_12 (.D0(ZERO), 
+                                      .D1(A[2]), 
+                                      .D2(DR[2]), 
+                                      .D3(ALU[2]), 
+                                      .E(ONE), 
+                                      .S0(muxCode[0]), 
+                                      .S1(muxCode[1]), 
+                                      .O(byteOut[2]));
+   (* HU_SET = "XLXI_16_5" *) 
+   M4_1E_MXILINX_CU_Read_MUX  XLXI_16 (.D0(ZERO), 
+                                      .D1(A[3]), 
+                                      .D2(DR[3]), 
+                                      .D3(ALU[3]), 
+                                      .E(ONE), 
+                                      .S0(muxCode[0]), 
+                                      .S1(muxCode[1]), 
+                                      .O(byteOut[3]));
+   (* HU_SET = "XLXI_19_6" *) 
+   M4_1E_MXILINX_CU_Read_MUX  XLXI_19 (.D0(ZERO), 
+                                      .D1(A[7]), 
+                                      .D2(DR[7]), 
+                                      .D3(ALU[7]), 
+                                      .E(ONE), 
+                                      .S0(muxCode[0]), 
+                                      .S1(muxCode[1]), 
+                                      .O(byteOut[7]));
+   (* HU_SET = "XLXI_20_7" *) 
+   M4_1E_MXILINX_CU_Read_MUX  XLXI_20 (.D0(ZERO), 
+                                      .D1(A[6]), 
+                                      .D2(DR[6]), 
+                                      .D3(ALU[6]), 
+                                      .E(ONE), 
+                                      .S0(muxCode[0]), 
+                                      .S1(muxCode[1]), 
+                                      .O(byteOut[6]));
+   (* HU_SET = "XLXI_21_8" *) 
+   M4_1E_MXILINX_CU_Read_MUX  XLXI_21 (.D0(ZERO), 
+                                      .D1(A[5]), 
+                                      .D2(DR[5]), 
+                                      .D3(ALU[5]), 
+                                      .E(ONE), 
+                                      .S0(muxCode[0]), 
+                                      .S1(muxCode[1]), 
+                                      .O(byteOut[5]));
+   (* HU_SET = "XLXI_22_9" *) 
+   M4_1E_MXILINX_CU_Read_MUX  XLXI_22 (.D0(ZERO), 
+                                      .D1(A[4]), 
+                                      .D2(DR[4]), 
+                                      .D3(XLXN_71), 
+                                      .E(ONE), 
+                                      .S0(ALU[4]), 
+                                      .S1(muxCode[1]), 
+                                      .O(byteOut[4]));
+   INV  XLXI_26 (.I(ZERO), 
+                .O(ONE));
+endmodule

@@ -1,0 +1,8 @@
+EN cu_write NULL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf sub00/vhpl06 1513211705
+EN or8_mxilinx_cu_write NULL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf sub00/vhpl02 1513211701
+AR d2_4e_mxilinx_cu_write behavioral C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf sub00/vhpl01 1513211700
+EN d2_4e_mxilinx_cu_write NULL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf sub00/vhpl00 1513211699
+EN and8_mxilinx_cu_write NULL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf sub00/vhpl04 1513211703
+AR and8_mxilinx_cu_write behavioral C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf sub00/vhpl05 1513211704
+AR or8_mxilinx_cu_write behavioral C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf sub00/vhpl03 1513211702
+AR cu_write behavioral C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf sub00/vhpl07 1513211706

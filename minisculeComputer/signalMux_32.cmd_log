@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym signalMux_32 C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/MM_Decode_MUX/MM_Decode_MUX/signalMux_32.sch C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/signalMux_32.sym 

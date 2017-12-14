@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym CU_Read C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Read/CU_Read/CU_Read.sch C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/CU_Read.sym 

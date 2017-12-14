@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -refsym MainMemory C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/MainMemory/MainMemory/MainMemory.sch C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/MainMemory.sym 

@@ -1,0 +1,3 @@
+vhdl work "signalMux_32.vhf"
+vhdl work "MM_signal_MUX.vhf"
+vhdl work "MM_Decode_MUX.vhf"

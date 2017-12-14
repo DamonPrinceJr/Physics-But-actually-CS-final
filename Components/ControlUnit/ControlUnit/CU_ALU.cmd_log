@@ -1,0 +1,1 @@
+sch2sym -intstyle ise -family spartan3e -w -refsym CU_ALU C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_ALU/CU_ALU/CU_ALU.sch C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/ControlUnit/ControlUnit/CU_ALU.sym 

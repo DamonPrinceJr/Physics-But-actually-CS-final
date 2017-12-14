@@ -111,21 +111,25 @@
         <signal name="XLXN_502" />
         <signal name="Reg_WRITE(2)" />
         <signal name="Reg_WRITE(4)" />
-        <signal name="MODE" />
         <signal name="Reg_WRITE(7)" />
-        <signal name="Reg_WRITE(1)" />
         <signal name="Reg_WRITE(6)" />
         <signal name="Reg_WRITE(5)" />
         <signal name="Reg_WRITE(3)" />
-        <signal name="MATH(5:0)" />
-        <signal name="MATH(1)" />
-        <signal name="MATH(2)" />
-        <signal name="MATH(3)" />
-        <signal name="MATH(4)" />
-        <signal name="MATH(5)" />
+        <signal name="EN" />
+        <signal name="Reg_WRITE(1)" />
+        <signal name="MATH_OP(0)" />
+        <signal name="MATH_OP(1)" />
+        <signal name="Reg_WRITE(8:0)" />
+        <signal name="MATH_OP(5:0)" />
+        <signal name="MATH_OP(2)" />
+        <signal name="MATH_OP(3)" />
+        <signal name="MATH_OP(4)" />
+        <signal name="MATH_OP(5)" />
         <port polarity="Input" name="IR(7:0)" />
         <port polarity="Input" name="DR(7:0)" />
-        <port polarity="Output" name="MATH(5:0)" />
+        <port polarity="Input" name="EN" />
+        <port polarity="Output" name="Reg_WRITE(8:0)" />
+        <port polarity="Output" name="MATH_OP(5:0)" />
         <blockdef name="inv">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-32" y2="-32" x1="0" />
@@ -305,7 +309,7 @@
             <blockpin signalname="XLXN_204" name="I5" />
             <blockpin signalname="XLXN_218" name="I6" />
             <blockpin signalname="IR(0)" name="I7" />
-            <blockpin signalname="MATH(5:0)" name="O" />
+            <blockpin signalname="MATH_OP(0)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_119">
             <blockpin signalname="IR(4)" name="I" />
@@ -344,7 +348,7 @@
             <blockpin signalname="XLXN_227" name="I5" />
             <blockpin signalname="IR(1)" name="I6" />
             <blockpin signalname="XLXN_266" name="I7" />
-            <blockpin signalname="MATH(1)" name="O" />
+            <blockpin signalname="MATH_OP(1)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_126">
             <blockpin signalname="IR(4)" name="I" />
@@ -359,7 +363,7 @@
             <blockpin signalname="XLXN_255" name="I5" />
             <blockpin signalname="IR(1)" name="I6" />
             <blockpin signalname="IR(0)" name="I7" />
-            <blockpin signalname="MATH(2)" name="O" />
+            <blockpin signalname="MATH_OP(2)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_146">
             <blockpin signalname="IR(4)" name="I" />
@@ -390,7 +394,7 @@
             <blockpin signalname="IR(2)" name="I5" />
             <blockpin signalname="XLXN_290" name="I6" />
             <blockpin signalname="XLXN_289" name="I7" />
-            <blockpin signalname="MATH(3)" name="O" />
+            <blockpin signalname="MATH_OP(3)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_154">
             <blockpin signalname="IR(4)" name="I" />
@@ -417,7 +421,7 @@
             <blockpin signalname="IR(2)" name="I5" />
             <blockpin signalname="XLXN_306" name="I6" />
             <blockpin signalname="IR(0)" name="I7" />
-            <blockpin signalname="MATH(4)" name="O" />
+            <blockpin signalname="MATH_OP(4)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_161">
             <blockpin signalname="IR(4)" name="I" />
@@ -448,7 +452,7 @@
             <blockpin signalname="IR(2)" name="I5" />
             <blockpin signalname="IR(1)" name="I6" />
             <blockpin signalname="XLXN_337" name="I7" />
-            <blockpin signalname="MATH(5)" name="O" />
+            <blockpin signalname="MATH_OP(5)" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_178">
             <blockpin signalname="IR(4)" name="I" />
@@ -664,16 +668,16 @@
         <block symbolname="or8" name="XLXI_254">
             <blockpin signalname="CLR" name="I0" />
             <blockpin signalname="LDA" name="I1" />
-            <blockpin signalname="MATH(5)" name="I2" />
-            <blockpin signalname="MATH(4)" name="I3" />
-            <blockpin signalname="MATH(3)" name="I4" />
-            <blockpin signalname="MATH(2)" name="I5" />
-            <blockpin signalname="MATH(1)" name="I6" />
-            <blockpin signalname="MATH(5:0)" name="I7" />
+            <blockpin signalname="MATH_OP(5)" name="I2" />
+            <blockpin signalname="MATH_OP(4)" name="I3" />
+            <blockpin signalname="MATH_OP(3)" name="I4" />
+            <blockpin signalname="MATH_OP(2)" name="I5" />
+            <blockpin signalname="MATH_OP(1)" name="I6" />
+            <blockpin signalname="MATH_OP(0)" name="I7" />
             <blockpin signalname="XLXN_501" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_258">
-            <blockpin signalname="MODE" name="I0" />
+            <blockpin signalname="EN" name="I0" />
             <blockpin signalname="XLXN_501" name="I1" />
             <blockpin signalname="Reg_WRITE(0)" name="O" />
         </block>
@@ -687,7 +691,7 @@
             <blockpin signalname="Reg_WRITE(6)" name="D3" />
         </block>
         <block symbolname="and2" name="XLXI_262">
-            <blockpin signalname="MODE" name="I0" />
+            <blockpin signalname="EN" name="I0" />
             <blockpin signalname="XLXN_522" name="I1" />
             <blockpin signalname="XLXN_516" name="O" />
         </block>
@@ -697,14 +701,9 @@
             <blockpin signalname="XLXN_502" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_259">
-            <blockpin signalname="MODE" name="I0" />
+            <blockpin signalname="EN" name="I0" />
             <blockpin signalname="XLXN_502" name="I1" />
             <blockpin signalname="Reg_WRITE(2)" name="O" />
-        </block>
-        <block symbolname="and2" name="XLXI_273">
-            <blockpin signalname="MODE" name="I0" />
-            <blockpin signalname="CLR" name="I1" />
-            <blockpin signalname="Reg_WRITE(1)" name="O" />
         </block>
         <block symbolname="or2" name="XLXI_267">
             <blockpin signalname="MVI" name="I0" />
@@ -712,9 +711,14 @@
             <blockpin signalname="XLXN_522" name="O" />
         </block>
         <block symbolname="and2" name="XLXI_274">
-            <blockpin signalname="MODE" name="I0" />
+            <blockpin signalname="EN" name="I0" />
             <blockpin signalname="SET" name="I1" />
             <blockpin signalname="Reg_WRITE(7)" name="O" />
+        </block>
+        <block symbolname="and2" name="XLXI_273">
+            <blockpin signalname="EN" name="I0" />
+            <blockpin signalname="CLR" name="I1" />
+            <blockpin signalname="Reg_WRITE(1)" name="O" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -726,29 +730,37 @@
         <instance x="128" y="592" name="XLXI_10" orien="R0" />
         <instance x="128" y="656" name="XLXI_11" orien="R0" />
         <branch name="XLXN_9">
-            <wire x2="384" y1="624" y2="624" x1="352" />
+            <wire x2="368" y1="624" y2="624" x1="352" />
+            <wire x2="384" y1="624" y2="624" x1="368" />
         </branch>
         <branch name="XLXN_8">
-            <wire x2="384" y1="560" y2="560" x1="352" />
+            <wire x2="368" y1="560" y2="560" x1="352" />
+            <wire x2="384" y1="560" y2="560" x1="368" />
         </branch>
         <branch name="XLXN_7">
-            <wire x2="384" y1="496" y2="496" x1="352" />
+            <wire x2="368" y1="496" y2="496" x1="352" />
+            <wire x2="384" y1="496" y2="496" x1="368" />
         </branch>
         <branch name="XLXN_6">
-            <wire x2="384" y1="368" y2="368" x1="352" />
+            <wire x2="368" y1="368" y2="368" x1="352" />
+            <wire x2="384" y1="368" y2="368" x1="368" />
         </branch>
         <branch name="XLXN_5">
-            <wire x2="384" y1="304" y2="304" x1="352" />
+            <wire x2="368" y1="304" y2="304" x1="352" />
+            <wire x2="384" y1="304" y2="304" x1="368" />
         </branch>
         <branch name="XLXN_4">
-            <wire x2="384" y1="240" y2="240" x1="352" />
+            <wire x2="368" y1="240" y2="240" x1="352" />
+            <wire x2="384" y1="240" y2="240" x1="368" />
         </branch>
         <branch name="XLXN_3">
-            <wire x2="384" y1="176" y2="176" x1="352" />
+            <wire x2="368" y1="176" y2="176" x1="352" />
+            <wire x2="384" y1="176" y2="176" x1="368" />
         </branch>
         <instance x="128" y="464" name="XLXI_12" orien="R0" />
         <branch name="XLXN_17">
-            <wire x2="384" y1="432" y2="432" x1="352" />
+            <wire x2="368" y1="432" y2="432" x1="352" />
+            <wire x2="384" y1="432" y2="432" x1="368" />
         </branch>
         <branch name="IR(0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="96" y="176" type="branch" />
@@ -1047,25 +1059,26 @@
         </branch>
         <branch name="NOP">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="400" type="branch" />
-            <wire x2="672" y1="400" y2="400" x1="640" />
+            <wire x2="656" y1="400" y2="400" x1="640" />
+            <wire x2="672" y1="400" y2="400" x1="656" />
         </branch>
         <branch name="LDA">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="944" type="branch" />
             <wire x2="672" y1="944" y2="944" x1="640" />
         </branch>
-        <branch name="MATH(5:0)">
+        <branch name="MATH_OP(0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="1488" type="branch" />
             <wire x2="672" y1="1488" y2="1488" x1="640" />
         </branch>
-        <branch name="MATH(1)">
+        <branch name="MATH_OP(1)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="2032" type="branch" />
             <wire x2="672" y1="2032" y2="2032" x1="640" />
         </branch>
-        <branch name="MATH(2)">
+        <branch name="MATH_OP(2)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="256" type="branch" />
             <wire x2="1440" y1="256" y2="256" x1="1408" />
         </branch>
-        <branch name="MATH(3)">
+        <branch name="MATH_OP(3)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="800" type="branch" />
             <wire x2="1440" y1="800" y2="800" x1="1408" />
         </branch>
@@ -1119,7 +1132,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="864" y="1568" type="branch" />
             <wire x2="1152" y1="1568" y2="1568" x1="864" />
         </branch>
-        <branch name="MATH(4)">
+        <branch name="MATH_OP(4)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="1344" type="branch" />
             <wire x2="1440" y1="1344" y2="1344" x1="1408" />
         </branch>
@@ -1170,7 +1183,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="864" y="2112" type="branch" />
             <wire x2="1152" y1="2112" y2="2112" x1="864" />
         </branch>
-        <branch name="MATH(5)">
+        <branch name="MATH_OP(5)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="1888" type="branch" />
             <wire x2="1440" y1="1888" y2="1888" x1="1408" />
         </branch>
@@ -1526,27 +1539,27 @@
             <wire x2="1696" y1="2112" y2="2112" x1="1664" />
         </branch>
         <instance x="1696" y="2144" name="XLXI_252" orien="R0" />
-        <branch name="MATH(5:0)">
+        <branch name="MATH_OP(0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="80" type="branch" />
             <wire x2="2672" y1="80" y2="80" x1="2640" />
         </branch>
-        <branch name="MATH(1)">
+        <branch name="MATH_OP(1)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="144" type="branch" />
             <wire x2="2672" y1="144" y2="144" x1="2640" />
         </branch>
-        <branch name="MATH(2)">
+        <branch name="MATH_OP(2)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="208" type="branch" />
             <wire x2="2672" y1="208" y2="208" x1="2640" />
         </branch>
-        <branch name="MATH(3)">
+        <branch name="MATH_OP(3)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="272" type="branch" />
             <wire x2="2672" y1="272" y2="272" x1="2640" />
         </branch>
-        <branch name="MATH(4)">
+        <branch name="MATH_OP(4)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="336" type="branch" />
             <wire x2="2672" y1="336" y2="336" x1="2640" />
         </branch>
-        <branch name="MATH(5)">
+        <branch name="MATH_OP(5)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="400" type="branch" />
             <wire x2="2672" y1="400" y2="400" x1="2640" />
         </branch>
@@ -1559,7 +1572,7 @@
         </branch>
         <instance x="2672" y="592" name="XLXI_254" orien="R0" />
         <instance x="2960" y="432" name="XLXI_258" orien="R0" />
-        <branch name="MODE">
+        <branch name="EN">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2928" y="368" type="branch" />
             <wire x2="2960" y1="368" y2="368" x1="2928" />
         </branch>
@@ -1585,7 +1598,7 @@
         </branch>
         <instance x="1952" y="1088" name="XLXI_230" orien="R0" />
         <instance x="1952" y="1632" name="XLXI_236" orien="R0" />
-        <branch name="MODE">
+        <branch name="EN">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2512" y="1216" type="branch" />
             <wire x2="2544" y1="1216" y2="1216" x1="2512" />
         </branch>
@@ -1593,7 +1606,7 @@
         <branch name="XLXN_502">
             <wire x2="2960" y1="752" y2="752" x1="2928" />
         </branch>
-        <branch name="MODE">
+        <branch name="EN">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2928" y="816" type="branch" />
             <wire x2="2960" y1="816" y2="816" x1="2928" />
         </branch>
@@ -1601,15 +1614,6 @@
         <branch name="Reg_WRITE(2)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3248" y="784" type="branch" />
             <wire x2="3248" y1="784" y2="784" x1="3216" />
-        </branch>
-        <instance x="2960" y="736" name="XLXI_273" orien="R0" />
-        <branch name="CLR">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="608" type="branch" />
-            <wire x2="2960" y1="608" y2="608" x1="2640" />
-        </branch>
-        <branch name="MODE">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2928" y="672" type="branch" />
-            <wire x2="2960" y1="672" y2="672" x1="2928" />
         </branch>
         <text x="3168" y="768">C</text>
         <text x="3164" y="320">A</text>
@@ -1652,7 +1656,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="1312" type="branch" />
             <wire x2="2960" y1="1312" y2="1312" x1="2640" />
         </branch>
-        <branch name="MODE">
+        <branch name="EN">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2928" y="1376" type="branch" />
             <wire x2="2960" y1="1376" y2="1376" x1="2928" />
         </branch>
@@ -1661,10 +1665,6 @@
         <branch name="Reg_WRITE(7)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3248" y="1344" type="branch" />
             <wire x2="3248" y1="1344" y2="1344" x1="3216" />
-        </branch>
-        <branch name="Reg_WRITE(1)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3248" y="640" type="branch" />
-            <wire x2="3248" y1="640" y2="640" x1="3216" />
         </branch>
         <branch name="CLR">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="720" type="branch" />
@@ -1678,10 +1678,30 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="528" type="branch" />
             <wire x2="2672" y1="528" y2="528" x1="2640" />
         </branch>
-        <iomarker fontsize="28" x="3184" y="1504" name="MATH(5:0)" orien="R0" />
-        <branch name="MATH(5:0)">
-            <wire x2="2688" y1="1504" y2="1504" x1="2656" />
-            <wire x2="3184" y1="1504" y2="1504" x1="2688" />
+        <branch name="EN">
+            <wire x2="272" y1="128" y2="128" x1="192" />
+        </branch>
+        <iomarker fontsize="28" x="192" y="128" name="EN" orien="R180" />
+        <instance x="2960" y="736" name="XLXI_273" orien="R0" />
+        <branch name="CLR">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2640" y="608" type="branch" />
+            <wire x2="2960" y1="608" y2="608" x1="2640" />
+        </branch>
+        <branch name="EN">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2928" y="672" type="branch" />
+            <wire x2="2960" y1="672" y2="672" x1="2928" />
+        </branch>
+        <branch name="Reg_WRITE(1)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="3248" y="640" type="branch" />
+            <wire x2="3248" y1="640" y2="640" x1="3216" />
+        </branch>
+        <iomarker fontsize="28" x="432" y="80" name="MATH_OP(5:0)" orien="R0" />
+        <branch name="MATH_OP(5:0)">
+            <wire x2="432" y1="80" y2="80" x1="352" />
+        </branch>
+        <iomarker fontsize="28" x="432" y="32" name="Reg_WRITE(8:0)" orien="R0" />
+        <branch name="Reg_WRITE(8:0)">
+            <wire x2="432" y1="32" y2="32" x1="352" />
         </branch>
     </sheet>
 </drawing>

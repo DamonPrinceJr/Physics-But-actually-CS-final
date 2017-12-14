@@ -7,8 +7,6 @@
     </attr>
     <netlist>
         <signal name="CU_READ(7:0)" />
-        <signal name="CU_WRITE(8:0)" />
-        <signal name="REG_OUT(71:0)" />
         <signal name="CLK" />
         <signal name="REG_OUT(7:0)" />
         <signal name="REG_OUT(15:8)" />
@@ -28,10 +26,12 @@
         <signal name="REG_OUT(71:64)" />
         <signal name="CU_WRITE(7)" />
         <signal name="CU_WRITE(8)" />
+        <signal name="REG_OUT(71:0)" />
+        <signal name="CU_WRITE(8:0)" />
         <port polarity="Input" name="CU_READ(7:0)" />
-        <port polarity="Input" name="CU_WRITE(8:0)" />
-        <port polarity="Output" name="REG_OUT(71:0)" />
         <port polarity="Input" name="CLK" />
+        <port polarity="Output" name="REG_OUT(71:0)" />
+        <port polarity="Input" name="CU_WRITE(8:0)" />
         <blockdef name="fd8ce">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="64" y1="-128" y2="-128" x1="0" />
@@ -112,22 +112,6 @@
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <branch name="CU_READ(7:0)">
-            <wire x2="464" y1="160" y2="160" x1="400" />
-        </branch>
-        <branch name="CU_WRITE(8:0)">
-            <wire x2="464" y1="240" y2="240" x1="400" />
-        </branch>
-        <iomarker fontsize="28" x="400" y="160" name="CU_READ(7:0)" orien="R180" />
-        <iomarker fontsize="28" x="400" y="240" name="CU_WRITE(8:0)" orien="R180" />
-        <branch name="REG_OUT(71:0)">
-            <wire x2="3104" y1="160" y2="160" x1="3040" />
-        </branch>
-        <iomarker fontsize="28" x="3104" y="160" name="REG_OUT(71:0)" orien="R0" />
-        <branch name="CLK">
-            <wire x2="464" y1="320" y2="320" x1="400" />
-        </branch>
-        <iomarker fontsize="28" x="400" y="320" name="CLK" orien="R180" />
         <instance x="416" y="880" name="XLXI_1" orien="R0" />
         <branch name="CU_READ(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="352" y="624" type="branch" />
@@ -290,5 +274,21 @@
         <text x="1744" y="1504">r3</text>
         <text x="2736" y="592">S</text>
         <text x="2736" y="900">Z</text>
+        <branch name="REG_OUT(71:0)">
+            <wire x2="624" y1="160" y2="160" x1="560" />
+        </branch>
+        <iomarker fontsize="28" x="624" y="160" name="REG_OUT(71:0)" orien="R0" />
+        <branch name="CU_READ(7:0)">
+            <wire x2="480" y1="160" y2="160" x1="416" />
+        </branch>
+        <branch name="CU_WRITE(8:0)">
+            <wire x2="480" y1="240" y2="240" x1="416" />
+        </branch>
+        <branch name="CLK">
+            <wire x2="480" y1="320" y2="320" x1="416" />
+        </branch>
+        <iomarker fontsize="28" x="416" y="160" name="CU_READ(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="416" y="240" name="CU_WRITE(8:0)" orien="R180" />
+        <iomarker fontsize="28" x="416" y="320" name="CLK" orien="R180" />
     </sheet>
 </drawing>

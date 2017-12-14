@@ -1,0 +1,143 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : DisplayModule.vf
+// /___/   /\     Timestamp : 12/13/2017 16:05:26
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/DisplayModule/DisplayModule/DisplayModule.vf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/DisplayModule/DisplayModule/DisplayModule.sch
+//Design Name: DisplayModule
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_DisplayModule(D0, 
+                                  D1, 
+                                  S0, 
+                                  O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module DisplayModule(CLK, 
+                     MM_ADR, 
+                     MM_DAT, 
+                     MODE, 
+                     RegisterC, 
+                     anO, 
+                     lightOutput, 
+                     sseg);
+
+    input CLK;
+    input [4:0] MM_ADR;
+    input [7:0] MM_DAT;
+    input MODE;
+    input [7:0] RegisterC;
+   output [3:0] anO;
+   output [4:0] lightOutput;
+   output [7:0] sseg;
+   
+   wire [7:0] displayOutput;
+   wire XLXN_20;
+   wire XLXN_35;
+   wire XLXN_38;
+   wire XLXN_41;
+   wire XLXN_44;
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   M2_1_MXILINX_DisplayModule  XLXI_1 (.D0(RegisterC[0]), 
+                                      .D1(MM_DAT[0]), 
+                                      .S0(MODE), 
+                                      .O(displayOutput[0]));
+   (* HU_SET = "XLXI_2_1" *) 
+   M2_1_MXILINX_DisplayModule  XLXI_2 (.D0(RegisterC[1]), 
+                                      .D1(MM_DAT[1]), 
+                                      .S0(MODE), 
+                                      .O(displayOutput[1]));
+   (* HU_SET = "XLXI_3_2" *) 
+   M2_1_MXILINX_DisplayModule  XLXI_3 (.D0(RegisterC[2]), 
+                                      .D1(MM_DAT[2]), 
+                                      .S0(MODE), 
+                                      .O(displayOutput[2]));
+   (* HU_SET = "XLXI_4_3" *) 
+   M2_1_MXILINX_DisplayModule  XLXI_4 (.D0(RegisterC[3]), 
+                                      .D1(MM_DAT[3]), 
+                                      .S0(MODE), 
+                                      .O(displayOutput[3]));
+   (* HU_SET = "XLXI_5_4" *) 
+   M2_1_MXILINX_DisplayModule  XLXI_5 (.D0(RegisterC[4]), 
+                                      .D1(MM_DAT[4]), 
+                                      .S0(MODE), 
+                                      .O(displayOutput[4]));
+   (* HU_SET = "XLXI_6_5" *) 
+   M2_1_MXILINX_DisplayModule  XLXI_6 (.D0(RegisterC[5]), 
+                                      .D1(MM_DAT[5]), 
+                                      .S0(MODE), 
+                                      .O(displayOutput[5]));
+   (* HU_SET = "XLXI_7_6" *) 
+   M2_1_MXILINX_DisplayModule  XLXI_7 (.D0(RegisterC[6]), 
+                                      .D1(MM_DAT[6]), 
+                                      .S0(MODE), 
+                                      .O(displayOutput[6]));
+   (* HU_SET = "XLXI_8_7" *) 
+   M2_1_MXILINX_DisplayModule  XLXI_8 (.D0(RegisterC[7]), 
+                                      .D1(MM_DAT[7]), 
+                                      .S0(MODE), 
+                                      .O(displayOutput[7]));
+   (* HU_SET = "XLXI_9_8" *) 
+   M2_1_MXILINX_DisplayModule  XLXI_9 (.D0(XLXN_35), 
+                                      .D1(MM_ADR[0]), 
+                                      .S0(MODE), 
+                                      .O(lightOutput[0]));
+   (* HU_SET = "XLXI_10_9" *) 
+   M2_1_MXILINX_DisplayModule  XLXI_10 (.D0(XLXN_38), 
+                                       .D1(MM_ADR[1]), 
+                                       .S0(MODE), 
+                                       .O(lightOutput[1]));
+   (* HU_SET = "XLXI_11_12" *) 
+   M2_1_MXILINX_DisplayModule  XLXI_11 (.D0(XLXN_20), 
+                                       .D1(MM_ADR[4]), 
+                                       .S0(MODE), 
+                                       .O(lightOutput[4]));
+   (* HU_SET = "XLXI_12_10" *) 
+   M2_1_MXILINX_DisplayModule  XLXI_12 (.D0(XLXN_41), 
+                                       .D1(MM_ADR[2]), 
+                                       .S0(MODE), 
+                                       .O(lightOutput[2]));
+   (* HU_SET = "XLXI_13_11" *) 
+   M2_1_MXILINX_DisplayModule  XLXI_13 (.D0(XLXN_44), 
+                                       .D1(MM_ADR[3]), 
+                                       .S0(MODE), 
+                                       .O(lightOutput[3]));
+   sevenSeg  XLXI_14 (.Din(displayOutput[7:0]), 
+                     .En(MODE), 
+                     .SYS_CLK(CLK), 
+                     .anO(anO[3:0]), 
+                     .sseg(sseg[7:0]));
+endmodule

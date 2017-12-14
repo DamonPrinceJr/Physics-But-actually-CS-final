@@ -1,0 +1,3 @@
+xst -intstyle ise -ifn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/32x8Bank/Mem32x8Bank/Mem32xBank.xst" -ofn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/32x8Bank/Mem32x8Bank/Mem32xBank.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s100e-cp132-4 Mem32xBank.ngc Mem32xBank.ngd  
+map -intstyle ise -p xc3s100e-cp132-4 -cm area -ir off -pr off -c 100 -o Mem32xBank_map.ncd Mem32xBank.ngd Mem32xBank.pcf 

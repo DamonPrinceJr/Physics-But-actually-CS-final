@@ -1,0 +1,31 @@
+V3 23
+FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf 2017/12/13.16:34:56 P.20131013
+EN work/D2_4E_MXILINX_CU_Write 1513211699 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/D2_4E_MXILINX_CU_Write/BEHAVIORAL 1513211700 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf \
+      EN work/D2_4E_MXILINX_CU_Write 1513211699 CP AND3 CP AND3B1 CP AND3B2
+EN work/OR8_MXILINX_CU_Write 1513211701 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/OR8_MXILINX_CU_Write/BEHAVIORAL 1513211702 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf \
+      EN work/OR8_MXILINX_CU_Write 1513211701 CP FMAP CP OR2 CP OR4
+EN work/AND8_MXILINX_CU_Write 1513211703 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/AND8_MXILINX_CU_Write/BEHAVIORAL 1513211704 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf \
+      EN work/AND8_MXILINX_CU_Write 1513211703 CP FMAP CP AND4 CP AND2
+EN work/CU_Write 1513211705 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf \
+      PB ieee/std_logic_1164 1381692176 PB ieee/NUMERIC_STD 1381692181 LB UNISIM \
+      PH unisim/VCOMPONENTS 1381692182
+AR work/CU_Write/BEHAVIORAL 1513211706 \
+      FL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Write/CU_Write/CU_Write.vhf \
+      EN work/CU_Write 1513211705 CP AND8_MXILINX_CU_Write CP INV \
+      CP OR8_MXILINX_CU_Write CP OR2 CP AND2 CP D2_4E_MXILINX_CU_Write

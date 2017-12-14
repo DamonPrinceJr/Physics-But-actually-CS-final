@@ -36,23 +36,24 @@
         <signal name="MM_ADR(2)" />
         <signal name="XLXN_44" />
         <signal name="MM_ADR(3)" />
-        <signal name="OUTPUT(0)" />
-        <signal name="OUTPUT(1)" />
-        <signal name="OUTPUT(2)" />
-        <signal name="OUTPUT(3)" />
-        <signal name="OUTPUT(4)" />
-        <signal name="OUTPUT(5)" />
-        <signal name="OUTPUT(6)" />
-        <signal name="OUTPUT(7)" />
-        <signal name="OUTPUT(8)" />
-        <signal name="OUTPUT(9)" />
-        <signal name="OUTPUT(10)" />
-        <signal name="OUTPUT(11)" />
-        <signal name="OUTPUT(12)" />
+        <signal name="displayOutput(0)" />
+        <signal name="displayOutput(1)" />
+        <signal name="displayOutput(2)" />
+        <signal name="displayOutput(3)" />
+        <signal name="displayOutput(4)" />
+        <signal name="displayOutput(5)" />
+        <signal name="displayOutput(6)" />
+        <signal name="displayOutput(7)" />
+        <signal name="lightOutput(0)" />
+        <signal name="lightOutput(1)" />
+        <signal name="lightOutput(2)" />
+        <signal name="lightOutput(3)" />
+        <signal name="lightOutput(4)" />
         <signal name="sseg(7:0)" />
         <signal name="anO(3:0)" />
-        <signal name="OUTPUT(12:0)" />
+        <signal name="displayOutput(7:0)" />
         <signal name="CLK" />
+        <signal name="lightOutput(4:0)" />
         <port polarity="Input" name="RegisterC(7:0)" />
         <port polarity="Input" name="MM_DAT(7:0)" />
         <port polarity="Input" name="MM_ADR(4:0)" />
@@ -60,6 +61,7 @@
         <port polarity="Output" name="sseg(7:0)" />
         <port polarity="Output" name="anO(3:0)" />
         <port polarity="Input" name="CLK" />
+        <port polarity="Output" name="lightOutput(4:0)" />
         <blockdef name="m2_1">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <line x2="96" y1="-64" y2="-192" x1="96" />
@@ -89,83 +91,83 @@
             <blockpin signalname="RegisterC(0)" name="D0" />
             <blockpin signalname="MM_DAT(0)" name="D1" />
             <blockpin signalname="MODE" name="S0" />
-            <blockpin signalname="OUTPUT(0)" name="O" />
+            <blockpin signalname="displayOutput(0)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_2">
             <blockpin signalname="RegisterC(1)" name="D0" />
             <blockpin signalname="MM_DAT(1)" name="D1" />
             <blockpin signalname="MODE" name="S0" />
-            <blockpin signalname="OUTPUT(1)" name="O" />
+            <blockpin signalname="displayOutput(1)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_3">
             <blockpin signalname="RegisterC(2)" name="D0" />
             <blockpin signalname="MM_DAT(2)" name="D1" />
             <blockpin signalname="MODE" name="S0" />
-            <blockpin signalname="OUTPUT(2)" name="O" />
+            <blockpin signalname="displayOutput(2)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_4">
             <blockpin signalname="RegisterC(3)" name="D0" />
             <blockpin signalname="MM_DAT(3)" name="D1" />
             <blockpin signalname="MODE" name="S0" />
-            <blockpin signalname="OUTPUT(3)" name="O" />
+            <blockpin signalname="displayOutput(3)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_5">
             <blockpin signalname="RegisterC(4)" name="D0" />
             <blockpin signalname="MM_DAT(4)" name="D1" />
             <blockpin signalname="MODE" name="S0" />
-            <blockpin signalname="OUTPUT(4)" name="O" />
+            <blockpin signalname="displayOutput(4)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_6">
             <blockpin signalname="RegisterC(5)" name="D0" />
             <blockpin signalname="MM_DAT(5)" name="D1" />
             <blockpin signalname="MODE" name="S0" />
-            <blockpin signalname="OUTPUT(5)" name="O" />
+            <blockpin signalname="displayOutput(5)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_7">
             <blockpin signalname="RegisterC(6)" name="D0" />
             <blockpin signalname="MM_DAT(6)" name="D1" />
             <blockpin signalname="MODE" name="S0" />
-            <blockpin signalname="OUTPUT(6)" name="O" />
+            <blockpin signalname="displayOutput(6)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_8">
             <blockpin signalname="RegisterC(7)" name="D0" />
             <blockpin signalname="MM_DAT(7)" name="D1" />
             <blockpin signalname="MODE" name="S0" />
-            <blockpin signalname="OUTPUT(7)" name="O" />
+            <blockpin signalname="displayOutput(7)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_9">
             <blockpin signalname="XLXN_35" name="D0" />
             <blockpin signalname="MM_ADR(0)" name="D1" />
             <blockpin signalname="MODE" name="S0" />
-            <blockpin signalname="OUTPUT(8)" name="O" />
+            <blockpin signalname="lightOutput(0)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_10">
             <blockpin signalname="XLXN_38" name="D0" />
             <blockpin signalname="MM_ADR(1)" name="D1" />
             <blockpin signalname="MODE" name="S0" />
-            <blockpin signalname="OUTPUT(9)" name="O" />
+            <blockpin signalname="lightOutput(1)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_12">
             <blockpin signalname="XLXN_41" name="D0" />
             <blockpin signalname="MM_ADR(2)" name="D1" />
             <blockpin signalname="MODE" name="S0" />
-            <blockpin signalname="OUTPUT(10)" name="O" />
+            <blockpin signalname="lightOutput(2)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_13">
             <blockpin signalname="XLXN_44" name="D0" />
             <blockpin signalname="MM_ADR(3)" name="D1" />
             <blockpin signalname="MODE" name="S0" />
-            <blockpin signalname="OUTPUT(11)" name="O" />
+            <blockpin signalname="lightOutput(3)" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_11">
             <blockpin signalname="XLXN_20" name="D0" />
             <blockpin signalname="MM_ADR(4)" name="D1" />
             <blockpin signalname="MODE" name="S0" />
-            <blockpin signalname="OUTPUT(12)" name="O" />
+            <blockpin signalname="lightOutput(4)" name="O" />
         </block>
         <block symbolname="sevenSeg" name="XLXI_14">
             <blockpin signalname="CLK" name="SYS_CLK" />
-            <blockpin signalname="OUTPUT(12:0)" name="Din(7:0)" />
+            <blockpin signalname="displayOutput(7:0)" name="Din(7:0)" />
             <blockpin signalname="MODE" name="En" />
             <blockpin signalname="sseg(7:0)" name="sseg(7:0)" />
             <blockpin signalname="anO(3:0)" name="anO(3:0)" />
@@ -352,55 +354,55 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1456" y="2032" type="branch" />
             <wire x2="1536" y1="2032" y2="2032" x1="1456" />
         </branch>
-        <branch name="OUTPUT(0)">
+        <branch name="displayOutput(0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="176" type="branch" />
             <wire x2="1904" y1="176" y2="176" x1="1856" />
         </branch>
-        <branch name="OUTPUT(1)">
+        <branch name="displayOutput(1)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="352" type="branch" />
             <wire x2="1904" y1="352" y2="352" x1="1856" />
         </branch>
-        <branch name="OUTPUT(2)">
+        <branch name="displayOutput(2)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="528" type="branch" />
             <wire x2="1904" y1="528" y2="528" x1="1856" />
         </branch>
-        <branch name="OUTPUT(3)">
+        <branch name="displayOutput(3)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="704" type="branch" />
             <wire x2="1904" y1="704" y2="704" x1="1856" />
         </branch>
-        <branch name="OUTPUT(4)">
+        <branch name="displayOutput(4)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="880" type="branch" />
             <wire x2="1904" y1="880" y2="880" x1="1856" />
         </branch>
-        <branch name="OUTPUT(5)">
+        <branch name="displayOutput(5)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="1056" type="branch" />
             <wire x2="1904" y1="1056" y2="1056" x1="1856" />
         </branch>
-        <branch name="OUTPUT(6)">
+        <branch name="displayOutput(6)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="1232" type="branch" />
             <wire x2="1904" y1="1232" y2="1232" x1="1856" />
         </branch>
-        <branch name="OUTPUT(7)">
+        <branch name="displayOutput(7)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="1408" type="branch" />
             <wire x2="1904" y1="1408" y2="1408" x1="1856" />
         </branch>
-        <branch name="OUTPUT(8)">
+        <branch name="lightOutput(0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="1760" type="branch" />
             <wire x2="1904" y1="1760" y2="1760" x1="1856" />
         </branch>
-        <branch name="OUTPUT(9)">
+        <branch name="lightOutput(1)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="1936" type="branch" />
             <wire x2="1904" y1="1936" y2="1936" x1="1856" />
         </branch>
-        <branch name="OUTPUT(10)">
+        <branch name="lightOutput(2)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="2112" type="branch" />
             <wire x2="1904" y1="2112" y2="2112" x1="1856" />
         </branch>
-        <branch name="OUTPUT(11)">
+        <branch name="lightOutput(3)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="2288" type="branch" />
             <wire x2="1904" y1="2288" y2="2288" x1="1856" />
         </branch>
-        <branch name="OUTPUT(12)">
+        <branch name="lightOutput(4)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="2464" type="branch" />
             <wire x2="1904" y1="2464" y2="2464" x1="1856" />
         </branch>
@@ -419,7 +421,7 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2560" y="560" type="branch" />
             <wire x2="2608" y1="560" y2="560" x1="2560" />
         </branch>
-        <branch name="OUTPUT(12:0)">
+        <branch name="displayOutput(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2560" y="496" type="branch" />
             <wire x2="2608" y1="496" y2="496" x1="2560" />
         </branch>
@@ -427,5 +429,9 @@
             <wire x2="2608" y1="432" y2="432" x1="2576" />
         </branch>
         <iomarker fontsize="28" x="2576" y="432" name="CLK" orien="R180" />
+        <branch name="lightOutput(4:0)">
+            <wire x2="608" y1="224" y2="224" x1="560" />
+        </branch>
+        <iomarker fontsize="28" x="608" y="224" name="lightOutput(4:0)" orien="R0" />
     </sheet>
 </drawing>

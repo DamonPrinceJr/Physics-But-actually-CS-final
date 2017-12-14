@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/MainMemory/MainMemory/MainMemory.xst" -ofn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/MainMemory/MainMemory/MainMemory.syr" 

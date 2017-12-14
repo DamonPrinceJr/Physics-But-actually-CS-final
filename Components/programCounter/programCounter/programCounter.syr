@@ -1,0 +1,703 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 1.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: programCounter.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "programCounter.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "programCounter"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : programCounter
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "programCounter.vf" in library work
+Module <M2_1_MXILINX_programCounter> compiled
+Module <FTCLEX_MXILINX_programCounter> compiled
+Module <CB8CLE_MXILINX_programCounter> compiled
+Module <M2_1B1_MXILINX_programCounter> compiled
+Module <CB2CLED_MXILINX_programCounter> compiled
+Module <programCounter> compiled
+No errors in compilation
+Analysis of file <"programCounter.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <programCounter> in library <work>.
+
+Analyzing hierarchy for module <CB8CLE_MXILINX_programCounter> in library <work>.
+
+Analyzing hierarchy for module <CB2CLED_MXILINX_programCounter> in library <work>.
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_programCounter> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_programCounter> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_programCounter> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_programCounter> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_programCounter> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_programCounter> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_programCounter> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_programCounter> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_programCounter> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <FTCLEX_MXILINX_programCounter> in library <work> with parameters.
+	INIT = "0"
+
+Analyzing hierarchy for module <M2_1_MXILINX_programCounter> in library <work>.
+
+Analyzing hierarchy for module <M2_1B1_MXILINX_programCounter> in library <work>.
+
+Analyzing hierarchy for module <M2_1_MXILINX_programCounter> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <programCounter>.
+WARNING:Xst:852 - "programCounter.vf" line 357: Unconnected input port 'CLR' of instance 'XLXI_3' is tied to GND.
+WARNING:Xst:852 - "programCounter.vf" line 366: Unconnected input port 'CLR' of instance 'XLXI_5' is tied to GND.
+Module <programCounter> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_3_14" for instance <XLXI_3> in unit <programCounter>.
+    Set user-defined property "HU_SET =  XLXI_5_13" for instance <XLXI_5> in unit <programCounter>.
+Analyzing module <CB8CLE_MXILINX_programCounter> in library <work>.
+Module <CB8CLE_MXILINX_programCounter> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_1" for instance <I_Q0> in unit <CB8CLE_MXILINX_programCounter>.
+    Set user-defined property "HU_SET =  I_Q1_2" for instance <I_Q1> in unit <CB8CLE_MXILINX_programCounter>.
+    Set user-defined property "HU_SET =  I_Q2_3" for instance <I_Q2> in unit <CB8CLE_MXILINX_programCounter>.
+    Set user-defined property "HU_SET =  I_Q3_4" for instance <I_Q3> in unit <CB8CLE_MXILINX_programCounter>.
+    Set user-defined property "HU_SET =  I_Q4_5" for instance <I_Q4> in unit <CB8CLE_MXILINX_programCounter>.
+    Set user-defined property "HU_SET =  I_Q5_6" for instance <I_Q5> in unit <CB8CLE_MXILINX_programCounter>.
+    Set user-defined property "HU_SET =  I_Q6_7" for instance <I_Q6> in unit <CB8CLE_MXILINX_programCounter>.
+    Set user-defined property "HU_SET =  I_Q7_8" for instance <I_Q7> in unit <CB8CLE_MXILINX_programCounter>.
+Analyzing module <FTCLEX_MXILINX_programCounter.1> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_programCounter.1> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.1>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_programCounter.1>.
+Analyzing module <M2_1_MXILINX_programCounter.2> in library <work>.
+Module <M2_1_MXILINX_programCounter.2> is correct for synthesis.
+ 
+Analyzing module <FTCLEX_MXILINX_programCounter.2> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_programCounter.2> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.2>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_programCounter.2>.
+Analyzing module <FTCLEX_MXILINX_programCounter.3> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_programCounter.3> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.3>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.3>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_programCounter.3>.
+Analyzing module <FTCLEX_MXILINX_programCounter.4> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_programCounter.4> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.4>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.4>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_programCounter.4>.
+Analyzing module <FTCLEX_MXILINX_programCounter.5> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_programCounter.5> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.5>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.5>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_programCounter.5>.
+Analyzing module <FTCLEX_MXILINX_programCounter.6> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_programCounter.6> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.6>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.6>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_programCounter.6>.
+Analyzing module <FTCLEX_MXILINX_programCounter.7> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_programCounter.7> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.7>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.7>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_programCounter.7>.
+Analyzing module <FTCLEX_MXILINX_programCounter.8> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_programCounter.8> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.8>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.8>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_programCounter.8>.
+Analyzing module <CB2CLED_MXILINX_programCounter> in library <work>.
+Module <CB2CLED_MXILINX_programCounter> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  I_Q0_10" for instance <I_Q0> in unit <CB2CLED_MXILINX_programCounter>.
+    Set user-defined property "HU_SET =  I_Q1_9" for instance <I_Q1> in unit <CB2CLED_MXILINX_programCounter>.
+    Set user-defined property "HU_SET =  I_T1_12" for instance <I_T1> in unit <CB2CLED_MXILINX_programCounter>.
+    Set user-defined property "HU_SET =  I_TC_11" for instance <I_TC> in unit <CB2CLED_MXILINX_programCounter>.
+Analyzing module <FTCLEX_MXILINX_programCounter.9> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_programCounter.9> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.9>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.9>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_programCounter.9>.
+Analyzing module <FTCLEX_MXILINX_programCounter.10> in library <work>.
+	INIT = 1'b0
+Module <FTCLEX_MXILINX_programCounter.10> is correct for synthesis.
+ 
+    Set user-defined property "INIT =  0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.10>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_35> in unit <FTCLEX_MXILINX_programCounter.10>.
+    Set user-defined property "HU_SET =  I_36_30_0" for instance <I_36_30> in unit <FTCLEX_MXILINX_programCounter.10>.
+Analyzing module <M2_1_MXILINX_programCounter.1> in library <work>.
+Module <M2_1_MXILINX_programCounter.1> is correct for synthesis.
+ 
+Analyzing module <M2_1B1_MXILINX_programCounter> in library <work>.
+Module <M2_1B1_MXILINX_programCounter> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <M2_1_MXILINX_programCounter_2>.
+    Related source file is "programCounter.vf".
+Unit <M2_1_MXILINX_programCounter_2> synthesized.
+
+
+Synthesizing Unit <M2_1_MXILINX_programCounter_1>.
+    Related source file is "programCounter.vf".
+Unit <M2_1_MXILINX_programCounter_1> synthesized.
+
+
+Synthesizing Unit <M2_1B1_MXILINX_programCounter>.
+    Related source file is "programCounter.vf".
+Unit <M2_1B1_MXILINX_programCounter> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_programCounter_1>.
+    Related source file is "programCounter.vf".
+Unit <FTCLEX_MXILINX_programCounter_1> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_programCounter_2>.
+    Related source file is "programCounter.vf".
+Unit <FTCLEX_MXILINX_programCounter_2> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_programCounter_3>.
+    Related source file is "programCounter.vf".
+Unit <FTCLEX_MXILINX_programCounter_3> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_programCounter_4>.
+    Related source file is "programCounter.vf".
+Unit <FTCLEX_MXILINX_programCounter_4> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_programCounter_5>.
+    Related source file is "programCounter.vf".
+Unit <FTCLEX_MXILINX_programCounter_5> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_programCounter_6>.
+    Related source file is "programCounter.vf".
+Unit <FTCLEX_MXILINX_programCounter_6> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_programCounter_7>.
+    Related source file is "programCounter.vf".
+Unit <FTCLEX_MXILINX_programCounter_7> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_programCounter_8>.
+    Related source file is "programCounter.vf".
+Unit <FTCLEX_MXILINX_programCounter_8> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_programCounter_9>.
+    Related source file is "programCounter.vf".
+Unit <FTCLEX_MXILINX_programCounter_9> synthesized.
+
+
+Synthesizing Unit <FTCLEX_MXILINX_programCounter_10>.
+    Related source file is "programCounter.vf".
+Unit <FTCLEX_MXILINX_programCounter_10> synthesized.
+
+
+Synthesizing Unit <CB8CLE_MXILINX_programCounter>.
+    Related source file is "programCounter.vf".
+Unit <CB8CLE_MXILINX_programCounter> synthesized.
+
+
+Synthesizing Unit <CB2CLED_MXILINX_programCounter>.
+    Related source file is "programCounter.vf".
+Unit <CB2CLED_MXILINX_programCounter> synthesized.
+
+
+Synthesizing Unit <programCounter>.
+    Related source file is "programCounter.vf".
+WARNING:Xst:653 - Signal <XLXN_9> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+WARNING:Xst:653 - Signal <XLXN_8> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <programCounter> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <programCounter> ...
+
+Optimizing unit <M2_1_MXILINX_programCounter_2> ...
+
+Optimizing unit <M2_1_MXILINX_programCounter_1> ...
+
+Optimizing unit <M2_1B1_MXILINX_programCounter> ...
+
+Optimizing unit <FTCLEX_MXILINX_programCounter_1> ...
+
+Optimizing unit <FTCLEX_MXILINX_programCounter_2> ...
+
+Optimizing unit <FTCLEX_MXILINX_programCounter_3> ...
+
+Optimizing unit <FTCLEX_MXILINX_programCounter_4> ...
+
+Optimizing unit <FTCLEX_MXILINX_programCounter_5> ...
+
+Optimizing unit <FTCLEX_MXILINX_programCounter_6> ...
+
+Optimizing unit <FTCLEX_MXILINX_programCounter_7> ...
+
+Optimizing unit <FTCLEX_MXILINX_programCounter_8> ...
+
+Optimizing unit <FTCLEX_MXILINX_programCounter_9> ...
+
+Optimizing unit <FTCLEX_MXILINX_programCounter_10> ...
+
+Optimizing unit <CB8CLE_MXILINX_programCounter> ...
+
+Optimizing unit <CB2CLED_MXILINX_programCounter> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block programCounter, actual ratio is 1.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 10
+ Flip-Flops                                            : 10
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : programCounter.ngr
+Top Level Output File Name         : programCounter
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 14
+
+Cell Usage :
+# BELS                             : 75
+#      AND2                        : 21
+#      AND2B1                      : 11
+#      AND2B2                      : 2
+#      AND3                        : 2
+#      AND4                        : 2
+#      AND5                        : 2
+#      GND                         : 5
+#      INV                         : 4
+#      OR2                         : 14
+#      VCC                         : 2
+#      XOR2                        : 10
+# FlipFlops/Latches                : 10
+#      FDCE                        : 10
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 13
+#      IBUF                        : 1
+#      OBUF                        : 12
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                        5  out of    960     0%  
+ Number of Slice Flip Flops:             10  out of   1920     0%  
+ Number of 4 input LUTs:                  4  out of   1920     0%  
+ Number of IOs:                          14
+ Number of bonded IOBs:                  14  out of     83    16%  
+ Number of GCLKs:                         1  out of     24     4%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+-----------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)       | Load  |
+-----------------------------------+-----------------------------+-------+
+pc_timer_3_OBUF(XLXI_21:O)         | NONE(*)(XLXI_3/I_Q0/I_36_35)| 8     |
+SYS_CLK                            | BUFGP                       | 2     |
+-----------------------------------+-----------------------------+-------+
+(*) This 1 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+--------------------------+-------+
+Control Signal                     | Buffer(FF name)          | Load  |
+-----------------------------------+--------------------------+-------+
+XLXI_3/N0(XLXI_3/XST_GND:G)        | NONE(XLXI_3/I_Q0/I_36_35)| 8     |
+XLXI_5/N0(XLXI_5/XST_GND:G)        | NONE(XLXI_5/I_Q0/I_36_35)| 2     |
+-----------------------------------+--------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 7.440ns (Maximum Frequency: 134.409MHz)
+   Minimum input arrival time before clock: 3.821ns
+   Maximum output required time after clock: 6.931ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pc_timer_3_OBUF'
+  Clock period: 7.440ns (frequency: 134.409MHz)
+  Total number of paths / destination ports: 156 / 16
+-------------------------------------------------------------------------
+Delay:               7.440ns (Levels of Logic = 7)
+  Source:            XLXI_3/I_Q0/I_36_35 (FF)
+  Destination:       XLXI_3/I_Q5/I_36_35 (FF)
+  Source Clock:      pc_timer_3_OBUF rising
+  Destination Clock: pc_timer_3_OBUF rising
+
+  Data Path: XLXI_3/I_Q0/I_36_35 to XLXI_3/I_Q5/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.591   0.708  I_36_35 (Q)
+     end scope: 'I_Q0'
+     AND4:I3->O            5   0.704   0.633  I_36_23 (T4)
+     AND3:I2->O            1   0.704   0.420  I_36_8 (T6)
+     begin scope: 'I_Q6'
+     XOR2:I0->O            1   0.704   0.420  I_36_32 (TQ)
+     begin scope: 'I_36_30'
+     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'I_36_30'
+     FDCE:D                    0.308          I_36_35
+    ----------------------------------------
+    Total                      7.440ns (4.419ns logic, 3.021ns route)
+                                       (59.4% logic, 40.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'SYS_CLK'
+  Clock period: 7.339ns (frequency: 136.258MHz)
+  Total number of paths / destination ports: 4 / 2
+-------------------------------------------------------------------------
+Delay:               7.339ns (Levels of Logic = 8)
+  Source:            XLXI_5/I_Q0/I_36_35 (FF)
+  Destination:       XLXI_5/I_Q1/I_36_35 (FF)
+  Source Clock:      SYS_CLK rising
+  Destination Clock: SYS_CLK rising
+
+  Data Path: XLXI_5/I_Q0/I_36_35 to XLXI_5/I_Q1/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.591   0.820  I_36_35 (Q)
+     end scope: 'I_Q0'
+     begin scope: 'I_T1'
+     AND2B2:I1->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'I_T1'
+     begin scope: 'I_Q1'
+     XOR2:I0->O            1   0.704   0.420  I_36_32 (TQ)
+     begin scope: 'I_36_30'
+     AND2B1:I1->O          1   0.704   0.420  I_36_7 (M0)
+     OR2:I1->O             1   0.704   0.420  I_36_8 (O)
+     end scope: 'I_36_30'
+     FDCE:D                    0.308          I_36_35
+    ----------------------------------------
+    Total                      7.339ns (4.419ns logic, 2.920ns route)
+                                       (60.2% logic, 39.8% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'pc_timer_3_OBUF'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.821ns (Levels of Logic = 3)
+  Source:            MODE (PAD)
+  Destination:       XLXI_3/I_Q0/I_36_35 (FF)
+  Destination Clock: pc_timer_3_OBUF rising
+
+  Data Path: MODE to XLXI_3/I_Q0/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  MODE_IBUF (MODE_IBUF)
+     begin scope: 'XLXI_3'
+     OR2:I0->O             8   0.704   0.757  I_36_49 (OR_CE_L)
+     begin scope: 'I_Q0'
+     FDCE:CE                   0.555          I_36_35
+    ----------------------------------------
+    Total                      3.821ns (2.477ns logic, 1.344ns route)
+                                       (64.8% logic, 35.2% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'SYS_CLK'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              3.511ns (Levels of Logic = 3)
+  Source:            MODE (PAD)
+  Destination:       XLXI_5/I_Q0/I_36_35 (FF)
+  Destination Clock: SYS_CLK rising
+
+  Data Path: MODE to XLXI_5/I_Q0/I_36_35
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             4   1.218   0.587  MODE_IBUF (MODE_IBUF)
+     begin scope: 'XLXI_5'
+     OR2:I0->O             2   0.704   0.447  I_36_47 (OR_CE_L)
+     begin scope: 'I_Q0'
+     FDCE:CE                   0.555          I_36_35
+    ----------------------------------------
+    Total                      3.511ns (2.477ns logic, 1.034ns route)
+                                       (70.5% logic, 29.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'pc_timer_3_OBUF'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              4.571ns (Levels of Logic = 2)
+  Source:            XLXI_3/I_Q4/I_36_35 (FF)
+  Destination:       counter<4> (PAD)
+  Source Clock:      pc_timer_3_OBUF rising
+
+  Data Path: XLXI_3/I_Q4/I_36_35 to counter<4>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             7   0.591   0.708  I_36_35 (Q)
+     end scope: 'I_Q4'
+     end scope: 'XLXI_3'
+     OBUF:I->O                 3.272          counter_4_OBUF (counter<4>)
+    ----------------------------------------
+    Total                      4.571ns (3.863ns logic, 0.708ns route)
+                                       (84.5% logic, 15.5% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'SYS_CLK'
+  Total number of paths / destination ports: 8 / 4
+-------------------------------------------------------------------------
+Offset:              6.931ns (Levels of Logic = 4)
+  Source:            XLXI_5/I_Q0/I_36_35 (FF)
+  Destination:       pc_timer<2> (PAD)
+  Source Clock:      SYS_CLK rising
+
+  Data Path: XLXI_5/I_Q0/I_36_35 to pc_timer<2>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCE:C->Q             9   0.591   0.820  I_36_35 (Q)
+     end scope: 'I_Q0'
+     end scope: 'XLXI_5'
+     INV:I->O              1   0.704   0.420  XLXI_30 (XLXN_81)
+     AND2:I1->O            1   0.704   0.420  XLXI_15 (pc_timer_0_OBUF)
+     OBUF:I->O                 3.272          pc_timer_0_OBUF (pc_timer<0>)
+    ----------------------------------------
+    Total                      6.931ns (5.271ns logic, 1.660ns route)
+                                       (76.0% logic, 24.0% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.27 secs
+ 
+--> 
+
+Total memory usage is 251760 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    4 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

@@ -1,0 +1,144 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : Registers.vf
+// /___/   /\     Timestamp : 12/13/2017 16:14:03
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Registers/Registers/Registers.vf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/Registers/Registers/Registers.sch
+//Design Name: Registers
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module FD8CE_MXILINX_Registers(C, 
+                               CE, 
+                               CLR, 
+                               D, 
+                               Q);
+
+    input C;
+    input CE;
+    input CLR;
+    input [7:0] D;
+   output [7:0] Q;
+   
+   
+   FDCE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[0]), 
+              .Q(Q[0]));
+   FDCE #( .INIT(1'b0) ) I_Q1 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[1]), 
+              .Q(Q[1]));
+   FDCE #( .INIT(1'b0) ) I_Q2 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[2]), 
+              .Q(Q[2]));
+   FDCE #( .INIT(1'b0) ) I_Q3 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[3]), 
+              .Q(Q[3]));
+   FDCE #( .INIT(1'b0) ) I_Q4 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[4]), 
+              .Q(Q[4]));
+   FDCE #( .INIT(1'b0) ) I_Q5 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[5]), 
+              .Q(Q[5]));
+   FDCE #( .INIT(1'b0) ) I_Q6 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[6]), 
+              .Q(Q[6]));
+   FDCE #( .INIT(1'b0) ) I_Q7 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D[7]), 
+              .Q(Q[7]));
+endmodule
+`timescale 1ns / 1ps
+
+module Registers(CLK, 
+                 CU_READ, 
+                 CU_WRITE, 
+                 REG_OUT);
+
+    input CLK;
+    input [7:0] CU_READ;
+    input [8:0] CU_WRITE;
+   output [71:0] REG_OUT;
+   
+   
+   (* HU_SET = "XLXI_1_0" *) 
+   FD8CE_MXILINX_Registers  XLXI_1 (.C(CLK), 
+                                   .CE(CU_WRITE[0]), 
+                                   .CLR(), 
+                                   .D(CU_READ[7:0]), 
+                                   .Q(REG_OUT[7:0]));
+   (* HU_SET = "XLXI_4_1" *) 
+   FD8CE_MXILINX_Registers  XLXI_4 (.C(CLK), 
+                                   .CE(CU_WRITE[1]), 
+                                   .CLR(), 
+                                   .D(CU_READ[7:0]), 
+                                   .Q(REG_OUT[15:8]));
+   (* HU_SET = "XLXI_5_2" *) 
+   FD8CE_MXILINX_Registers  XLXI_5 (.C(CLK), 
+                                   .CE(CU_WRITE[2]), 
+                                   .CLR(), 
+                                   .D(CU_READ[7:0]), 
+                                   .Q(REG_OUT[23:16]));
+   (* HU_SET = "XLXI_7_3" *) 
+   FD8CE_MXILINX_Registers  XLXI_7 (.C(CLK), 
+                                   .CE(CU_WRITE[3]), 
+                                   .CLR(), 
+                                   .D(CU_READ[7:0]), 
+                                   .Q(REG_OUT[31:24]));
+   (* HU_SET = "XLXI_8_4" *) 
+   FD8CE_MXILINX_Registers  XLXI_8 (.C(CLK), 
+                                   .CE(CU_WRITE[4]), 
+                                   .CLR(), 
+                                   .D(CU_READ[7:0]), 
+                                   .Q(REG_OUT[39:32]));
+   (* HU_SET = "XLXI_13_5" *) 
+   FD8CE_MXILINX_Registers  XLXI_13 (.C(CLK), 
+                                    .CE(CU_WRITE[5]), 
+                                    .CLR(), 
+                                    .D(CU_READ[7:0]), 
+                                    .Q(REG_OUT[47:40]));
+   (* HU_SET = "XLXI_14_6" *) 
+   FD8CE_MXILINX_Registers  XLXI_14 (.C(CLK), 
+                                    .CE(CU_WRITE[6]), 
+                                    .CLR(), 
+                                    .D(CU_READ[7:0]), 
+                                    .Q(REG_OUT[55:48]));
+   (* HU_SET = "XLXI_34_7" *) 
+   FD8CE_MXILINX_Registers  XLXI_34 (.C(CLK), 
+                                    .CE(CU_WRITE[7]), 
+                                    .CLR(), 
+                                    .D(CU_READ[7:0]), 
+                                    .Q(REG_OUT[63:56]));
+   (* HU_SET = "XLXI_35_8" *) 
+   FD8CE_MXILINX_Registers  XLXI_35 (.C(CLK), 
+                                    .CE(CU_WRITE[8]), 
+                                    .CLR(), 
+                                    .D(CU_READ[7:0]), 
+                                    .Q(REG_OUT[71:64]));
+endmodule

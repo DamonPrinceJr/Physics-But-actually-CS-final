@@ -1,0 +1,523 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.10 secs
+ 
+--> Reading design: CU_Read.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "CU_Read.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "CU_Read"
+Output Format                      : NGC
+Target Device                      : xc3s100e-4-cp132
+
+---- Source Options
+Top Module Name                    : CU_Read
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "CU_Read.vf" in library work
+Module <OR6_MXILINX_CU_Read> compiled
+Module <AND8_MXILINX_CU_Read> compiled
+Module <CU_Read> compiled
+No errors in compilation
+Analysis of file <"CU_Read.prj"> succeeded.
+ 
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for module <CU_Read> in library <work>.
+
+Analyzing hierarchy for module <AND8_MXILINX_CU_Read> in library <work>.
+
+Analyzing hierarchy for module <AND8_MXILINX_CU_Read> in library <work>.
+
+Analyzing hierarchy for module <AND8_MXILINX_CU_Read> in library <work>.
+
+Analyzing hierarchy for module <AND8_MXILINX_CU_Read> in library <work>.
+
+Analyzing hierarchy for module <AND8_MXILINX_CU_Read> in library <work>.
+
+Analyzing hierarchy for module <AND8_MXILINX_CU_Read> in library <work>.
+
+Analyzing hierarchy for module <AND8_MXILINX_CU_Read> in library <work>.
+
+Analyzing hierarchy for module <AND8_MXILINX_CU_Read> in library <work>.
+
+Analyzing hierarchy for module <AND8_MXILINX_CU_Read> in library <work>.
+
+Analyzing hierarchy for module <AND8_MXILINX_CU_Read> in library <work>.
+
+Analyzing hierarchy for module <AND8_MXILINX_CU_Read> in library <work>.
+
+Analyzing hierarchy for module <AND8_MXILINX_CU_Read> in library <work>.
+
+Analyzing hierarchy for module <OR6_MXILINX_CU_Read> in library <work>.
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <CU_Read>.
+Module <CU_Read> is correct for synthesis.
+ 
+    Set user-defined property "HU_SET =  XLXI_1_1" for instance <XLXI_1> in unit <CU_Read>.
+    Set user-defined property "HU_SET =  XLXI_170_2" for instance <XLXI_170> in unit <CU_Read>.
+    Set user-defined property "HU_SET =  XLXI_178_3" for instance <XLXI_178> in unit <CU_Read>.
+    Set user-defined property "HU_SET =  XLXI_185_6" for instance <XLXI_185> in unit <CU_Read>.
+    Set user-defined property "HU_SET =  XLXI_19_4" for instance <XLXI_19> in unit <CU_Read>.
+    Set user-defined property "HU_SET =  XLXI_198_7" for instance <XLXI_198> in unit <CU_Read>.
+    Set user-defined property "HU_SET =  XLXI_25_5" for instance <XLXI_25> in unit <CU_Read>.
+    Set user-defined property "HU_SET =  XLXI_285_8" for instance <XLXI_285> in unit <CU_Read>.
+    Set user-defined property "HU_SET =  XLXI_293_9" for instance <XLXI_293> in unit <CU_Read>.
+    Set user-defined property "HU_SET =  XLXI_301_10" for instance <XLXI_301> in unit <CU_Read>.
+    Set user-defined property "HU_SET =  XLXI_309_11" for instance <XLXI_309> in unit <CU_Read>.
+    Set user-defined property "HU_SET =  XLXI_340_12" for instance <XLXI_340> in unit <CU_Read>.
+    Set user-defined property "HU_SET =  XLXI_7_0" for instance <XLXI_7> in unit <CU_Read>.
+Analyzing module <AND8_MXILINX_CU_Read.1> in library <work>.
+Module <AND8_MXILINX_CU_Read.1> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_CU_Read.1>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_CU_Read.1>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_CU_Read.1>.
+Analyzing module <AND8_MXILINX_CU_Read.2> in library <work>.
+Module <AND8_MXILINX_CU_Read.2> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_CU_Read.2>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_CU_Read.2>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_CU_Read.2>.
+Analyzing module <AND8_MXILINX_CU_Read.3> in library <work>.
+Module <AND8_MXILINX_CU_Read.3> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_CU_Read.3>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_CU_Read.3>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_CU_Read.3>.
+Analyzing module <AND8_MXILINX_CU_Read.4> in library <work>.
+Module <AND8_MXILINX_CU_Read.4> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_CU_Read.4>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_CU_Read.4>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_CU_Read.4>.
+Analyzing module <AND8_MXILINX_CU_Read.5> in library <work>.
+Module <AND8_MXILINX_CU_Read.5> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_CU_Read.5>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_CU_Read.5>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_CU_Read.5>.
+Analyzing module <AND8_MXILINX_CU_Read.6> in library <work>.
+Module <AND8_MXILINX_CU_Read.6> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_CU_Read.6>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_CU_Read.6>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_CU_Read.6>.
+Analyzing module <AND8_MXILINX_CU_Read.7> in library <work>.
+Module <AND8_MXILINX_CU_Read.7> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_CU_Read.7>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_CU_Read.7>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_CU_Read.7>.
+Analyzing module <AND8_MXILINX_CU_Read.8> in library <work>.
+Module <AND8_MXILINX_CU_Read.8> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_CU_Read.8>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_CU_Read.8>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_CU_Read.8>.
+Analyzing module <AND8_MXILINX_CU_Read.9> in library <work>.
+Module <AND8_MXILINX_CU_Read.9> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_CU_Read.9>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_CU_Read.9>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_CU_Read.9>.
+Analyzing module <AND8_MXILINX_CU_Read.10> in library <work>.
+Module <AND8_MXILINX_CU_Read.10> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_CU_Read.10>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_CU_Read.10>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_CU_Read.10>.
+Analyzing module <AND8_MXILINX_CU_Read.11> in library <work>.
+Module <AND8_MXILINX_CU_Read.11> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_CU_Read.11>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_CU_Read.11>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_CU_Read.11>.
+Analyzing module <AND8_MXILINX_CU_Read.12> in library <work>.
+Module <AND8_MXILINX_CU_Read.12> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_29> in unit <AND8_MXILINX_CU_Read.12>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_138> in unit <AND8_MXILINX_CU_Read.12>.
+    Set user-defined property "RLOC =  X0Y1" for instance <I_36_152> in unit <AND8_MXILINX_CU_Read.12>.
+Analyzing module <OR6_MXILINX_CU_Read> in library <work>.
+Module <OR6_MXILINX_CU_Read> is correct for synthesis.
+ 
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_106> in unit <OR6_MXILINX_CU_Read>.
+    Set user-defined property "RLOC =  X0Y0" for instance <I_36_107> in unit <OR6_MXILINX_CU_Read>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <AND8_MXILINX_CU_Read_1>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <AND8_MXILINX_CU_Read_1> synthesized.
+
+
+Synthesizing Unit <AND8_MXILINX_CU_Read_2>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <AND8_MXILINX_CU_Read_2> synthesized.
+
+
+Synthesizing Unit <AND8_MXILINX_CU_Read_3>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <AND8_MXILINX_CU_Read_3> synthesized.
+
+
+Synthesizing Unit <AND8_MXILINX_CU_Read_4>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <AND8_MXILINX_CU_Read_4> synthesized.
+
+
+Synthesizing Unit <AND8_MXILINX_CU_Read_5>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <AND8_MXILINX_CU_Read_5> synthesized.
+
+
+Synthesizing Unit <AND8_MXILINX_CU_Read_6>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <AND8_MXILINX_CU_Read_6> synthesized.
+
+
+Synthesizing Unit <AND8_MXILINX_CU_Read_7>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <AND8_MXILINX_CU_Read_7> synthesized.
+
+
+Synthesizing Unit <AND8_MXILINX_CU_Read_8>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <AND8_MXILINX_CU_Read_8> synthesized.
+
+
+Synthesizing Unit <AND8_MXILINX_CU_Read_9>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <AND8_MXILINX_CU_Read_9> synthesized.
+
+
+Synthesizing Unit <AND8_MXILINX_CU_Read_10>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <AND8_MXILINX_CU_Read_10> synthesized.
+
+
+Synthesizing Unit <AND8_MXILINX_CU_Read_11>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <AND8_MXILINX_CU_Read_11> synthesized.
+
+
+Synthesizing Unit <AND8_MXILINX_CU_Read_12>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <AND8_MXILINX_CU_Read_12> synthesized.
+
+
+Synthesizing Unit <OR6_MXILINX_CU_Read>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:653 - Signal <dummy> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <OR6_MXILINX_CU_Read> synthesized.
+
+
+Synthesizing Unit <CU_Read>.
+    Related source file is "CU_Read.vf".
+WARNING:Xst:646 - Signal <opCode0x17> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:653 - Signal <opCode0x14> is used but never assigned. This sourceless signal will be automatically connected to value 0.
+Unit <CU_Read> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <CU_Read> ...
+
+Optimizing unit <AND8_MXILINX_CU_Read_1> ...
+
+Optimizing unit <AND8_MXILINX_CU_Read_2> ...
+
+Optimizing unit <AND8_MXILINX_CU_Read_3> ...
+
+Optimizing unit <AND8_MXILINX_CU_Read_4> ...
+
+Optimizing unit <AND8_MXILINX_CU_Read_5> ...
+
+Optimizing unit <AND8_MXILINX_CU_Read_6> ...
+
+Optimizing unit <AND8_MXILINX_CU_Read_7> ...
+
+Optimizing unit <AND8_MXILINX_CU_Read_8> ...
+
+Optimizing unit <AND8_MXILINX_CU_Read_9> ...
+
+Optimizing unit <AND8_MXILINX_CU_Read_10> ...
+
+Optimizing unit <AND8_MXILINX_CU_Read_11> ...
+
+Optimizing unit <AND8_MXILINX_CU_Read_12> ...
+
+Optimizing unit <OR6_MXILINX_CU_Read> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block CU_Read, actual ratio is 0.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : CU_Read.ngr
+Top Level Output File Name         : CU_Read
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 12
+
+Cell Usage :
+# BELS                             : 125
+#      AND2                        : 12
+#      AND4                        : 24
+#      GND                         : 14
+#      INV                         : 71
+#      OR2                         : 1
+#      OR3                         : 2
+#      OR4                         : 1
+# IO Buffers                       : 12
+#      IBUF                        : 8
+#      OBUF                        : 4
+# Others                           : 38
+#      FMAP                        : 38
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s100ecp132-4 
+
+ Number of Slices:                       36  out of    960     3%  
+ Number of 4 input LUTs:                 71  out of   1920     3%  
+ Number of IOs:                          12
+ Number of bonded IOBs:                  12  out of     83    14%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 11.071ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 88 / 4
+-------------------------------------------------------------------------
+Delay:               11.071ns (Levels of Logic = 9)
+  Source:            IR<6> (PAD)
+  Destination:       readSignal<3> (PAD)
+
+  Data Path: IR<6> to readSignal<3>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            12   1.218   0.961  IR_6_IBUF (IR_6_IBUF)
+     INV:I->O              1   0.704   0.420  XLXI_188 (XLXN_377)
+     begin scope: 'XLXI_185'
+     AND4:I1->O            1   0.704   0.420  I_36_110 (S0)
+     AND2:I0->O            1   0.704   0.420  I_36_142 (O_DUMMY)
+     end scope: 'XLXI_185'
+     begin scope: 'XLXI_340'
+     OR3:I2->O             1   0.704   0.420  I_36_88 (I35)
+     OR4:I3->O             1   0.704   0.420  I_36_87 (O_DUMMY)
+     end scope: 'XLXI_340'
+     OBUF:I->O                 3.272          readSignal_3_OBUF (readSignal<3>)
+    ----------------------------------------
+    Total                     11.071ns (8.010ns logic, 3.061ns route)
+                                       (72.4% logic, 27.6% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 4.48 secs
+ 
+--> 
+
+Total memory usage is 251832 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :   15 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

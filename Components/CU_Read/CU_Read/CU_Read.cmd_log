@@ -1,0 +1,1 @@
+xst -intstyle ise -ifn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Read/CU_Read/CU_Read.xst" -ofn "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/CU_Read/CU_Read/CU_Read.syr" 

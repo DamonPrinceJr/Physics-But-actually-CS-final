@@ -1,0 +1,13 @@
+EN dcm_50m NULL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd sub00/vhpl02 1513209931
+EN sel_strobeb NULL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd sub00/vhpl06 1513209935
+EN ssd_1dig NULL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd sub00/vhpl08 1513209937
+AR mux4ssd behavioral C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd sub00/vhpl05 1513209934
+MO DisplayModule NULL DisplayModule.vf vlg20/_display_module.bin 1513209930
+EN bin2bcd3en NULL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd sub00/vhpl00 1513209929
+MO M2_1_MXILINX_DisplayModule NULL DisplayModule.vf vlg7E/_m2__1___m_x_i_l_i_n_x___display_module.bin 1513209930
+AR sel_strobeb behavioral C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/sel_strobeB.vhd sub00/vhpl07 1513209936
+AR ssd_1dig behavioral C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/SSD_1dig.vhd sub00/vhpl09 1513209938
+EN mux4ssd NULL C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/mux4SSD.vhd sub00/vhpl04 1513209933
+MO sevenSeg NULL sevenSeg.vf vlg78/seven_seg.bin 1513209930
+AR bin2bcd3en behavioral C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/bin2BCD3en.vhd sub00/vhpl01 1513209930
+AR dcm_50m behavioral C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/downloads/DCM_50M.vhd sub00/vhpl03 1513209932

@@ -125,7 +125,9 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForInputs"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
+      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Decoder.jhd"/>
       <outfile xil_pn:name="Decoder.lso"/>
@@ -148,6 +150,7 @@
     <transform xil_pn:end_ts="1513118150" xil_pn:in_ck="814814015279858430" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="-2128645518433567013" xil_pn:start_ts="1513118143">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Decoder.bld"/>
       <outfile xil_pn:name="Decoder.ngd"/>
       <outfile xil_pn:name="Decoder_ngdbuild.xrpt"/>
@@ -157,6 +160,7 @@
     <transform xil_pn:end_ts="1513118154" xil_pn:in_ck="865356121793585247" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1513118150">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="Decoder.pcf"/>
@@ -173,6 +177,7 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Decoder.ncd"/>
       <outfile xil_pn:name="Decoder.pad"/>
       <outfile xil_pn:name="Decoder.par"/>
@@ -187,6 +192,7 @@
     <transform xil_pn:end_ts="1513118170" xil_pn:in_ck="108979029259398937" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1513118163">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Decoder.ut"/>
       <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
       <outfile xil_pn:name="decoder.bgn"/>
@@ -199,10 +205,12 @@
     <transform xil_pn:end_ts="1513118174" xil_pn:in_ck="157989556787848451" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="2182533642587968765" xil_pn:start_ts="1513118170">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1513118163" xil_pn:in_ck="-5806201938018354597" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1513118161">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
+      <status xil_pn:value="OutOfDateForPredecessor"/>
       <outfile xil_pn:name="Decoder.twr"/>
       <outfile xil_pn:name="Decoder.twx"/>
       <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
