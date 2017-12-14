@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Thu Dec 14 09:49:50 2017
+# Process ID: 16204
+# Log file: C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/planAhead_run_1/planAhead.log
+# Journal file: C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/planAhead_run_1/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/minisculeComputer/pa.fromNetlist.tcl
+startgroup
+set_property package_pin C8 [get_ports SYS_CLK]
+endgroup
+save_constraints

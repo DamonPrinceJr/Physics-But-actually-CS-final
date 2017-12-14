@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : minisculComputer.vhf
--- /___/   /\     Timestamp : 12/14/2017 09:29:53
+-- /___/   /\     Timestamp : 12/14/2017 09:57:52
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -121,6 +121,7 @@ entity minisculComputer is
           writeToMM   : in    std_logic; 
           writeToTemp : in    std_logic; 
           anO         : out   std_logic_vector (3 downto 0); 
+          binDisplay  : out   std_logic_vector (3 downto 0); 
           dpO         : out   std_logic; 
           sseg        : out   std_logic_vector (7 downto 0); 
           colO        : inout std_logic_vector (3 downto 0));
@@ -132,11 +133,9 @@ architecture BEHAVIORAL of minisculComputer is
    signal Add_Sub                 : std_logic;
    signal ALU_B                   : std_logic_vector (7 downto 0);
    signal ALU_out                 : std_logic_vector (7 downto 0);
-   signal binDisplay              : std_logic_vector (3 downto 0);
    signal binO                    : std_logic_vector (7 downto 0);
    signal byteOut                 : std_logic_vector (7 downto 0);
    signal constant1ToCE           : std_logic;
-   signal counter                 : std_logic_vector (5 downto 0);
    signal DISABLE_PC              : std_logic;
    signal DR                      : std_logic_vector (7 downto 0);
    signal IM                      : std_logic_vector (7 downto 0);
@@ -145,6 +144,7 @@ architecture BEHAVIORAL of minisculComputer is
    signal keyO                    : std_logic;
    signal MMByte                  : std_logic_vector (31 downto 0);
    signal OP                      : std_logic_vector (7 downto 0);
+   signal pc_counter              : std_logic_vector (7 downto 0);
    signal pc_timer                : std_logic_vector (3 downto 0);
    signal Reg                     : std_logic_vector (71 downto 0);
    signal Reg_Write               : std_logic_vector (8 downto 0);
@@ -165,6 +165,7 @@ architecture BEHAVIORAL of minisculComputer is
    signal XLXN_44                 : std_logic_vector (255 downto 0);
    signal XLXN_57                 : std_logic;
    signal XLXN_69                 : std_logic_vector (255 downto 0);
+   signal binDisplay_DUMMY        : std_logic_vector (3 downto 0);
    signal row_DUMMY               : std_logic_vector (3 downto 0);
    signal XLXI_4_dp_in_openSignal : std_logic_vector (3 downto 0);
    signal XLXI_8_CLR_openSignal   : std_logic;
@@ -282,14 +283,6 @@ architecture BEHAVIORAL of minisculComputer is
              CLK1   : out   std_logic);
    end component;
    
-   component programCounter
-      port ( SYS_CLK  : in    std_logic; 
-             MODE     : in    std_logic; 
-             pc_timer : out   std_logic_vector (3 downto 0); 
-             counter  : out   std_logic_vector (7 downto 0); 
-             counter  : out   std_logic_vector (5 downto 0));
-   end component;
-   
    component CU_ALU
       port ( MODE    : in    std_logic; 
              MATH    : in    std_logic_vector (5 downto 0); 
@@ -303,18 +296,6 @@ architecture BEHAVIORAL of minisculComputer is
              ALU_B   : out   std_logic_vector (7 downto 0));
    end component;
    
-   component inputProcessor
-      port ( SYS_CLK     : in    std_logic; 
-             writeToTemp : in    std_logic; 
-             binaryInput : in    std_logic_vector (3 downto 0); 
-             writeToMM   : in    std_logic; 
-             opCode      : out   std_logic_vector (7 downto 0); 
-             immediate   : out   std_logic_vector (7 downto 0); 
-             displayData : out   std_logic_vector (8 downto 0); 
-             switchAddr  : in    std_logic_vector (4 downto 0); 
-             MM_Byte     : out   std_logic_vector (31 downto 0));
-   end component;
-   
    component ALU_component
       port ( A_in     : in    std_logic_vector (7 downto 0); 
              B_in     : in    std_logic_vector (7 downto 0); 
@@ -325,11 +306,42 @@ architecture BEHAVIORAL of minisculComputer is
              Carryout : out   std_logic);
    end component;
    
-   attribute HU_SET of XLXI_13 : label is "XLXI_13_3";
-   attribute HU_SET of XLXI_14 : label is "XLXI_14_2";
+   component DisplayModule
+      port ( RegisterC : in    std_logic_vector (7 downto 0); 
+             MM_DAT    : in    std_logic_vector (7 downto 0); 
+             MM_ADR    : in    std_logic_vector (4 downto 0); 
+             MODE      : in    std_logic; 
+             CLK       : in    std_logic; 
+             sseg      : out   std_logic_vector (7 downto 0); 
+             anO       : out   std_logic_vector (3 downto 0));
+   end component;
+   
+   component inputProcessor
+      port ( SYS_CLK     : in    std_logic; 
+             writeToTemp : in    std_logic; 
+             binaryInput : in    std_logic_vector (3 downto 0); 
+             writeToMM   : in    std_logic; 
+             switchAddr  : in    std_logic_vector (4 downto 0); 
+             MODE        : in    std_logic; 
+             opCode      : out   std_logic_vector (7 downto 0); 
+             immediate   : out   std_logic_vector (7 downto 0); 
+             displayData : out   std_logic_vector (8 downto 0); 
+             MM_Byte     : out   std_logic_vector (31 downto 0));
+   end component;
+   
+   component programCounter
+      port ( SYS_CLK    : in    std_logic; 
+             MODE       : in    std_logic; 
+             pc_timer   : out   std_logic_vector (3 downto 0); 
+             pc_counter : out   std_logic_vector (7 downto 0));
+   end component;
+   
+   attribute HU_SET of XLXI_13 : label is "XLXI_13_1";
+   attribute HU_SET of XLXI_14 : label is "XLXI_14_0";
 begin
    constant1ToCE <= '1';
    XLXN_7 <= '0';
+   binDisplay(3 downto 0) <= binDisplay_DUMMY(3 downto 0);
    row_DUMMY(3 downto 0) <= row(3 downto 0);
    XLXI_2 : CU_Misc
       port map (IR(7 downto 0)=>IR(7 downto 0),
@@ -348,7 +360,7 @@ begin
                 sel(0 to 1)=>XLXN_14(0 to 1),
                 anO=>open,
                 dpO=>dpO,
-                hexO(3 downto 0)=>binDisplay(3 downto 0));
+                hexO(3 downto 0)=>binDisplay_DUMMY(3 downto 0));
    
    XLXI_5 : bin2BCD3en
       port map (CLK=>XLXN_5,
@@ -375,7 +387,7 @@ begin
    
    XLXI_10 : MM_signal_MUX
       port map (MM_in(255 downto 0)=>XLXN_44(255 downto 0),
-                S(4 downto 0)=>counter(4 downto 0),
+                S(4 downto 0)=>pc_counter(4 downto 0),
                 outByte(7 downto 0)=>OP(7 downto 0));
    
    XLXI_10_0 : PULLDOWN
@@ -392,7 +404,7 @@ begin
    
    XLXI_11 : MM_signal_MUX
       port map (MM_in(255 downto 0)=>XLXN_69(255 downto 0),
-                S(4 downto 0)=>counter(4 downto 0),
+                S(4 downto 0)=>pc_counter(4 downto 0),
                 outByte(7 downto 0)=>IM(7 downto 0));
    
    XLXI_13 : FD8CE_MXILINX_minisculComputer
@@ -449,13 +461,6 @@ begin
                 CLK1M=>open,
                 CLK10k=>XLXN_6);
    
-   XLXI_153 : programCounter
-      port map (MODE=>MODE,
-                SYS_CLK=>SYS_CLK,
-                counter(5 downto 0)=>counter(5 downto 0),
-                counter=>open,
-                pc_timer(3 downto 0)=>pc_timer(3 downto 0));
-   
    XLXI_156 : CU_ALU
       port map (DR(7 downto 0)=>DR(7 downto 0),
                 MATH(5 downto 0)=>XLXN_4(5 downto 0),
@@ -468,8 +473,27 @@ begin
                 ALU_B(7 downto 0)=>ALU_B(7 downto 0),
                 Signed=>Signed);
    
-   XLXI_157 : inputProcessor
-      port map (binaryInput(3 downto 0)=>binDisplay(3 downto 0),
+   XLXI_158 : ALU_component
+      port map (Add_Sub=>Add_Sub,
+                A_in(7 downto 0)=>Reg(7 downto 0),
+                B_in(7 downto 0)=>ALU_B(7 downto 0),
+                Signed=>Signed,
+                ALU_out(7 downto 0)=>ALU_out(7 downto 0),
+                Carryout=>open,
+                Overflow=>open);
+   
+   XLXI_159 : DisplayModule
+      port map (CLK=>SYS_CLK,
+                MM_ADR(4 downto 0)=>switchAddr(4 downto 0),
+                MM_DAT(7 downto 0)=>inputDisplay(7 downto 0),
+                MODE=>MODE,
+                RegisterC(7 downto 0)=>Reg(23 downto 16),
+                anO(3 downto 0)=>anO(3 downto 0),
+                sseg(7 downto 0)=>sseg(7 downto 0));
+   
+   XLXI_161 : inputProcessor
+      port map (binaryInput(3 downto 0)=>binDisplay_DUMMY(3 downto 0),
+                MODE=>MODE,
                 switchAddr(4 downto 0)=>switchAddr(4 downto 0),
                 SYS_CLK=>SYS_CLK,
                 writeToMM=>writeToMM,
@@ -479,14 +503,11 @@ begin
                 MM_Byte(31 downto 0)=>MMByte(31 downto 0),
                 opCode(7 downto 0)=>writeOP(7 downto 0));
    
-   XLXI_158 : ALU_component
-      port map (Add_Sub=>Add_Sub,
-                A_in(7 downto 0)=>Reg(7 downto 0),
-                B_in(7 downto 0)=>ALU_B(7 downto 0),
-                Signed=>Signed,
-                ALU_out(7 downto 0)=>ALU_out(7 downto 0),
-                Carryout=>open,
-                Overflow=>open);
+   XLXI_162 : programCounter
+      port map (MODE=>MODE,
+                SYS_CLK=>SYS_CLK,
+                pc_counter(7 downto 0)=>pc_counter(7 downto 0),
+                pc_timer(3 downto 0)=>pc_timer(3 downto 0));
    
 end BEHAVIORAL;
 

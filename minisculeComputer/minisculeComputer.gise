@@ -52,24 +52,62 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="Registers.vhf"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="SSD_1dig.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="SSD_1dig.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="_ngo"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/map.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/par.xmsgs"/>
+    <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/trce.xmsgs"/>
     <file xil_pn:fileType="FILE_XMSGS" xil_pn:name="_xmsgs/xst.xmsgs"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="bin2BCD3en.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="bin2BCD3en.sym" xil_pn:origination="imported"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="inputProcessor.sym" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="inputProcessor.vhf"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGDBUILD_LOG" xil_pn:name="minisculComputer.bld"/>
     <file xil_pn:fileType="FILE_CMD_LOG" xil_pn:name="minisculComputer.cmd_log"/>
     <file xil_pn:fileType="FILE_JHD" xil_pn:name="minisculComputer.jhd"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_LSO" xil_pn:name="minisculComputer.lso"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="minisculComputer.ncd" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGC" xil_pn:name="minisculComputer.ngc"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGD" xil_pn:name="minisculComputer.ngd"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGR" xil_pn:name="minisculComputer.ngr"/>
+    <file xil_pn:fileType="FILE_PAD_MISC" xil_pn:name="minisculComputer.pad"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAR_REPORT" xil_pn:name="minisculComputer.par" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PCF" xil_pn:name="minisculComputer.pcf" xil_pn:subbranch="Map"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="minisculComputer.prj"/>
+    <file xil_pn:fileType="FILE_TRCE_MISC" xil_pn:name="minisculComputer.ptwx"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_STX" xil_pn:name="minisculComputer.stx"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="minisculComputer.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_REPORT" xil_pn:name="minisculComputer.syr"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_TXT_REPORT" xil_pn:name="minisculComputer.twr" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_TIMING_XML_REPORT" xil_pn:name="minisculComputer.twx" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_UNROUTES" xil_pn:name="minisculComputer.unroutes" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="minisculComputer.ut" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="minisculComputer.vhf"/>
+    <file xil_pn:fileType="FILE_XPI" xil_pn:name="minisculComputer.xpi"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST" xil_pn:name="minisculComputer.xst"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="minisculComputer_envsettings.html"/>
+    <file xil_pn:fileType="FILE_NCD" xil_pn:name="minisculComputer_guide.ncd" xil_pn:origination="imported"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="minisculComputer_map.map" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_MAP_REPORT" xil_pn:name="minisculComputer_map.mrp" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NCD" xil_pn:name="minisculComputer_map.ncd" xil_pn:subbranch="Map"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_NGM" xil_pn:name="minisculComputer_map.ngm" xil_pn:subbranch="Map"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="minisculComputer_map.xrpt"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="minisculComputer_ngdbuild.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_EXCEL_REPORT" xil_pn:name="minisculComputer_pad.csv" xil_pn:subbranch="Par"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_PAD_TXT_REPORT" xil_pn:name="minisculComputer_pad.txt" xil_pn:subbranch="Par"/>
+    <file xil_pn:fileType="FILE_XRPT" xil_pn:name="minisculComputer_par.xrpt"/>
     <file xil_pn:fileType="FILE_HTML" xil_pn:name="minisculComputer_summary.html"/>
+    <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="minisculComputer_summary.xml"/>
+    <file xil_pn:fileType="FILE_WEBTALK" xil_pn:name="minisculComputer_usage.xml"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_XST_PROJECT" xil_pn:name="minisculComputer_vhdl.prj"/>
     <file xil_pn:fileType="FILE_XRPT" xil_pn:name="minisculComputer_xst.xrpt"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_REPORT" xil_pn:name="minisculcomputer.bgn" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BIT" xil_pn:name="minisculcomputer.bit" xil_pn:subbranch="FPGAConfiguration"/>
+    <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_BITGEN_DRC" xil_pn:name="minisculcomputer.drc" xil_pn:subbranch="FPGAConfiguration"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="mux4SSD.spl"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="mux4SSD.sym" xil_pn:origination="imported"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="planAhead_run_1"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="programCounter.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="programCounter.vhf"/>
     <file xil_pn:fileType="FILE_SPL" xil_pn:name="sel_strobeB.spl"/>
@@ -80,7 +118,10 @@
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="signConverter2.vhf"/>
     <file xil_pn:fileType="FILE_SYMBOL" xil_pn:name="signalMux_32.sym" xil_pn:origination="imported"/>
     <file xil_pn:branch="Implementation" xil_pn:fileType="FILE_VHDL" xil_pn:name="signalMux_32.vhf"/>
+    <file xil_pn:fileType="FILE_HTML" xil_pn:name="usage_statistics_webtalk.html"/>
+    <file xil_pn:fileType="FILE_LOG" xil_pn:name="webtalk.log"/>
     <file xil_pn:fileType="FILE_FITTER_REPORT" xil_pn:name="webtalk_pn.xml"/>
+    <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xlnx_auto_0_xdb"/>
     <file xil_pn:fileType="FILE_DIRECTORY" xil_pn:name="xst"/>
   </files>
 
@@ -89,8 +130,8 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1513272595" xil_pn:in_ck="-5484351911313401623" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1310553701813273253" xil_pn:start_ts="1513272592">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1513274273" xil_pn:in_ck="-5484351911313401623" xil_pn:name="TRAN_schematicsToHdl" xil_pn:prop_ck="-1310553701813273253" xil_pn:start_ts="1513274271">
+      <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
       <outfile xil_pn:name="ALU_component.vhf"/>
       <outfile xil_pn:name="CU_ALU.vhf"/>
@@ -103,6 +144,7 @@
       <outfile xil_pn:name="MainMemory.vhf"/>
       <outfile xil_pn:name="Mem32xBank.vhf"/>
       <outfile xil_pn:name="Registers.vhf"/>
+      <outfile xil_pn:name="inputProcessor.vhf"/>
       <outfile xil_pn:name="minisculComputer.vhf"/>
       <outfile xil_pn:name="programCounter.vhf"/>
       <outfile xil_pn:name="sevenSeg.vhf"/>
@@ -121,28 +163,27 @@
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
     </transform>
-    <transform xil_pn:end_ts="1513272458" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1513272458">
+    <transform xil_pn:end_ts="1513273686" xil_pn:name="TRAN_SubProjectPreToStructuralProxy" xil_pn:prop_ck="2988080280822507185" xil_pn:start_ts="1513273686">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
     <transform xil_pn:end_ts="1513268016" xil_pn:name="TRAN_platgen" xil_pn:prop_ck="-2690112418818672715" xil_pn:start_ts="1513268016">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
     </transform>
-    <transform xil_pn:end_ts="1513272517" xil_pn:in_ck="2163897847273868188" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8089048525156231093" xil_pn:start_ts="1513272513">
-      <status xil_pn:value="FailedRun"/>
+    <transform xil_pn:end_ts="1513274288" xil_pn:in_ck="-2069890434892480706" xil_pn:name="TRANEXT_xstsynthesize_spartan3e" xil_pn:prop_ck="8089048525156231093" xil_pn:start_ts="1513274273">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForInputs"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
       <status xil_pn:value="OutOfDateForOutputs"/>
-      <status xil_pn:value="InputChanged"/>
       <status xil_pn:value="OutputChanged"/>
       <outfile xil_pn:name="_xmsgs/xst.xmsgs"/>
       <outfile xil_pn:name="minisculComputer.jhd"/>
       <outfile xil_pn:name="minisculComputer.lso"/>
+      <outfile xil_pn:name="minisculComputer.ngc"/>
+      <outfile xil_pn:name="minisculComputer.ngr"/>
       <outfile xil_pn:name="minisculComputer.prj"/>
+      <outfile xil_pn:name="minisculComputer.stx"/>
       <outfile xil_pn:name="minisculComputer.syr"/>
       <outfile xil_pn:name="minisculComputer.xst"/>
       <outfile xil_pn:name="minisculComputer_vhdl.prj"/>
@@ -150,10 +191,70 @@
       <outfile xil_pn:name="webtalk_pn.xml"/>
       <outfile xil_pn:name="xst"/>
     </transform>
-    <transform xil_pn:end_ts="1513268020" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6160946175456529301" xil_pn:start_ts="1513268020">
+    <transform xil_pn:end_ts="1513274288" xil_pn:in_ck="-2284064328205788705" xil_pn:name="TRAN_compileBCD2" xil_pn:prop_ck="6160946175456529301" xil_pn:start_ts="1513274288">
       <status xil_pn:value="SuccessfullyRun"/>
       <status xil_pn:value="ReadyToRun"/>
-      <status xil_pn:value="OutOfDateForPredecessor"/>
+    </transform>
+    <transform xil_pn:end_ts="1513274293" xil_pn:in_ck="-8865446859026084616" xil_pn:name="TRANEXT_ngdbuild_FPGA" xil_pn:prop_ck="4924363233063501464" xil_pn:start_ts="1513274288">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_ngo"/>
+      <outfile xil_pn:name="_xmsgs/ngdbuild.xmsgs"/>
+      <outfile xil_pn:name="minisculComputer.bld"/>
+      <outfile xil_pn:name="minisculComputer.ngd"/>
+      <outfile xil_pn:name="minisculComputer_ngdbuild.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1513274298" xil_pn:in_ck="5458443982741882745" xil_pn:name="TRANEXT_map_spartan3" xil_pn:prop_ck="-1303429204059397298" xil_pn:start_ts="1513274293">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/map.xmsgs"/>
+      <outfile xil_pn:name="minisculComputer.pcf"/>
+      <outfile xil_pn:name="minisculComputer_map.map"/>
+      <outfile xil_pn:name="minisculComputer_map.mrp"/>
+      <outfile xil_pn:name="minisculComputer_map.ncd"/>
+      <outfile xil_pn:name="minisculComputer_map.ngm"/>
+      <outfile xil_pn:name="minisculComputer_map.xrpt"/>
+      <outfile xil_pn:name="minisculComputer_summary.xml"/>
+      <outfile xil_pn:name="minisculComputer_usage.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1513274308" xil_pn:in_ck="4804935724395589522" xil_pn:name="TRANEXT_par_spartan3" xil_pn:prop_ck="-4078461964484670437" xil_pn:start_ts="1513274298">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="WarningsGenerated"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/par.xmsgs"/>
+      <outfile xil_pn:name="minisculComputer.ncd"/>
+      <outfile xil_pn:name="minisculComputer.pad"/>
+      <outfile xil_pn:name="minisculComputer.par"/>
+      <outfile xil_pn:name="minisculComputer.ptwx"/>
+      <outfile xil_pn:name="minisculComputer.unroutes"/>
+      <outfile xil_pn:name="minisculComputer.xpi"/>
+      <outfile xil_pn:name="minisculComputer_pad.csv"/>
+      <outfile xil_pn:name="minisculComputer_pad.txt"/>
+      <outfile xil_pn:name="minisculComputer_par.xrpt"/>
+    </transform>
+    <transform xil_pn:end_ts="1513274315" xil_pn:in_ck="-2284064328205796330" xil_pn:name="TRANEXT_bitFile_spartan3e" xil_pn:prop_ck="287829442711806529" xil_pn:start_ts="1513274308">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/bitgen.xmsgs"/>
+      <outfile xil_pn:name="minisculComputer.ut"/>
+      <outfile xil_pn:name="minisculcomputer.bgn"/>
+      <outfile xil_pn:name="minisculcomputer.bit"/>
+      <outfile xil_pn:name="minisculcomputer.drc"/>
+      <outfile xil_pn:name="usage_statistics_webtalk.html"/>
+      <outfile xil_pn:name="webtalk.log"/>
+      <outfile xil_pn:name="webtalk_pn.xml"/>
+    </transform>
+    <transform xil_pn:end_ts="1513274320" xil_pn:in_ck="-666716919766551040" xil_pn:name="TRAN_configureTargetDevice" xil_pn:prop_ck="2182533642587968765" xil_pn:start_ts="1513274315">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+    </transform>
+    <transform xil_pn:end_ts="1513274308" xil_pn:in_ck="-3727251612255544075" xil_pn:name="TRAN_postRouteTrce" xil_pn:prop_ck="445577401284416186" xil_pn:start_ts="1513274305">
+      <status xil_pn:value="SuccessfullyRun"/>
+      <status xil_pn:value="ReadyToRun"/>
+      <outfile xil_pn:name="_xmsgs/trce.xmsgs"/>
+      <outfile xil_pn:name="minisculComputer.twr"/>
+      <outfile xil_pn:name="minisculComputer.twx"/>
     </transform>
   </transforms>
 

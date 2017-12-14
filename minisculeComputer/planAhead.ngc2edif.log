@@ -1,0 +1,24 @@
+Release 14.7 - ngc2edif P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design minisculComputer.ngc ...
+WARNING:NetListWriters:298 - No output is written to minisculComputer.xncf,
+   ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus Reg<55 : 0> on block minisculComputer is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_106/Mcompar_cnt10k_cmp_gt0000_lut<11 : 0> on block minisculComputer is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus XLXI_106/Mcompar_cnt1k_cmp_gt0000_lut<11
+   : 0> on block minisculComputer is not reconstructed, because there are some
+   missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   XLXI_159/XLXI_14/XLXI_82/Mcompar_cnt1k_cmp_gt0000_lut<11 : 0> on block
+   minisculComputer is not reconstructed, because there are some missing bus
+   signals.
+  finished :Prep
+Writing EDIF netlist file minisculComputer.edif ...
+ngc2edif: Total memory usage is 90276 kilobytes
+

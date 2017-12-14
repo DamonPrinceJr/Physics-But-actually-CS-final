@@ -7,7 +7,7 @@
 -- \   \   \/     Version : 14.7
 --  \   \         Application : sch2hdl
 --  /   /         Filename : programCounter.vhf
--- /___/   /\     Timestamp : 12/14/2017 08:47:59
+-- /___/   /\     Timestamp : 12/14/2017 09:48:04
 -- \   \  /  \ 
 --  \___\/\___\ 
 --
@@ -125,7 +125,7 @@ architecture BEHAVIORAL of FTCLEX_MXILINX_programCounter is
    end component;
    attribute BOX_TYPE of FDCE : component is "BLACK_BOX";
    
-   attribute HU_SET of I_36_30 : label is "I_36_30_0";
+   attribute HU_SET of I_36_30 : label is "I_36_30_2";
    attribute RLOC of I_36_35 : label is "X0Y0";
 begin
    Q <= Q_DUMMY;
@@ -239,14 +239,14 @@ architecture BEHAVIORAL of CB8CLE_MXILINX_programCounter is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_1";
-   attribute HU_SET of I_Q1 : label is "I_Q1_2";
-   attribute HU_SET of I_Q2 : label is "I_Q2_3";
-   attribute HU_SET of I_Q3 : label is "I_Q3_4";
-   attribute HU_SET of I_Q4 : label is "I_Q4_5";
-   attribute HU_SET of I_Q5 : label is "I_Q5_6";
-   attribute HU_SET of I_Q6 : label is "I_Q6_7";
-   attribute HU_SET of I_Q7 : label is "I_Q7_8";
+   attribute HU_SET of I_Q0 : label is "I_Q0_3";
+   attribute HU_SET of I_Q1 : label is "I_Q1_4";
+   attribute HU_SET of I_Q2 : label is "I_Q2_5";
+   attribute HU_SET of I_Q3 : label is "I_Q3_6";
+   attribute HU_SET of I_Q4 : label is "I_Q4_7";
+   attribute HU_SET of I_Q5 : label is "I_Q5_8";
+   attribute HU_SET of I_Q6 : label is "I_Q6_9";
+   attribute HU_SET of I_Q7 : label is "I_Q7_10";
 begin
    Q(7 downto 0) <= Q_DUMMY(7 downto 0);
    TC <= TC_DUMMY;
@@ -523,10 +523,10 @@ architecture BEHAVIORAL of CB2CLED_MXILINX_programCounter is
    end component;
    attribute BOX_TYPE of OR2 : component is "BLACK_BOX";
    
-   attribute HU_SET of I_Q0 : label is "I_Q0_10";
-   attribute HU_SET of I_Q1 : label is "I_Q1_9";
-   attribute HU_SET of I_TC : label is "I_TC_11";
-   attribute HU_SET of I_T1 : label is "I_T1_12";
+   attribute HU_SET of I_Q0 : label is "I_Q0_12";
+   attribute HU_SET of I_Q1 : label is "I_Q1_11";
+   attribute HU_SET of I_TC : label is "I_TC_13";
+   attribute HU_SET of I_T1 : label is "I_T1_14";
 begin
    Q0 <= Q0_DUMMY;
    Q1 <= Q1_DUMMY;
@@ -595,10 +595,10 @@ library UNISIM;
 use UNISIM.Vcomponents.ALL;
 
 entity programCounter is
-   port ( MODE     : in    std_logic; 
-          SYS_CLK  : in    std_logic; 
-          counter  : out   std_logic_vector (7 downto 0); 
-          pc_timer : out   std_logic_vector (3 downto 0));
+   port ( MODE       : in    std_logic; 
+          SYS_CLK    : in    std_logic; 
+          pc_counter : out   std_logic_vector (7 downto 0); 
+          pc_timer   : out   std_logic_vector (3 downto 0));
 end programCounter;
 
 architecture BEHAVIORAL of programCounter is
@@ -616,7 +616,7 @@ architecture BEHAVIORAL of programCounter is
    signal XLXN_85               : std_logic;
    signal XLXN_86               : std_logic;
    signal pc_timer_DUMMY        : std_logic_vector (3 downto 0);
-   signal counter_DUMMY         : std_logic_vector (7 downto 0);
+   signal pc_counter_DUMMY      : std_logic_vector (7 downto 0);
    signal XLXI_3_CLR_openSignal : std_logic;
    signal XLXI_3_D_openSignal   : std_logic_vector (7 downto 0);
    signal XLXI_5_CLR_openSignal : std_logic;
@@ -668,12 +668,12 @@ architecture BEHAVIORAL of programCounter is
    end component;
    attribute BOX_TYPE of AND5 : component is "BLACK_BOX";
    
-   attribute HU_SET of XLXI_3 : label is "XLXI_3_14";
-   attribute HU_SET of XLXI_5 : label is "XLXI_5_13";
+   attribute HU_SET of XLXI_3 : label is "XLXI_3_16";
+   attribute HU_SET of XLXI_5 : label is "XLXI_5_15";
 begin
    XLXN_11 <= '0';
    XLXN_14 <= '1';
-   counter(7 downto 0) <= counter_DUMMY(7 downto 0);
+   pc_counter(7 downto 0) <= pc_counter_DUMMY(7 downto 0);
    pc_timer(3 downto 0) <= pc_timer_DUMMY(3 downto 0);
    XLXI_3 : CB8CLE_MXILINX_programCounter
       port map (C=>pc_timer_DUMMY(3),
@@ -682,7 +682,7 @@ begin
                 D(7 downto 0)=>XLXI_3_D_openSignal(7 downto 0),
                 L=>counter_31,
                 CEO=>open,
-                Q(7 downto 0)=>counter_DUMMY(7 downto 0),
+                Q(7 downto 0)=>pc_counter_DUMMY(7 downto 0),
                 TC=>open);
    
    XLXI_5 : CB2CLED_MXILINX_programCounter
@@ -735,11 +735,11 @@ begin
                 O=>XLXN_86);
    
    XLXI_38 : AND5
-      port map (I0=>counter_DUMMY(4),
-                I1=>counter_DUMMY(3),
-                I2=>counter_DUMMY(2),
-                I3=>counter_DUMMY(1),
-                I4=>counter_DUMMY(0),
+      port map (I0=>pc_counter_DUMMY(4),
+                I1=>pc_counter_DUMMY(3),
+                I2=>pc_counter_DUMMY(2),
+                I3=>pc_counter_DUMMY(1),
+                I4=>pc_counter_DUMMY(0),
                 O=>counter_31);
    
 end BEHAVIORAL;

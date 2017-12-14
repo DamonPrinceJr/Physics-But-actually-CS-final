@@ -17,7 +17,6 @@
         <signal name="anO(3:0)" />
         <signal name="XLXN_44(255:0)" />
         <signal name="XLXN_69(255:0)" />
-        <signal name="counter(4:0)" />
         <signal name="pc_timer(3)" />
         <signal name="Reg(71:0)" />
         <signal name="pc_timer(1)" />
@@ -48,15 +47,11 @@
         <signal name="pc_timer(2)" />
         <signal name="XLXN_4(5:0)" />
         <signal name="switchAddr(4:0)" />
-        <signal name="writeToTemp" />
-        <signal name="writeToMM" />
         <signal name="inputDisplay(7:0)" />
         <signal name="writeIM(7:0)" />
         <signal name="writeOP(7:0)" />
         <signal name="MMByte(31:0)" />
-        <signal name="inputDisplay(8:0)" />
-        <signal name="pc_timer(3:0)" />
-        <signal name="counter(5:0)" />
+        <signal name="pc_counter(4:0)" />
         <signal name="Reg(31:24)" />
         <signal name="Reg(39:32)" />
         <signal name="Reg(47:40)" />
@@ -65,10 +60,16 @@
         <signal name="ALU_B(7:0)" />
         <signal name="Signed" />
         <signal name="ALU_out(7:0)" />
+        <signal name="inputDisplay(8:0)" />
+        <signal name="writeToTemp" />
+        <signal name="writeToMM" />
+        <signal name="pc_timer(3:0)" />
+        <signal name="pc_counter(7:0)" />
         <port polarity="Input" name="MODE" />
         <port polarity="Input" name="SYS_CLK" />
         <port polarity="Output" name="sseg(7:0)" />
         <port polarity="Output" name="anO(3:0)" />
+        <port polarity="Output" name="binDisplay(3:0)" />
         <port polarity="Input" name="En" />
         <port polarity="Output" name="dpO" />
         <port polarity="BiDirectional" name="colO(3:0)" />
@@ -283,37 +284,6 @@
             <line x2="384" y1="-96" y2="-96" x1="320" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
-        <blockdef name="programCounter">
-            <timestamp>2017-12-14T16:40:9</timestamp>
-            <rect width="256" x="64" y="-192" height="192" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-32" y2="-32" x1="64" />
-            <rect width="64" x="320" y="-172" height="24" />
-            <line x2="384" y1="-160" y2="-160" x1="320" />
-            <rect width="64" x="320" y="-108" height="24" />
-            <line x2="384" y1="-96" y2="-96" x1="320" />
-            <rect width="64" x="320" y="-44" height="24" />
-            <line x2="384" y1="-32" y2="-32" x1="320" />
-        </blockdef>
-        <blockdef name="inputProcessor">
-            <timestamp>2017-12-14T16:30:36</timestamp>
-            <rect width="64" x="0" y="20" height="24" />
-            <line x2="0" y1="32" y2="32" x1="64" />
-            <rect width="64" x="416" y="20" height="24" />
-            <line x2="480" y1="32" y2="32" x1="416" />
-            <line x2="0" y1="-288" y2="-288" x1="64" />
-            <line x2="0" y1="-224" y2="-224" x1="64" />
-            <rect width="64" x="0" y="-172" height="24" />
-            <line x2="0" y1="-160" y2="-160" x1="64" />
-            <line x2="0" y1="-96" y2="-96" x1="64" />
-            <rect width="64" x="416" y="-300" height="24" />
-            <line x2="480" y1="-288" y2="-288" x1="416" />
-            <rect width="64" x="416" y="-172" height="24" />
-            <line x2="480" y1="-160" y2="-160" x1="416" />
-            <rect width="64" x="416" y="-44" height="24" />
-            <line x2="480" y1="-32" y2="-32" x1="416" />
-            <rect width="352" x="64" y="-320" height="384" />
-        </blockdef>
         <blockdef name="ALU_component">
             <timestamp>2017-12-14T17:18:49</timestamp>
             <rect width="256" x="64" y="-256" height="256" />
@@ -344,6 +314,36 @@
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
+        <blockdef name="inputProcessor">
+            <timestamp>2017-12-14T17:39:25</timestamp>
+            <rect width="352" x="64" y="-384" height="384" />
+            <line x2="0" y1="-352" y2="-352" x1="64" />
+            <line x2="0" y1="-288" y2="-288" x1="64" />
+            <rect width="64" x="0" y="-236" height="24" />
+            <line x2="0" y1="-224" y2="-224" x1="64" />
+            <line x2="0" y1="-160" y2="-160" x1="64" />
+            <rect width="64" x="0" y="-108" height="24" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="416" y="-364" height="24" />
+            <line x2="480" y1="-352" y2="-352" x1="416" />
+            <rect width="64" x="416" y="-268" height="24" />
+            <line x2="480" y1="-256" y2="-256" x1="416" />
+            <rect width="64" x="416" y="-172" height="24" />
+            <line x2="480" y1="-160" y2="-160" x1="416" />
+            <rect width="64" x="416" y="-76" height="24" />
+            <line x2="480" y1="-64" y2="-64" x1="416" />
+        </blockdef>
+        <blockdef name="programCounter">
+            <timestamp>2017-12-14T17:47:5</timestamp>
+            <rect width="288" x="64" y="-128" height="128" />
+            <line x2="0" y1="-96" y2="-96" x1="64" />
+            <line x2="0" y1="-32" y2="-32" x1="64" />
+            <rect width="64" x="352" y="-108" height="24" />
+            <line x2="416" y1="-96" y2="-96" x1="352" />
+            <rect width="64" x="352" y="-44" height="24" />
+            <line x2="416" y1="-32" y2="-32" x1="352" />
+        </blockdef>
         <block symbolname="MainMemory" name="XLXI_8">
             <blockpin signalname="writeOP(7:0)" name="OP(7:0)" />
             <blockpin signalname="writeIM(7:0)" name="IM(7:0)" />
@@ -355,12 +355,12 @@
         </block>
         <block symbolname="MM_signal_MUX" name="XLXI_10">
             <blockpin signalname="XLXN_44(255:0)" name="MM_in(255:0)" />
-            <blockpin signalname="counter(4:0)" name="S(4:0)" />
+            <blockpin signalname="pc_counter(4:0)" name="S(4:0)" />
             <blockpin signalname="OP(7:0)" name="outByte(7:0)" />
         </block>
         <block symbolname="MM_signal_MUX" name="XLXI_11">
             <blockpin signalname="XLXN_69(255:0)" name="MM_in(255:0)" />
-            <blockpin signalname="counter(4:0)" name="S(4:0)" />
+            <blockpin signalname="pc_counter(4:0)" name="S(4:0)" />
             <blockpin signalname="IM(7:0)" name="outByte(7:0)" />
         </block>
         <block symbolname="Registers" name="XLXI_84">
@@ -469,13 +469,6 @@
             <blockpin signalname="Reg_Write(8:0)" name="Reg_WRITE(8:0)" />
             <blockpin signalname="XLXN_4(5:0)" name="MATH_OP(5:0)" />
         </block>
-        <block symbolname="programCounter" name="XLXI_153">
-            <blockpin signalname="SYS_CLK" name="SYS_CLK" />
-            <blockpin signalname="MODE" name="MODE" />
-            <blockpin signalname="pc_timer(3:0)" name="pc_timer(3:0)" />
-            <blockpin name="counter(7:0)" />
-            <blockpin signalname="counter(5:0)" name="counter(5:0)" />
-        </block>
         <block symbolname="CU_ALU" name="XLXI_156">
             <blockpin signalname="MODE" name="MODE" />
             <blockpin signalname="XLXN_4(5:0)" name="MATH(5:0)" />
@@ -487,17 +480,6 @@
             <blockpin signalname="Add_Sub" name="Add_Sub" />
             <blockpin signalname="Signed" name="Signed" />
             <blockpin signalname="ALU_B(7:0)" name="ALU_B(7:0)" />
-        </block>
-        <block symbolname="inputProcessor" name="XLXI_157">
-            <blockpin signalname="SYS_CLK" name="SYS_CLK" />
-            <blockpin signalname="writeToTemp" name="writeToTemp" />
-            <blockpin signalname="binDisplay(3:0)" name="binaryInput(3:0)" />
-            <blockpin signalname="writeToMM" name="writeToMM" />
-            <blockpin signalname="writeOP(7:0)" name="opCode(7:0)" />
-            <blockpin signalname="writeIM(7:0)" name="immediate(7:0)" />
-            <blockpin signalname="inputDisplay(8:0)" name="displayData(8:0)" />
-            <blockpin signalname="switchAddr(4:0)" name="switchAddr(4:0)" />
-            <blockpin signalname="MMByte(31:0)" name="MM_Byte(31:0)" />
         </block>
         <block symbolname="ALU_component" name="XLXI_158">
             <blockpin signalname="Reg(7:0)" name="A_in(7:0)" />
@@ -516,6 +498,24 @@
             <blockpin signalname="SYS_CLK" name="CLK" />
             <blockpin signalname="sseg(7:0)" name="sseg(7:0)" />
             <blockpin signalname="anO(3:0)" name="anO(3:0)" />
+        </block>
+        <block symbolname="inputProcessor" name="XLXI_161">
+            <blockpin signalname="SYS_CLK" name="SYS_CLK" />
+            <blockpin signalname="writeToTemp" name="writeToTemp" />
+            <blockpin signalname="binDisplay(3:0)" name="binaryInput(3:0)" />
+            <blockpin signalname="writeToMM" name="writeToMM" />
+            <blockpin signalname="switchAddr(4:0)" name="switchAddr(4:0)" />
+            <blockpin signalname="MODE" name="MODE" />
+            <blockpin signalname="writeOP(7:0)" name="opCode(7:0)" />
+            <blockpin signalname="writeIM(7:0)" name="immediate(7:0)" />
+            <blockpin signalname="inputDisplay(8:0)" name="displayData(8:0)" />
+            <blockpin signalname="MMByte(31:0)" name="MM_Byte(31:0)" />
+        </block>
+        <block symbolname="programCounter" name="XLXI_162">
+            <blockpin signalname="SYS_CLK" name="SYS_CLK" />
+            <blockpin signalname="MODE" name="MODE" />
+            <blockpin signalname="pc_timer(3:0)" name="pc_timer(3:0)" />
+            <blockpin signalname="pc_counter(7:0)" name="pc_counter(7:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
@@ -583,11 +583,11 @@
         </instance>
         <instance x="2896" y="624" name="XLXI_11" orien="R0">
         </instance>
-        <branch name="counter(4:0)">
+        <branch name="pc_counter(4:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2816" y="592" type="branch" />
             <wire x2="2896" y1="592" y2="592" x1="2816" />
         </branch>
-        <branch name="counter(4:0)">
+        <branch name="pc_counter(4:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2816" y="336" type="branch" />
             <wire x2="2896" y1="336" y2="336" x1="2816" />
         </branch>
@@ -642,7 +642,6 @@
             <wire x2="1440" y1="784" y2="784" x1="1360" />
         </branch>
         <branch name="binDisplay(3:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1904" y="848" type="branch" />
             <wire x2="1904" y1="848" y2="848" x1="1824" />
         </branch>
         <branch name="binO(7:0)">
@@ -830,62 +829,12 @@
         </instance>
         <iomarker fontsize="28" x="320" y="160" name="switchAddr(4:0)" orien="R180" />
         <text style="fontsize:30;fontname:Arial" x="1496" y="980">inputProcessor</text>
-        <branch name="binDisplay(3:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="1232" type="branch" />
-            <wire x2="1360" y1="1232" y2="1232" x1="1280" />
-        </branch>
-        <branch name="writeToTemp">
-            <wire x2="1360" y1="1168" y2="1168" x1="1328" />
-        </branch>
-        <iomarker fontsize="28" x="1328" y="1168" name="writeToTemp" orien="R180" />
-        <branch name="writeToMM">
-            <wire x2="1360" y1="1296" y2="1296" x1="1328" />
-        </branch>
-        <iomarker fontsize="28" x="1328" y="1296" name="writeToMM" orien="R180" />
-        <branch name="SYS_CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="1104" type="branch" />
-            <wire x2="1360" y1="1104" y2="1104" x1="1280" />
-        </branch>
         <branch name="switchAddr(4:0)">
             <wire x2="400" y1="160" y2="160" x1="320" />
-        </branch>
-        <branch name="switchAddr(4:0)">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="1424" type="branch" />
-            <wire x2="1360" y1="1424" y2="1424" x1="1280" />
-        </branch>
-        <branch name="inputDisplay(8:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1920" y="1360" type="branch" />
-            <wire x2="1920" y1="1360" y2="1360" x1="1840" />
-        </branch>
-        <branch name="writeIM(7:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1920" y="1232" type="branch" />
-            <wire x2="1920" y1="1232" y2="1232" x1="1840" />
         </branch>
         <branch name="writeOP(7:0)">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1920" y="1104" type="branch" />
             <wire x2="1920" y1="1104" y2="1104" x1="1840" />
-        </branch>
-        <branch name="MMByte(31:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1920" y="1424" type="branch" />
-            <wire x2="1920" y1="1424" y2="1424" x1="1840" />
-        </branch>
-        <instance x="208" y="1632" name="XLXI_153" orien="R0">
-        </instance>
-        <branch name="pc_timer(3:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="1472" type="branch" />
-            <wire x2="672" y1="1472" y2="1472" x1="592" />
-        </branch>
-        <branch name="counter(5:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="672" y="1600" type="branch" />
-            <wire x2="672" y1="1600" y2="1600" x1="592" />
-        </branch>
-        <branch name="MODE">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="128" y="1600" type="branch" />
-            <wire x2="208" y1="1600" y2="1600" x1="128" />
-        </branch>
-        <branch name="SYS_CLK">
-            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="128" y="1472" type="branch" />
-            <wire x2="208" y1="1472" y2="1472" x1="128" />
         </branch>
         <branch name="Reg(7:0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="2432" y="1168" type="branch" />
@@ -949,11 +898,66 @@
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="1840" type="branch" />
             <wire x2="1392" y1="1840" y2="1840" x1="1344" />
         </branch>
-        <instance x="1360" y="1392" name="XLXI_157" orien="R0">
-        </instance>
         <instance x="2528" y="1392" name="XLXI_158" orien="R0">
         </instance>
         <instance x="2720" y="1888" name="XLXI_159" orien="R0">
         </instance>
+        <branch name="writeIM(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1920" y="1200" type="branch" />
+            <wire x2="1920" y1="1200" y2="1200" x1="1840" />
+        </branch>
+        <branch name="inputDisplay(8:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1920" y="1296" type="branch" />
+            <wire x2="1920" y1="1296" y2="1296" x1="1840" />
+        </branch>
+        <branch name="MMByte(31:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1920" y="1392" type="branch" />
+            <wire x2="1920" y1="1392" y2="1392" x1="1840" />
+        </branch>
+        <branch name="binDisplay(3:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="1232" type="branch" />
+            <wire x2="1360" y1="1232" y2="1232" x1="1280" />
+        </branch>
+        <branch name="writeToTemp">
+            <wire x2="1360" y1="1168" y2="1168" x1="1328" />
+        </branch>
+        <branch name="writeToMM">
+            <wire x2="1360" y1="1296" y2="1296" x1="1328" />
+        </branch>
+        <iomarker fontsize="28" x="1328" y="1168" name="writeToTemp" orien="R180" />
+        <iomarker fontsize="28" x="1328" y="1296" name="writeToMM" orien="R180" />
+        <branch name="SYS_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="1104" type="branch" />
+            <wire x2="1360" y1="1104" y2="1104" x1="1280" />
+        </branch>
+        <branch name="switchAddr(4:0)">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="1360" type="branch" />
+            <wire x2="1360" y1="1360" y2="1360" x1="1280" />
+        </branch>
+        <branch name="MODE">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1280" y="1424" type="branch" />
+            <wire x2="1360" y1="1424" y2="1424" x1="1280" />
+        </branch>
+        <instance x="1360" y="1456" name="XLXI_161" orien="R0">
+        </instance>
+        <branch name="SYS_CLK">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="144" y="1408" type="branch" />
+            <wire x2="224" y1="1408" y2="1408" x1="144" />
+        </branch>
+        <instance x="224" y="1504" name="XLXI_162" orien="R0">
+        </instance>
+        <branch name="pc_timer(3:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="720" y="1408" type="branch" />
+            <wire x2="720" y1="1408" y2="1408" x1="640" />
+        </branch>
+        <branch name="MODE">
+            <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="144" y="1472" type="branch" />
+            <wire x2="224" y1="1472" y2="1472" x1="144" />
+        </branch>
+        <branch name="pc_counter(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="720" y="1472" type="branch" />
+            <wire x2="720" y1="1472" y2="1472" x1="640" />
+        </branch>
+        <iomarker fontsize="28" x="1904" y="848" name="binDisplay(3:0)" orien="R0" />
     </sheet>
 </drawing>

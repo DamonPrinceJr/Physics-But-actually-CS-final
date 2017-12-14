@@ -8,8 +8,7 @@ NET "row[2]" LOC = A3;
 NET "row[1]" LOC = J3;
 NET "row[0]" LOC = B5;
 
-NET "En" LOC = G12;
-NET "keyO" LOC = M5;
+NET "MODE" LOC = N3;
 
 #NET "binDisplay[0]" LOC = n5;
 #NET "binDisplay[1]" LOC = n4;

@@ -18,14 +18,13 @@
         <signal name="XLXN_83" />
         <signal name="XLXN_85" />
         <signal name="XLXN_86" />
-        <signal name="counter(0)" />
-        <signal name="counter(1)" />
-        <signal name="counter(2)" />
-        <signal name="counter(3)" />
-        <signal name="counter(4)" />
+        <signal name="pc_counter(0)" />
+        <signal name="pc_counter(1)" />
+        <signal name="pc_counter(2)" />
+        <signal name="pc_counter(3)" />
+        <signal name="pc_counter(4)" />
         <signal name="counter_31" />
-        <signal name="counter(7:0)" />
-        <signal name="counter(5:0)" />
+        <signal name="pc_counter(7:0)" />
         <signal name="pc_timer(0)" />
         <signal name="pc_timer(1)" />
         <signal name="pc_timer(3)" />
@@ -34,8 +33,7 @@
         <port polarity="Input" name="SYS_CLK" />
         <port polarity="Input" name="MODE" />
         <port polarity="Output" name="pc_timer(3:0)" />
-        <port polarity="Output" name="counter(7:0)" />
-        <port polarity="Output" name="counter(5:0)" />
+        <port polarity="Output" name="pc_counter(7:0)" />
         <blockdef name="cb8cle">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <rect width="256" x="64" y="-448" height="384" />
@@ -130,7 +128,7 @@
             <blockpin name="D(7:0)" />
             <blockpin signalname="counter_31" name="L" />
             <blockpin name="CEO" />
-            <blockpin signalname="counter(7:0)" name="Q(7:0)" />
+            <blockpin signalname="pc_counter(7:0)" name="Q(7:0)" />
             <blockpin name="TC" />
         </block>
         <block symbolname="inv" name="XLXI_30">
@@ -170,11 +168,11 @@
             <blockpin signalname="XLXN_86" name="O" />
         </block>
         <block symbolname="and5" name="XLXI_38">
-            <blockpin signalname="counter(4)" name="I0" />
-            <blockpin signalname="counter(3)" name="I1" />
-            <blockpin signalname="counter(2)" name="I2" />
-            <blockpin signalname="counter(1)" name="I3" />
-            <blockpin signalname="counter(0)" name="I4" />
+            <blockpin signalname="pc_counter(4)" name="I0" />
+            <blockpin signalname="pc_counter(3)" name="I1" />
+            <blockpin signalname="pc_counter(2)" name="I2" />
+            <blockpin signalname="pc_counter(1)" name="I3" />
+            <blockpin signalname="pc_counter(0)" name="I4" />
             <blockpin signalname="counter_31" name="O" />
         </block>
         <block symbolname="constant" name="XLXI_40">
@@ -205,7 +203,8 @@
         <iomarker fontsize="28" x="400" y="128" name="MODE" orien="R180" />
         <instance x="816" y="816" name="XLXI_5" orien="R0" />
         <instance x="816" y="1344" name="XLXI_3" orien="R0" />
-        <branch name="counter(7:0)">
+        <branch name="pc_counter(7:0)">
+            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1344" y="960" type="branch" />
             <wire x2="1344" y1="960" y2="960" x1="1200" />
         </branch>
         <branch name="XLXN_8">
@@ -281,23 +280,23 @@
         </branch>
         <instance x="1456" y="496" name="XLXI_37" orien="R0" />
         <instance x="1456" y="1360" name="XLXI_38" orien="R0" />
-        <branch name="counter(0)">
+        <branch name="pc_counter(0)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1408" y="1040" type="branch" />
             <wire x2="1456" y1="1040" y2="1040" x1="1408" />
         </branch>
-        <branch name="counter(1)">
+        <branch name="pc_counter(1)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1408" y="1104" type="branch" />
             <wire x2="1456" y1="1104" y2="1104" x1="1408" />
         </branch>
-        <branch name="counter(2)">
+        <branch name="pc_counter(2)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1408" y="1168" type="branch" />
             <wire x2="1456" y1="1168" y2="1168" x1="1408" />
         </branch>
-        <branch name="counter(3)">
+        <branch name="pc_counter(3)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1408" y="1232" type="branch" />
             <wire x2="1456" y1="1232" y2="1232" x1="1408" />
         </branch>
-        <branch name="counter(4)">
+        <branch name="pc_counter(4)">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="1408" y="1296" type="branch" />
             <wire x2="1456" y1="1296" y2="1296" x1="1408" />
         </branch>
@@ -309,16 +308,10 @@
         </instance>
         <instance x="624" y="528" name="XLXI_41" orien="R0">
         </instance>
-        <branch name="counter(5:0)">
+        <branch name="pc_counter(7:0)">
             <wire x2="640" y1="128" y2="128" x1="560" />
         </branch>
-        <iomarker fontsize="28" x="640" y="128" name="counter(5:0)" orien="R0" />
-        <bustap x2="1344" y1="960" y2="864" x1="1344" />
-        <branch name="counter(5:0)">
-            <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1440" y="816" type="branch" />
-            <wire x2="1440" y1="816" y2="816" x1="1344" />
-            <wire x2="1344" y1="816" y2="864" x1="1344" />
-        </branch>
+        <iomarker fontsize="28" x="640" y="128" name="pc_counter(7:0)" orien="R0" />
         <branch name="timer0">
             <attrtext style="alignment:SOFT-BCENTER;fontsize:28;fontname:Arial" attrname="Name" x="1312" y="144" type="branch" />
             <wire x2="1312" y1="304" y2="304" x1="1200" />

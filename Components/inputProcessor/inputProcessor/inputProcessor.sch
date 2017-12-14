@@ -107,7 +107,6 @@
         <signal name="switchAddr(4)" />
         <signal name="MODE" />
         <signal name="temp(3:0)" />
-        <signal name="switchAddr(7:0)" />
         <port polarity="Input" name="SYS_CLK" />
         <port polarity="Input" name="writeToTemp" />
         <port polarity="Input" name="binaryInput(3:0)" />
@@ -118,7 +117,6 @@
         <port polarity="Output" name="displayData(8:0)" />
         <port polarity="Output" name="MM_Byte(31:0)" />
         <port polarity="Input" name="MODE" />
-        <port polarity="Input" name="switchAddr(7:0)" />
         <blockdef name="cb2cled">
             <timestamp>2000-1-1T10:10:10</timestamp>
             <rect width="256" x="64" y="-576" height="512" />
@@ -233,7 +231,7 @@
             <blockpin signalname="temp(3)" name="Q3" />
         </block>
         <block symbolname="inv" name="XLXI_73">
-            <blockpin signalname="switchAddr(4:0)" name="I" />
+            <blockpin signalname="MODE" name="I" />
             <blockpin signalname="XLXN_369" name="O" />
         </block>
         <block symbolname="fd4ce" name="XLXI_6">
@@ -346,7 +344,7 @@
             <blockpin signalname="XLXN_365" name="O" />
         </block>
         <block symbolname="inv" name="XLXI_72">
-            <blockpin signalname="switchAddr(4:0)" name="I" />
+            <blockpin signalname="MODE" name="I" />
             <blockpin signalname="XLXN_368" name="O" />
         </block>
         <block symbolname="m2_1" name="XLXI_158">
@@ -526,7 +524,7 @@
             <wire x2="400" y1="1232" y2="1232" x1="368" />
         </branch>
         <instance x="144" y="1264" name="XLXI_73" orien="R0" />
-        <branch name="switchAddr(4:0)">
+        <branch name="MODE">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="112" y="1232" type="branch" />
             <wire x2="144" y1="1232" y2="1232" x1="112" />
         </branch>
@@ -754,7 +752,7 @@
             <wire x2="1136" y1="2576" y2="2576" x1="832" />
         </branch>
         <instance x="1136" y="2640" name="XLXI_13" orien="R0" />
-        <branch name="switchAddr(4:0)">
+        <branch name="MODE">
             <attrtext style="alignment:SOFT-RIGHT;fontsize:28;fontname:Arial" attrname="Name" x="112" y="2096" type="branch" />
             <wire x2="144" y1="2096" y2="2096" x1="112" />
         </branch>
@@ -1124,9 +1122,9 @@
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="560" y="608" type="branch" />
             <wire x2="560" y1="608" y2="608" x1="480" />
         </branch>
-        <branch name="switchAddr(7:0)">
+        <branch name="switchAddr(4:0)">
             <wire x2="480" y1="480" y2="480" x1="400" />
         </branch>
-        <iomarker fontsize="28" x="400" y="480" name="switchAddr(7:0)" orien="R180" />
+        <iomarker fontsize="28" x="400" y="480" name="switchAddr(4:0)" orien="R180" />
     </sheet>
 </drawing>
