@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7 (64-bit)
+# Build 321239 by xbuild on Fri Sep 27 19:29:51 MDT 2013
+# Start of session at: Wed Dec 13 20:00:52 2017
+# Process ID: 5540
+# Log file: C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/New folder/testingDisplay/planAhead_run_5/planAhead.log
+# Journal file: C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/New folder/testingDisplay/planAhead_run_5/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source {C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/New folder/testingDisplay/pa.fromNetlist.tcl}
+startgroup
+set_property package_pin P6 [get_ports {binaryInput[3]}]
+endgroup
+startgroup
+set_property package_pin P7 [get_ports {binaryInput[2]}]
+endgroup
+startgroup
+set_property package_pin M11 [get_ports {binaryInput[1]}]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports {binaryInput[0]}]
+endgroup
+save_constraints

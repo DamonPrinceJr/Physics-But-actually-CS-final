@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version='1.0' encoding='utf-8'?>
 <!--This is an ISE project configuration file.-->
 <!--It holds project specific layout data for the projectmgr plugin.-->
 <!--Copyright (c) 1995-2009 Xilinx, Inc.  All rights reserved.-->
@@ -9,6 +9,7 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
          <ClosedNode>/ALU C:|Users|Vason|Documents|GitHub|Physics-But-actually-CS-final|newSandbox|TrueALU|ALU.sch</ClosedNode>
          <ClosedNode>/testingDisplay C:|Users|Vason|Documents|GitHub|Physics-But-actually-CS-final|RyanSandbox|New folder|testingDisplay|testingDisplay.sch/XLXI_1 - Decoder</ClosedNode>
+         <ClosedNode>/testingDisplay C:|Users|Vason|Documents|GitHub|Physics-But-actually-CS-final|RyanSandbox|New folder|testingDisplay|testingDisplay.sch/XLXI_3 - sevenSeg</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
          <SelectedItem>testingDisplay (C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/New folder/testingDisplay/testingDisplay.sch)</SelectedItem>
@@ -40,7 +41,7 @@
       <SelectedItems/>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
-      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000126000000040101000100000000000000000000000064ffffffff0000008100000000000000040000004200000001000000000000002400000001000000000000006600000001000000000000005a0000000100000000</ViewHeaderState>
+      <ViewHeaderState orientation="horizontal" >000000ff00000000000000010000000000000000010000000000000000000000000000000000000130000000040101000100000000000000000000000064ffffffff000000810000000000000004000000420000000100000000000000240000000100000000000000660000000100000000000000640000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
       <CurrentItem>bin2BCD3en.vhd</CurrentItem>
    </ItemView>
@@ -60,7 +61,6 @@
       <ClosedNodes>
          <ClosedNodesVersion>1</ClosedNodesVersion>
          <ClosedNode>Configure Target Device</ClosedNode>
-         <ClosedNode>Design Utilities</ClosedNode>
          <ClosedNode>Implement Design</ClosedNode>
          <ClosedNode>Synthesize - XST</ClosedNode>
       </ClosedNodes>

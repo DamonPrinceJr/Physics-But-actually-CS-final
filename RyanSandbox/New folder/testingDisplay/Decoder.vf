@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : Decoder.vf
-// /___/   /\     Timestamp : 12/13/2017 18:31:29
+// /___/   /\     Timestamp : 12/13/2017 20:33:33
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -74,10 +74,10 @@ module Decoder(En,
    bin2BCD3en  XLXI_14 (.CLK(XLXN_5), 
                        .Din(binO[7:0]), 
                        .En(En), 
-                       .Dout0(), 
-                       .Dout1(), 
-                       .Dout2(), 
-                       .Dout3(), 
+                       .Dout0(XLXN_13[3:0]), 
+                       .Dout1(XLXN_11[3:0]), 
+                       .Dout2(XLXN_10[3:0]), 
+                       .Dout3(XLXN_9[3:0]), 
                        .RBout());
    sel_strobeB  XLXI_15 (.clk(XLXN_6), 
                         .sel(XLXN_14[0:1]));

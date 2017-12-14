@@ -27,6 +27,7 @@
         <signal name="binDisplay(1)" />
         <signal name="binDisplay(2)" />
         <signal name="binDisplay(3)" />
+        <signal name="XLXN_15" />
         <port polarity="Output" name="keyO" />
         <port polarity="Input" name="SYS_CLK" />
         <port polarity="Input" name="En" />
@@ -168,10 +169,10 @@
             <blockpin signalname="XLXN_5" name="CLK" />
             <blockpin signalname="En" name="En" />
             <blockpin signalname="binO(7:0)" name="Din(7:0)" />
-            <blockpin name="Dout3(3:0)" />
-            <blockpin name="Dout2(3:0)" />
-            <blockpin name="Dout1(3:0)" />
-            <blockpin name="Dout0(3:0)" />
+            <blockpin signalname="XLXN_9(3:0)" name="Dout3(3:0)" />
+            <blockpin signalname="XLXN_10(3:0)" name="Dout2(3:0)" />
+            <blockpin signalname="XLXN_11(3:0)" name="Dout1(3:0)" />
+            <blockpin signalname="XLXN_13(3:0)" name="Dout0(3:0)" />
             <blockpin name="RBout(3:0)" />
         </block>
         <block symbolname="sel_strobeB" name="XLXI_15">
@@ -191,19 +192,10 @@
         <branch name="binO(7:0)">
             <wire x2="1360" y1="1216" y2="1248" x1="1360" />
             <wire x2="1360" y1="1248" y2="1280" x1="1360" />
-            <wire x2="1392" y1="1216" y2="1216" x1="1360" />
-            <wire x2="1408" y1="1216" y2="1216" x1="1392" />
+            <wire x2="1408" y1="1216" y2="1216" x1="1360" />
         </branch>
         <branch name="XLXN_4">
             <wire x2="1424" y1="544" y2="544" x1="1280" />
-        </branch>
-        <branch name="XLXN_5">
-            <wire x2="1104" y1="1232" y2="1232" x1="1040" />
-            <wire x2="1424" y1="480" y2="480" x1="1104" />
-            <wire x2="1104" y1="480" y2="960" x1="1104" />
-            <wire x2="1104" y1="960" y2="1232" x1="1104" />
-            <wire x2="1392" y1="960" y2="960" x1="1104" />
-            <wire x2="1408" y1="960" y2="960" x1="1392" />
         </branch>
         <branch name="XLXN_6">
             <wire x2="1168" y1="1168" y2="1168" x1="1040" />
@@ -246,8 +238,7 @@
         </branch>
         <iomarker fontsize="28" x="624" y="1104" name="SYS_CLK" orien="R180" />
         <branch name="En">
-            <wire x2="1392" y1="1088" y2="1088" x1="1376" />
-            <wire x2="1408" y1="1088" y2="1088" x1="1392" />
+            <wire x2="1408" y1="1088" y2="1088" x1="1376" />
         </branch>
         <branch name="keyO">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1856" y="480" type="branch" />
@@ -273,11 +264,6 @@
         </branch>
         <iomarker fontsize="28" x="1312" y="608" name="row(3:0)" orien="R180" />
         <instance x="1312" y="768" name="XLXI_10(3:0)" orien="R0" />
-        <branch name="binDisplay(3:0)">
-            <wire x2="2768" y1="1280" y2="1280" x1="2592" />
-            <wire x2="2816" y1="1024" y2="1024" x1="2768" />
-            <wire x2="2768" y1="1024" y2="1280" x1="2768" />
-        </branch>
         <branch name="binDisplay(0)">
             <wire x2="2864" y1="1072" y2="1072" x1="2816" />
         </branch>
@@ -298,11 +284,25 @@
         </instance>
         <instance x="2208" y="1312" name="XLXI_13" orien="R0">
         </instance>
-        <instance x="1392" y="1248" name="XLXI_14" orien="R0">
-        </instance>
         <instance x="1408" y="1600" name="XLXI_15" orien="R0">
         </instance>
         <instance x="1424" y="640" name="XLXI_16" orien="R0">
         </instance>
+        <branch name="XLXN_5">
+            <wire x2="1104" y1="1232" y2="1232" x1="1040" />
+            <wire x2="1424" y1="480" y2="480" x1="1104" />
+            <wire x2="1104" y1="480" y2="928" x1="1104" />
+            <wire x2="1104" y1="928" y2="1232" x1="1104" />
+            <wire x2="1392" y1="928" y2="928" x1="1104" />
+            <wire x2="1392" y1="928" y2="960" x1="1392" />
+            <wire x2="1408" y1="960" y2="960" x1="1392" />
+        </branch>
+        <instance x="1408" y="1248" name="XLXI_14" orien="R0">
+        </instance>
+        <branch name="binDisplay(3:0)">
+            <wire x2="2768" y1="1280" y2="1280" x1="2592" />
+            <wire x2="2816" y1="1024" y2="1024" x1="2768" />
+            <wire x2="2768" y1="1024" y2="1280" x1="2768" />
+        </branch>
     </sheet>
 </drawing>

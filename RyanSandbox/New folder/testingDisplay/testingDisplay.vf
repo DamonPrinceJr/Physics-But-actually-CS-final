@@ -7,7 +7,7 @@
 // \   \   \/     Version : 14.7
 //  \   \         Application : sch2hdl
 //  /   /         Filename : testingDisplay.vf
-// /___/   /\     Timestamp : 12/13/2017 19:45:45
+// /___/   /\     Timestamp : 12/13/2017 20:52:32
 // \   \  /  \ 
 //  \___\/\___\ 
 //
@@ -20,39 +20,32 @@
 //
 `timescale 1ns / 1ps
 
-module testingDisplay(MODE, 
+module testingDisplay(CLK, 
+                      MODE, 
                       row, 
-                      systemClock, 
                       writeTemp, 
                       anO, 
+                      binary, 
                       sseg, 
                       rolO);
 
+    input CLK;
     input MODE;
     input [3:0] row;
-    input systemClock;
     input writeTemp;
    output [3:0] anO;
+   output [3:0] binary;
    output [7:0] sseg;
     inout [3:0] rolO;
    
-   wire [3:0] binaryInput;
-   wire CLK;
-   wire [8:0] displayData;
-   wire XLXN_22;
+   wire [7:0] displayData;
    
-   Decoder  XLXI_1 (.En(MODE), 
-                   .row(row[3:0]), 
-                   .SYS_CLK(CLK), 
-                   .binDisplay(binaryInput[3:0]), 
-                   .keyO(), 
-                   .colO(rolO[3:0]));
-   inputProcessor  XLXI_2 (.binaryInput(binaryInput[3:0]), 
+   inputProcessor  XLXI_2 (.binaryInput(), 
                           .MODE(MODE), 
                           .SYS_CLK(CLK), 
                           .writeToMM(), 
                           .writeToTemp(writeTemp), 
-                          .displayData(displayData[8:0]), 
+                          .displayData(), 
                           .immediate(), 
                           .opCode());
    sevenSeg  XLXI_3 (.Din(displayData[7:0]), 
@@ -60,10 +53,10 @@ module testingDisplay(MODE,
                     .SYS_CLK(CLK), 
                     .anO(anO[3:0]), 
                     .sseg(sseg[7:0]));
-   DCM_50M  XLXI_12 (.CLK(systemClock), 
-                    .RST(), 
-                    .CLK1(XLXN_22), 
-                    .CLK1k(CLK), 
-                    .CLK1M(), 
-                    .CLK10k());
+   Decoder  XLXI_13 (.En(MODE), 
+                    .row(row[3:0]), 
+                    .SYS_CLK(CLK), 
+                    .binDisplay(binary[3:0]), 
+                    .keyO(), 
+                    .colO(rolO[3:0]));
 endmodule
