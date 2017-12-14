@@ -1,0 +1,528 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : RyanSandbox.vf
+// /___/   /\     Timestamp : 12/13/2017 18:14:48
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/RyanSandbox/RyanSandbox.vf -w C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/RyanSandbox/RyanSandbox.sch
+//Design Name: RyanSandbox
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module Decoder_MUSER_RyanSandbox(En, 
+                                 row, 
+                                 SYS_CLK, 
+                                 binDisplay, 
+                                 keyO, 
+                                 colO);
+
+    input En;
+    input [3:0] row;
+    input SYS_CLK;
+   output [3:0] binDisplay;
+   output keyO;
+    inout [3:0] colO;
+   
+   wire [7:0] binO;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire [3:0] XLXN_9;
+   wire [3:0] XLXN_10;
+   wire [3:0] XLXN_11;
+   wire [3:0] XLXN_13;
+   wire [0:1] XLXN_14;
+   wire keyO_DUMMY;
+   wire [3:0] row_DUMMY;
+   
+   assign XLXN_4 = 1;
+   assign XLXN_7 = 0;
+   assign keyO = keyO_DUMMY;
+   assign row_DUMMY[3:0] = row[3:0];
+   DCM_50M  XLXI_2 (.CLK(SYS_CLK), 
+                   .RST(XLXN_7), 
+                   .CLK1(), 
+                   .CLK1k(XLXN_5), 
+                   .CLK1M(), 
+                   .CLK10k(XLXN_6));
+   mux4SSD  XLXI_4 (.dp_in(), 
+                   .hexA(XLXN_13[3:0]), 
+                   .hexB(XLXN_11[3:0]), 
+                   .hexC(XLXN_10[3:0]), 
+                   .hexD(XLXN_9[3:0]), 
+                   .rb_in(keyO_DUMMY), 
+                   .sel(XLXN_14[0:1]), 
+                   .anO(), 
+                   .dpO(), 
+                   .hexO(binDisplay[3:0]));
+   bin2BCD3en  XLXI_5 (.CLK(XLXN_5), 
+                      .Din(binO[7:0]), 
+                      .En(En), 
+                      .Dout0(XLXN_13[3:0]), 
+                      .Dout1(XLXN_11[3:0]), 
+                      .Dout2(XLXN_10[3:0]), 
+                      .Dout3(XLXN_9[3:0]), 
+                      .RBout());
+   sel_strobeB  XLXI_6 (.clk(XLXN_6), 
+                       .sel(XLXN_14[0:1]));
+   PULLDOWN  XLXI_10_0 (.O(row_DUMMY[0]));
+   PULLDOWN  XLXI_10_1 (.O(row_DUMMY[1]));
+   PULLDOWN  XLXI_10_2 (.O(row_DUMMY[2]));
+   PULLDOWN  XLXI_10_3 (.O(row_DUMMY[3]));
+   CRenc4bin  XLXI_11 (.CE(XLXN_4), 
+                      .clk(XLXN_5), 
+                      .rowI(row_DUMMY[3:0]), 
+                      .binO(binO[3:0]), 
+                      .keyO(keyO_DUMMY), 
+                      .colO(colO[3:0]));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1_MXILINX_RyanSandbox(D0, 
+                                D1, 
+                                S0, 
+                                O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B1  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module M2_1B1_MXILINX_RyanSandbox(D0, 
+                                  D1, 
+                                  S0, 
+                                  O);
+
+    input D0;
+    input D1;
+    input S0;
+   output O;
+   
+   wire M0;
+   wire M1;
+   
+   AND2B2  I_36_7 (.I0(S0), 
+                  .I1(D0), 
+                  .O(M0));
+   OR2  I_36_8 (.I0(M1), 
+               .I1(M0), 
+               .O(O));
+   AND2  I_36_9 (.I0(D1), 
+                .I1(S0), 
+                .O(M1));
+endmodule
+`timescale 1ns / 1ps
+
+module FTCLEX_MXILINX_RyanSandbox(C, 
+                                  CE, 
+                                  CLR, 
+                                  D, 
+                                  L, 
+                                  T, 
+                                  Q);
+
+   parameter INIT = 1'b0;
+   
+    input C;
+    input CE;
+    input CLR;
+    input D;
+    input L;
+    input T;
+   output Q;
+   
+   wire MD;
+   wire TQ;
+   wire Q_DUMMY;
+   
+   assign Q = Q_DUMMY;
+   (* HU_SET = "I_36_30_19" *) 
+   M2_1_MXILINX_RyanSandbox  I_36_30 (.D0(TQ), 
+                                     .D1(D), 
+                                     .S0(L), 
+                                     .O(MD));
+   XOR2  I_36_32 (.I0(T), 
+                 .I1(Q_DUMMY), 
+                 .O(TQ));
+   (* RLOC = "X0Y0" *) 
+   FDCE  I_36_35 (.C(C), 
+                 .CE(CE), 
+                 .CLR(CLR), 
+                 .D(MD), 
+                 .Q(Q_DUMMY));
+endmodule
+`timescale 1ns / 1ps
+
+module CB2CLED_MXILINX_RyanSandbox(C, 
+                                   CE, 
+                                   CLR, 
+                                   D0, 
+                                   D1, 
+                                   L, 
+                                   UP, 
+                                   CEO, 
+                                   Q0, 
+                                   Q1, 
+                                   TC);
+
+    input C;
+    input CE;
+    input CLR;
+    input D0;
+    input D1;
+    input L;
+    input UP;
+   output CEO;
+   output Q0;
+   output Q1;
+   output TC;
+   
+   wire OR_CE_L;
+   wire TC_DN;
+   wire TC_UP;
+   wire T1;
+   wire XLXN_1;
+   wire Q0_DUMMY;
+   wire Q1_DUMMY;
+   wire TC_DUMMY;
+   
+   assign Q0 = Q0_DUMMY;
+   assign Q1 = Q1_DUMMY;
+   assign TC = TC_DUMMY;
+   (* HU_SET = "I_Q0_21" *) 
+   FTCLEX_MXILINX_RyanSandbox #( .INIT(1'b0) ) I_Q0 (.C(C), 
+                                    .CE(OR_CE_L), 
+                                    .CLR(CLR), 
+                                    .D(D0), 
+                                    .L(L), 
+                                    .T(XLXN_1), 
+                                    .Q(Q0_DUMMY));
+   (* HU_SET = "I_Q1_20" *) 
+   FTCLEX_MXILINX_RyanSandbox #( .INIT(1'b0) ) I_Q1 (.C(C), 
+                                    .CE(OR_CE_L), 
+                                    .CLR(CLR), 
+                                    .D(D1), 
+                                    .L(L), 
+                                    .T(T1), 
+                                    .Q(Q1_DUMMY));
+   (* HU_SET = "I_TC_22" *) 
+   M2_1_MXILINX_RyanSandbox  I_TC (.D0(TC_DN), 
+                                  .D1(TC_UP), 
+                                  .S0(UP), 
+                                  .O(TC_DUMMY));
+   (* HU_SET = "I_T1_23" *) 
+   M2_1B1_MXILINX_RyanSandbox  I_T1 (.D0(Q0_DUMMY), 
+                                    .D1(Q0_DUMMY), 
+                                    .S0(UP), 
+                                    .O(T1));
+   VCC  I_36_7 (.P(XLXN_1));
+   AND2B2  I_36_33 (.I0(Q1_DUMMY), 
+                   .I1(Q0_DUMMY), 
+                   .O(TC_DN));
+   AND2  I_36_36 (.I0(Q1_DUMMY), 
+                 .I1(Q0_DUMMY), 
+                 .O(TC_UP));
+   AND2  I_36_39 (.I0(CE), 
+                 .I1(TC_DUMMY), 
+                 .O(CEO));
+   OR2  I_36_47 (.I0(CE), 
+                .I1(L), 
+                .O(OR_CE_L));
+endmodule
+`timescale 1ns / 1ps
+
+module FD4CE_MXILINX_RyanSandbox(C, 
+                                 CE, 
+                                 CLR, 
+                                 D0, 
+                                 D1, 
+                                 D2, 
+                                 D3, 
+                                 Q0, 
+                                 Q1, 
+                                 Q2, 
+                                 Q3);
+
+    input C;
+    input CE;
+    input CLR;
+    input D0;
+    input D1;
+    input D2;
+    input D3;
+   output Q0;
+   output Q1;
+   output Q2;
+   output Q3;
+   
+   
+   FDCE #( .INIT(1'b0) ) I_Q0 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D0), 
+              .Q(Q0));
+   FDCE #( .INIT(1'b0) ) I_Q1 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D1), 
+              .Q(Q1));
+   FDCE #( .INIT(1'b0) ) I_Q2 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D2), 
+              .Q(Q2));
+   FDCE #( .INIT(1'b0) ) I_Q3 (.C(C), 
+              .CE(CE), 
+              .CLR(CLR), 
+              .D(D3), 
+              .Q(Q3));
+endmodule
+`timescale 1ns / 1ps
+
+module inputProcessor_MUSER_RyanSandbox(binaryInput, 
+                                        MODE, 
+                                        SYS_CLK, 
+                                        writeToMM, 
+                                        writeToTemp, 
+                                        displayData, 
+                                        immediate, 
+                                        opCode);
+
+    input [3:0] binaryInput;
+    input MODE;
+    input SYS_CLK;
+    input writeToMM;
+    input writeToTemp;
+   output [8:0] displayData;
+   output [7:0] immediate;
+   output [7:0] opCode;
+   
+   wire [3:0] pos;
+   wire temp(0);
+   wire XLXN_3;
+   wire XLXN_4;
+   wire XLXN_5;
+   wire XLXN_6;
+   wire XLXN_7;
+   wire XLXN_8;
+   wire XLXN_9;
+   wire XLXN_10;
+   wire XLXN_77;
+   wire XLXN_78;
+   wire XLXN_79;
+   wire XLXN_80;
+   wire XLXN_87;
+   wire XLXN_365;
+   wire XLXN_368;
+   wire XLXN_369;
+   wire [7:0] opCode_DUMMY;
+   wire [7:0] immediate_DUMMY;
+   
+   assign XLXN_365 = 1;
+   assign immediate[7:0] = immediate_DUMMY[7:0];
+   assign opCode[7:0] = opCode_DUMMY[7:0];
+   (* HU_SET = "XLXI_5_29" *) 
+   CB2CLED_MXILINX_RyanSandbox  XLXI_5 (.C(writeToTemp), 
+                                       .CE(XLXN_368), 
+                                       .CLR(), 
+                                       .D0(), 
+                                       .D1(), 
+                                       .L(), 
+                                       .UP(XLXN_365), 
+                                       .CEO(), 
+                                       .Q0(pos[0]), 
+                                       .Q1(pos[1]), 
+                                       .TC());
+   (* HU_SET = "XLXI_6_25" *) 
+   FD4CE_MXILINX_RyanSandbox  XLXI_6 (.C(writeToTemp), 
+                                     .CE(XLXN_3), 
+                                     .CLR(XLXN_80), 
+                                     .D0(temp(0)), 
+                                     .D1(), 
+                                     .D2(), 
+                                     .D3(), 
+                                     .Q0(opCode_DUMMY[0]), 
+                                     .Q1(opCode_DUMMY[1]), 
+                                     .Q2(opCode_DUMMY[2]), 
+                                     .Q3(opCode_DUMMY[3]));
+   (* HU_SET = "XLXI_7_26" *) 
+   FD4CE_MXILINX_RyanSandbox  XLXI_7 (.C(writeToTemp), 
+                                     .CE(XLXN_4), 
+                                     .CLR(XLXN_79), 
+                                     .D0(temp(0)), 
+                                     .D1(), 
+                                     .D2(), 
+                                     .D3(), 
+                                     .Q0(opCode_DUMMY[4]), 
+                                     .Q1(opCode_DUMMY[5]), 
+                                     .Q2(opCode_DUMMY[6]), 
+                                     .Q3(opCode_DUMMY[7]));
+   (* HU_SET = "XLXI_8_27" *) 
+   FD4CE_MXILINX_RyanSandbox  XLXI_8 (.C(writeToTemp), 
+                                     .CE(XLXN_5), 
+                                     .CLR(XLXN_77), 
+                                     .D0(temp(0)), 
+                                     .D1(), 
+                                     .D2(), 
+                                     .D3(), 
+                                     .Q0(immediate_DUMMY[0]), 
+                                     .Q1(immediate_DUMMY[1]), 
+                                     .Q2(immediate_DUMMY[2]), 
+                                     .Q3(immediate_DUMMY[3]));
+   (* HU_SET = "XLXI_9_28" *) 
+   FD4CE_MXILINX_RyanSandbox  XLXI_9 (.C(writeToTemp), 
+                                     .CE(XLXN_6), 
+                                     .CLR(XLXN_78), 
+                                     .D0(temp(0)), 
+                                     .D1(), 
+                                     .D2(), 
+                                     .D3(), 
+                                     .Q0(immediate_DUMMY[4]), 
+                                     .Q1(immediate_DUMMY[5]), 
+                                     .Q2(immediate_DUMMY[6]), 
+                                     .Q3(immediate_DUMMY[7]));
+   AND2  XLXI_10 (.I0(XLXN_7), 
+                 .I1(XLXN_10), 
+                 .O(XLXN_3));
+   AND2  XLXI_11 (.I0(XLXN_8), 
+                 .I1(pos[0]), 
+                 .O(XLXN_4));
+   AND2  XLXI_12 (.I0(pos[1]), 
+                 .I1(XLXN_9), 
+                 .O(XLXN_5));
+   AND2  XLXI_13 (.I0(pos[1]), 
+                 .I1(pos[0]), 
+                 .O(XLXN_6));
+   INV  XLXI_14 (.I(pos[0]), 
+                .O(XLXN_10));
+   INV  XLXI_15 (.I(pos[1]), 
+                .O(XLXN_7));
+   INV  XLXI_16 (.I(pos[1]), 
+                .O(XLXN_8));
+   INV  XLXI_17 (.I(pos[0]), 
+                .O(XLXN_9));
+   (* HU_SET = "XLXI_18_24" *) 
+   FD4CE_MXILINX_RyanSandbox  XLXI_18 (.C(SYS_CLK), 
+                                      .CE(XLXN_369), 
+                                      .CLR(XLXN_87), 
+                                      .D0(binaryInput[0]), 
+                                      .D1(binaryInput[1]), 
+                                      .D2(binaryInput[2]), 
+                                      .D3(binaryInput[3]), 
+                                      .Q0(temp(0)), 
+                                      .Q1(), 
+                                      .Q2(), 
+                                      .Q3());
+   INV  XLXI_72 (.I(MODE), 
+                .O(XLXN_368));
+   INV  XLXI_73 (.I(MODE), 
+                .O(XLXN_369));
+   (* HU_SET = "XLXI_158_30" *) 
+   M2_1_MXILINX_RyanSandbox  XLXI_158 (.D0(opCode_DUMMY[0]), 
+                                      .D1(immediate_DUMMY[0]), 
+                                      .S0(pos[0]), 
+                                      .O(displayData[0]));
+   (* HU_SET = "XLXI_159_31" *) 
+   M2_1_MXILINX_RyanSandbox  XLXI_159 (.D0(opCode_DUMMY[1]), 
+                                      .D1(immediate_DUMMY[1]), 
+                                      .S0(pos[0]), 
+                                      .O(displayData[1]));
+   (* HU_SET = "XLXI_160_32" *) 
+   M2_1_MXILINX_RyanSandbox  XLXI_160 (.D0(opCode_DUMMY[2]), 
+                                      .D1(immediate_DUMMY[2]), 
+                                      .S0(pos[0]), 
+                                      .O(displayData[2]));
+   (* HU_SET = "XLXI_161_33" *) 
+   M2_1_MXILINX_RyanSandbox  XLXI_161 (.D0(opCode_DUMMY[3]), 
+                                      .D1(immediate_DUMMY[3]), 
+                                      .S0(pos[0]), 
+                                      .O(displayData[3]));
+   (* HU_SET = "XLXI_162_34" *) 
+   M2_1_MXILINX_RyanSandbox  XLXI_162 (.D0(opCode_DUMMY[4]), 
+                                      .D1(immediate_DUMMY[4]), 
+                                      .S0(pos[0]), 
+                                      .O(displayData[4]));
+   (* HU_SET = "XLXI_163_35" *) 
+   M2_1_MXILINX_RyanSandbox  XLXI_163 (.D0(opCode_DUMMY[5]), 
+                                      .D1(immediate_DUMMY[5]), 
+                                      .S0(pos[0]), 
+                                      .O(displayData[5]));
+   (* HU_SET = "XLXI_164_36" *) 
+   M2_1_MXILINX_RyanSandbox  XLXI_164 (.D0(opCode_DUMMY[6]), 
+                                      .D1(immediate_DUMMY[6]), 
+                                      .S0(pos[0]), 
+                                      .O(displayData[6]));
+   (* HU_SET = "XLXI_165_37" *) 
+   M2_1_MXILINX_RyanSandbox  XLXI_165 (.D0(opCode_DUMMY[7]), 
+                                      .D1(immediate_DUMMY[7]), 
+                                      .S0(pos[0]), 
+                                      .O(displayData[7]));
+   AND2  XLXI_166 (.I0(pos[1]), 
+                  .I1(pos[0]), 
+                  .O(displayData[8]));
+endmodule
+`timescale 1ns / 1ps
+
+module RyanSandbox(MODE, 
+                   SYS_CLK, 
+                   witeToTemp, 
+                   writeToMM, 
+                   XLXN_4);
+
+    input MODE;
+    input SYS_CLK;
+    input witeToTemp;
+    input writeToMM;
+    input XLXN_4;
+   
+   wire [8:0] displayData;
+   wire [3:0] keypadOutput;
+   wire XLXN_2;
+   
+   inputProcessor_MUSER_RyanSandbox  XLXI_6 (.binaryInput(keypadOutput[3:0]), 
+                                            .MODE(MODE), 
+                                            .SYS_CLK(SYS_CLK), 
+                                            .writeToMM(writeToMM), 
+                                            .writeToTemp(witeToTemp), 
+                                            .displayData(displayData[8:0]), 
+                                            .immediate(), 
+                                            .opCode());
+   Decoder_MUSER_RyanSandbox  XLXI_7 (.En(), 
+                                     .row(), 
+                                     .SYS_CLK(XLXN_2), 
+                                     .binDisplay(keypadOutput[3:0]), 
+                                     .keyO(), 
+                                     .colO());
+   sevenSeg  XLXI_8 (.Din(displayData[7:0]), 
+                    .En(MODE), 
+                    .SYS_CLK(SYS_CLK), 
+                    .anO(), 
+                    .sseg());
+endmodule

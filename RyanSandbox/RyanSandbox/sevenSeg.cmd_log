@@ -1,1 +1,2 @@
 sch2sym -intstyle ise -family spartan3e -w -refsym sevenSeg C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/SevenSeg/sevenSeg.sch C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/RyanSandbox/sevenSeg.sym 
+sch2sym -intstyle ise -family spartan3e -w -refsym sevenSeg C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/Components/SevenSeg/sevenSeg.sch C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/RyanSandbox/sevenSeg.sym 

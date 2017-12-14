@@ -1,0 +1,26 @@
+
+# PlanAhead Generated physical constraints 
+
+NET "row[3]" LOC = B7;
+NET "row[2]" LOC = C5;
+NET "row[1]" LOC = B6;
+NET "row[0]" LOC = C6;
+NET "rolO[3]" LOC = B2;
+NET "rolO[2]" LOC = A3;
+NET "rolO[1]" LOC = J3;
+NET "rolO[0]" LOC = B5;
+NET "sseg[7]" LOC = N13;
+NET "sseg[6]" LOC = L14;
+NET "sseg[5]" LOC = H12;
+NET "sseg[4]" LOC = N14;
+NET "sseg[3]" LOC = N11;
+NET "sseg[2]" LOC = P12;
+NET "sseg[1]" LOC = L13;
+NET "sseg[0]" LOC = M12;
+NET "MODE" LOC = N3;
+NET "systemClock" LOC = C8;#, CLOCK_DEDICATED_ROUTE = FALSE;
+NET "writeTemp" LOC = G12;
+NET "anO[3]" LOC = K14;
+NET "anO[2]" LOC = M13;
+NET "anO[1]" LOC = J12;
+NET "anO[0]" LOC = F12;

@@ -1,0 +1,69 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 14.7
+//  \   \         Application : sch2hdl
+//  /   /         Filename : testingDisplay.vf
+// /___/   /\     Timestamp : 12/13/2017 19:45:45
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: sch2hdl -intstyle ise -family spartan3e -verilog "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/New folder/testingDisplay/testingDisplay.vf" -w "C:/Users/Vason/Documents/GitHub/Physics-But-actually-CS-final/RyanSandbox/New folder/testingDisplay/testingDisplay.sch"
+//Design Name: testingDisplay
+//Device: spartan3e
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module testingDisplay(MODE, 
+                      row, 
+                      systemClock, 
+                      writeTemp, 
+                      anO, 
+                      sseg, 
+                      rolO);
+
+    input MODE;
+    input [3:0] row;
+    input systemClock;
+    input writeTemp;
+   output [3:0] anO;
+   output [7:0] sseg;
+    inout [3:0] rolO;
+   
+   wire [3:0] binaryInput;
+   wire CLK;
+   wire [8:0] displayData;
+   wire XLXN_22;
+   
+   Decoder  XLXI_1 (.En(MODE), 
+                   .row(row[3:0]), 
+                   .SYS_CLK(CLK), 
+                   .binDisplay(binaryInput[3:0]), 
+                   .keyO(), 
+                   .colO(rolO[3:0]));
+   inputProcessor  XLXI_2 (.binaryInput(binaryInput[3:0]), 
+                          .MODE(MODE), 
+                          .SYS_CLK(CLK), 
+                          .writeToMM(), 
+                          .writeToTemp(writeTemp), 
+                          .displayData(displayData[8:0]), 
+                          .immediate(), 
+                          .opCode());
+   sevenSeg  XLXI_3 (.Din(displayData[7:0]), 
+                    .En(MODE), 
+                    .SYS_CLK(CLK), 
+                    .anO(anO[3:0]), 
+                    .sseg(sseg[7:0]));
+   DCM_50M  XLXI_12 (.CLK(systemClock), 
+                    .RST(), 
+                    .CLK1(XLXN_22), 
+                    .CLK1k(CLK), 
+                    .CLK1M(), 
+                    .CLK10k());
+endmodule

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="mux4SSD">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2017-12-13T23:13:20</timestamp>
+    <timestamp>2017-12-14T2:10:49</timestamp>
     <pin polarity="Input" x="0" y="-416" name="rb_in" />
     <pin polarity="Input" x="0" y="-352" name="hexD(3:0)" />
     <pin polarity="Input" x="0" y="-288" name="hexC(3:0)" />

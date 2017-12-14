@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <symbol version="7" name="Decoder">
     <symboltype>BLOCK</symboltype>
-    <timestamp>2017-12-13T22:51:52</timestamp>
+    <timestamp>2017-12-14T2:11:22</timestamp>
     <pin polarity="Input" x="0" y="-160" name="SYS_CLK" />
     <pin polarity="Input" x="0" y="-96" name="En" />
     <pin polarity="Input" x="0" y="-32" name="row(3:0)" />

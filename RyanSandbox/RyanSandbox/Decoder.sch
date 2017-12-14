@@ -37,7 +37,7 @@
         <port polarity="Output" name="binDisplay(2)" />
         <port polarity="Output" name="binDisplay(3)" />
         <blockdef name="DCM_50M">
-            <timestamp>2017-12-13T22:48:3</timestamp>
+            <timestamp>2017-12-14T2:11:17</timestamp>
             <rect width="256" x="64" y="-256" height="256" />
             <line x2="0" y1="-224" y2="-224" x1="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
@@ -47,7 +47,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="mux4SSD">
-            <timestamp>2017-12-13T22:48:8</timestamp>
+            <timestamp>2017-12-14T2:10:49</timestamp>
             <rect width="256" x="64" y="-448" height="448" />
             <line x2="0" y1="-416" y2="-416" x1="64" />
             <rect width="64" x="0" y="-364" height="24" />
@@ -69,7 +69,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="bin2BCD3en">
-            <timestamp>2017-12-13T22:48:13</timestamp>
+            <timestamp>2017-12-14T2:13:27</timestamp>
             <rect width="256" x="64" y="-320" height="320" />
             <line x2="0" y1="-288" y2="-288" x1="64" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
@@ -87,7 +87,7 @@
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
         <blockdef name="sel_strobeB">
-            <timestamp>2017-12-13T22:48:24</timestamp>
+            <timestamp>2017-12-14T2:11:3</timestamp>
             <rect width="256" x="64" y="-64" height="64" />
             <line x2="0" y1="-32" y2="-32" x1="64" />
             <rect width="64" x="320" y="-44" height="24" />
@@ -113,7 +113,7 @@
             <line x2="64" y1="-32" y2="-48" x1="64" />
         </blockdef>
         <blockdef name="CRenc4bin">
-            <timestamp>2017-12-13T22:49:36</timestamp>
+            <timestamp>2017-12-14T2:11:10</timestamp>
             <rect width="256" x="64" y="-192" height="192" />
             <line x2="0" y1="-160" y2="-160" x1="64" />
             <line x2="0" y1="-96" y2="-96" x1="64" />
@@ -125,40 +125,6 @@
             <rect width="64" x="320" y="-44" height="24" />
             <line x2="384" y1="-32" y2="-32" x1="320" />
         </blockdef>
-        <block symbolname="DCM_50M" name="XLXI_2">
-            <blockpin signalname="SYS_CLK" name="CLK" />
-            <blockpin signalname="XLXN_7" name="RST" />
-            <blockpin name="CLK1M" />
-            <blockpin signalname="XLXN_6" name="CLK10k" />
-            <blockpin signalname="XLXN_5" name="CLK1k" />
-            <blockpin name="CLK1" />
-        </block>
-        <block symbolname="mux4SSD" name="XLXI_4">
-            <blockpin signalname="keyO" name="rb_in" />
-            <blockpin signalname="XLXN_9(3:0)" name="hexD(3:0)" />
-            <blockpin signalname="XLXN_10(3:0)" name="hexC(3:0)" />
-            <blockpin signalname="XLXN_11(3:0)" name="hexB(3:0)" />
-            <blockpin signalname="XLXN_13(3:0)" name="hexA(3:0)" />
-            <blockpin signalname="XLXN_14(0:1)" name="sel(0:1)" />
-            <blockpin name="dp_in(3:0)" />
-            <blockpin name="dpO" />
-            <blockpin name="anO(3:0)" />
-            <blockpin signalname="binDisplay(3:0)" name="hexO(3:0)" />
-        </block>
-        <block symbolname="bin2BCD3en" name="XLXI_5">
-            <blockpin signalname="XLXN_5" name="CLK" />
-            <blockpin signalname="En" name="En" />
-            <blockpin signalname="binO(7:0)" name="Din(7:0)" />
-            <blockpin signalname="XLXN_9(3:0)" name="Dout3(3:0)" />
-            <blockpin signalname="XLXN_10(3:0)" name="Dout2(3:0)" />
-            <blockpin signalname="XLXN_11(3:0)" name="Dout1(3:0)" />
-            <blockpin signalname="XLXN_13(3:0)" name="Dout0(3:0)" />
-            <blockpin name="RBout(3:0)" />
-        </block>
-        <block symbolname="sel_strobeB" name="XLXI_6">
-            <blockpin signalname="XLXN_6" name="clk" />
-            <blockpin signalname="XLXN_14(0:1)" name="sel(0:1)" />
-        </block>
         <block symbolname="constant" name="XLXI_7">
             <attr value="0" name="CValue">
                 <trait delete="all:1 sym:0" />
@@ -178,26 +144,55 @@
         <block symbolname="pulldown" name="XLXI_10(3:0)">
             <blockpin signalname="row(3:0)" name="O" />
         </block>
-        <block symbolname="CRenc4bin" name="XLXI_11">
+        <block symbolname="DCM_50M" name="XLXI_12">
+            <blockpin signalname="SYS_CLK" name="CLK" />
+            <blockpin signalname="XLXN_7" name="RST" />
+            <blockpin name="CLK1M" />
+            <blockpin signalname="XLXN_6" name="CLK10k" />
+            <blockpin signalname="XLXN_5" name="CLK1k" />
+            <blockpin name="CLK1" />
+        </block>
+        <block symbolname="mux4SSD" name="XLXI_13">
+            <blockpin signalname="keyO" name="rb_in" />
+            <blockpin signalname="XLXN_9(3:0)" name="hexD(3:0)" />
+            <blockpin signalname="XLXN_10(3:0)" name="hexC(3:0)" />
+            <blockpin signalname="XLXN_11(3:0)" name="hexB(3:0)" />
+            <blockpin signalname="XLXN_13(3:0)" name="hexA(3:0)" />
+            <blockpin signalname="XLXN_14(0:1)" name="sel(0:1)" />
+            <blockpin name="dp_in(3:0)" />
+            <blockpin name="dpO" />
+            <blockpin name="anO(3:0)" />
+            <blockpin signalname="binDisplay(3:0)" name="hexO(3:0)" />
+        </block>
+        <block symbolname="bin2BCD3en" name="XLXI_14">
+            <blockpin signalname="XLXN_5" name="CLK" />
+            <blockpin signalname="En" name="En" />
+            <blockpin signalname="binO(7:0)" name="Din(7:0)" />
+            <blockpin name="Dout3(3:0)" />
+            <blockpin name="Dout2(3:0)" />
+            <blockpin name="Dout1(3:0)" />
+            <blockpin name="Dout0(3:0)" />
+            <blockpin name="RBout(3:0)" />
+        </block>
+        <block symbolname="sel_strobeB" name="XLXI_15">
+            <blockpin signalname="XLXN_6" name="clk" />
+            <blockpin signalname="XLXN_14(0:1)" name="sel(0:1)" />
+        </block>
+        <block symbolname="CRenc4bin" name="XLXI_16">
             <blockpin signalname="XLXN_5" name="clk" />
             <blockpin signalname="XLXN_4" name="CE" />
             <blockpin signalname="row(3:0)" name="rowI(3:0)" />
+            <blockpin signalname="colO(3:0)" name="colO(3:0)" />
             <blockpin signalname="keyO" name="keyO" />
             <blockpin signalname="binO(3:0)" name="binO(3:0)" />
-            <blockpin signalname="colO(3:0)" name="colO(3:0)" />
         </block>
     </netlist>
     <sheet sheetnum="1" width="3520" height="2720">
-        <instance x="656" y="1328" name="XLXI_2" orien="R0">
-        </instance>
-        <instance x="1408" y="1248" name="XLXI_5" orien="R0">
-        </instance>
-        <instance x="1408" y="1600" name="XLXI_6" orien="R0">
-        </instance>
         <branch name="binO(7:0)">
-            <wire x2="1408" y1="1216" y2="1216" x1="1360" />
             <wire x2="1360" y1="1216" y2="1248" x1="1360" />
             <wire x2="1360" y1="1248" y2="1280" x1="1360" />
+            <wire x2="1392" y1="1216" y2="1216" x1="1360" />
+            <wire x2="1408" y1="1216" y2="1216" x1="1392" />
         </branch>
         <branch name="XLXN_4">
             <wire x2="1424" y1="544" y2="544" x1="1280" />
@@ -207,7 +202,8 @@
             <wire x2="1424" y1="480" y2="480" x1="1104" />
             <wire x2="1104" y1="480" y2="960" x1="1104" />
             <wire x2="1104" y1="960" y2="1232" x1="1104" />
-            <wire x2="1408" y1="960" y2="960" x1="1104" />
+            <wire x2="1392" y1="960" y2="960" x1="1104" />
+            <wire x2="1408" y1="960" y2="960" x1="1392" />
         </branch>
         <branch name="XLXN_6">
             <wire x2="1168" y1="1168" y2="1168" x1="1040" />
@@ -242,8 +238,6 @@
             <wire x2="2208" y1="1216" y2="1216" x1="2016" />
             <wire x2="2016" y1="1216" y2="1568" x1="2016" />
         </branch>
-        <instance x="2208" y="1312" name="XLXI_4" orien="R0">
-        </instance>
         <branch name="keyO">
             <wire x2="256" y1="160" y2="160" x1="48" />
         </branch>
@@ -252,7 +246,8 @@
         </branch>
         <iomarker fontsize="28" x="624" y="1104" name="SYS_CLK" orien="R180" />
         <branch name="En">
-            <wire x2="1408" y1="1088" y2="1088" x1="1376" />
+            <wire x2="1392" y1="1088" y2="1088" x1="1376" />
+            <wire x2="1408" y1="1088" y2="1088" x1="1392" />
         </branch>
         <branch name="keyO">
             <attrtext style="alignment:SOFT-LEFT;fontsize:28;fontname:Arial" attrname="Name" x="1856" y="480" type="branch" />
@@ -299,7 +294,15 @@
         <iomarker fontsize="28" x="2864" y="1136" name="binDisplay(1)" orien="R0" />
         <iomarker fontsize="28" x="2864" y="1200" name="binDisplay(2)" orien="R0" />
         <iomarker fontsize="28" x="2864" y="1264" name="binDisplay(3)" orien="R0" />
-        <instance x="1424" y="640" name="XLXI_11" orien="R0">
+        <instance x="656" y="1328" name="XLXI_12" orien="R0">
+        </instance>
+        <instance x="2208" y="1312" name="XLXI_13" orien="R0">
+        </instance>
+        <instance x="1392" y="1248" name="XLXI_14" orien="R0">
+        </instance>
+        <instance x="1408" y="1600" name="XLXI_15" orien="R0">
+        </instance>
+        <instance x="1424" y="640" name="XLXI_16" orien="R0">
         </instance>
     </sheet>
 </drawing>
